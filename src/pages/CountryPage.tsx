@@ -7,23 +7,41 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, CalendarDays } from 'lucide-react';
 
+// Import flag images
+import saFlag from '@/assets/flags/sa.png';
+import aeFlag from '@/assets/flags/ae.png';
+import egFlag from '@/assets/flags/eg.png';
+import maFlag from '@/assets/flags/ma.png';
+import joFlag from '@/assets/flags/jo.png';
+import kwFlag from '@/assets/flags/kw.png';
+import qaFlag from '@/assets/flags/qa.png';
+import lbFlag from '@/assets/flags/lb.png';
+import bhFlag from '@/assets/flags/bh.png';
+import omFlag from '@/assets/flags/om.png';
+import tnFlag from '@/assets/flags/tn.png';
+import dzFlag from '@/assets/flags/dz.png';
+import syFlag from '@/assets/flags/sy.png';
+import iqFlag from '@/assets/flags/iq.png';
+import yeFlag from '@/assets/flags/ye.png';
+import lyFlag from '@/assets/flags/ly.png';
+
 const arabicCountries = {
-  'ae': { name: 'United Arab Emirates', nameAr: 'دولة الإمارات العربية المتحدة', flag: '🇦🇪' },
-  'sa': { name: 'Saudi Arabia', nameAr: 'المملكة العربية السعودية', flag: '🇸🇦' },
-  'eg': { name: 'Egypt', nameAr: 'جمهورية مصر العربية', flag: '🇪🇬' },
-  'jo': { name: 'Jordan', nameAr: 'المملكة الأردنية الهاشمية', flag: '🇯🇴' },
-  'lb': { name: 'Lebanon', nameAr: 'الجمهورية اللبنانية', flag: '🇱🇧' },
-  'sy': { name: 'Syria', nameAr: 'الجمهورية العربية السورية', flag: '🇸🇾' },
-  'iq': { name: 'Iraq', nameAr: 'جمهورية العراق', flag: '🇮🇶' },
-  'kw': { name: 'Kuwait', nameAr: 'دولة الكويت', flag: '🇰🇼' },
-  'qa': { name: 'Qatar', nameAr: 'دولة قطر', flag: '🇶🇦' },
-  'bh': { name: 'Bahrain', nameAr: 'مملكة البحرين', flag: '🇧🇭' },
-  'om': { name: 'Oman', nameAr: 'سلطنة عمان', flag: '🇴🇲' },
-  'ye': { name: 'Yemen', nameAr: 'الجمهورية اليمنية', flag: '🇾🇪' },
-  'ma': { name: 'Morocco', nameAr: 'المملكة المغربية', flag: '🇲🇦' },
-  'tn': { name: 'Tunisia', nameAr: 'الجمهورية التونسية', flag: '🇹🇳' },
-  'dz': { name: 'Algeria', nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية', flag: '🇩🇿' },
-  'ly': { name: 'Libya', nameAr: 'دولة ليبيا', flag: '🇱🇾' }
+  'ae': { name: 'United Arab Emirates', nameAr: 'دولة الإمارات العربية المتحدة', flag: '🇦🇪', flagImage: aeFlag },
+  'sa': { name: 'Saudi Arabia', nameAr: 'المملكة العربية السعودية', flag: '🇸🇦', flagImage: saFlag },
+  'eg': { name: 'Egypt', nameAr: 'جمهورية مصر العربية', flag: '🇪🇬', flagImage: egFlag },
+  'jo': { name: 'Jordan', nameAr: 'المملكة الأردنية الهاشمية', flag: '🇯🇴', flagImage: joFlag },
+  'lb': { name: 'Lebanon', nameAr: 'الجمهورية اللبنانية', flag: '🇱🇧', flagImage: lbFlag },
+  'sy': { name: 'Syria', nameAr: 'الجمهورية العربية السورية', flag: '🇸🇾', flagImage: syFlag },
+  'iq': { name: 'Iraq', nameAr: 'جمهورية العراق', flag: '🇮🇶', flagImage: iqFlag },
+  'kw': { name: 'Kuwait', nameAr: 'دولة الكويت', flag: '🇰🇼', flagImage: kwFlag },
+  'qa': { name: 'Qatar', nameAr: 'دولة قطر', flag: '🇶🇦', flagImage: qaFlag },
+  'bh': { name: 'Bahrain', nameAr: 'مملكة البحرين', flag: '🇧🇭', flagImage: bhFlag },
+  'om': { name: 'Oman', nameAr: 'سلطنة عمان', flag: '🇴🇲', flagImage: omFlag },
+  'ye': { name: 'Yemen', nameAr: 'الجمهورية اليمنية', flag: '🇾🇪', flagImage: yeFlag },
+  'ma': { name: 'Morocco', nameAr: 'المملكة المغربية', flag: '🇲🇦', flagImage: maFlag },
+  'tn': { name: 'Tunisia', nameAr: 'الجمهورية التونسية', flag: '🇹🇳', flagImage: tnFlag },
+  'dz': { name: 'Algeria', nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية', flag: '🇩🇿', flagImage: dzFlag },
+  'ly': { name: 'Libya', nameAr: 'دولة ليبيا', flag: '🇱🇾', flagImage: lyFlag }
 };
 
 // Comprehensive Arabic Countries Holiday Database (2025-2028)
@@ -970,19 +988,37 @@ export const CountryPage = () => {
         {/* Country Header */}
         <div className="text-center mb-12">
           <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
-            <div className="text-6xl mb-4">{country.flag}</div>
-            <h1 className="text-2xl font-bold text-foreground mb-2">
-              {selectedCountry.toUpperCase()}
+            {/* Country Flag */}
+            <div className="mb-4 flex justify-center">
+              {country.flagImage ? (
+                <img 
+                  src={country.flagImage} 
+                  alt={`${country.name} flag`}
+                  className="w-20 h-14 object-cover rounded-md shadow-lg border-2 border-border"
+                />
+              ) : (
+                <div className="text-6xl">{country.flag}</div>
+              )}
+            </div>
+            
+            {/* Headlines */}
+            <h1 className={`text-3xl font-bold text-foreground mb-2 ${language === 'ar' ? 'arabic-text' : ''}`}>
+              {language === 'ar' 
+                ? `${country.nameAr} العطل الرسمية ${selectedYear}`
+                : `${country.name} Public Holidays ${selectedYear}`
+              }
             </h1>
-            <h2 className="text-lg text-muted-foreground mb-4">
-              {language === 'ar' ? country.nameAr : country.name} {language === 'ar' ? 'العطل الرسمية' : 'Public Holidays'} {selectedYear} - {language === 'ar' ? 'التقويم الرسمي' : 'Official Calendar'}
+            
+            <h2 className={`text-xl font-semibold text-muted-foreground mb-4 ${language === 'ar' ? 'arabic-text' : ''}`}>
+              {language === 'ar' ? 'التقويم الرسمي' : 'Official Calendar'}
             </h2>
-            <h3 className="text-xl font-semibold text-foreground">
+            
+            <p className={`text-sm text-muted-foreground ${language === 'ar' ? 'arabic-text' : ''}`}>
               {language === 'ar' 
                 ? `دليل شامل للعطل الإسلامية والأيام الوطنية وجدول العمل في ${country.nameAr}`
                 : `Complete Guide to Islamic Holidays, National Days & Work Schedule in ${country.name}`
               }
-            </h3>
+            </p>
           </div>
         </div>
 
