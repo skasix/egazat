@@ -3,6 +3,12 @@ import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Calendar } from 'lucide-react';
 
+// Import flag images
+import saFlag from '@/assets/flags/sa.png';
+import aeFlag from '@/assets/flags/ae.png';
+import egFlag from '@/assets/flags/eg.png';
+import maFlag from '@/assets/flags/ma.png';
+
 interface CountryCardsProps {
   language: string;
   year: number;
@@ -14,6 +20,7 @@ const arabicCountries = [
     name: 'United Arab Emirates', 
     nameAr: 'دولة الإمارات العربية المتحدة',
     flag: '🇦🇪',
+    flagImage: aeFlag,
     region: 'Gulf'
   },
   { 
@@ -21,6 +28,7 @@ const arabicCountries = [
     name: 'Saudi Arabia', 
     nameAr: 'المملكة العربية السعودية',
     flag: '🇸🇦',
+    flagImage: saFlag,
     region: 'Gulf'
   },
   { 
@@ -28,6 +36,7 @@ const arabicCountries = [
     name: 'Egypt', 
     nameAr: 'جمهورية مصر العربية',
     flag: '🇪🇬',
+    flagImage: egFlag,
     region: 'North Africa'
   },
   { 
@@ -35,6 +44,7 @@ const arabicCountries = [
     name: 'Jordan', 
     nameAr: 'المملكة الأردنية الهاشمية',
     flag: '🇯🇴',
+    flagImage: null,
     region: 'Levant'
   },
   { 
@@ -42,6 +52,7 @@ const arabicCountries = [
     name: 'Lebanon', 
     nameAr: 'الجمهورية اللبنانية',
     flag: '🇱🇧',
+    flagImage: null,
     region: 'Levant'
   },
   { 
@@ -49,6 +60,7 @@ const arabicCountries = [
     name: 'Syria', 
     nameAr: 'الجمهورية العربية السورية',
     flag: '🇸🇾',
+    flagImage: null,
     region: 'Levant'
   },
   { 
@@ -56,6 +68,7 @@ const arabicCountries = [
     name: 'Iraq', 
     nameAr: 'جمهورية العراق',
     flag: '🇮🇶',
+    flagImage: null,
     region: 'Levant'
   },
   { 
@@ -63,6 +76,7 @@ const arabicCountries = [
     name: 'Kuwait', 
     nameAr: 'دولة الكويت',
     flag: '🇰🇼',
+    flagImage: null,
     region: 'Gulf'
   },
   { 
@@ -70,6 +84,7 @@ const arabicCountries = [
     name: 'Qatar', 
     nameAr: 'دولة قطر',
     flag: '🇶🇦',
+    flagImage: null,
     region: 'Gulf'
   },
   { 
@@ -77,6 +92,7 @@ const arabicCountries = [
     name: 'Bahrain', 
     nameAr: 'مملكة البحرين',
     flag: '🇧🇭',
+    flagImage: null,
     region: 'Gulf'
   },
   { 
@@ -84,6 +100,7 @@ const arabicCountries = [
     name: 'Oman', 
     nameAr: 'سلطنة عمان',
     flag: '🇴🇲',
+    flagImage: null,
     region: 'Gulf'
   },
   { 
@@ -91,6 +108,7 @@ const arabicCountries = [
     name: 'Yemen', 
     nameAr: 'الجمهورية اليمنية',
     flag: '🇾🇪',
+    flagImage: null,
     region: 'Gulf'
   },
   { 
@@ -98,6 +116,7 @@ const arabicCountries = [
     name: 'Morocco', 
     nameAr: 'المملكة المغربية',
     flag: '🇲🇦',
+    flagImage: maFlag,
     region: 'North Africa'
   },
   { 
@@ -105,6 +124,7 @@ const arabicCountries = [
     name: 'Tunisia', 
     nameAr: 'الجمهورية التونسية',
     flag: '🇹🇳',
+    flagImage: null,
     region: 'North Africa'
   },
   { 
@@ -112,6 +132,7 @@ const arabicCountries = [
     name: 'Algeria', 
     nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية',
     flag: '🇩🇿',
+    flagImage: null,
     region: 'North Africa'
   },
   { 
@@ -119,6 +140,7 @@ const arabicCountries = [
     name: 'Libya', 
     nameAr: 'دولة ليبيا',
     flag: '🇱🇾',
+    flagImage: null,
     region: 'North Africa'
   }
 ];
@@ -173,15 +195,37 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                 onClick={() => handleCountryClick(country.code)}
               >
                 <CardHeader className="text-center pb-3">
-                  <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
-                    {country.flag}
+                  {/* Large flag image at top */}
+                  <div className="mb-3 group-hover:scale-110 transition-transform duration-300 flex justify-center">
+                    {country.flagImage ? (
+                      <img 
+                        src={country.flagImage} 
+                        alt={`${country.name} flag`}
+                        className="w-20 h-14 object-cover rounded-md shadow-lg border-2 border-border"
+                      />
+                    ) : (
+                      <div className="text-5xl">
+                        {country.flag}
+                      </div>
+                    )}
                   </div>
+                  
+                  {/* Flag image + Country Code */}
                   <div className="flex items-center justify-center gap-2 mb-2">
-                    <span className="text-2xl">{country.flag}</span>
+                    {country.flagImage ? (
+                      <img 
+                        src={country.flagImage} 
+                        alt={`${country.name} flag`}
+                        className="w-8 h-6 object-cover rounded-sm border border-border"
+                      />
+                    ) : (
+                      <span className="text-2xl">{country.flag}</span>
+                    )}
                     <span className="text-xl font-bold text-primary bg-primary/10 px-2 py-1 rounded-md">
                       {country.code.toUpperCase()}
                     </span>
                   </div>
+                  
                   <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {language === 'ar' ? country.nameAr : country.name}
                   </CardTitle>
