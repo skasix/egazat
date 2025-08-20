@@ -4,7 +4,7 @@ import { CountryCards } from '@/components/CountryCards';
 
 const Index = () => {
   const [language, setLanguage] = useState('en');
-  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
+  const [selectedYear, setSelectedYear] = useState(2025);
   const [selectedCountry, setSelectedCountry] = useState('ae');
 
   const handleLanguageChange = (newLanguage: string) => {

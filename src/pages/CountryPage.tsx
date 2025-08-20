@@ -121,7 +121,7 @@ export const CountryPage = () => {
   const { countryCode, year } = useParams();
   const navigate = useNavigate();
   const [language, setLanguage] = useState('en');
-  const [selectedYear, setSelectedYear] = useState(parseInt(year || '2024'));
+  const [selectedYear, setSelectedYear] = useState(parseInt(year || '2025'));
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
 
   const country = arabicCountries[selectedCountry as keyof typeof arabicCountries];
