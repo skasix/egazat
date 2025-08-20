@@ -2,14 +2,18 @@ import { useState, useEffect } from 'react';
 import { Header } from '@/components/Header';
 import { CountryCards } from '@/components/CountryCards';
 import { CountryQuickSelector } from '@/components/CountryQuickSelector';
+import { useParams, useNavigate } from 'react-router-dom';
 
 const Index = () => {
+  const { lang } = useParams();
+  const navigate = useNavigate();
   const [language, setLanguage] = useState('en');
   const [selectedYear, setSelectedYear] = useState(2025);
   const [selectedCountry, setSelectedCountry] = useState('ae');
 
   const handleLanguageChange = (newLanguage: string) => {
     setLanguage(newLanguage);
+    navigate(`/${newLanguage}`);
   };
 
   const handleYearChange = (newYear: number) => {
@@ -19,6 +23,11 @@ const Index = () => {
   const handleCountryChange = (newCountry: string) => {
     setSelectedCountry(newCountry);
   };
+
+  // Sync local language state with URL param
+  useEffect(() => {
+    setLanguage(lang === 'ar' ? 'ar' : 'en');
+  }, [lang]);
 
   // Update document language and direction
   useEffect(() => {

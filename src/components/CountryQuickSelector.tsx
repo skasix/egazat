@@ -29,7 +29,7 @@ export const CountryQuickSelector = ({ language, year }: CountryQuickSelectorPro
   const navigate = useNavigate();
 
   const handleCountryClick = (countryCode: string) => {
-    navigate(`/country/${countryCode}/${year}`);
+    navigate(`/${language}/country/${countryCode}/${year}`);
   };
 
   return (

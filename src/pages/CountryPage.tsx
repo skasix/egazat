@@ -898,9 +898,9 @@ export const getWeekendDays = (countryCode: string): string[] => {
 };
 
 export const CountryPage = () => {
-  const { countryCode, year } = useParams();
+  const { countryCode, year, lang } = useParams();
   const navigate = useNavigate();
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState(lang === 'ar' ? 'ar' : 'en');
   const [selectedYear, setSelectedYear] = useState(parseInt(year || '2025'));
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
 
@@ -914,8 +914,15 @@ export const CountryPage = () => {
     }
   }, [year, countryCode]);
 
+  // Update document language and direction
+  useEffect(() => {
+    document.documentElement.lang = language === 'ar' ? 'ar' : 'en';
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  }, [language]);
+
   const handleLanguageChange = (newLanguage: string) => {
     setLanguage(newLanguage);
+    navigate(`/${newLanguage}/country/${selectedCountry}/${selectedYear}`);
   };
 
   const handleYearChange = (newYear: number) => {

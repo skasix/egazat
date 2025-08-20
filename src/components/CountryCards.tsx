@@ -161,7 +161,7 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
   const navigate = useNavigate();
 
   const handleCountryClick = (countryCode: string) => {
-    navigate(`/country/${countryCode}/${year}`);
+    navigate(`/${language}/country/${countryCode}/${year}`);
   };
 
   // Group countries by region
