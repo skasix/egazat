@@ -1,0 +1,216 @@
+# Apache Performance Optimizations for Egazat.com
+# Enable mod_rewrite, mod_deflate, mod_expires, mod_headers
+
+# Security Headers
+<IfModule mod_headers.c>
+    # HSTS Security Header
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    
+    # XSS Protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Content Type Options
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Frame Options
+    Header always set X-Frame-Options "DENY"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # Content Security Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'"
+</IfModule>
+
+# Enable GZIP Compression
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+    
+    # Remove browser bugs (only needed for ancient browsers)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary Accept-Encoding
+</IfModule>
+
+# Leverage Browser Caching with Expires Headers
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Default expiration: 1 hour after request
+    ExpiresDefault "access plus 1 hour"
+    
+    # CSS and JS: 1 year
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType application/x-javascript "access plus 1 year"
+    
+    # Images: 1 year
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    
+    # Fonts: 1 year
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    
+    # HTML: 1 day (for SEO updates)
+    ExpiresByType text/html "access plus 1 day"
+    
+    # Manifest files: 1 week
+    ExpiresByType application/manifest+json "access plus 1 week"
+    ExpiresByType text/cache-manifest "access plus 1 week"
+</IfModule>
+
+# Cache-Control Headers for better control
+<IfModule mod_headers.c>
+    # CSS and JS files
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # Image files
+    <FilesMatch "\.(png|jpg|jpeg|gif|svg|webp|ico)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    # Font files
+    <FilesMatch "\.(ttf|otf|woff|woff2|eot)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+    
+    # HTML files
+    <FilesMatch "\.html$">
+        Header set Cache-Control "public, max-age=86400, must-revalidate"
+    </FilesMatch>
+    
+    # Service Worker
+    <FilesMatch "sw\.js$">
+        Header set Cache-Control "no-cache, no-store, must-revalidate"
+        Header set Pragma "no-cache"
+        Header set Expires "0"
+    </FilesMatch>
+</IfModule>
+
+# URL Rewriting for SEO-friendly URLs
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Remove trailing slashes (except for directories)
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [R=301,L]
+    
+    # Add .html extension to URLs internally
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !\.html$
+    RewriteRule ^(.*)$ $1.html [L]
+    
+    # Redirect old URLs to new structure
+    # /country/sa/2025 -> /ar/country/sa/2025.html
+    RewriteRule ^country/([a-z]{2})/([0-9]{4})/?$ /ar/country/$1/$2.html [R=301,L]
+    
+    # Ensure www redirect (adjust domain as needed)
+    # RewriteCond %{HTTP_HOST} !^www\. [NC]
+    # RewriteRule ^(.*)$ https://www.egazat.com/$1 [R=301,L]
+    
+    # HTTPS redirect
+    RewriteCond %{HTTPS} off
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# Prevent access to sensitive files
+<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|inc|ini|log|psd|sh|sql|sw[op])|~)$">
+    Require all denied
+</FilesMatch>
+
+# Prevent access to .htaccess itself
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# Enable Keep-Alive connections
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# Optimize Apache settings
+<IfModule mod_mime.c>
+    # Set UTF-8 as default charset
+    AddDefaultCharset UTF-8
+    
+    # Serve correct MIME types
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType image/svg+xml .svg .svgz
+    AddType application/vnd.ms-fontobject .eot
+    AddType font/ttf .ttf
+    AddType font/otf .otf
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    AddType image/webp .webp
+</IfModule>
+
+# Preload hints for critical resources
+<IfModule mod_headers.c>
+    # Preload critical fonts
+    <FilesMatch "\.html$">
+        Header add Link "</assets/fonts/cairo.woff2>; rel=preload; as=font; type=font/woff2; crossorigin"
+        Header add Link "</lovable-uploads/5e13b9cd-d239-4913-9435-94616b25ed57.png>; rel=preload; as=image"
+    </FilesMatch>
+</IfModule>
+
+# Enable ETags for better caching
+FileETag MTime Size
+
+# Optimize server performance
+<IfModule mod_deflate.c>
+    # Don't compress already compressed files
+    SetEnvIfNoCase Request_URI \
+        \.(?:gif|jpe?g|png|rar|zip|exe|flv|mov|wma|mp3|avi|swf|mp?g|mp4|webm|webp|pdf)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar|7z)$ no-gzip dont-vary
+</IfModule>
+
+# Set proper MIME type for various file formats
+<IfModule mod_mime.c>
+    AddType application/atom+xml .atom
+    AddType application/json .json .map .topojson
+    AddType application/ld+json .jsonld
+    AddType application/rss+xml .rss
+    AddType application/geo+json .geojson
+    AddType application/rdf+xml .rdf
+    AddType application/xml .xml
+    AddType text/calendar .ics .ical
+    AddType text/markdown .markdown .md
+    AddType text/vcard .vcard .vcf
+</IfModule>
