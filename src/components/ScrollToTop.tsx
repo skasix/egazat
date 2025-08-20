@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowUp } from 'lucide-react';
 
-export const ScrollToTop = () => {
+interface ScrollToTopProps {
+  language: string;
+}
+
+export const ScrollToTop = ({ language }: ScrollToTopProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   // Show button when page is scrolled up to given distance
@@ -30,13 +34,16 @@ export const ScrollToTop = () => {
     });
   };
 
+  // Position button based on language direction
+  const positionClass = language === 'ar' ? 'bottom-6 left-6' : 'bottom-6 right-6';
+
   return (
     <>
       {isVisible && (
         <Button
           onClick={scrollToTop}
           size="icon"
-          className="fixed bottom-6 right-6 z-50 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in hover-scale bg-primary hover:bg-primary/90 text-primary-foreground"
+          className={`fixed ${positionClass} z-50 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in hover-scale bg-primary hover:bg-primary/90 text-primary-foreground`}
           aria-label="Scroll to top"
         >
           <ArrowUp className="h-5 w-5" />

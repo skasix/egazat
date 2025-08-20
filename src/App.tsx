@@ -32,7 +32,7 @@ const AppContent = () => {
          </Routes>
       </div>
       <Footer language={language} />
-      <ScrollToTop />
+      <ScrollToTop language={language} />
     </div>
   );
 };
