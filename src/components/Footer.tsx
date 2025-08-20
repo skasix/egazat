@@ -13,8 +13,8 @@ export const Footer = ({ language = 'en' }: FooterProps) => {
           <div className="flex items-center justify-center gap-2 mb-4">
             <h3 className="text-xl font-bold text-foreground">
               {isArabic 
-                ? '🌍 العطل الرسمية العربية - دليلك الشامل للعطل الرسمية في الشرق الأوسط'
-                : '🌍 Arab Public Holidays - Your Complete Guide to Middle East Public Holidays'
+                ? <>🌍 <a href="https://egazat.com" className="hover:text-primary transition-colors">العطل الرسمية العربية</a> - دليلك الشامل للعطل الرسمية في الشرق الأوسط</>
+                : <>🌍 <a href="https://egazat.com" className="hover:text-primary transition-colors">Arab Public Holidays</a> - Your Complete Guide to Middle East Public Holidays</>
               }
             </h3>
           </div>
@@ -31,8 +31,8 @@ export const Footer = ({ language = 'en' }: FooterProps) => {
           <div className="pt-4 border-t border-border">
             <p className="text-sm text-muted-foreground">
               {isArabic 
-                ? '© 2025 العطل الرسمية العربية. جميع الحقوق محفوظة. | معلومات العطل الرسمية لأغراض التخطيط والمرجع.'
-                : '© 2025 Arab Public Holidays. All rights reserved. | Official holiday information for planning and reference purposes.'
+                ? <>© 2025 <a href="https://egazat.com" className="hover:text-primary transition-colors">العطل الرسمية العربية</a>. جميع الحقوق محفوظة. | معلومات العطل الرسمية لأغراض التخطيط والمرجع.</>
+                : <>© 2025 <a href="https://egazat.com" className="hover:text-primary transition-colors">Arab Public Holidays</a>. All rights reserved. | Official holiday information for planning and reference purposes.</>
               }
             </p>
           </div>
