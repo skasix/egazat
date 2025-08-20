@@ -8,6 +8,18 @@ import saFlag from '@/assets/flags/sa.png';
 import aeFlag from '@/assets/flags/ae.png';
 import egFlag from '@/assets/flags/eg.png';
 import maFlag from '@/assets/flags/ma.png';
+import joFlag from '@/assets/flags/jo.png';
+import kwFlag from '@/assets/flags/kw.png';
+import qaFlag from '@/assets/flags/qa.png';
+import lbFlag from '@/assets/flags/lb.png';
+import bhFlag from '@/assets/flags/bh.png';
+import omFlag from '@/assets/flags/om.png';
+import tnFlag from '@/assets/flags/tn.png';
+import dzFlag from '@/assets/flags/dz.png';
+import syFlag from '@/assets/flags/sy.png';
+import iqFlag from '@/assets/flags/iq.png';
+import yeFlag from '@/assets/flags/ye.png';
+import lyFlag from '@/assets/flags/ly.png';
 
 interface CountryCardsProps {
   language: string;
@@ -44,7 +56,7 @@ const arabicCountries = [
     name: 'Jordan', 
     nameAr: 'المملكة الأردنية الهاشمية',
     flag: '🇯🇴',
-    flagImage: null,
+    flagImage: joFlag,
     region: 'Levant'
   },
   { 
@@ -52,7 +64,7 @@ const arabicCountries = [
     name: 'Lebanon', 
     nameAr: 'الجمهورية اللبنانية',
     flag: '🇱🇧',
-    flagImage: null,
+    flagImage: lbFlag,
     region: 'Levant'
   },
   { 
@@ -60,7 +72,7 @@ const arabicCountries = [
     name: 'Syria', 
     nameAr: 'الجمهورية العربية السورية',
     flag: '🇸🇾',
-    flagImage: null,
+    flagImage: syFlag,
     region: 'Levant'
   },
   { 
@@ -68,7 +80,7 @@ const arabicCountries = [
     name: 'Iraq', 
     nameAr: 'جمهورية العراق',
     flag: '🇮🇶',
-    flagImage: null,
+    flagImage: iqFlag,
     region: 'Levant'
   },
   { 
@@ -76,7 +88,7 @@ const arabicCountries = [
     name: 'Kuwait', 
     nameAr: 'دولة الكويت',
     flag: '🇰🇼',
-    flagImage: null,
+    flagImage: kwFlag,
     region: 'Gulf'
   },
   { 
@@ -84,7 +96,7 @@ const arabicCountries = [
     name: 'Qatar', 
     nameAr: 'دولة قطر',
     flag: '🇶🇦',
-    flagImage: null,
+    flagImage: qaFlag,
     region: 'Gulf'
   },
   { 
@@ -92,7 +104,7 @@ const arabicCountries = [
     name: 'Bahrain', 
     nameAr: 'مملكة البحرين',
     flag: '🇧🇭',
-    flagImage: null,
+    flagImage: bhFlag,
     region: 'Gulf'
   },
   { 
@@ -100,7 +112,7 @@ const arabicCountries = [
     name: 'Oman', 
     nameAr: 'سلطنة عمان',
     flag: '🇴🇲',
-    flagImage: null,
+    flagImage: omFlag,
     region: 'Gulf'
   },
   { 
@@ -108,7 +120,7 @@ const arabicCountries = [
     name: 'Yemen', 
     nameAr: 'الجمهورية اليمنية',
     flag: '🇾🇪',
-    flagImage: null,
+    flagImage: yeFlag,
     region: 'Gulf'
   },
   { 
@@ -124,7 +136,7 @@ const arabicCountries = [
     name: 'Tunisia', 
     nameAr: 'الجمهورية التونسية',
     flag: '🇹🇳',
-    flagImage: null,
+    flagImage: tnFlag,
     region: 'North Africa'
   },
   { 
@@ -132,7 +144,7 @@ const arabicCountries = [
     name: 'Algeria', 
     nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية',
     flag: '🇩🇿',
-    flagImage: null,
+    flagImage: dzFlag,
     region: 'North Africa'
   },
   { 
@@ -140,7 +152,7 @@ const arabicCountries = [
     name: 'Libya', 
     nameAr: 'دولة ليبيا',
     flag: '🇱🇾',
-    flagImage: null,
+    flagImage: lyFlag,
     region: 'North Africa'
   }
 ];
