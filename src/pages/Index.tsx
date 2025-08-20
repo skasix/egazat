@@ -26,9 +26,14 @@ const Index = () => {
     setSelectedCountry(newCountry);
   };
 
-  // Sync local language state with URL param
+  // Sync local language state with URL param, default to Arabic for root path
   useEffect(() => {
-    setLanguage(lang === 'en' ? 'en' : 'ar');
+    if (!lang) {
+      // Root path, default to Arabic
+      setLanguage('ar');
+    } else {
+      setLanguage(lang === 'en' ? 'en' : 'ar');
+    }
   }, [lang]);
 
   // Update document language and direction

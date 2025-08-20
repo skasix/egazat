@@ -18,7 +18,7 @@ const AppContent = () => {
     <div className="min-h-screen flex flex-col">
       <div className="flex-1">
           <Routes>
-            <Route path="/" element={<Navigate to="/ar" replace />} />
+            <Route path="/" element={<Index />} />
             
             <Route path="/:lang" element={<Index />} />
             <Route path="/:lang.html" element={<Index />} />
