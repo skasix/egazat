@@ -40,12 +40,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={language === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}
+        title={language === 'ar' 
+          ? 'العطل الرسمية العربية - دليل شامل | Egazat.com'
+          : 'Arabic Public Holidays - Complete Guide | Egazat.com'
+        }
         description={language === 'ar' 
-          ? 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية'
-          : 'Complete Guide to Public Holidays in Arab Countries'
+          ? 'دليل شامل للعطل والمناسبات الرسمية في جميع الدول العربية. تقويم كامل للعطل الرسمية والإجازات الوطنية.'
+          : 'Complete guide to public holidays and official celebrations in all Arab countries. Full calendar of official holidays and national vacations.'
         }
         language={language}
+        keywords={language === 'ar'
+          ? 'العطل الرسمية العربية, التقويم العربي, الإجازات الرسمية, العطل الوطنية, التقويم الهجري'
+          : 'arabic public holidays, arab calendar, official holidays, national holidays, islamic calendar'
+        }
       />
       <Header
         selectedLanguage={language}

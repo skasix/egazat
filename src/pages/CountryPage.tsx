@@ -999,17 +999,21 @@ export const CountryPage = () => {
     <div className="min-h-screen bg-background">
       <SEOHead
         title={language === 'ar' 
-          ? `${country.nameAr} العطل الرسمية ${selectedYear}`
-          : `${country.name} Public Holidays ${selectedYear}`
+          ? `${country.nameAr} العطل الرسمية ${selectedYear} - التقويم | Egazat.com`
+          : `${country.name} Public Holidays ${selectedYear} - Calendar | Egazat.com`
         }
         description={language === 'ar'
-          ? `دليل شامل للعطل الإسلامية والأيام الوطنية وجدول العمل في ${country.nameAr} لعام ${selectedYear}`
-          : `Complete Guide to Islamic Holidays, National Days & Work Schedule in ${country.name} for ${selectedYear}`
+          ? `التقويم الكامل للعطل الرسمية في ${country.nameAr}. اكتشف عطلات نهاية الأسبوع الطويلة وخطط للإجازات الآن.`
+          : `Complete calendar of the official holidays in ${country.name}. Discover long weekends and plan vacations now.`
         }
         language={language}
         countryCode={selectedCountry}
         year={selectedYear}
-      />
+        keywords={language === 'ar'
+          ? `${country.nameAr} العطل, العطل الرسمية ${selectedYear}, التقويم ${country.nameAr}, الإجازات الوطنية`
+          : `${country.name} holidays, public holidays ${selectedYear}, ${country.name} calendar, national vacations`
+        }
+       />
       <Header
         selectedLanguage={language}
         selectedYear={selectedYear}

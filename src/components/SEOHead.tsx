@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import { getCountryMetadata } from '@/utils/seoRoutes';
 
@@ -8,116 +8,113 @@ interface SEOHeadProps {
   language?: string;
   countryCode?: string;
   year?: number;
+  keywords?: string;
 }
 
-export const SEOHead = ({ title, description, language = 'en', countryCode, year }: SEOHeadProps) => {
+export const SEOHead = ({ title, description, language = 'ar', countryCode, year, keywords }: SEOHeadProps) => {
   const location = useLocation();
-
-  useEffect(() => {
-    // Update document title
-    if (title) {
-      document.title = `${title} | Egazat`;
-    }
-
-    // Update meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription && description) {
-      metaDescription.setAttribute('content', description);
-    }
-
-    // Update language and direction
-    document.documentElement.lang = language;
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
-
-    // Update canonical URL (remove .html for canonical)
-    const canonicalUrl = `https://egazat.com${location.pathname.replace('.html', '')}`;
-    let canonical = document.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement('link');
-      canonical.setAttribute('rel', 'canonical');
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute('href', canonicalUrl);
-
-    // Update Open Graph tags
-    const updateOGTag = (property: string, content: string) => {
-      let tag = document.querySelector(`meta[property="${property}"]`);
-      if (!tag) {
-        tag = document.createElement('meta');
-        tag.setAttribute('property', property);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute('content', content);
-    };
-
-    if (title) {
-      updateOGTag('og:title', title);
-    }
-    if (description) {
-      updateOGTag('og:description', description);
-    }
-    updateOGTag('og:url', canonicalUrl);
-    updateOGTag('og:locale', language === 'ar' ? 'ar_SA' : 'en_US');
-
-    // Update Twitter tags
-    const updateTwitterTag = (name: string, content: string) => {
-      let tag = document.querySelector(`meta[name="${name}"]`);
-      if (!tag) {
-        tag = document.createElement('meta');
-        tag.setAttribute('name', name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute('content', content);
-    };
-
-    if (title) {
-      updateTwitterTag('twitter:title', title);
-    }
-    if (description) {
-      updateTwitterTag('twitter:description', description);
-    }
-
-    // Add structured data for country pages
-    if (countryCode && year) {
-      const countryMetadata = getCountryMetadata(countryCode, language);
-      const structuredData = {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": title,
+  
+  // Build canonical URL (remove .html for canonical)
+  const canonicalUrl = `https://egazat.com${location.pathname.replace('.html', '')}`;
+  
+  // Generate keywords
+  const defaultKeywords = language === 'ar' 
+    ? 'العطل الرسمية, العطل العربية, التقويم, الإجازات, العطل الوطنية'
+    : 'public holidays, arab holidays, calendar, vacations, national holidays';
+  
+  const finalKeywords = keywords || defaultKeywords;
+  
+  // Generate structured data for country pages
+  let structuredData = null;
+  if (countryCode && year) {
+    const countryMetadata = getCountryMetadata(countryCode, language);
+    structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": title,
+      "description": description,
+      "url": canonicalUrl,
+      "inLanguage": language,
+      "about": {
+        "@type": "Country",
+        "name": countryMetadata.name,
+        "alternateName": countryMetadata.code
+      },
+      "mainEntity": {
+        "@type": "Event",
+        "name": language === 'ar' 
+          ? `العطل الرسمية ${countryMetadata.name} ${year}`
+          : `${countryMetadata.name} Public Holidays ${year}`,
         "description": description,
-        "url": canonicalUrl,
-        "inLanguage": language,
-        "about": {
+        "location": {
           "@type": "Country",
-          "name": countryMetadata.name,
-          "alternateName": countryMetadata.code
+          "name": countryMetadata.name
         },
-        "mainEntity": {
-          "@type": "Event",
-          "name": `${countryMetadata.name} Public Holidays ${year}`,
-          "description": description,
-          "location": {
-            "@type": "Country",
-            "name": countryMetadata.name
-          },
-          "startDate": `${year}-01-01`,
-          "endDate": `${year}-12-31`
-        }
-      };
-
-      // Remove existing structured data
-      const existingScript = document.querySelector('script[type="application/ld+json"]');
-      if (existingScript) {
-        existingScript.remove();
+        "startDate": `${year}-01-01`,
+        "endDate": `${year}-12-31`
       }
+    };
+  } else {
+    // Homepage structured data
+    structuredData = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Egazat",
+      "description": description,
+      "url": canonicalUrl,
+      "inLanguage": language,
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://egazat.com/{lang}/country/{country}/{year}"
+        },
+        "query-input": "required name=country"
+      }
+    };
+  }
 
-      // Add new structured data
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(structuredData);
-      document.head.appendChild(script);
-    }
-  }, [title, description, language, countryCode, year, location]);
-
-  return null;
+  return (
+    <Helmet>
+      {/* Basic Meta Tags */}
+      <html lang={language} dir={language === 'ar' ? 'rtl' : 'ltr'} />
+      <title>{title}</title>
+      <meta name="description" content={description} />
+      <meta name="keywords" content={finalKeywords} />
+      <meta name="robots" content="index, follow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+      {/* Canonical URL */}
+      <link rel="canonical" href={canonicalUrl} />
+      
+      {/* Open Graph Tags */}
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
+      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:site_name" content="Egazat" />
+      <meta property="og:locale" content={language === 'ar' ? 'ar_SA' : 'en_US'} />
+      <meta property="og:image" content="https://egazat.com/og-image.jpg" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={language === 'ar' ? 'دليل العطل الرسمية العربية' : 'Arabic Public Holidays Guide'} />
+      
+      {/* Twitter Card Tags */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content="https://egazat.com/og-image.jpg" />
+      <meta name="twitter:image:alt" content={language === 'ar' ? 'دليل العطل الرسمية العربية' : 'Arabic Public Holidays Guide'} />
+      
+      {/* Additional Meta Tags */}
+      <meta name="author" content="Egazat" />
+      <meta name="theme-color" content="#000000" />
+      <meta name="format-detection" content="telephone=no" />
+      
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
+    </Helmet>
+  );
 };
