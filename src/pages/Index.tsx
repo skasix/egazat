@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Header } from '@/components/Header';
 import { CountryCards } from '@/components/CountryCards';
 import { CountryQuickSelector } from '@/components/CountryQuickSelector';
@@ -19,6 +19,12 @@ const Index = () => {
   const handleCountryChange = (newCountry: string) => {
     setSelectedCountry(newCountry);
   };
+
+  // Update document language and direction
+  useEffect(() => {
+    document.documentElement.lang = language === 'ar' ? 'ar' : 'en';
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+  }, [language]);
 
   return (
     <div className="min-h-screen bg-background" dir={language === 'ar' ? 'rtl' : 'ltr'}>

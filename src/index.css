@@ -131,11 +131,32 @@ All colors MUST be HSL.
     text-align: left;
   }
 
+  /* RTL specific adjustments */
+  [dir="rtl"] .flex {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .gap-2 > * + * {
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+
+  [dir="rtl"] .ml-2 {
+    margin-left: 0;
+    margin-right: 0.5rem;
+  }
+
+  [dir="rtl"] .mr-2 {
+    margin-right: 0;
+    margin-left: 0.5rem;
+  }
+
   /* Arabic font stack */
   .arabic-text {
-    font-family: 'Amiri', 'Cairo', 'Noto Sans Arabic', 'Arial Unicode MS', Arial, sans-serif;
+    font-family: 'Cairo', 'Amiri', 'Noto Sans Arabic', 'Arial Unicode MS', Arial, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1, 'kern' 1;
     line-height: 1.8;
+    letter-spacing: 0.02em;
   }
 
   /* Ensure proper Arabic number display */
@@ -143,7 +164,13 @@ All colors MUST be HSL.
     unicode-bidi: bidi-override;
     direction: ltr;
   }
-}
 
-/* Import Arabic fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap');
+  /* RTL button and icon adjustments */
+  [dir="rtl"] .lucide {
+    transform: scaleX(-1);
+  }
+
+  [dir="rtl"] .group-hover\\:scale-110 {
+    transform-origin: center;
+  }
+}
