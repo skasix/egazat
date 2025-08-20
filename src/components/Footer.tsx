@@ -27,6 +27,16 @@ export const Footer = ({ language = 'en' }: FooterProps) => {
             }
           </p>
           
+          {/* Contact Information */}
+          <div className="mb-6">
+            <p className="text-muted-foreground">
+              {isArabic 
+                ? <>التواصل والإعلان: <a href="mailto:info@egazat.com" className="text-primary hover:underline">info@egazat.com</a></>
+                : <>Contact & Advertising: <a href="mailto:info@egazat.com" className="text-primary hover:underline">info@egazat.com</a></>
+              }
+            </p>
+          </div>
+          
           {/* Copyright */}
           <div className="pt-4 border-t border-border">
             <p className="text-sm text-muted-foreground">
