@@ -27,38 +27,95 @@ const arabicCountries = {
 };
 
 // Sample holidays data - will be replaced with real data later
-const sampleHolidays = [
-  {
-    name: 'New Year\'s Day',
-    nameAr: 'رأس السنة الميلادية',
-    date: '2024-01-01',
-    type: 'national',
-    isFixed: true
-  },
-  {
-    name: 'Eid al-Fitr',
-    nameAr: 'عيد الفطر',
-    date: '2024-04-10',
-    type: 'religious',
-    isFixed: false,
-    duration: 3
-  },
-  {
-    name: 'National Day',
-    nameAr: 'اليوم الوطني',
-    date: '2024-12-02',
-    type: 'national',
-    isFixed: true
-  },
-  {
-    name: 'Eid al-Adha',
-    nameAr: 'عيد الأضحى',
-    date: '2024-06-16',
-    type: 'religious',
-    isFixed: false,
-    duration: 4
+const getHolidaysForCountryYear = (countryCode: string, year: number) => {
+  // Saudi Arabia holidays for 2024-2025
+  if (countryCode === 'sa') {
+    return [
+      {
+        name: 'New Year\'s Day',
+        nameAr: 'رأس السنة الميلادية',
+        date: `${year}-01-01`,
+        type: 'national'
+      },
+      {
+        name: 'Saudi Founding Day',
+        nameAr: 'يوم التأسيس السعودي',
+        date: `${year}-02-22`,
+        type: 'national'
+      },
+      {
+        name: 'Eid al-Fitr',
+        nameAr: 'عيد الفطر',
+        date: year === 2024 ? '2024-04-10' : '2025-03-29',
+        type: 'religious'
+      },
+      {
+        name: 'Eid al-Adha',
+        nameAr: 'عيد الأضحى',
+        date: year === 2024 ? '2024-06-16' : '2025-06-05',
+        type: 'religious'
+      },
+      {
+        name: 'Saudi National Day',
+        nameAr: 'اليوم الوطني السعودي',
+        date: `${year}-09-23`,
+        type: 'national'
+      }
+    ];
   }
-];
+  
+  // UAE holidays
+  if (countryCode === 'ae') {
+    return [
+      {
+        name: 'New Year\'s Day',
+        nameAr: 'رأس السنة الميلادية',
+        date: `${year}-01-01`,
+        type: 'national'
+      },
+      {
+        name: 'Eid al-Fitr',
+        nameAr: 'عيد الفطر',
+        date: year === 2024 ? '2024-04-10' : '2025-03-29',
+        type: 'religious'
+      },
+      {
+        name: 'Eid al-Adha',
+        nameAr: 'عيد الأضحى',
+        date: year === 2024 ? '2024-06-16' : '2025-06-05',
+        type: 'religious'
+      },
+      {
+        name: 'UAE National Day',
+        nameAr: 'اليوم الوطني الإماراتي',
+        date: `${year}-12-02`,
+        type: 'national'
+      }
+    ];
+  }
+  
+  // Default holidays for other countries
+  return [
+    {
+      name: 'New Year\'s Day',
+      nameAr: 'رأس السنة الميلادية',
+      date: `${year}-01-01`,
+      type: 'national'
+    },
+    {
+      name: 'Eid al-Fitr',
+      nameAr: 'عيد الفطر',
+      date: year === 2024 ? '2024-04-10' : '2025-03-29',
+      type: 'religious'
+    },
+    {
+      name: 'Eid al-Adha',
+      nameAr: 'عيد الأضحى',
+      date: year === 2024 ? '2024-06-16' : '2025-06-05',
+      type: 'religious'
+    }
+  ];
+};
 
 export const CountryPage = () => {
   const { countryCode, year } = useParams();
@@ -68,6 +125,7 @@ export const CountryPage = () => {
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
 
   const country = arabicCountries[selectedCountry as keyof typeof arabicCountries];
+  const holidays = getHolidaysForCountryYear(selectedCountry, selectedYear);
 
   useEffect(() => {
     if (year && countryCode) {
@@ -135,25 +193,31 @@ export const CountryPage = () => {
 
         {/* Country Header */}
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <span className="text-6xl">{country.flag}</span>
-            <div>
-              <h1 className="text-4xl font-bold text-foreground">
-                {language === 'ar' ? country.nameAr : country.name}
-              </h1>
-              <p className="text-xl text-muted-foreground mt-2">
-                {language === 'ar' 
-                  ? `العطل الرسمية لعام ${selectedYear}`
-                  : `Public Holidays ${selectedYear}`
-                }
-              </p>
-            </div>
+          <div className="bg-card border border-border rounded-lg p-8 shadow-sm">
+            <div className="text-6xl mb-4">{country.flag}</div>
+            <h1 className="text-2xl font-bold text-foreground mb-2">
+              {selectedCountry.toUpperCase()}
+            </h1>
+            <h2 className="text-lg text-muted-foreground mb-4">
+              {language === 'ar' ? country.nameAr : country.name} {language === 'ar' ? 'العطل الرسمية' : 'Public Holidays'} {selectedYear} - {language === 'ar' ? 'التقويم الرسمي' : 'Official Calendar'}
+            </h2>
+            <h3 className="text-xl font-semibold text-foreground">
+              {language === 'ar' 
+                ? `دليل شامل للعطل الإسلامية والأيام الوطنية وجدول العمل في ${country.nameAr}`
+                : `Complete Guide to Islamic Holidays, National Days & Work Schedule in ${country.name}`
+              }
+            </h3>
           </div>
         </div>
 
         {/* Calendar Section */}
         <section className="mb-12">
-          <Calendar year={selectedYear} language={language} />
+          <Calendar 
+            year={selectedYear} 
+            language={language} 
+            countryCode={selectedCountry}
+            holidays={holidays}
+          />
         </section>
 
         {/* Holidays List */}
@@ -165,7 +229,7 @@ export const CountryPage = () => {
           </div>
 
           <div className="grid gap-4 max-w-4xl mx-auto">
-            {sampleHolidays.map((holiday, index) => (
+            {holidays.map((holiday, index) => (
               <Card key={index} className="bg-card hover:shadow-lg transition-shadow duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between gap-4">
@@ -187,14 +251,6 @@ export const CountryPage = () => {
                           }
                         )}
                       </p>
-                      {holiday.duration && (
-                        <p className="text-sm text-muted-foreground">
-                          {language === 'ar' 
-                            ? `مدة العطلة: ${holiday.duration} أيام`
-                            : `Duration: ${holiday.duration} days`
-                          }
-                        </p>
-                      )}
                     </div>
                     <div className="flex flex-col items-end gap-2">
                       <Badge className={getHolidayTypeColor(holiday.type)}>
@@ -204,10 +260,7 @@ export const CountryPage = () => {
                         }
                       </Badge>
                       <Badge variant="outline">
-                        {holiday.isFixed 
-                          ? (language === 'ar' ? 'ثابت' : 'Fixed')
-                          : (language === 'ar' ? 'متحرك' : 'Variable')
-                        }
+                        {language === 'ar' ? 'عطلة رسمية' : 'Official Holiday'}
                       </Badge>
                     </div>
                   </div>

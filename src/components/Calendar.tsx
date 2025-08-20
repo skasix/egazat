@@ -4,6 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 interface CalendarProps {
   year: number;
   language: string;
+  countryCode: string;
+  holidays: Array<{
+    name: string;
+    nameAr: string;
+    date: string;
+    type: string;
+  }>;
 }
 
 const monthNames = {
@@ -22,7 +29,7 @@ const dayNames = {
   ar: ['أحد', 'اثنين', 'ثلاثاء', 'أربعاء', 'خميس', 'جمعة', 'سبت']
 };
 
-export const Calendar = ({ year, language }: CalendarProps) => {
+export const Calendar = ({ year, language, countryCode, holidays }: CalendarProps) => {
   const months = useMemo(() => {
     return Array.from({ length: 12 }, (_, monthIndex) => {
       const firstDay = new Date(year, monthIndex, 1);
@@ -43,61 +50,103 @@ export const Calendar = ({ year, language }: CalendarProps) => {
         days.push(day);
       }
       
+      // Get holidays for this month
+      const monthHolidays = holidays.filter(holiday => {
+        const holidayDate = new Date(holiday.date);
+        return holidayDate.getMonth() === monthIndex && holidayDate.getFullYear() === year;
+      });
+      
       return {
         name: monthNames[language as keyof typeof monthNames][monthIndex],
         days,
-        monthIndex
+        monthIndex,
+        holidays: monthHolidays
       };
     });
-  }, [year, language]);
+  }, [year, language, holidays]);
+
+  const isHoliday = (monthIndex: number, day: number) => {
+    return holidays.some(holiday => {
+      const holidayDate = new Date(holiday.date);
+      return holidayDate.getMonth() === monthIndex && 
+             holidayDate.getDate() === day && 
+             holidayDate.getFullYear() === year;
+    });
+  };
 
   return (
     <div className="w-full max-w-7xl mx-auto">
-      <div className="text-center mb-8">
-        <h3 className="text-3xl font-bold text-foreground mb-2">
-          {language === 'ar' ? `تقويم ${year}` : `${year} Calendar`}
-        </h3>
-      </div>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {months.map((month, index) => (
-          <Card key={index} className="bg-card shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <CardHeader className="pb-3">
-              <CardTitle className="text-center text-lg font-semibold text-primary">
-                {month.name}
+          <Card key={index} className="bg-card shadow-sm border border-border">
+            <CardHeader className="pb-3 bg-accent text-accent-foreground">
+              <CardTitle className="text-center text-lg font-semibold">
+                {month.name} {year}
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-3">
+            <CardContent className="p-4">
               {/* Day headers */}
               <div className="grid grid-cols-7 gap-1 mb-2">
                 {dayNames[language as keyof typeof dayNames].map((day, dayIndex) => (
-                  <div key={dayIndex} className="text-center text-xs font-medium text-muted-foreground p-1">
+                  <div key={dayIndex} className="text-center text-xs font-medium text-muted-foreground p-1 bg-accent/20">
                     {day}
                   </div>
                 ))}
               </div>
               
               {/* Calendar days */}
-              <div className="grid grid-cols-7 gap-1">
-                {month.days.map((day, dayIndex) => (
-                  <div
-                    key={dayIndex}
-                    className={`
-                      text-center p-2 text-sm rounded-md transition-colors
-                      ${day 
-                        ? 'hover:bg-primary/10 cursor-pointer text-foreground' 
-                        : 'text-transparent'
-                      }
-                      ${day && new Date(year, month.monthIndex, day).getDay() === 5 
-                        ? 'bg-accent/20 font-semibold' 
-                        : ''
-                      }
-                    `}
-                  >
-                    {day || ''}
-                  </div>
-                ))}
+              <div className="grid grid-cols-7 gap-1 mb-4">
+                {month.days.map((day, dayIndex) => {
+                  const isHolidayDay = day ? isHoliday(month.monthIndex, day) : false;
+                  return (
+                    <div
+                      key={dayIndex}
+                      className={`
+                        text-center p-2 text-sm transition-colors border
+                        ${day 
+                          ? 'text-foreground cursor-pointer hover:bg-muted' 
+                          : 'text-transparent border-transparent'
+                        }
+                        ${isHolidayDay 
+                          ? 'bg-destructive text-destructive-foreground font-bold border-destructive' 
+                          : 'border-border'
+                        }
+                        ${day && new Date(year, month.monthIndex, day).getDay() === 5 && !isHolidayDay
+                          ? 'bg-accent/30' 
+                          : ''
+                        }
+                      `}
+                    >
+                      {day || ''}
+                    </div>
+                  );
+                })}
               </div>
+
+              {/* Holidays list for this month */}
+              {month.holidays.length > 0 && (
+                <div className="border-t border-border pt-3">
+                  <h5 className="font-semibold text-sm text-foreground mb-2">
+                    {language === 'ar' 
+                      ? `العطل الرسمية في ${month.name}:`
+                      : `Public Holidays in ${month.name}:`
+                    }
+                  </h5>
+                  <div className="space-y-1">
+                    {month.holidays.map((holiday, holidayIndex) => {
+                      const holidayDate = new Date(holiday.date);
+                      const dayOfMonth = holidayDate.getDate();
+                      return (
+                        <div key={holidayIndex} className="text-xs text-muted-foreground">
+                          <span className="text-destructive font-medium">{month.name} {dayOfMonth}</span>
+                          <span className="mx-1">-</span>
+                          <span>{language === 'ar' ? holiday.nameAr : holiday.name}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
             </CardContent>
           </Card>
         ))}
