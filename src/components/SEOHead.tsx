@@ -14,12 +14,22 @@ interface SEOHeadProps {
 export const SEOHead = ({ title, description, language = 'ar', countryCode, year, keywords }: SEOHeadProps) => {
   const location = useLocation();
   
-  // Build canonical URL (ensure .html extension for proper canonicals)
+  // Build canonical URL with special handling for home page
   const getCanonicalUrl = () => {
     let path = location.pathname;
     
-    // If path doesn't end with .html and it's not the root, add .html
-    if (!path.endsWith('.html') && path !== '/' && !path.endsWith('/')) {
+    // Special handling for home page
+    if (path === '/' || path === '/ar' || path === '/ar.html') {
+      return 'https://egazat.com/';
+    }
+    
+    // For English home page
+    if (path === '/en' || path === '/en.html') {
+      return 'https://egazat.com/en.html';
+    }
+    
+    // For all other pages, ensure .html extension
+    if (!path.endsWith('.html') && !path.endsWith('/')) {
       path = `${path}.html`;
     }
     
