@@ -137,6 +137,18 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
     });
   };
 
+  // Helper function to check if a day header is a weekend day
+  const isWeekendHeader = (dayIndex: number) => {
+    if (mondayFirst) {
+      // For Monday-first calendars: 0=Monday, 1=Tuesday, ..., 5=Saturday, 6=Sunday
+      const actualDayOfWeek = dayIndex === 6 ? 0 : dayIndex + 1; // Convert to standard (0=Sunday)
+      return weekendDays.includes(actualDayOfWeek);
+    } else {
+      // For Sunday-first calendars: 0=Sunday, 1=Monday, ..., 6=Saturday
+      return weekendDays.includes(dayIndex);
+    }
+  };
+
   return (
     <div className="w-full max-w-7xl mx-auto">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -151,7 +163,12 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
               {/* Day headers */}
               <div className="grid grid-cols-7 gap-1 mb-2">
                 {dayNames.map((day, dayIndex) => (
-                  <div key={dayIndex} className="text-center text-xs font-medium text-muted-foreground p-1 bg-accent/20">
+                  <div 
+                    key={dayIndex} 
+                    className={`text-center text-xs font-medium text-muted-foreground p-1 ${
+                      isWeekendHeader(dayIndex) ? 'bg-accent/30' : 'bg-accent/20'
+                    }`}
+                  >
                     {day}
                   </div>
                 ))}
