@@ -2,16 +2,21 @@ import { useState, useEffect } from 'react';
 import { Header } from '@/components/Header';
 import { CountryCards } from '@/components/CountryCards';
 import { CountryQuickSelector } from '@/components/CountryQuickSelector';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { generateHomeUrl } from '@/utils/seoRoutes';
 import { SEOHead } from '@/components/SEOHead';
+import { useSmartPrefetch } from '@/hooks/usePrefetch';
 
 const Index = () => {
   const { lang } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const [language, setLanguage] = useState('ar');
   const [selectedYear, setSelectedYear] = useState(2025);
   const [selectedCountry, setSelectedCountry] = useState('ae');
+
+  // Smart prefetching for likely next pages
+  useSmartPrefetch(location.pathname);
 
   const handleLanguageChange = (newLanguage: string) => {
     setLanguage(newLanguage);

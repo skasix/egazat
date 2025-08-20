@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Calendar } from 'lucide-react';
 import { generateCountryUrl } from '@/utils/seoRoutes';
+import { LazyImage } from '@/components/LazyImage';
 
 // Import flag images
 import saFlag from '@/assets/flags/sa.png';
@@ -244,15 +245,18 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                 key={country.code} 
                 className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-primary/30 bg-gradient-to-br from-card to-card/80"
                 onClick={() => handleCountryClick(country.code)}
+                data-country-code={country.code}
               >
                 <CardHeader className="text-center pb-3">
                   {/* Large flag image at top */}
                   <div className="mb-3 group-hover:scale-110 transition-transform duration-300 flex justify-center">
                     {country.flagImage ? (
-                      <img 
+                      <LazyImage 
                         src={country.flagImage} 
-                        alt={`${country.name} flag`}
+                        alt={`${language === 'ar' ? country.nameAr : country.name} flag`}
                         className="w-20 h-14 object-cover rounded-md shadow-lg border-2 border-border"
+                        width={80}
+                        height={56}
                       />
                     ) : (
                       <div className="text-5xl">
@@ -264,10 +268,12 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                   {/* Flag image + Country Code */}
                   <div className="flex items-center justify-center gap-2 mb-2">
                     {country.flagImage ? (
-                      <img 
+                      <LazyImage 
                         src={country.flagImage} 
-                        alt={`${country.name} flag`}
+                        alt={`${language === 'ar' ? country.nameAr : country.name} flag`}
                         className="w-8 h-6 object-cover rounded-sm border border-border"
+                        width={32}
+                        height={24}
                       />
                     ) : (
                       <span className="text-2xl">{country.flag}</span>

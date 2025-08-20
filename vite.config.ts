@@ -34,4 +34,45 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    // Performance optimizations
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          // Separate vendor chunks for better caching
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          ui: ['@radix-ui/react-slot', '@radix-ui/react-dialog', '@radix-ui/react-popover'],
+          icons: ['lucide-react'],
+          utils: ['class-variance-authority', 'clsx', 'tailwind-merge'],
+        },
+      },
+    },
+    // Enable source maps for production debugging
+    sourcemap: mode === 'production' ? 'hidden' : true,
+    // Optimize chunk size
+    chunkSizeWarningLimit: 1000,
+    // Enable CSS code splitting
+    cssCodeSplit: true,
+    // Minify CSS
+    cssMinify: true,
+    // Enable tree shaking
+    target: 'es2015',
+    // Optimize assets
+    assetsDir: 'assets',
+    // Generate manifest for PWA
+    manifest: true,
+  },
+  // Optimize dependencies
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react-router-dom',
+      'lucide-react',
+      '@radix-ui/react-slot',
+      '@radix-ui/react-dialog',
+      '@radix-ui/react-popover',
+    ],
+  },
 }));

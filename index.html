@@ -3,29 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- DNS Prefetch & Preconnect for Speed -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap"></noscript>
+    
+    <!-- Preload Critical Images -->
+    <link rel="preload" href="/lovable-uploads/5e13b9cd-d239-4913-9435-94616b25ed57.png" as="image" type="image/png">
+    
     <title>إجازات - العطل الرسمية العربية | Egazat</title>
     <meta name="description" content="دليل شامل للعطل الرسمية في الدول العربية. اكتشف العطل الوطنية والدينية في منطقة الشرق الأوسط وشمال أفريقيا." />
     <meta name="keywords" content="العطل العربية, العطل الرسمية, الدول العربية, عطل الشرق الأوسط, العطل الإسلامية, العطل الوطنية" />
     <meta name="author" content="Egazat" />
     
+    <!-- Performance & SEO Meta Tags -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/lovable-uploads/5e13b9cd-d239-4913-9435-94616b25ed57.png" sizes="96x96" />
     <link rel="apple-touch-icon" sizes="180x180" href="/lovable-uploads/5e13b9cd-d239-4913-9435-94616b25ed57.png" />
     <meta name="apple-mobile-web-app-title" content="Egazat.com" />
-    
-    <!-- Arabic Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Open Graph Tags -->
     <meta property="og:title" content="إجازات - العطل الرسمية العربية" />
     <meta property="og:description" content="دليل شامل للعطل الرسمية في الدول العربية. اكتشف العطل الوطنية والدينية في منطقة الشرق الأوسط وشمال أفريقيا." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="https://egazat.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://egazat.com/" />
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:site" content="@egazat_com" />
+    <meta name="twitter:image" content="https://egazat.com/og-image.jpg" />
+    
+    <!-- Performance optimizations -->
+    <script>
+      // Critical CSS and performance hints
+      if ('connection' in navigator) {
+        const connection = navigator.connection;
+        if (connection.effectiveType === 'slow-2g' || connection.effectiveType === '2g') {
+          document.documentElement.classList.add('slow-connection');
+        }
+      }
+      
+      // Preload critical resources based on user interaction
+      const preloadOnHover = (href) => {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.href = href;
+        document.head.appendChild(link);
+      };
+      
+      // Add hover prefetch for country links
+      document.addEventListener('DOMContentLoaded', () => {
+        const countryLinks = document.querySelectorAll('[data-country-code]');
+        countryLinks.forEach(link => {
+          link.addEventListener('mouseenter', () => {
+            const country = link.dataset.countryCode;
+            const year = new Date().getFullYear();
+            const lang = document.documentElement.lang;
+            preloadOnHover(`/${lang}/country/${country}/${year}.html`);
+          }, { once: true });
+        });
+      });
+    </script>
   </head>
 
   <body>
