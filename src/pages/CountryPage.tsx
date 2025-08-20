@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Header } from '@/components/Header';
 import { Calendar } from '@/components/Calendar';
+import { CountryQuickSelector } from '@/components/CountryQuickSelector';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -1013,6 +1014,8 @@ export const CountryPage = () => {
         onYearChange={handleYearChange}
         onCountryChange={handleCountryChange}
       />
+
+      <CountryQuickSelector language={language} year={selectedYear} />
 
       <main className="container mx-auto px-4 py-8 bg-muted/20 rounded-lg">
 
