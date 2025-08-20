@@ -96,9 +96,9 @@ const countriesHolidays: Record<string, CountryInfo> = {
     }
   },
 
-  // UAE - Weekend: Friday & Saturday (Private sector) / Saturday & Sunday (Government)
+  // UAE - Weekend: Saturday & Sunday (changed in January 2022)
   'ae': {
-    weekendDays: ['Friday', 'Saturday'],
+    weekendDays: ['Saturday', 'Sunday'],
     holidays: {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },

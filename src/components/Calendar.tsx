@@ -13,6 +13,34 @@ interface CalendarProps {
   }>;
 }
 
+// Weekend days mapping function
+const getWeekendDaysForCountry = (countryCode: string): number[] => {
+  // Map country codes to weekend day numbers (0=Sunday, 1=Monday, ..., 6=Saturday)
+  const weekendMapping: Record<string, number[]> = {
+    // Saturday-Sunday weekend countries
+    'ae': [6, 0], // UAE: Saturday & Sunday (changed in 2022)
+    'lb': [6, 0], // Lebanon: Saturday & Sunday
+    'ma': [6, 0], // Morocco: Saturday & Sunday
+    'tn': [6, 0], // Tunisia: Saturday & Sunday
+    
+    // Friday-Saturday weekend countries (most Arab countries)
+    'sa': [5, 6], // Saudi Arabia: Friday & Saturday
+    'eg': [5, 6], // Egypt: Friday & Saturday
+    'jo': [5, 6], // Jordan: Friday & Saturday
+    'kw': [5, 6], // Kuwait: Friday & Saturday
+    'qa': [5, 6], // Qatar: Friday & Saturday
+    'bh': [5, 6], // Bahrain: Friday & Saturday
+    'om': [5, 6], // Oman: Friday & Saturday
+    'sy': [5, 6], // Syria: Friday & Saturday
+    'iq': [5, 6], // Iraq: Friday & Saturday
+    'ye': [5, 6], // Yemen: Friday & Saturday
+    'dz': [5, 6], // Algeria: Friday & Saturday
+    'ly': [5, 6], // Libya: Friday & Saturday
+  };
+  
+  return weekendMapping[countryCode] || [5, 6]; // Default to Friday-Saturday
+};
+
 const monthNames = {
   en: [
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -30,6 +58,8 @@ const dayNames = {
 };
 
 export const Calendar = ({ year, language, countryCode, holidays }: CalendarProps) => {
+  const weekendDays = getWeekendDaysForCountry(countryCode);
+  
   const months = useMemo(() => {
     return Array.from({ length: 12 }, (_, monthIndex) => {
       const firstDay = new Date(year, monthIndex, 1);
@@ -65,6 +95,11 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
     });
   }, [year, language, holidays]);
 
+  const isWeekendDay = (monthIndex: number, day: number) => {
+    const dayOfWeek = new Date(year, monthIndex, day).getDay();
+    return weekendDays.includes(dayOfWeek);
+  };
+
   const isHoliday = (monthIndex: number, day: number) => {
     return holidays.some(holiday => {
       const holidayDate = new Date(holiday.date);
@@ -98,6 +133,7 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
               <div className="grid grid-cols-7 gap-1 mb-4">
                 {month.days.map((day, dayIndex) => {
                   const isHolidayDay = day ? isHoliday(month.monthIndex, day) : false;
+                  const isWeekend = day ? isWeekendDay(month.monthIndex, day) : false;
                   return (
                     <div
                       key={dayIndex}
@@ -111,7 +147,7 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
                           ? 'bg-destructive text-white font-bold border-destructive' 
                           : 'border-border'
                         }
-                        ${day && new Date(year, month.monthIndex, day).getDay() === 5 && !isHolidayDay
+                        ${day && isWeekend && !isHolidayDay
                           ? 'bg-accent/30' 
                           : ''
                         }
