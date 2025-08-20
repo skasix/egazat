@@ -27,6 +27,10 @@ import syFlag from '@/assets/flags/sy.png';
 import iqFlag from '@/assets/flags/iq.png';
 import yeFlag from '@/assets/flags/ye.png';
 import lyFlag from '@/assets/flags/ly.png';
+import sdFlag from '@/assets/flags/sd.png';
+import soFlag from '@/assets/flags/so.png';
+import djFlag from '@/assets/flags/dj.png';
+import kmFlag from '@/assets/flags/km.png';
 
 const arabicCountries = {
   'ae': { name: 'United Arab Emirates', nameAr: 'دولة الإمارات العربية المتحدة', flag: '🇦🇪', flagImage: aeFlag },
@@ -45,10 +49,10 @@ const arabicCountries = {
   'tn': { name: 'Tunisia', nameAr: 'الجمهورية التونسية', flag: '🇹🇳', flagImage: tnFlag },
   'dz': { name: 'Algeria', nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية', flag: '🇩🇿', flagImage: dzFlag },
   'ly': { name: 'Libya', nameAr: 'دولة ليبيا', flag: '🇱🇾', flagImage: lyFlag },
-  'sd': { name: 'Sudan', nameAr: 'جمهورية السودان', flag: '🇸🇩', flagImage: null },
-  'so': { name: 'Somalia', nameAr: 'جمهورية الصومال', flag: '🇸🇴', flagImage: null },
-  'dj': { name: 'Djibouti', nameAr: 'جمهورية جيبوتي', flag: '🇩🇯', flagImage: null },
-  'km': { name: 'Comoros', nameAr: 'جزر القمر', flag: '🇰🇲', flagImage: null }
+  'sd': { name: 'Sudan', nameAr: 'جمهورية السودان', flag: '🇸🇩', flagImage: sdFlag },
+  'so': { name: 'Somalia', nameAr: 'جمهورية الصومال', flag: '🇸🇴', flagImage: soFlag },
+  'dj': { name: 'Djibouti', nameAr: 'جمهورية جيبوتي', flag: '🇩🇯', flagImage: djFlag },
+  'km': { name: 'Comoros', nameAr: 'جزر القمر', flag: '🇰🇲', flagImage: kmFlag }
 };
 
 // Comprehensive Arabic Countries Holiday Database (2025-2028)

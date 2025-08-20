@@ -21,6 +21,10 @@ import syFlag from '@/assets/flags/sy.png';
 import iqFlag from '@/assets/flags/iq.png';
 import yeFlag from '@/assets/flags/ye.png';
 import lyFlag from '@/assets/flags/ly.png';
+import sdFlag from '@/assets/flags/sd.png';
+import soFlag from '@/assets/flags/so.png';
+import djFlag from '@/assets/flags/dj.png';
+import kmFlag from '@/assets/flags/km.png';
 
 interface CountryCardsProps {
   language: string;
@@ -161,7 +165,7 @@ const arabicCountries = [
     name: 'Sudan', 
     nameAr: 'جمهورية السودان',
     flag: '🇸🇩',
-    flagImage: null,
+    flagImage: sdFlag,
     region: 'North Africa'
   },
   { 
@@ -169,7 +173,7 @@ const arabicCountries = [
     name: 'Somalia', 
     nameAr: 'جمهورية الصومال',
     flag: '🇸🇴',
-    flagImage: null,
+    flagImage: soFlag,
     region: 'Horn of Africa'
   },
   { 
@@ -177,7 +181,7 @@ const arabicCountries = [
     name: 'Djibouti', 
     nameAr: 'جمهورية جيبوتي',
     flag: '🇩🇯',
-    flagImage: null,
+    flagImage: djFlag,
     region: 'Horn of Africa'
   },
   { 
@@ -185,7 +189,7 @@ const arabicCountries = [
     name: 'Comoros', 
     nameAr: 'جزر القمر',
     flag: '🇰🇲',
-    flagImage: null,
+    flagImage: kmFlag,
     region: 'Indian Ocean'
   }
 ];
