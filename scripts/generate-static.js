@@ -152,11 +152,13 @@ const generateHTML = async (route) => {
     .replace(/<meta property="og:locale"[^>]*>/, `<meta property="og:locale" content="${lang === 'ar' ? 'ar_SA' : 'en_US'}" />`)
     .replace(/<meta name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${title}" />`)
     .replace(/<meta name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${description}" />`)
-    .replace(/<div id="root"><\/div>/, `<div id="root">
-      <!-- SEO fallback content -->
-      <h1>${title}</h1>
-      <p>${description}</p>
-      <p>Loading content...</p>
+.replace(/<div id="root"><\/div>/, `<div id="root">
+      <noscript>
+        <!-- SEO fallback content -->
+        <h1>${title}</h1>
+        <p>${description}</p>
+        <p>Loading content...</p>
+      </noscript>
     </div>`);
   
   // Add canonical URL if not present
