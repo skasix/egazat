@@ -14,8 +14,19 @@ interface SEOHeadProps {
 export const SEOHead = ({ title, description, language = 'ar', countryCode, year, keywords }: SEOHeadProps) => {
   const location = useLocation();
   
-  // Build canonical URL (remove .html for canonical)
-  const canonicalUrl = `https://egazat.com${location.pathname.replace('.html', '')}`;
+  // Build canonical URL (ensure .html extension for proper canonicals)
+  const getCanonicalUrl = () => {
+    let path = location.pathname;
+    
+    // If path doesn't end with .html and it's not the root, add .html
+    if (!path.endsWith('.html') && path !== '/' && !path.endsWith('/')) {
+      path = `${path}.html`;
+    }
+    
+    return `https://egazat.com${path}`;
+  };
+  
+  const canonicalUrl = getCanonicalUrl();
   
   // Generate keywords
   const defaultKeywords = language === 'ar' 
