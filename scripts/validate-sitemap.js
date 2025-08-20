@@ -25,10 +25,10 @@ const validateSitemap = async () => {
   // Expected URLs
   const expectedUrls = new Set();
   
-  // Add homepage variants
-  expectedUrls.add('https://egazat.com/');
-  expectedUrls.add('https://egazat.com/ar.html');
-  expectedUrls.add('https://egazat.com/en.html');
+  // Add homepage variants - ROOT SERVES ARABIC DIRECTLY
+  expectedUrls.add('https://egazat.com/');          // Arabic homepage (root)
+  expectedUrls.add('https://egazat.com/en.html');   // English homepage
+  // Note: /ar.html is NO LONGER USED
   
   // Add all country pages
   languages.forEach(lang => {
@@ -46,7 +46,10 @@ const validateSitemap = async () => {
     });
   });
   
-  console.log(`📊 Expected URLs: ${expectedUrls.size}`);
+  console.log(`📊 Expected URLs: ${expectedUrls.size} (updated for root Arabic homepage)`);
+  console.log(`   - Root homepage: https://egazat.com/ (Arabic)`);
+  console.log(`   - English homepage: https://egazat.com/en.html`);
+  console.log(`   - Note: /ar.html removed - root serves Arabic directly`);
   
   // Read generated sitemap
   const sitemapPath = path.join(__dirname, '../public/sitemap.xml');
@@ -100,6 +103,8 @@ const validateSitemap = async () => {
     console.log(`   - Missing URLs: ${missingUrls.length}`);
     console.log(`   - Extra URLs: ${extraUrls.length}`);
     console.log(`   - Hreflang attributes: ${hreflangCount}`);
+    console.log(`   - Homepage structure: / (Arabic root), /en.html (English)`);
+    console.log(`   - Countries: ${countries.length}, Years: ${years.length}`);
     
   } catch (error) {
     console.error('❌ Error reading sitemap:', error);
