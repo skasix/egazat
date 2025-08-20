@@ -36,6 +36,10 @@ const getWeekendDaysForCountry = (countryCode: string): number[] => {
     'ye': [5, 6], // Yemen: Friday & Saturday
     'dz': [5, 6], // Algeria: Friday & Saturday
     'ly': [5, 6], // Libya: Friday & Saturday
+    'sd': [5, 6], // Sudan: Friday & Saturday
+    'so': [5, 6], // Somalia: Friday & Saturday
+    'dj': [5, 6], // Djibouti: Friday & Saturday
+    'km': [5, 6], // Comoros: Friday & Saturday
   };
   
   return weekendMapping[countryCode] || [5, 6]; // Default to Friday-Saturday

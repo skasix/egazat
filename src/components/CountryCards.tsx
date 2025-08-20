@@ -155,6 +155,38 @@ const arabicCountries = [
     flag: '🇱🇾',
     flagImage: lyFlag,
     region: 'North Africa'
+  },
+  { 
+    code: 'sd', 
+    name: 'Sudan', 
+    nameAr: 'جمهورية السودان',
+    flag: '🇸🇩',
+    flagImage: null,
+    region: 'North Africa'
+  },
+  { 
+    code: 'so', 
+    name: 'Somalia', 
+    nameAr: 'جمهورية الصومال',
+    flag: '🇸🇴',
+    flagImage: null,
+    region: 'Horn of Africa'
+  },
+  { 
+    code: 'dj', 
+    name: 'Djibouti', 
+    nameAr: 'جمهورية جيبوتي',
+    flag: '🇩🇯',
+    flagImage: null,
+    region: 'Horn of Africa'
+  },
+  { 
+    code: 'km', 
+    name: 'Comoros', 
+    nameAr: 'جزر القمر',
+    flag: '🇰🇲',
+    flagImage: null,
+    region: 'Indian Ocean'
   }
 ];
 
@@ -178,7 +210,9 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
   const regionNames = {
     'Gulf': language === 'ar' ? 'دول الخليج العربي' : 'Gulf Countries',
     'Levant': language === 'ar' ? 'بلاد الشام' : 'Levant Countries', 
-    'North Africa': language === 'ar' ? 'شمال أفريقيا' : 'North African Countries'
+    'North Africa': language === 'ar' ? 'شمال أفريقيا' : 'North African Countries',
+    'Horn of Africa': language === 'ar' ? 'القرن الأفريقي' : 'Horn of Africa',
+    'Indian Ocean': language === 'ar' ? 'المحيط الهندي' : 'Indian Ocean Islands'
   };
 
   return (

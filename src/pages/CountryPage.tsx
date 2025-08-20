@@ -43,7 +43,11 @@ const arabicCountries = {
   'ma': { name: 'Morocco', nameAr: 'المملكة المغربية', flag: '🇲🇦', flagImage: maFlag },
   'tn': { name: 'Tunisia', nameAr: 'الجمهورية التونسية', flag: '🇹🇳', flagImage: tnFlag },
   'dz': { name: 'Algeria', nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية', flag: '🇩🇿', flagImage: dzFlag },
-  'ly': { name: 'Libya', nameAr: 'دولة ليبيا', flag: '🇱🇾', flagImage: lyFlag }
+  'ly': { name: 'Libya', nameAr: 'دولة ليبيا', flag: '🇱🇾', flagImage: lyFlag },
+  'sd': { name: 'Sudan', nameAr: 'جمهورية السودان', flag: '🇸🇩', flagImage: null },
+  'so': { name: 'Somalia', nameAr: 'جمهورية الصومال', flag: '🇸🇴', flagImage: null },
+  'dj': { name: 'Djibouti', nameAr: 'جمهورية جيبوتي', flag: '🇩🇯', flagImage: null },
+  'km': { name: 'Comoros', nameAr: 'جزر القمر', flag: '🇰🇲', flagImage: null }
 };
 
 // Comprehensive Arabic Countries Holiday Database (2025-2028)
@@ -920,9 +924,21 @@ export const getWeekendDays = (countryCode: string): string[] => {
 export const CountryPage = () => {
   const { countryCode, year, lang } = useParams();
   const navigate = useNavigate();
-  const [language, setLanguage] = useState(lang === 'ar' ? 'ar' : 'en');
+  
+  // Handle legacy routes without language prefix
+  const detectedLanguage = lang || 'en'; // Default to English for legacy routes
+  const [language, setLanguage] = useState(detectedLanguage);
   const [selectedYear, setSelectedYear] = useState(parseInt(year || '2025'));
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
+
+  // Redirect legacy routes to proper language-prefixed routes
+  useEffect(() => {
+    if (!lang && countryCode && year) {
+      // This is a legacy route, redirect to English version
+      navigate(generateCountryUrl('en', countryCode, parseInt(year)), { replace: true });
+      return;
+    }
+  }, [lang, countryCode, year, navigate]);
 
   const country = arabicCountries[selectedCountry as keyof typeof arabicCountries];
   const holidays = getHolidaysForCountryYear(selectedCountry, selectedYear);

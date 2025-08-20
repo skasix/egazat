@@ -18,7 +18,7 @@ const generateRoutes = () => {
   
   const countries = [
     'ae', 'sa', 'eg', 'jo', 'lb', 'sy', 'iq', 'kw', 'qa', 'bh', 'om', 'ye', 
-    'ma', 'tn', 'dz', 'ly'
+    'ma', 'tn', 'dz', 'ly', 'sd', 'so', 'dj', 'km'
   ];
   const years = [2025, 2026, 2027, 2028];
   const languages = ['en', 'ar'];
@@ -56,7 +56,11 @@ const generateRoutes = () => {
           'ma': { name: 'Morocco', nameAr: 'المملكة المغربية' },
           'tn': { name: 'Tunisia', nameAr: 'الجمهورية التونسية' },
           'dz': { name: 'Algeria', nameAr: 'الجمهورية الجزائرية الديمقراطية الشعبية' },
-          'ly': { name: 'Libya', nameAr: 'دولة ليبيا' }
+          'ly': { name: 'Libya', nameAr: 'دولة ليبيا' },
+          'sd': { name: 'Sudan', nameAr: 'جمهورية السودان' },
+          'so': { name: 'Somalia', nameAr: 'جمهورية الصومال' },
+          'dj': { name: 'Djibouti', nameAr: 'جمهورية جيبوتي' },
+          'km': { name: 'Comoros', nameAr: 'جزر القمر' }
         };
         
         const countryData = countryNames[country];

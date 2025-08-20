@@ -23,7 +23,11 @@ const countries = [
   { code: 'ma', name: 'Morocco', nameAr: 'المغرب' },
   { code: 'tn', name: 'Tunisia', nameAr: 'تونس' },
   { code: 'dz', name: 'Algeria', nameAr: 'الجزائر' },
-  { code: 'ly', name: 'Libya', nameAr: 'ليبيا' }
+  { code: 'ly', name: 'Libya', nameAr: 'ليبيا' },
+  { code: 'sd', name: 'Sudan', nameAr: 'السودان' },
+  { code: 'so', name: 'Somalia', nameAr: 'الصومال' },
+  { code: 'dj', name: 'Djibouti', nameAr: 'جيبوتي' },
+  { code: 'km', name: 'Comoros', nameAr: 'القمر' }
 ];
 
 export const CountryQuickSelector = ({ language, year }: CountryQuickSelectorProps) => {
