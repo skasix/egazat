@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import { CountryPage } from "./pages/CountryPage";
 import NotFound from "./pages/NotFound";
@@ -31,6 +32,7 @@ const AppContent = () => {
          </Routes>
       </div>
       <Footer language={language} />
+      <ScrollToTop />
     </div>
   );
 };
