@@ -958,7 +958,7 @@ export const CountryPage = () => {
         onCountryChange={handleCountryChange}
       />
 
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 bg-muted/20 rounded-lg">
         {/* Back Button */}
         <div className="mb-6">
           <Button 
