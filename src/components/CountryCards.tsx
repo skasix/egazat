@@ -173,7 +173,7 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                 onClick={() => handleCountryClick(country.code)}
               >
                 <CardHeader className="text-center pb-3">
-                  <div className="text-4xl mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
                     {country.flag}
                   </div>
                   <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
