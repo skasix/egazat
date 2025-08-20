@@ -50,9 +50,16 @@ export const Header = ({
       <div className="container mx-auto px-4 py-4">
         {/* Title and Subtitle */}
         <div className="text-center mb-6">
-          <h1 className={`text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2 ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
-            {selectedLanguage === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}
-          </h1>
+          <a 
+            href="https://egazat.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block hover:opacity-80 transition-opacity"
+          >
+            <h1 className={`text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2 ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
+              {selectedLanguage === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}
+            </h1>
+          </a>
           <h2 className={`text-xl text-muted-foreground ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
             {selectedLanguage === 'ar' 
               ? 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية'
