@@ -56,7 +56,7 @@ export const Header = ({
             rel="noopener noreferrer"
             className="inline-block hover:opacity-80 transition-opacity"
           >
-            <h1 className={`text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2 ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
+            <h1 className={`text-4xl font-bold bg-gradient-to-r from-black to-yellow-500 bg-clip-text text-transparent mb-2 ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
               {selectedLanguage === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}
             </h1>
           </a>
