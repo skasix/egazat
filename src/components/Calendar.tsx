@@ -108,7 +108,7 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
                           : 'text-transparent border-transparent'
                         }
                         ${isHolidayDay 
-                          ? 'bg-destructive text-destructive-foreground font-bold border-destructive' 
+                          ? 'bg-destructive text-white font-bold border-destructive' 
                           : 'border-border'
                         }
                         ${day && new Date(year, month.monthIndex, day).getDay() === 5 && !isHolidayDay
