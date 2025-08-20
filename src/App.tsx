@@ -18,16 +18,19 @@ const App = () => (
       <BrowserRouter>
         <div className="min-h-screen flex flex-col">
           <div className="flex-1">
-            <Routes>
-              <Route path="/" element={<Navigate to="/en" replace />} />
-              
-              <Route path="/:lang" element={<Index />} />
-              <Route path="/:lang/country/:countryCode/:year" element={<CountryPage />} />
-              {/* Legacy routes for backward compatibility */}
-              <Route path="/country/:countryCode/:year" element={<CountryPage />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+             <Routes>
+               <Route path="/" element={<Navigate to="/en" replace />} />
+               
+               <Route path="/:lang" element={<Index />} />
+               <Route path="/:lang.html" element={<Index />} />
+               <Route path="/:lang/country/:countryCode/:year" element={<CountryPage />} />
+               <Route path="/:lang/country/:countryCode/:year.html" element={<CountryPage />} />
+               {/* Legacy routes for backward compatibility */}
+               <Route path="/country/:countryCode/:year" element={<CountryPage />} />
+               <Route path="/country/:countryCode/:year.html" element={<CountryPage />} />
+               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+               <Route path="*" element={<NotFound />} />
+             </Routes>
           </div>
           <Footer />
         </div>

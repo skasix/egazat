@@ -3,6 +3,8 @@ import { Header } from '@/components/Header';
 import { CountryCards } from '@/components/CountryCards';
 import { CountryQuickSelector } from '@/components/CountryQuickSelector';
 import { useParams, useNavigate } from 'react-router-dom';
+import { generateHomeUrl } from '@/utils/seoRoutes';
+import { SEOHead } from '@/components/SEOHead';
 
 const Index = () => {
   const { lang } = useParams();
@@ -13,7 +15,7 @@ const Index = () => {
 
   const handleLanguageChange = (newLanguage: string) => {
     setLanguage(newLanguage);
-    navigate(`/${newLanguage}`);
+    navigate(generateHomeUrl(newLanguage));
   };
 
   const handleYearChange = (newYear: number) => {
@@ -37,6 +39,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={language === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}
+        description={language === 'ar' 
+          ? 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية'
+          : 'Complete Guide to Public Holidays in Arab Countries'
+        }
+        language={language}
+      />
       <Header
         selectedLanguage={language}
         selectedYear={selectedYear}

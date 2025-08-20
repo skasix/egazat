@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 import { MapPin, Calendar } from 'lucide-react';
+import { generateCountryUrl } from '@/utils/seoRoutes';
 
 // Import flag images
 import saFlag from '@/assets/flags/sa.png';
@@ -161,7 +162,7 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
   const navigate = useNavigate();
 
   const handleCountryClick = (countryCode: string) => {
-    navigate(`/${language}/country/${countryCode}/${year}`);
+    navigate(generateCountryUrl(language, countryCode, year));
   };
 
   // Group countries by region

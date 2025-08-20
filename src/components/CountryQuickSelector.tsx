@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import { generateCountryUrl } from '@/utils/seoRoutes';
 
 interface CountryQuickSelectorProps {
   language: string;
@@ -29,7 +30,7 @@ export const CountryQuickSelector = ({ language, year }: CountryQuickSelectorPro
   const navigate = useNavigate();
 
   const handleCountryClick = (countryCode: string) => {
-    navigate(`/${language}/country/${countryCode}/${year}`);
+    navigate(generateCountryUrl(language, countryCode, year));
   };
 
   return (

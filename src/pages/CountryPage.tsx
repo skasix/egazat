@@ -6,6 +6,8 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, CalendarDays } from 'lucide-react';
+import { generateCountryUrl, generateHomeUrl, getCountryMetadata } from '@/utils/seoRoutes';
+import { SEOHead } from '@/components/SEOHead';
 
 // Import flag images
 import saFlag from '@/assets/flags/sa.png';
@@ -940,21 +942,21 @@ export const CountryPage = () => {
 
   const handleLanguageChange = (newLanguage: string) => {
     setLanguage(newLanguage);
-    navigate(`/${newLanguage}/country/${selectedCountry}/${selectedYear}`);
+    navigate(generateCountryUrl(newLanguage, selectedCountry, selectedYear));
   };
 
   const handleYearChange = (newYear: number) => {
     setSelectedYear(newYear);
-    navigate(`/country/${selectedCountry}/${newYear}`);
+    navigate(generateCountryUrl(language, selectedCountry, newYear));
   };
 
   const handleCountryChange = (newCountry: string) => {
     setSelectedCountry(newCountry);
-    navigate(`/country/${newCountry}/${selectedYear}`);
+    navigate(generateCountryUrl(language, newCountry, selectedYear));
   };
 
   const handleBackToHome = () => {
-    navigate(`/${language}`);
+    navigate(generateHomeUrl(language));
   };
 
   const getHolidayTypeColor = (type: string) => {
@@ -974,6 +976,19 @@ export const CountryPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={language === 'ar' 
+          ? `${country.nameAr} العطل الرسمية ${selectedYear}`
+          : `${country.name} Public Holidays ${selectedYear}`
+        }
+        description={language === 'ar'
+          ? `دليل شامل للعطل الإسلامية والأيام الوطنية وجدول العمل في ${country.nameAr} لعام ${selectedYear}`
+          : `Complete Guide to Islamic Holidays, National Days & Work Schedule in ${country.name} for ${selectedYear}`
+        }
+        language={language}
+        countryCode={selectedCountry}
+        year={selectedYear}
+      />
       <Header
         selectedLanguage={language}
         selectedYear={selectedYear}
