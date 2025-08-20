@@ -27,7 +27,7 @@ const Index = () => {
   }, [language]);
 
   return (
-    <div className="min-h-screen bg-background" dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    <div className="min-h-screen bg-background">
       <Header
         selectedLanguage={language}
         selectedYear={selectedYear}

@@ -131,25 +131,7 @@ All colors MUST be HSL.
     text-align: left;
   }
 
-  /* RTL specific adjustments */
-  [dir="rtl"] .flex {
-    flex-direction: row-reverse;
-  }
-
-  [dir="rtl"] .gap-2 > * + * {
-    margin-right: 0.5rem;
-    margin-left: 0;
-  }
-
-  [dir="rtl"] .ml-2 {
-    margin-left: 0;
-    margin-right: 0.5rem;
-  }
-
-  [dir="rtl"] .mr-2 {
-    margin-right: 0;
-    margin-left: 0.5rem;
-  }
+  /* RTL specific adjustments: rely on component-level classes instead of global flex reversals to avoid layout issues */
 
   /* Arabic font stack */
   .arabic-text {
@@ -165,12 +147,5 @@ All colors MUST be HSL.
     direction: ltr;
   }
 
-  /* RTL button and icon adjustments */
-  [dir="rtl"] .lucide {
-    transform: scaleX(-1);
-  }
-
-  [dir="rtl"] .group-hover\\:scale-110 {
-    transform-origin: center;
-  }
+  /* RTL button and icon adjustments removed to prevent unintended mirroring of icons */
 }
