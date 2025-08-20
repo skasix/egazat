@@ -119,4 +119,31 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Arabic typography and RTL support */
+  [dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+  }
+
+  [dir="ltr"] {
+    direction: ltr;
+    text-align: left;
+  }
+
+  /* Arabic font stack */
+  .arabic-text {
+    font-family: 'Amiri', 'Cairo', 'Noto Sans Arabic', 'Arial Unicode MS', Arial, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1, 'kern' 1;
+    line-height: 1.8;
+  }
+
+  /* Ensure proper Arabic number display */
+  .arabic-numbers {
+    unicode-bidi: bidi-override;
+    direction: ltr;
+  }
 }
+
+/* Import Arabic fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap');

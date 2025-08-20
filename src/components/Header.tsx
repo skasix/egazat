@@ -50,12 +50,12 @@ export const Header = ({
       <div className="container mx-auto px-4 py-4">
         {/* Title and Subtitle */}
         <div className="text-center mb-6">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2">
-            {selectedLanguage === 'ar' ? 'إجازات عربية' : 'Arabic Public Holidays'}
+          <h1 className={`text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-2 ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
+            {selectedLanguage === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}
           </h1>
-          <h2 className="text-xl text-muted-foreground">
+          <h2 className={`text-xl text-muted-foreground ${selectedLanguage === 'ar' ? 'arabic-text' : ''}`}>
             {selectedLanguage === 'ar' 
-              ? 'دليل شامل للعطل الرسمية في الدول العربية'
+              ? 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية'
               : 'Complete Guide to Public Holidays in Arab Countries'
             }
           </h2>

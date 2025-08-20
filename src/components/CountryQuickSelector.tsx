@@ -35,8 +35,8 @@ export const CountryQuickSelector = ({ language, year }: CountryQuickSelectorPro
   return (
     <div className="w-full bg-card/50 border-b border-border/50 py-4">
       <div className="container mx-auto px-4">
-        <h3 className="text-sm font-medium text-muted-foreground mb-3 text-center">
-          {language === 'ar' ? 'اختيار سريع للدولة' : 'Quick Country Selection'}
+        <h3 className={`text-sm font-medium text-muted-foreground mb-3 text-center ${language === 'ar' ? 'arabic-text' : ''}`}>
+          {language === 'ar' ? 'الاختيار السريع للدولة' : 'Quick Country Selection'}
         </h3>
         <div className="flex flex-wrap justify-center gap-2">
           {countries.map(country => (

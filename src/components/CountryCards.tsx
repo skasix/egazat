@@ -183,12 +183,12 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
   return (
     <div className="w-full max-w-7xl mx-auto space-y-12">
       <div className="text-center mb-12">
-        <h3 className="text-3xl font-bold text-foreground mb-4">
-          {language === 'ar' ? 'اختر دولة عربية' : 'Select an Arab Country'}
+        <h3 className={`text-3xl font-bold text-foreground mb-4 ${language === 'ar' ? 'arabic-text' : ''}`}>
+          {language === 'ar' ? 'اختر الدولة العربية' : 'Select an Arab Country'}
         </h3>
-        <p className="text-muted-foreground text-lg">
+        <p className={`text-muted-foreground text-lg ${language === 'ar' ? 'arabic-text' : ''}`}>
           {language === 'ar' 
-            ? 'اطلع على العطل الرسمية والمناسبات الوطنية لكل دولة عربية'
+            ? 'استكشف العطل الرسمية والمناسبات الوطنية لكل دولة عربية'
             : 'Explore public holidays and national occasions for each Arab country'
           }
         </p>
@@ -196,7 +196,7 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
 
       {Object.entries(groupedCountries).map(([region, countries]) => (
         <div key={region} className="mb-12">
-          <h4 className="text-2xl font-semibold text-primary mb-6 text-center">
+          <h4 className={`text-2xl font-semibold text-primary mb-6 text-center ${language === 'ar' ? 'arabic-text' : ''}`}>
             {regionNames[region as keyof typeof regionNames]}
           </h4>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -238,7 +238,7 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                     </span>
                   </div>
                   
-                  <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
+                   <CardTitle className={`text-lg font-semibold text-foreground group-hover:text-primary transition-colors ${language === 'ar' ? 'arabic-text' : ''}`}>
                     {language === 'ar' ? country.nameAr : country.name}
                   </CardTitle>
                 </CardHeader>
@@ -255,7 +255,9 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                     className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                   >
                     <Calendar className="h-4 w-4 mr-2" />
-                    {language === 'ar' ? 'عرض العطل' : 'View Holidays'}
+                    <span className={language === 'ar' ? 'arabic-text' : ''}>
+                      {language === 'ar' ? 'عرض العطل' : 'View Holidays'}
+                    </span>
                   </Button>
                 </CardContent>
               </Card>
