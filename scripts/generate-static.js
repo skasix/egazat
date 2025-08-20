@@ -108,68 +108,85 @@ const createDirectories = async (routes) => {
   }
 };
 
-// Generate HTML template
-const generateHTML = (route) => {
+// Generate HTML template using the built index.html as base
+const generateHTML = async (route) => {
   const { title, description, lang } = route;
+  const distDir = path.join(__dirname, '../dist');
   
-  return `<!DOCTYPE html>
-<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>${title} | Egazat</title>
-    <meta name="description" content="${description}" />
-    <meta name="keywords" content="arabic holidays, public holidays, arab countries, middle east holidays, islamic holidays, national holidays, ${route.country || ''}" />
-    <meta name="author" content="Egazat" />
+  // Read the built index.html to get correct script references
+  let baseHtml;
+  try {
+    // Try to read from backup first, then original
+    const backupPath = path.join(distDir, 'index.original.html');
+    const indexPath = path.join(distDir, 'index.html');
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="${title}" />
-    <meta property="og:description" content="${description}" />
-    <meta property="og:locale" content="${lang === 'ar' ? 'ar_SA' : 'en_US'}" />
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${title}" />
-    <meta name="twitter:description" content="${description}" />
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://egazat.com${route.path === '/index.html' ? '/' : route.path}" />
-    
-    <!-- Arabic Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Redirect to SPA route -->
-    <script>
-      // For root index.html, no redirect needed - serve Arabic content directly
-      ${route.path === '/index.html' ? '// Root serves Arabic homepage directly' : `window.location.replace('${route.route}');`}
-    </script>
-    
-    <!-- Fallback content for crawlers -->
-    <noscript>
-      ${route.path === '/index.html' ? '<p>Loading Arabic homepage...</p>' : `<meta http-equiv="refresh" content="0; url=${route.route}" />`}
-    </noscript>
-  </head>
+    try {
+      baseHtml = await fs.readFile(backupPath, 'utf8');
+    } catch {
+      baseHtml = await fs.readFile(indexPath, 'utf8');
+    }
+  } catch (error) {
+    console.error('Error reading built index.html:', error);
+    // Fallback to basic template
+    baseHtml = `<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Egazat</title>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>`;
+  }
   
-  <body>
-    <div id="root">
+  // Update the HTML with route-specific content
+  const updatedHtml = baseHtml
+    .replace(/<html[^>]*>/, `<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">`)
+    .replace(/<title>.*?<\/title>/, `<title>${title} | Egazat</title>`)
+    .replace(/<meta name="description"[^>]*>/, `<meta name="description" content="${description}" />`)
+    .replace(/<meta name="keywords"[^>]*>/, `<meta name="keywords" content="arabic holidays, public holidays, arab countries, middle east holidays, islamic holidays, national holidays, ${route.country || ''}" />`)
+    .replace(/<meta property="og:title"[^>]*>/, `<meta property="og:title" content="${title}" />`)
+    .replace(/<meta property="og:description"[^>]*>/, `<meta property="og:description" content="${description}" />`)
+    .replace(/<meta property="og:locale"[^>]*>/, `<meta property="og:locale" content="${lang === 'ar' ? 'ar_SA' : 'en_US'}" />`)
+    .replace(/<meta name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${title}" />`)
+    .replace(/<meta name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${description}" />`)
+    .replace(/<div id="root"><\/div>/, `<div id="root">
       <!-- SEO fallback content -->
       <h1>${title}</h1>
       <p>${description}</p>
       <p>Loading content...</p>
-    </div>
-    
-    <!-- SPA will replace this content -->
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>`;
+    </div>`);
+  
+  // Add canonical URL if not present
+  if (!updatedHtml.includes('rel="canonical"')) {
+    const canonicalTag = `<link rel="canonical" href="https://egazat.com${route.path === '/index.html' ? '/' : route.path}" />`;
+    const headCloseIndex = updatedHtml.indexOf('</head>');
+    const htmlWithCanonical = updatedHtml.slice(0, headCloseIndex) + 
+      '    ' + canonicalTag + '\n  ' + 
+      updatedHtml.slice(headCloseIndex);
+    return htmlWithCanonical;
+  }
+  
+  return updatedHtml;
 };
 
 // Generate all static files
 const generateStaticFiles = async () => {
   console.log('🚀 Generating static HTML files for SEO...');
+  
+  const distDir = path.join(__dirname, '../dist');
+  const indexPath = path.join(distDir, 'index.html');
+  const backupPath = path.join(distDir, 'index.original.html');
+  
+  // Backup the original built index.html
+  try {
+    await fs.copyFile(indexPath, backupPath);
+    console.log('📋 Backed up original index.html');
+  } catch (error) {
+    console.error('⚠️  Could not backup index.html:', error);
+  }
   
   const routes = generateRoutes();
   console.log(`📄 Found ${routes.length} routes to generate`);
@@ -177,7 +194,7 @@ const generateStaticFiles = async () => {
   await createDirectories(routes);
   
   for (const route of routes) {
-    const html = generateHTML(route);
+    const html = await generateHTML(route);
     // For root homepage, generate as dist/index.html directly
     const fileName = route.path === '/index.html' ? 'index.html' : route.path;
     const filePath = path.join(__dirname, '../dist', fileName);
