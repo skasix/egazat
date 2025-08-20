@@ -93,7 +93,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'Saudi Founding Day', nameAr: 'يوم التأسيس السعودي', date: '2027-02-22', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 4 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2027-09-23', type: 'national' }
       ],
@@ -130,7 +130,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2027-12-02', type: 'national', duration: 2 }
@@ -179,7 +179,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Sinai Liberation Day', nameAr: 'عيد تحرير سيناء', date: '2027-04-25', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2027-07-23', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
@@ -227,7 +227,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Arab League Day', nameAr: 'يوم الجامعة العربية', date: '2027-03-22', type: 'cultural' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2027-05-25', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
@@ -269,7 +269,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2027-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2027-02-26', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
@@ -304,7 +304,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2027-12-18', type: 'national' }
       ],
@@ -339,7 +339,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2027-12-16', type: 'national', duration: 2 }
       ],
@@ -376,7 +376,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Sultan\'s Birthday', nameAr: 'عيد ميلاد السلطان', date: '2027-11-18', type: 'national' },
         { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2027-11-19', type: 'national' }
@@ -419,7 +419,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
         { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2027-03-29', type: 'cultural' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-11-22', type: 'national' }
       ],
@@ -463,7 +463,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
@@ -507,7 +507,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2027-01-06', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2027-07-14', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-10-03', type: 'national' }
@@ -551,7 +551,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2027-05-22', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-11-30', type: 'national' }
@@ -603,7 +603,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2027-01-11', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2027-07-30', type: 'national' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2027-08-14', type: 'national' },
         { name: 'King\'s Birthday', nameAr: 'ذكرى ثورة الملك والشعب', date: '2027-08-20', type: 'national' },
@@ -662,7 +662,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-03-20', type: 'national' },
         { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2027-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2027-07-25', type: 'national' },
         { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2027-08-13', type: 'cultural' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
@@ -708,7 +708,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-07-05', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2027-11-01', type: 'national' }
@@ -746,7 +746,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2027-10-23', type: 'national' }
       ],
@@ -782,7 +782,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
@@ -819,7 +819,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-07-01', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
@@ -858,7 +858,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-06-27', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
@@ -897,7 +897,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-15', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-07-06', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
