@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { CountryCards } from '@/components/CountryCards';
+import { CountryQuickSelector } from '@/components/CountryQuickSelector';
 
 const Index = () => {
   const [language, setLanguage] = useState('en');
@@ -29,6 +30,8 @@ const Index = () => {
         onYearChange={handleYearChange}
         onCountryChange={handleCountryChange}
       />
+      
+      <CountryQuickSelector language={language} year={selectedYear} />
       
       <main className="container mx-auto px-4 py-12">
         <CountryCards language={language} year={selectedYear} />
