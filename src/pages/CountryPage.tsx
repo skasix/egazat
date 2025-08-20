@@ -960,9 +960,9 @@ export const CountryPage = () => {
   const getHolidayTypeColor = (type: string) => {
     switch (type) {
       case 'religious':
-        return 'bg-accent text-accent-foreground';
+        return 'bg-red-500 text-white';
       case 'national':
-        return 'bg-primary text-primary-foreground';
+        return 'bg-red-500 text-white';
       default:
         return 'bg-secondary text-secondary-foreground';
     }
@@ -1059,7 +1059,7 @@ export const CountryPage = () => {
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-2">
-                        <CalendarDays className="h-5 w-5 text-primary" />
+                        <CalendarDays className="h-5 w-5 text-red-500" />
                         <h4 className="text-xl font-semibold text-foreground">
                           {language === 'ar' ? holiday.nameAr : holiday.name}
                         </h4>
