@@ -176,6 +176,12 @@ export const CountryCards = ({ language, year }: CountryCardsProps) => {
                   <div className="text-5xl mb-3 group-hover:scale-110 transition-transform duration-300">
                     {country.flag}
                   </div>
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <span className="text-2xl">{country.flag}</span>
+                    <span className="text-xl font-bold text-primary bg-primary/10 px-2 py-1 rounded-md">
+                      {country.code.toUpperCase()}
+                    </span>
+                  </div>
                   <CardTitle className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                     {language === 'ar' ? country.nameAr : country.name}
                   </CardTitle>
