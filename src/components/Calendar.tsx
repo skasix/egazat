@@ -102,7 +102,7 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
                     <div
                       key={dayIndex}
                       className={`
-                        text-center p-2 text-sm transition-colors border
+                        text-center p-2 text-sm transition-colors border rounded-md
                         ${day 
                           ? 'text-foreground cursor-pointer hover:bg-muted' 
                           : 'text-transparent border-transparent'
