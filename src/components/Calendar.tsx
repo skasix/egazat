@@ -56,20 +56,44 @@ const monthNames = {
   ]
 };
 
-const dayNames = {
-  en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  ar: ['أحد', 'اثنين', 'ثلاثاء', 'أربعاء', 'خميس', 'جمعة', 'سبت']
+// Check if country uses Monday as first day of week (countries with Saturday-Sunday weekends)
+const usesMondayFirst = (countryCode: string): boolean => {
+  const mondayFirstCountries = ['ae', 'lb', 'ma', 'tn']; // Saturday-Sunday weekend countries
+  return mondayFirstCountries.includes(countryCode);
+};
+
+const getDayNames = (language: string, countryCode: string) => {
+  const dayNamesOriginal = {
+    en: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    ar: ['أحد', 'اثنين', 'ثلاثاء', 'أربعاء', 'خميس', 'جمعة', 'سبت']
+  };
+  
+  const names = dayNamesOriginal[language as keyof typeof dayNamesOriginal];
+  
+  // If country uses Monday first, rearrange the array
+  if (usesMondayFirst(countryCode)) {
+    return [...names.slice(1), names[0]]; // Move Sunday to the end
+  }
+  
+  return names;
 };
 
 export const Calendar = ({ year, language, countryCode, holidays }: CalendarProps) => {
   const weekendDays = getWeekendDaysForCountry(countryCode);
+  const dayNames = getDayNames(language, countryCode);
+  const mondayFirst = usesMondayFirst(countryCode);
   
   const months = useMemo(() => {
     return Array.from({ length: 12 }, (_, monthIndex) => {
       const firstDay = new Date(year, monthIndex, 1);
       const lastDay = new Date(year, monthIndex + 1, 0);
-      const startingDayOfWeek = firstDay.getDay();
+      let startingDayOfWeek = firstDay.getDay();
       const daysInMonth = lastDay.getDate();
+      
+      // Adjust starting day if using Monday first
+      if (mondayFirst) {
+        startingDayOfWeek = startingDayOfWeek === 0 ? 6 : startingDayOfWeek - 1;
+      }
       
       // Create array of days with leading empty cells
       const days = [];
@@ -97,7 +121,7 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
         holidays: monthHolidays
       };
     });
-  }, [year, language, holidays]);
+  }, [year, language, holidays, countryCode]);
 
   const isWeekendDay = (monthIndex: number, day: number) => {
     const dayOfWeek = new Date(year, monthIndex, day).getDay();
@@ -126,7 +150,7 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
             <CardContent className="p-4">
               {/* Day headers */}
               <div className="grid grid-cols-7 gap-1 mb-2">
-                {dayNames[language as keyof typeof dayNames].map((day, dayIndex) => (
+                {dayNames.map((day, dayIndex) => (
                   <div key={dayIndex} className="text-center text-xs font-medium text-muted-foreground p-1 bg-accent/20">
                     {day}
                   </div>
