@@ -945,6 +945,11 @@ export const CountryPage = () => {
     }
   }, [lang, countryCode, year, navigate]);
 
+  // Sync local language state with URL param
+  useEffect(() => {
+    setLanguage(lang === 'en' ? 'en' : 'ar');
+  }, [lang]);
+
   const country = arabicCountries[selectedCountry as keyof typeof arabicCountries];
   const holidays = getHolidaysForCountryYear(selectedCountry, selectedYear);
 
