@@ -79,7 +79,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'Saudi Founding Day', nameAr: 'يوم التأسيس السعودي', date: '2025-02-22', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 4 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2025-09-23', type: 'national' }
       ],
@@ -114,7 +114,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-27', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2025-12-02', type: 'national', duration: 2 }
@@ -157,7 +157,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Sinai Liberation Day', nameAr: 'عيد تحرير سيناء', date: '2025-04-25', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2025-07-23', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],
@@ -207,7 +207,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2025-05-25', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2025-01-30', type: 'national' }
       ],
@@ -253,7 +253,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2025-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2025-02-26', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],
       2026: [
@@ -290,7 +290,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2025-12-18', type: 'national' }
       ],
@@ -325,7 +325,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 3 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2025-12-16', type: 'national', duration: 2 }
       ],
@@ -360,7 +360,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Sultan\'s Birthday', nameAr: 'عيد ميلاد السلطان', date: '2025-11-18', type: 'national' },
         { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2025-11-19', type: 'national' }
@@ -401,7 +401,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2025-04-21', type: 'cultural' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-11-22', type: 'national' }
       ],
@@ -445,7 +445,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],
       2026: [
@@ -487,7 +487,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2025-01-06', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2025-07-14', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-10-03', type: 'national' }
@@ -534,7 +534,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2025-05-22', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-11-30', type: 'national' }
       ],
@@ -577,7 +577,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2025-01-11', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2025-07-30', type: 'national' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2025-08-14', type: 'national' },
         { name: 'King\'s Birthday', nameAr: 'ذكرى ثورة الملك والشعب', date: '2025-08-20', type: 'national' },
@@ -638,7 +638,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2025-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2025-07-25', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2025-08-13', type: 'cultural' }
@@ -690,7 +690,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-07-05', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2025-11-01', type: 'national' }
@@ -732,7 +732,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2025-10-23', type: 'national' }
       ],
@@ -768,7 +768,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],
       2026: [
@@ -803,7 +803,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-07-01', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],
@@ -842,7 +842,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-06-27', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],
@@ -881,7 +881,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-05', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-07-06', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
       ],

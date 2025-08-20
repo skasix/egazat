@@ -11,8 +11,9 @@ import NotFound from "./pages/NotFound";
 
 const AppContent = () => {
   const location = useLocation();
-  const pathSegments = location.pathname.split('/');
-  const language = pathSegments[1]?.replace('.html', '') || 'ar';
+  const pathSegments = location.pathname.split('/').filter(Boolean);
+  // Handle root path (/) as Arabic, otherwise extract language from first segment
+  const language = pathSegments.length === 0 ? 'ar' : (pathSegments[0]?.replace('.html', '') || 'ar');
   
   return (
     <div className="min-h-screen flex flex-col">

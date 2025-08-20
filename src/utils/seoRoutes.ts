@@ -8,7 +8,8 @@ export const generateSEOUrl = (lang: string, countryCode?: string, year?: number
 };
 
 export const generateHomeUrl = (lang: string): string => {
-  return `/${lang}.html`;
+  // Arabic home page should use root path, English uses .html
+  return lang === 'ar' ? '/' : `/${lang}.html`;
 };
 
 export const generateCountryUrl = (lang: string, countryCode: string, year: number): string => {
