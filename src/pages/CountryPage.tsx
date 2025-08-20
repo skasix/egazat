@@ -931,7 +931,7 @@ export const CountryPage = () => {
   const navigate = useNavigate();
   
   // Handle legacy routes without language prefix
-  const detectedLanguage = lang || 'en'; // Default to English for legacy routes
+  const detectedLanguage = lang || 'ar'; // Default to Arabic for legacy routes  
   const [language, setLanguage] = useState(detectedLanguage);
   const [selectedYear, setSelectedYear] = useState(parseInt(year || '2025'));
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
@@ -939,8 +939,8 @@ export const CountryPage = () => {
   // Redirect legacy routes to proper language-prefixed routes
   useEffect(() => {
     if (!lang && countryCode && year) {
-      // This is a legacy route, redirect to English version
-      navigate(generateCountryUrl('en', countryCode, parseInt(year)), { replace: true });
+      // This is a legacy route, redirect to Arabic version
+      navigate(generateCountryUrl('ar', countryCode, parseInt(year)), { replace: true });
       return;
     }
   }, [lang, countryCode, year, navigate]);
@@ -957,8 +957,8 @@ export const CountryPage = () => {
 
   // Update document language and direction
   useEffect(() => {
-    document.documentElement.lang = language === 'ar' ? 'ar' : 'en';
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = language === 'en' ? 'en' : 'ar';
+    document.documentElement.dir = language === 'en' ? 'ltr' : 'rtl';
   }, [language]);
 
   const handleLanguageChange = (newLanguage: string) => {

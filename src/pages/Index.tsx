@@ -9,7 +9,7 @@ import { SEOHead } from '@/components/SEOHead';
 const Index = () => {
   const { lang } = useParams();
   const navigate = useNavigate();
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('ar');
   const [selectedYear, setSelectedYear] = useState(2025);
   const [selectedCountry, setSelectedCountry] = useState('ae');
 
@@ -28,13 +28,13 @@ const Index = () => {
 
   // Sync local language state with URL param
   useEffect(() => {
-    setLanguage(lang === 'ar' ? 'ar' : 'en');
+    setLanguage(lang === 'en' ? 'en' : 'ar');
   }, [lang]);
 
   // Update document language and direction
   useEffect(() => {
-    document.documentElement.lang = language === 'ar' ? 'ar' : 'en';
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.lang = language === 'en' ? 'en' : 'ar';
+    document.documentElement.dir = language === 'en' ? 'ltr' : 'rtl';
   }, [language]);
 
   return (
