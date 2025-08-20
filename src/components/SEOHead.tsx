@@ -36,7 +36,43 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
     return `https://egazat.com${path}`;
   };
   
+  // Generate hreflang URLs
+  const getHreflangUrls = () => {
+    const currentPath = location.pathname;
+    
+    // Homepage variants
+    if (currentPath === '/' || currentPath === '/ar' || currentPath === '/ar.html') {
+      return {
+        ar: 'https://egazat.com/',
+        en: 'https://egazat.com/en.html'
+      };
+    }
+    
+    if (currentPath === '/en' || currentPath === '/en.html') {
+      return {
+        ar: 'https://egazat.com/',
+        en: 'https://egazat.com/en.html'
+      };
+    }
+    
+    // Country pages
+    if (countryCode && year) {
+      return {
+        ar: `https://egazat.com/ar/country/${countryCode}/${year}.html`,
+        en: `https://egazat.com/en/country/${countryCode}/${year}.html`
+      };
+    }
+    
+    // Fallback for other pages
+    const pathWithoutLang = currentPath.replace(/^\/(ar|en)/, '');
+    return {
+      ar: `https://egazat.com/ar${pathWithoutLang.endsWith('.html') ? pathWithoutLang : pathWithoutLang + '.html'}`,
+      en: `https://egazat.com/en${pathWithoutLang.endsWith('.html') ? pathWithoutLang : pathWithoutLang + '.html'}`
+    };
+  };
+  
   const canonicalUrl = getCanonicalUrl();
+  const hreflangUrls = getHreflangUrls();
   
   // Generate keywords
   const defaultKeywords = language === 'ar' 
@@ -108,6 +144,11 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />
       
+      {/* Hreflang Links for Language Alternatives */}
+      <link rel="alternate" hrefLang="ar" href={hreflangUrls.ar} />
+      <link rel="alternate" hrefLang="en" href={hreflangUrls.en} />
+      <link rel="alternate" hrefLang="x-default" href={hreflangUrls.ar} />
+      
       {/* Open Graph Tags */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
@@ -115,6 +156,7 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:site_name" content="Egazat" />
       <meta property="og:locale" content={language === 'ar' ? 'ar_SA' : 'en_US'} />
+      <meta property="og:locale:alternate" content={language === 'ar' ? 'en_US' : 'ar_SA'} />
       <meta property="og:image" content="https://egazat.com/og-image.jpg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
