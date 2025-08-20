@@ -39,17 +39,6 @@ const generateSitemap = async () => {
   </url>
 `;
 
-  // Add alternative Arabic home URLs (for consistency)
-  sitemap += `  <url>
-    <loc>${baseUrl}/ar.html</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/" />
-    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en.html" />
-  </url>
-`;
-
   // Add English home page
   sitemap += `  <url>
     <loc>${baseUrl}/en.html</loc>
@@ -164,13 +153,14 @@ Disallow: /sw.js
   
   console.log('✅ Generated robots.txt');
   console.log(`📊 Sitemap Summary:`);
-  console.log(`   - Homepage variants: 3 URLs (/, /ar.html, /en.html)`);
+  console.log(`   - Homepage variants: 2 URLs (/, /en.html)`);
   console.log(`   - Country pages (ar): ${countries.length * years.length} URLs`);
   console.log(`   - Country pages (en): ${countries.length * years.length} URLs`);
   console.log(`   - Legacy country pages: ${countries.length * years.length} URLs`);
   console.log(`   - Total URLs: ${urlCount}`);
   console.log(`   - Countries covered: ${countries.length}`);
   console.log(`   - Years covered: ${years.join(', ')}`);
+  console.log(`   - Root domain serves: Arabic homepage directly`);
 };
 
 generateSitemap().catch(console.error);

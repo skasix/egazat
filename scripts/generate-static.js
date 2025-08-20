@@ -24,16 +24,22 @@ const generateRoutes = () => {
   const languages = ['en', 'ar'];
   
   // Add home pages
-  languages.forEach(lang => {
-    routes.push({
-      path: `/${lang}.html`,
-      route: `/${lang}`,
-      lang,
-      title: lang === 'ar' ? 'العطل الرسمية العربية' : 'Arabic Public Holidays',
-      description: lang === 'ar' 
-        ? 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية'
-        : 'Complete Guide to Public Holidays in Arab Countries'
-    });
+  // Root path serves Arabic homepage directly
+  routes.push({
+    path: '/index.html',
+    route: '/',
+    lang: 'ar',
+    title: 'العطل الرسمية العربية',
+    description: 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية'
+  });
+  
+  // English homepage
+  routes.push({
+    path: '/en.html',
+    route: '/en',
+    lang: 'en',
+    title: 'Arabic Public Holidays',
+    description: 'Complete Guide to Public Holidays in Arab Countries'
   });
   
   // Add country pages
@@ -128,7 +134,7 @@ const generateHTML = (route) => {
     <meta name="twitter:description" content="${description}" />
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://egazat.com${route.path}" />
+    <link rel="canonical" href="https://egazat.com${route.path === '/index.html' ? '/' : route.path}" />
     
     <!-- Arabic Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -137,13 +143,13 @@ const generateHTML = (route) => {
     
     <!-- Redirect to SPA route -->
     <script>
-      // Redirect to the SPA route for dynamic content
-      window.location.replace('${route.route}');
+      // For root index.html, no redirect needed - serve Arabic content directly
+      ${route.path === '/index.html' ? '// Root serves Arabic homepage directly' : `window.location.replace('${route.route}');`}
     </script>
     
     <!-- Fallback content for crawlers -->
     <noscript>
-      <meta http-equiv="refresh" content="0; url=${route.route}" />
+      ${route.path === '/index.html' ? '<p>Loading Arabic homepage...</p>' : `<meta http-equiv="refresh" content="0; url=${route.route}" />`}
     </noscript>
   </head>
   
@@ -172,13 +178,15 @@ const generateStaticFiles = async () => {
   
   for (const route of routes) {
     const html = generateHTML(route);
-    const filePath = path.join(__dirname, '../dist', route.path);
+    // For root homepage, generate as dist/index.html directly
+    const fileName = route.path === '/index.html' ? 'index.html' : route.path;
+    const filePath = path.join(__dirname, '../dist', fileName);
     
     try {
       await fs.writeFile(filePath, html, 'utf8');
-      console.log(`✅ Generated: ${route.path}`);
+      console.log(`✅ Generated: ${fileName}`);
     } catch (error) {
-      console.error(`❌ Error generating ${route.path}:`, error);
+      console.error(`❌ Error generating ${fileName}:`, error);
     }
   }
   
