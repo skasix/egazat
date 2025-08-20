@@ -39,6 +39,17 @@ const generateSitemap = async () => {
   </url>
 `;
 
+  // Add alternative Arabic home URLs (for consistency)
+  sitemap += `  <url>
+    <loc>${baseUrl}/ar.html</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en.html" />
+  </url>
+`;
+
   // Add English home page
   sitemap += `  <url>
     <loc>${baseUrl}/en.html</loc>
@@ -74,6 +85,17 @@ const generateSitemap = async () => {
     <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en/country/${country}/${year}.html" />
   </url>
 `;
+
+      // Legacy routes for backward compatibility (without language prefix)
+      sitemap += `  <url>
+    <loc>${baseUrl}/country/${country}/${year}.html</loc>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/ar/country/${country}/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en/country/${country}/${year}.html" />
+  </url>
+`;
     });
   });
   
@@ -85,33 +107,70 @@ const generateSitemap = async () => {
   
   // Ensure directories exist
   await fs.mkdir(publicDir, { recursive: true });
-  await fs.mkdir(distDir, { recursive: true });
   
-  // Write to both locations
+  // Write to public location (dist will be created during build)
   const publicSitemapPath = path.join(publicDir, 'sitemap.xml');
-  const distSitemapPath = path.join(distDir, 'sitemap.xml');
-  
   await fs.writeFile(publicSitemapPath, sitemap, 'utf8');
-  await fs.writeFile(distSitemapPath, sitemap, 'utf8');
+  
+  // Also write to dist if it exists
+  try {
+    await fs.mkdir(distDir, { recursive: true });
+    const distSitemapPath = path.join(distDir, 'sitemap.xml');
+    await fs.writeFile(distSitemapPath, sitemap, 'utf8');
+  } catch (error) {
+    // Dist folder may not exist in development
+    console.log('Note: dist folder not found, skipping dist sitemap write');
+  }
   
   const urlCount = (sitemap.match(/<url>/g) || []).length;
   console.log(`✅ Generated sitemap.xml with ${urlCount} URLs`);
   
-  // Generate robots.txt
+  // Enhanced robots.txt with specific instructions
   const robotsTxt = `User-agent: *
 Allow: /
 
+# Sitemap location
 Sitemap: ${baseUrl}/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
+
+# Allow specific search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block access to admin or sensitive areas (if any)
+User-agent: *
+Disallow: /admin/
+Disallow: /.htaccess
+Disallow: /sw.js
 `;
   
   const publicRobotsPath = path.join(publicDir, 'robots.txt');
-  const distRobotsPath = path.join(distDir, 'robots.txt');
-  
   await fs.writeFile(publicRobotsPath, robotsTxt, 'utf8');
-  await fs.writeFile(distRobotsPath, robotsTxt, 'utf8');
+  
+  try {
+    const distRobotsPath = path.join(distDir, 'robots.txt');
+    await fs.writeFile(distRobotsPath, robotsTxt, 'utf8');
+  } catch (error) {
+    console.log('Note: dist folder not found, skipping dist robots.txt write');
+  }
   
   console.log('✅ Generated robots.txt');
-  console.log(`📊 Total URLs in sitemap: ${urlCount}`);
+  console.log(`📊 Sitemap Summary:`);
+  console.log(`   - Homepage variants: 3 URLs (/, /ar.html, /en.html)`);
+  console.log(`   - Country pages (ar): ${countries.length * years.length} URLs`);
+  console.log(`   - Country pages (en): ${countries.length * years.length} URLs`);
+  console.log(`   - Legacy country pages: ${countries.length * years.length} URLs`);
+  console.log(`   - Total URLs: ${urlCount}`);
+  console.log(`   - Countries covered: ${countries.length}`);
+  console.log(`   - Years covered: ${years.join(', ')}`);
 };
 
 generateSitemap().catch(console.error);
