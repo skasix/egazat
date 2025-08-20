@@ -936,7 +936,7 @@ export const CountryPage = () => {
   };
 
   const handleBackToHome = () => {
-    navigate('/');
+    navigate(`/${language}`);
   };
 
   const getHolidayTypeColor = (type: string) => {
@@ -966,17 +966,6 @@ export const CountryPage = () => {
       />
 
       <main className="container mx-auto px-4 py-8 bg-muted/20 rounded-lg">
-        {/* Back Button */}
-        <div className="mb-6">
-          <Button 
-            variant="outline" 
-            onClick={handleBackToHome}
-            className="flex items-center gap-2"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            {language === 'ar' ? 'العودة للرئيسية' : 'Back to Home'}
-          </Button>
-        </div>
 
         {/* Country Header */}
         <div className="text-center mb-12">

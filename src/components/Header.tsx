@@ -63,18 +63,31 @@ export const Header = ({
 
         {/* Navigation Menu */}
         <nav className="flex flex-wrap items-center justify-center gap-4">
-          {/* Language Selector */}
+          {/* Language Toggle Slider */}
           <div className="flex items-center gap-2">
             <Globe className="h-4 w-4 text-muted-foreground" />
-            <Select value={selectedLanguage} onValueChange={onLanguageChange}>
-              <SelectTrigger className="w-32">
-                <SelectValue placeholder="Language" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="en">English</SelectItem>
-                <SelectItem value="ar">العربية</SelectItem>
-              </SelectContent>
-            </Select>
+            <div className="relative bg-muted rounded-lg p-1 flex items-center">
+              <button
+                onClick={() => onLanguageChange('en')}
+                className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${
+                  selectedLanguage === 'en' 
+                    ? 'bg-primary text-primary-foreground shadow-sm' 
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                English
+              </button>
+              <button
+                onClick={() => onLanguageChange('ar')}
+                className={`px-3 py-1 rounded-md text-sm font-medium transition-all duration-200 ${
+                  selectedLanguage === 'ar' 
+                    ? 'bg-primary text-primary-foreground shadow-sm' 
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                العربية
+              </button>
+            </div>
           </div>
 
           {/* Year Selector */}
