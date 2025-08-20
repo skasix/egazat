@@ -114,8 +114,8 @@ export const Calendar = ({ year, language, countryCode, holidays }: CalendarProp
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {months.map((month, index) => (
           <Card key={index} className="bg-card shadow-sm border border-border">
-            <CardHeader className="pb-3 bg-accent text-accent-foreground rounded-t-lg">
-              <CardTitle className="text-center text-lg font-semibold">
+            <CardHeader className="pb-3 bg-accent text-accent-foreground rounded-t-lg flex items-center justify-center min-h-[60px]">
+              <CardTitle className="text-lg font-semibold">
                 {month.name} {year}
               </CardTitle>
             </CardHeader>
