@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import { CountryPage } from "./pages/CountryPage";
+import { Sitemap } from "./pages/Sitemap";
 import NotFound from "./pages/NotFound";
 
 const AppContent = () => {
@@ -28,6 +29,13 @@ const AppContent = () => {
             {/* Legacy routes for backward compatibility */}
             <Route path="/country/:countryCode/:year" element={<CountryPage />} />
             <Route path="/country/:countryCode/:year.html" element={<CountryPage />} />
+            
+            {/* Sitemap routes */}
+            <Route path="/sitemap" element={<Sitemap language="ar" />} />
+            <Route path="/sitemap.html" element={<Sitemap language="ar" />} />
+            <Route path="/:lang/sitemap" element={<Sitemap />} />
+            <Route path="/:lang/sitemap.html" element={<Sitemap />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

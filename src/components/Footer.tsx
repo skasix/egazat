@@ -35,6 +35,14 @@ export const Footer = ({ language = 'en' }: FooterProps) => {
                 : <>Contact & Advertising: <a href="mailto:info@egazat.com" className="text-primary hover:underline">info@egazat.com</a></>
               }
             </p>
+            <p className="text-muted-foreground mt-2">
+              <a 
+                href={`/${language}/sitemap.html`} 
+                className="text-primary hover:underline"
+              >
+                {isArabic ? 'خريطة الموقع' : 'Sitemap'}
+              </a>
+            </p>
           </div>
           
           {/* Copyright */}
