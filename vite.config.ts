@@ -4,15 +4,24 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import { execSync } from 'child_process';
 
-// Plugin to generate sitemap after build
+// Plugin to generate sitemap and static pages after build
 const sitemapPlugin = () => ({
   name: 'sitemap-generator',
   writeBundle() {
     console.log('🔨 Generating sitemap...');
     try {
       execSync('node scripts/generate-sitemap.js', { stdio: 'inherit' });
+      console.log('✅ Sitemap generated');
     } catch (error) {
       console.error('❌ Failed to generate sitemap:', error);
+    }
+    
+    console.log('🔨 Generating static HTML pages...');
+    try {
+      execSync('node scripts/generate-static.js', { stdio: 'inherit' });
+      console.log('✅ Static pages generated');
+    } catch (error) {
+      console.error('❌ Failed to generate static pages:', error);
     }
   }
 });
