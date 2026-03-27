@@ -1,0 +1,3 @@
+# Cloudflare Pages: Serve pre-generated static HTML files directly
+# Only fall back to index.html for routes without a static file
+/*    /index.html   200
