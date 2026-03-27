@@ -35,7 +35,8 @@ const arabicCountries = [
   { code: 'km', name: 'Comoros', nameAr: 'جزر القمر' }
 ];
 
-const years = [2026, 2027, 2028];
+const currentYear = new Date().getFullYear();
+const years = [currentYear, currentYear + 1, currentYear + 2];
 
 export const Header = ({
   selectedLanguage,
