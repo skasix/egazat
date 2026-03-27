@@ -106,7 +106,7 @@ export const Header = ({
                 <SelectValue placeholder="Year" />
               </SelectTrigger>
               <SelectContent>
-                {years.map(year => (
+                {[...new Set([selectedYear, ...defaultYears])].sort().map(year => (
                   <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
                 ))}
               </SelectContent>
