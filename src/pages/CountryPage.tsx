@@ -56,7 +56,7 @@ const arabicCountries = {
   'km': { name: 'Comoros', nameAr: 'جزر القمر', flag: '🇰🇲', flagImage: kmFlag }
 };
 
-// Comprehensive Arabic Countries Holiday Database (2025-2028)
+// Comprehensive Arabic Countries Holiday Database (2026-2028)
 // Based on official government sources and Islamic calendar calculations
 
 interface Holiday {
