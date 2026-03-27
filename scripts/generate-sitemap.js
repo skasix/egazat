@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Sitemap Generator for SEO
- * Generates XML sitemap with proper canonical URLs
+ * Sitemap Generator — produces sitemap-index.xml + per-country sitemaps + main sitemap.xml
  */
 
 import { promises as fs } from 'fs';
@@ -12,155 +11,187 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const generateSitemap = async () => {
-  console.log('🗺️  Generating sitemap.xml...');
-  
-  const baseUrl = 'https://egazat.com';
-  
-  const countries = [
-    'ae', 'sa', 'eg', 'jo', 'lb', 'sy', 'iq', 'kw', 'qa', 'bh', 'om', 'ye', 
-    'ma', 'tn', 'dz', 'ly', 'sd', 'so', 'dj', 'km'
-  ];
-  const years = [2025, 2026, 2027, 2028];
-  
-  let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-`;
+const BASE_URL = 'https://egazat.com';
+const countries = [
+  'ae', 'sa', 'eg', 'jo', 'lb', 'sy', 'iq', 'kw', 'qa', 'bh', 'om', 'ye',
+  'ma', 'tn', 'dz', 'ly', 'sd', 'so', 'dj', 'km'
+];
+const years = [2025, 2026, 2027, 2028];
+const today = new Date().toISOString().split('T')[0];
+const currentYear = new Date().getFullYear();
 
-  // Add Arabic home page (canonical root)
-  sitemap += `  <url>
-    <loc>${baseUrl}/</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/" />
-    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en.html" />
-  </url>
-`;
-
-  // Add English home page
-  sitemap += `  <url>
-    <loc>${baseUrl}/en.html</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/" />
-    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en.html" />
-  </url>
-`;
+const generateCountrySitemap = (country) => {
+  const urls = [];
   
-  // Add country pages for both languages
-  countries.forEach(country => {
+  ['ar', 'en'].forEach(lang => {
     years.forEach(year => {
-      // Arabic country page
-      sitemap += `  <url>
-    <loc>${baseUrl}/ar/country/${country}/${year}.html</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/ar/country/${country}/${year}.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en/country/${country}/${year}.html" />
-  </url>
-`;
-      
-      // English country page
-      sitemap += `  <url>
-    <loc>${baseUrl}/en/country/${country}/${year}.html</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/ar/country/${country}/${year}.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en/country/${country}/${year}.html" />
-  </url>
-`;
+      const isCurrent = year === currentYear;
+      const isFuture = year > currentYear;
+      const isPast = year < currentYear;
+      const priority = isCurrent ? '0.9' : isFuture ? '0.7' : '0.5';
+      const changefreq = isCurrent ? 'weekly' : isFuture ? 'monthly' : 'yearly';
+      const lastmod = isPast ? `${year}-12-31` : today;
 
-      // Legacy routes for backward compatibility (without language prefix)
-      sitemap += `  <url>
-    <loc>${baseUrl}/country/${country}/${year}.html</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ar" href="${baseUrl}/ar/country/${country}/${year}.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="${baseUrl}/en/country/${country}/${year}.html" />
-  </url>
-`;
+      urls.push(`  <url>
+    <loc>${BASE_URL}/${lang}/country/${country}/${year}.html</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/ar/country/${country}/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/country/${country}/${year}.html" />
+  </url>`);
     });
   });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urls.join('\n')}
+</urlset>`;
+};
+
+const generateSitemapIndex = () => {
+  const sitemaps = countries.map(country => `  <sitemap>
+    <loc>${BASE_URL}/sitemap-${country}.xml</loc>
+    <lastmod>${today}</lastmod>
+  </sitemap>`).join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>${BASE_URL}/sitemap-pages.xml</loc>
+    <lastmod>${today}</lastmod>
+  </sitemap>
+${sitemaps}
+</sitemapindex>`;
+};
+
+const generatePagesSitemap = () => {
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>${BASE_URL}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/" />
+  </url>
+  <url>
+    <loc>${BASE_URL}/en.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/" />
+  </url>
+  <url>
+    <loc>${BASE_URL}/sitemap.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>`;
+};
+
+// Also generate a flat sitemap.xml for backward compatibility
+const generateFlatSitemap = () => {
+  let urls = [];
   
-  sitemap += `</urlset>`;
+  urls.push(`  <url>
+    <loc>${BASE_URL}/</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
+  </url>`);
+
+  urls.push(`  <url>
+    <loc>${BASE_URL}/en.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
+  </url>`);
+
+  countries.forEach(country => {
+    years.forEach(year => {
+      const isCurrent = year === currentYear;
+      const isFuture = year > currentYear;
+      const isPast = year < currentYear;
+      const priority = isCurrent ? '0.8' : isFuture ? '0.7' : '0.5';
+      const changefreq = isCurrent ? 'weekly' : isFuture ? 'monthly' : 'yearly';
+      const lastmod = isPast ? `${year}-12-31` : today;
+
+      ['ar', 'en'].forEach(lang => {
+        urls.push(`  <url>
+    <loc>${BASE_URL}/${lang}/country/${country}/${year}.html</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/ar/country/${country}/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/country/${country}/${year}.html" />
+  </url>`);
+      });
+    });
+  });
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+${urls.join('\n')}
+</urlset>`;
+};
+
+const generateSitemap = async () => {
+  console.log('🗺️  Generating sitemaps...');
   
-  // Write sitemap to public folder (for development) and dist folder (for production)
   const publicDir = path.join(__dirname, '../public');
   const distDir = path.join(__dirname, '../dist');
   
-  // Ensure directories exist
   await fs.mkdir(publicDir, { recursive: true });
-  
-  // Write to public location (dist will be created during build)
-  const publicSitemapPath = path.join(publicDir, 'sitemap.xml');
-  await fs.writeFile(publicSitemapPath, sitemap, 'utf8');
-  
-  // Also write to dist if it exists
-  try {
-    await fs.mkdir(distDir, { recursive: true });
-    const distSitemapPath = path.join(distDir, 'sitemap.xml');
-    await fs.writeFile(distSitemapPath, sitemap, 'utf8');
-  } catch (error) {
-    // Dist folder may not exist in development
-    console.log('Note: dist folder not found, skipping dist sitemap write');
+
+  // Write to both public and dist
+  const writeFile = async (filename, content) => {
+    await fs.writeFile(path.join(publicDir, filename), content, 'utf8');
+    try {
+      await fs.mkdir(distDir, { recursive: true });
+      await fs.writeFile(path.join(distDir, filename), content, 'utf8');
+    } catch (e) {
+      // dist may not exist yet
+    }
+  };
+
+  // 1. Generate sitemap index
+  await writeFile('sitemap-index.xml', generateSitemapIndex());
+  console.log('✅ Generated sitemap-index.xml');
+
+  // 2. Generate pages sitemap
+  await writeFile('sitemap-pages.xml', generatePagesSitemap());
+  console.log('✅ Generated sitemap-pages.xml');
+
+  // 3. Generate per-country sitemaps
+  for (const country of countries) {
+    await writeFile(`sitemap-${country}.xml`, generateCountrySitemap(country));
   }
+  console.log(`✅ Generated ${countries.length} country sitemaps`);
+
+  // 4. Generate flat sitemap.xml (backward compat)
+  await writeFile('sitemap.xml', generateFlatSitemap());
   
-  const urlCount = (sitemap.match(/<url>/g) || []).length;
-  console.log(`✅ Generated sitemap.xml with ${urlCount} URLs`);
+  const totalUrls = 2 + countries.length * years.length * 2; // home pages + country pages
+  console.log(`✅ Generated sitemap.xml with ${totalUrls} URLs`);
   
-  // Enhanced robots.txt with specific instructions
-  const robotsTxt = `User-agent: *
-Allow: /
-
-# Sitemap location
-Sitemap: ${baseUrl}/sitemap.xml
-
-# Crawl delay for respectful crawling
-Crawl-delay: 1
-
-# Allow specific search engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Block access to admin or sensitive areas (if any)
-User-agent: *
-Disallow: /admin/
-Disallow: /.htaccess
-Disallow: /sw.js
-`;
-  
-  const publicRobotsPath = path.join(publicDir, 'robots.txt');
-  await fs.writeFile(publicRobotsPath, robotsTxt, 'utf8');
-  
-  try {
-    const distRobotsPath = path.join(distDir, 'robots.txt');
-    await fs.writeFile(distRobotsPath, robotsTxt, 'utf8');
-  } catch (error) {
-    console.log('Note: dist folder not found, skipping dist robots.txt write');
-  }
-  
-  console.log('✅ Generated robots.txt');
   console.log(`📊 Sitemap Summary:`);
-  console.log(`   - Homepage variants: 2 URLs (/, /en.html)`);
-  console.log(`   - Country pages (ar): ${countries.length * years.length} URLs`);
-  console.log(`   - Country pages (en): ${countries.length * years.length} URLs`);
-  console.log(`   - Legacy country pages: ${countries.length * years.length} URLs`);
-  console.log(`   - Total URLs: ${urlCount}`);
-  console.log(`   - Countries covered: ${countries.length}`);
-  console.log(`   - Years covered: ${years.join(', ')}`);
-  console.log(`   - Root domain serves: Arabic homepage directly`);
+  console.log(`   - Sitemap index: 1 + ${countries.length} child sitemaps`);
+  console.log(`   - Total URLs: ${totalUrls}`);
+  console.log(`   - Countries: ${countries.length}`);
+  console.log(`   - Years: ${years.join(', ')}`);
 };
 
 generateSitemap().catch(console.error);
