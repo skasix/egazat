@@ -12,7 +12,7 @@ const Index = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [language, setLanguage] = useState('ar');
-  const [selectedYear, setSelectedYear] = useState(2026);
+  const [selectedYear, setSelectedYear] = useState(new Date().getFullYear());
   const [selectedCountry, setSelectedCountry] = useState('ae');
 
   // Smart prefetching for likely next pages
