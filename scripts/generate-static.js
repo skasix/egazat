@@ -446,10 +446,10 @@ function generateHolidayTableHTML(holidays, lang, countryName, year, countryCode
   return `
     <article dir="${dir}" lang="${lang}" itemscope itemtype="https://schema.org/WebPage">
       <header>
-        <h1 itemprop="name">${isAr ? `${countryName} العطل الرسمية ${year}` : `${countryName} Public Holidays ${year}`}</h1>
+        <h1 itemprop="name">${isAr ? `العطل الرسمية في ${countryName} ${year}` : `${countryName} Public Holidays ${year}`}</h1>
         <p itemprop="description">${isAr
-          ? `دليل شامل للعطل الإسلامية والأيام الوطنية وجدول العمل في ${countryName} لعام ${year}`
-          : `Complete Guide to Islamic Holidays, National Days & Work Schedule in ${countryName} for ${year}`}</p>
+          ? `دليل العطل الرسمية في ${countryName} ${year} — مواعيد عيد الفطر والأضحى والأعياد الوطنية.`
+          : `${countryName} ${year} public holidays — Eid al-Fitr, Eid al-Adha dates & national days.`}</p>
         <p>${isAr ? 'أيام العطل الأسبوعية:' : 'Weekend Days:'} ${wkd.join(' & ')}</p>
       </header>
       <table aria-label="${isAr ? `العطل الرسمية في ${countryName} ${year}` : `Public Holidays in ${countryName} ${year}`}">
@@ -523,8 +523,8 @@ const generateRoutes = () => {
           lang, country, year,
           title: lang === 'ar' ? `${countryName} العطل الرسمية ${year}` : `${countryName} Public Holidays ${year}`,
           description: lang === 'ar'
-            ? `دليل شامل للعطل الإسلامية والأيام الوطنية وجدول العمل في ${countryName} لعام ${year}`
-            : `Complete Guide to Islamic Holidays, National Days & Work Schedule in ${countryName} for ${year}`
+            ? `دليل العطل الرسمية في ${countryName} ${year} — مواعيد عيد الفطر والأضحى والأعياد الوطنية.`
+            : `${countryName} ${year} public holidays — Eid al-Fitr, Eid al-Adha dates & national days.`
         });
       });
     });
