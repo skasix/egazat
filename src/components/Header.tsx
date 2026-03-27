@@ -36,7 +36,7 @@ const arabicCountries = [
 ];
 
 const currentYear = new Date().getFullYear();
-const years = [currentYear, currentYear + 1, currentYear + 2];
+const defaultYears = [currentYear, currentYear + 1, currentYear + 2];
 
 export const Header = ({
   selectedLanguage,
@@ -106,7 +106,7 @@ export const Header = ({
                 <SelectValue placeholder="Year" />
               </SelectTrigger>
               <SelectContent>
-                {years.map(year => (
+                {[...new Set([selectedYear, ...defaultYears])].sort().map(year => (
                   <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
                 ))}
               </SelectContent>
