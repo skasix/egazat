@@ -36,7 +36,7 @@ const arabicCountries = [
 ];
 
 const currentYear = new Date().getFullYear();
-const years = [currentYear, currentYear + 1, currentYear + 2];
+const defaultYears = [currentYear, currentYear + 1, currentYear + 2];
 
 export const Header = ({
   selectedLanguage,
