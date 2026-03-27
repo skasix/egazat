@@ -36,7 +36,8 @@ const arabicCountries = [
 ];
 
 const currentYear = new Date().getFullYear();
-const defaultYears = [currentYear, currentYear + 1, currentYear + 2];
+const mainYears = [currentYear, currentYear + 1, currentYear + 2];
+const olderYears = [currentYear - 1];
 
 export const Header = ({
   selectedLanguage,
@@ -106,7 +107,13 @@ export const Header = ({
                 <SelectValue placeholder="Year" />
               </SelectTrigger>
               <SelectContent>
-                {defaultYears.map(year => (
+                {mainYears.map(year => (
+                  <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
+                ))}
+                <div className="px-2 py-1.5 text-xs text-muted-foreground border-t mt-1 pt-1">
+                  {selectedLanguage === 'ar' ? '── سنوات سابقة ──' : '── Older Years ──'}
+                </div>
+                {olderYears.map(year => (
                   <SelectItem key={year} value={year.toString()}>{year}</SelectItem>
                 ))}
               </SelectContent>
