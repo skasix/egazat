@@ -28,7 +28,7 @@ const countries = [
   { code: 'km', nameAr: 'جزر القمر', nameEn: 'Comoros' },
 ];
 
-const years = [2025, 2026, 2027, 2028];
+const years = [2026, 2027, 2028];
 
 export const Sitemap = ({ language = 'ar' }: SitemapProps) => {
   const isArabic = language === 'ar';
