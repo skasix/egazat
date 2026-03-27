@@ -110,17 +110,17 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
       <meta property="og:site_name" content="Egazat" />
       <meta property="og:locale" content={language === 'ar' ? 'ar_AR' : 'en_US'} />
       <meta property="og:locale:alternate" content={language === 'ar' ? 'en_US' : 'ar_AR'} />
-      <meta property="og:image" content="https://egazat.com/og-image.jpg" />
+      <meta property="og:image" content={countryCode && year ? `https://egazat.com/og/${countryCode}-${year}.jpg` : 'https://egazat.com/og-image.jpg'} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content={language === 'ar' ? 'دليل العطل الرسمية العربية' : 'Arabic Public Holidays Guide'} />
+      <meta property="og:image:alt" content={countryCode && year ? (language === 'ar' ? `العطل الرسمية ${year}` : `Public Holidays ${year}`) : (language === 'ar' ? 'دليل العطل الرسمية العربية' : 'Arabic Public Holidays Guide')} />
       
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content="https://egazat.com/og-image.jpg" />
-      <meta name="twitter:image:alt" content={language === 'ar' ? 'دليل العطل الرسمية العربية' : 'Arabic Public Holidays Guide'} />
+      <meta name="twitter:image" content={countryCode && year ? `https://egazat.com/og/${countryCode}-${year}.jpg` : 'https://egazat.com/og-image.jpg'} />
+      <meta name="twitter:image:alt" content={countryCode && year ? (language === 'ar' ? `العطل الرسمية ${year}` : `Public Holidays ${year}`) : (language === 'ar' ? 'دليل العطل الرسمية العربية' : 'Arabic Public Holidays Guide')} />
       
       {/* Additional Meta Tags */}
       <meta name="author" content="Egazat" />
