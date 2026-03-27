@@ -2,6 +2,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Header } from '@/components/Header';
 import { Calendar } from '@/components/Calendar';
+import { LongWeekends } from '@/components/LongWeekends';
 import { CountryQuickSelector } from '@/components/CountryQuickSelector';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -1212,6 +1213,15 @@ export const CountryPage = () => {
             holidays={holidays}
           />
         </section>
+
+        {/* Long Weekends Section */}
+        <LongWeekends
+          holidays={holidays}
+          countryCode={selectedCountry}
+          year={selectedYear}
+          language={language}
+          weekendDays={getWeekendDays(selectedCountry)}
+        />
 
         {/* Holidays List */}
         <section className="mb-12">
