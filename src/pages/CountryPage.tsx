@@ -859,10 +859,22 @@ export const CountryPage = () => {
   const [selectedYear, setSelectedYear] = useState(parseInt(year || new Date().getFullYear().toString()));
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
 
+  const currentYear = new Date().getFullYear();
+
+  // Redirect 2025 or any unsupported year to current year
+  useEffect(() => {
+    const parsedYear = parseInt(year || currentYear.toString());
+    if (parsedYear < currentYear) {
+      const targetLang = lang || 'ar';
+      const targetCountry = countryCode || 'ae';
+      navigate(generateCountryUrl(targetLang, targetCountry, currentYear), { replace: true });
+      return;
+    }
+  }, [year, lang, countryCode, navigate, currentYear]);
+
   // Redirect legacy routes to proper language-prefixed routes
   useEffect(() => {
     if (!lang && countryCode && year) {
-      // This is a legacy route, redirect to Arabic version
       navigate(generateCountryUrl('ar', countryCode, parseInt(year)), { replace: true });
       return;
     }
