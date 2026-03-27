@@ -856,7 +856,7 @@ export const CountryPage = () => {
   // Handle legacy routes without language prefix
   const detectedLanguage = lang || 'ar'; // Default to Arabic for legacy routes  
   const [language, setLanguage] = useState(detectedLanguage);
-  const [selectedYear, setSelectedYear] = useState(parseInt(year || new Date().getFullYear().toString()));
+  const [selectedYear, setSelectedYear] = useState(parseInt(year || '2026'));
   const [selectedCountry, setSelectedCountry] = useState(countryCode || 'ae');
 
   // Redirect legacy routes to proper language-prefixed routes
