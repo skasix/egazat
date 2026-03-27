@@ -79,29 +79,34 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'Saudi Founding Day', nameAr: 'يوم التأسيس السعودي', date: '2025-02-22', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 4 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Arafat Day', nameAr: 'يوم عرفة', date: '2025-06-05', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2025-09-23', type: 'national' }
       ],
       2026: [
         { name: 'Saudi Founding Day', nameAr: 'يوم التأسيس السعودي', date: '2026-02-22', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2026-09-23', type: 'national' }
       ],
       2027: [
         { name: 'Saudi Founding Day', nameAr: 'يوم التأسيس السعودي', date: '2027-02-22', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 4 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2027-09-23', type: 'national' }
       ],
       2028: [
         { name: 'Saudi Founding Day', nameAr: 'يوم التأسيس السعودي', date: '2028-02-22', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 4 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2028-09-23', type: 'national' }
       ]
     }
@@ -114,33 +119,40 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 3 },
-        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-27', type: 'religious' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Arafat Day', nameAr: 'يوم عرفة', date: '2025-06-05', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Commemoration Day', nameAr: 'يوم الشهيد', date: '2025-11-30', type: 'national' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2025-12-02', type: 'national', duration: 2 }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
+        { name: 'Arafat Day', nameAr: 'يوم عرفة', date: '2026-05-25', type: 'religious' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
+        { name: 'Commemoration Day', nameAr: 'يوم الشهيد', date: '2026-11-30', type: 'national' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2026-12-02', type: 'national', duration: 2 }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
+        { name: 'Arafat Day', nameAr: 'يوم عرفة', date: '2027-05-15', type: 'religious' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Commemoration Day', nameAr: 'يوم الشهيد', date: '2027-11-30', type: 'national' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2027-12-02', type: 'national', duration: 2 }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Commemoration Day', nameAr: 'يوم الشهيد', date: '2028-11-30', type: 'national' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2028-12-02', type: 'national', duration: 2 }
       ]
     }
@@ -152,47 +164,63 @@ const countriesHolidays: Record<string, CountryInfo> = {
     holidays: {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
-        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2025-01-07', type: 'cultural' },
+        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2025-01-07', type: 'religious' },
         { name: '25 January Revolution Day', nameAr: 'ثورة 25 يناير', date: '2025-01-25', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
+        { name: 'Sham el-Nessim', nameAr: 'شم النسيم', date: '2025-04-21', type: 'national' },
         { name: 'Sinai Liberation Day', nameAr: 'عيد تحرير سيناء', date: '2025-04-25', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: '30 June Revolution Day', nameAr: 'ثورة 30 يونيو', date: '2025-06-30', type: 'national' },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2025-07-23', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2025-10-06', type: 'national' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
-        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2026-01-07', type: 'cultural' },
+        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2026-01-07', type: 'religious' },
         { name: '25 January Revolution Day', nameAr: 'ثورة 25 يناير', date: '2026-01-25', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
+        { name: 'Sham el-Nessim', nameAr: 'شم النسيم', date: '2026-04-13', type: 'national' },
         { name: 'Sinai Liberation Day', nameAr: 'عيد تحرير سيناء', date: '2026-04-25', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
+        { name: '30 June Revolution Day', nameAr: 'ثورة 30 يونيو', date: '2026-06-30', type: 'national' },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2026-07-23', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
+        { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2026-10-06', type: 'national' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2027-01-07', type: 'cultural' },
+        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2027-01-07', type: 'religious' },
         { name: '25 January Revolution Day', nameAr: 'ثورة 25 يناير', date: '2027-01-25', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
+        { name: 'Sham el-Nessim', nameAr: 'شم النسيم', date: '2027-03-29', type: 'national' },
         { name: 'Sinai Liberation Day', nameAr: 'عيد تحرير سيناء', date: '2027-04-25', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
+        { name: '30 June Revolution Day', nameAr: 'ثورة 30 يونيو', date: '2027-06-30', type: 'national' },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2027-07-23', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2027-10-06', type: 'national' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2028-01-07', type: 'cultural' },
+        { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2028-01-07', type: 'religious' },
         { name: '25 January Revolution Day', nameAr: 'ثورة 25 يناير', date: '2028-01-25', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Sham el-Nessim', nameAr: 'شم النسيم', date: '2028-04-17', type: 'national' },
         { name: 'Sinai Liberation Day', nameAr: 'عيد تحرير سيناء', date: '2028-04-25', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: '30 June Revolution Day', nameAr: 'ثورة 30 يونيو', date: '2028-06-30', type: 'national' },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2028-07-23', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2028-10-06', type: 'national' }
       ]
     }
   },
@@ -203,43 +231,48 @@ const countriesHolidays: Record<string, CountryInfo> = {
     holidays: {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
-        { name: 'Arab League Day', nameAr: 'يوم الجامعة العربية', date: '2025-03-22', type: 'cultural' },
+        { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2025-01-30', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2025-05-25', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
-        { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2025-01-30', type: 'national' }
+        { name: 'Arafat Day', nameAr: 'يوم عرفة', date: '2025-06-05', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2025-12-25', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2026-01-30', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
-        { name: 'Arab League Day', nameAr: 'يوم الجامعة العربية', date: '2026-03-22', type: 'cultural' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2026-05-25', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2026-12-25', type: 'religious' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2027-01-30', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Arab League Day', nameAr: 'يوم الجامعة العربية', date: '2027-03-22', type: 'cultural' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2027-05-25', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2027-12-25', type: 'religious' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
         { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2028-01-30', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Arab League Day', nameAr: 'يوم الجامعة العربية', date: '2028-03-22', type: 'cultural' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2028-05-25', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2028-12-25', type: 'religious' }
       ]
     }
   },
@@ -253,32 +286,37 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2025-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2025-02-26', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Arafat Day', nameAr: 'يوم عرفة', date: '2025-06-05', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2026-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2026-02-26', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2027-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2027-02-26', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2028-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2028-02-26', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ]
     }
   },
@@ -288,31 +326,31 @@ const countriesHolidays: Record<string, CountryInfo> = {
     weekendDays: ['Friday', 'Saturday'],
     holidays: {
       2025: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
+        { name: 'Sports Day', nameAr: 'اليوم الرياضي', date: '2025-02-11', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 3 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2025-12-18', type: 'national' }
       ],
       2026: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
+        { name: 'Sports Day', nameAr: 'اليوم الرياضي', date: '2026-02-10', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 3 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2026-12-18', type: 'national' }
       ],
       2027: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Sports Day', nameAr: 'اليوم الرياضي', date: '2027-02-09', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2027-12-18', type: 'national' }
       ],
       2028: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Sports Day', nameAr: 'اليوم الرياضي', date: '2028-02-08', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 3 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2028-12-18', type: 'national' }
       ]
     }
@@ -325,29 +363,40 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 3 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2025-07-05', type: 'religious', duration: 2 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2025-12-16', type: 'national', duration: 2 }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
+        { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2026-06-25', type: 'religious', duration: 2 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2026-12-16', type: 'national', duration: 2 }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
+        { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2027-06-15', type: 'religious', duration: 2 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2027-12-16', type: 'national', duration: 2 }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 3 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2028-06-03', type: 'religious', duration: 2 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2028-12-16', type: 'national', duration: 2 }
       ]
     }
@@ -359,78 +408,103 @@ const countriesHolidays: Record<string, CountryInfo> = {
     holidays: {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Sultan\'s Birthday', nameAr: 'عيد ميلاد السلطان', date: '2025-11-18', type: 'national' },
-        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2025-11-19', type: 'national' }
+        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2025-11-18', type: 'national', duration: 2 }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
-        { name: 'Sultan\'s Birthday', nameAr: 'عيد ميلاد السلطان', date: '2026-11-18', type: 'national' },
-        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2026-11-19', type: 'national' }
+        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2026-11-18', type: 'national', duration: 2 }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
-        { name: 'Sultan\'s Birthday', nameAr: 'عيد ميلاد السلطان', date: '2027-11-18', type: 'national' },
-        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2027-11-19', type: 'national' }
+        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2027-11-18', type: 'national', duration: 2 }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
-        { name: 'Sultan\'s Birthday', nameAr: 'عيد ميلاد السلطان', date: '2028-11-18', type: 'national' },
-        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2028-11-19', type: 'national' }
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2028-11-18', type: 'national', duration: 2 }
       ]
     }
   },
 
-  // Lebanon - Weekend: Saturday & Sunday (but Friday-Saturday common in some sectors)
+  // Lebanon - Weekend: Saturday & Sunday
   'lb': {
     weekendDays: ['Saturday', 'Sunday'],
     holidays: {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
+        { name: 'Armenian Christmas', nameAr: 'عيد الميلاد الأرمني', date: '2025-01-06', type: 'religious' },
+        { name: 'Saint Maron\'s Day', nameAr: 'عيد مار مارون', date: '2025-02-09', type: 'religious' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
-        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2025-04-21', type: 'cultural' },
+        { name: 'Good Friday', nameAr: 'الجمعة العظيمة', date: '2025-04-18', type: 'religious' },
+        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2025-04-21', type: 'religious' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-11-22', type: 'national' }
+        { name: 'Resistance & Liberation Day', nameAr: 'عيد المقاومة والتحرير', date: '2025-05-25', type: 'national' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 2 },
+        { name: 'Assumption of Mary', nameAr: 'عيد انتقال العذراء', date: '2025-08-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-11-22', type: 'national' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2025-12-25', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
+        { name: 'Armenian Christmas', nameAr: 'عيد الميلاد الأرمني', date: '2026-01-06', type: 'religious' },
+        { name: 'Saint Maron\'s Day', nameAr: 'عيد مار مارون', date: '2026-02-09', type: 'religious' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 2 },
-        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2026-04-06', type: 'cultural' },
+        { name: 'Good Friday', nameAr: 'الجمعة العظيمة', date: '2026-04-03', type: 'religious' },
+        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2026-04-06', type: 'religious' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
+        { name: 'Resistance & Liberation Day', nameAr: 'عيد المقاومة والتحرير', date: '2026-05-25', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 2 },
+        { name: 'Assumption of Mary', nameAr: 'عيد انتقال العذراء', date: '2026-08-15', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-11-22', type: 'national' }
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-11-22', type: 'national' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2026-12-25', type: 'religious' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
-        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2027-03-29', type: 'cultural' },
+        { name: 'Armenian Christmas', nameAr: 'عيد الميلاد الأرمني', date: '2027-01-06', type: 'religious' },
+        { name: 'Saint Maron\'s Day', nameAr: 'عيد مار مارون', date: '2027-02-09', type: 'religious' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 2 },
+        { name: 'Good Friday', nameAr: 'الجمعة العظيمة', date: '2027-03-26', type: 'religious' },
+        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2027-03-29', type: 'religious' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
+        { name: 'Resistance & Liberation Day', nameAr: 'عيد المقاومة والتحرير', date: '2027-05-25', type: 'national' },
+        { name: 'Assumption of Mary', nameAr: 'عيد انتقال العذراء', date: '2027-08-15', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-11-22', type: 'national' }
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-11-22', type: 'national' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2027-12-25', type: 'religious' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 2 },
-        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2028-04-17', type: 'cultural' },
+        { name: 'Armenian Christmas', nameAr: 'عيد الميلاد الأرمني', date: '2028-01-06', type: 'religious' },
+        { name: 'Saint Maron\'s Day', nameAr: 'عيد مار مارون', date: '2028-02-09', type: 'religious' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 2 },
+        { name: 'Good Friday', nameAr: 'الجمعة العظيمة', date: '2028-04-14', type: 'religious' },
+        { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2028-04-17', type: 'religious' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 2 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-11-22', type: 'national' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 2 },
+        { name: 'Resistance & Liberation Day', nameAr: 'عيد المقاومة والتحرير', date: '2028-05-25', type: 'national' },
+        { name: 'Assumption of Mary', nameAr: 'عيد انتقال العذراء', date: '2028-08-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-11-22', type: 'national' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2028-12-25', type: 'religious' }
       ]
     }
   },
@@ -444,9 +518,11 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2025-03-08', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-04-17', type: 'national' },
+        { name: 'Easter (Orthodox)', nameAr: 'عيد الفصح', date: '2025-04-20', type: 'religious' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2025-12-25', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
@@ -455,25 +531,28 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2026-12-25', type: 'religious' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2027-03-08', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2027-12-25', type: 'religious' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2028-03-08', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2028-12-25', type: 'religious' }
       ]
     }
   },
@@ -487,9 +566,11 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2025-01-06', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2025-07-05', type: 'religious', duration: 2 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2025-07-14', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-10-03', type: 'national' }
       ],
       2026: [
@@ -498,6 +579,8 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2026-06-25', type: 'religious', duration: 2 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2026-07-14', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-10-03', type: 'national' }
@@ -505,9 +588,11 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2027-01-06', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2027-06-15', type: 'religious', duration: 2 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2027-07-14', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-10-03', type: 'national' }
@@ -515,11 +600,13 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2028-01-06', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Ashura', nameAr: 'عاشوراء', date: '2028-06-03', type: 'religious', duration: 2 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2028-07-14', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-10-03', type: 'national' }
       ]
     }
@@ -534,8 +621,10 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2025-05-22', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Revolution Day (26 September)', nameAr: 'ثورة 26 سبتمبر', date: '2025-09-26', type: 'national' },
+        { name: 'Revolution Day (14 October)', nameAr: 'ثورة 14 أكتوبر', date: '2025-10-14', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-11-30', type: 'national' }
       ],
       2026: [
@@ -545,24 +634,30 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2026-05-22', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
+        { name: 'Revolution Day (26 September)', nameAr: 'ثورة 26 سبتمبر', date: '2026-09-26', type: 'national' },
+        { name: 'Revolution Day (14 October)', nameAr: 'ثورة 14 أكتوبر', date: '2026-10-14', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-11-30', type: 'national' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2027-05-22', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Revolution Day (26 September)', nameAr: 'ثورة 26 سبتمبر', date: '2027-09-26', type: 'national' },
+        { name: 'Revolution Day (14 October)', nameAr: 'ثورة 14 أكتوبر', date: '2027-10-14', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-11-30', type: 'national' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2028-05-22', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Revolution Day (26 September)', nameAr: 'ثورة 26 سبتمبر', date: '2028-09-26', type: 'national' },
+        { name: 'Revolution Day (14 October)', nameAr: 'ثورة 14 أكتوبر', date: '2028-10-14', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-11-30', type: 'national' }
       ]
     }
@@ -575,25 +670,29 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2025-01-11', type: 'national' },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2025-01-14', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2025-07-30', type: 'national' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2025-08-14', type: 'national' },
-        { name: 'King\'s Birthday', nameAr: 'ذكرى ثورة الملك والشعب', date: '2025-08-20', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Revolution of King & People', nameAr: 'ذكرى ثورة الملك والشعب', date: '2025-08-20', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Green March Day', nameAr: 'ذكرى المسيرة الخضراء', date: '2025-11-06', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-11-18', type: 'national' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2026-01-11', type: 'national' },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2026-01-14', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2026-07-30', type: 'national' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2026-08-14', type: 'national' },
-        { name: 'King\'s Birthday', nameAr: 'ذكرى ثورة الملك والشعب', date: '2026-08-20', type: 'national' },
+        { name: 'Revolution of King & People', nameAr: 'ذكرى ثورة الملك والشعب', date: '2026-08-20', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
         { name: 'Green March Day', nameAr: 'ذكرى المسيرة الخضراء', date: '2026-11-06', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-11-18', type: 'national' }
@@ -601,26 +700,30 @@ const countriesHolidays: Record<string, CountryInfo> = {
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2027-01-11', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2027-01-14', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2027-07-30', type: 'national' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2027-08-14', type: 'national' },
-        { name: 'King\'s Birthday', nameAr: 'ذكرى ثورة الملك والشعب', date: '2027-08-20', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Revolution of King & People', nameAr: 'ذكرى ثورة الملك والشعب', date: '2027-08-20', type: 'national' },
         { name: 'Green March Day', nameAr: 'ذكرى المسيرة الخضراء', date: '2027-11-06', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-11-18', type: 'national' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2028-01-11', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 2 },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2028-01-14', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2028-07-30', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2028-08-14', type: 'national' },
-        { name: 'King\'s Birthday', nameAr: 'ذكرى ثورة الملك والشعب', date: '2028-08-20', type: 'national' },
+        { name: 'Revolution of King & People', nameAr: 'ذكرى ثورة الملك والشعب', date: '2028-08-20', type: 'national' },
         { name: 'Green March Day', nameAr: 'ذكرى المسيرة الخضراء', date: '2028-11-06', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-11-18', type: 'national' }
       ]
@@ -638,10 +741,12 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2025-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2025-07-25', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
-        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2025-08-13', type: 'cultural' }
+        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2025-08-13', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2025-10-15', type: 'national' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
@@ -651,33 +756,39 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2026-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2026-07-25', type: 'national' },
-        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2026-08-13', type: 'cultural' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
+        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2026-08-13', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
+        { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2026-10-15', type: 'national' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2027-01-14', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-03-20', type: 'national' },
         { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2027-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2027-07-25', type: 'national' },
-        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2027-08-13', type: 'cultural' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
+        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2027-08-13', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
+        { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2027-10-15', type: 'national' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2028-01-14', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-03-20', type: 'national' },
         { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2028-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2028-07-25', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
-        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2028-08-13', type: 'cultural' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2028-08-13', type: 'national' },
+        { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2028-10-15', type: 'national' }
       ]
     }
   },
@@ -688,38 +799,46 @@ const countriesHolidays: Record<string, CountryInfo> = {
     holidays: {
       2025: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2025-01-12', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-07-05', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2025-11-01', type: 'national' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2026-01-12', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-07-05', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2026-11-01', type: 'national' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2027-01-12', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-07-05', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2027-11-01', type: 'national' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
+        { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2028-01-12', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-07-05', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2028-11-01', type: 'national' }
       ]
     }
@@ -730,32 +849,40 @@ const countriesHolidays: Record<string, CountryInfo> = {
     weekendDays: ['Friday', 'Saturday'],
     holidays: {
       2025: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
+        { name: 'Revolution Day (17 February)', nameAr: 'ثورة 17 فبراير', date: '2025-02-17', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' },
-        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2025-10-23', type: 'national' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' },
+        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2025-10-23', type: 'national' },
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-12-24', type: 'national' }
       ],
       2026: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
+        { name: 'Revolution Day (17 February)', nameAr: 'ثورة 17 فبراير', date: '2026-02-17', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' },
-        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2026-10-23', type: 'national' }
+        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2026-10-23', type: 'national' },
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-12-24', type: 'national' }
       ],
       2027: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Revolution Day (17 February)', nameAr: 'ثورة 17 فبراير', date: '2027-02-17', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' },
-        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2027-10-23', type: 'national' }
+        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2027-10-23', type: 'national' },
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-12-24', type: 'national' }
       ],
       2028: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' },
-        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2028-10-23', type: 'national' }
+        { name: 'Revolution Day (17 February)', nameAr: 'ثورة 17 فبراير', date: '2028-02-17', type: 'national' },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 4 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' },
+        { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2028-10-23', type: 'national' },
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-12-24', type: 'national' }
       ]
     }
   },
@@ -765,32 +892,32 @@ const countriesHolidays: Record<string, CountryInfo> = {
     weekendDays: ['Friday', 'Saturday'],
     holidays: {
       2025: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' }
       ],
       2026: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
       ],
       2027: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
-        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 3 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ]
     }
   },
@@ -803,33 +930,37 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 4 },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-07-01', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 3 },
+        { name: 'Independence Day (26 June)', nameAr: 'عيد الاستقلال', date: '2025-06-26', type: 'national' },
+        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2025-07-01', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 4 },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-07-01', type: 'national' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 3 },
+        { name: 'Independence Day (26 June)', nameAr: 'عيد الاستقلال', date: '2026-06-26', type: 'national' },
+        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2026-07-01', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 4 },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-07-01', type: 'national' },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 3 },
+        { name: 'Independence Day (26 June)', nameAr: 'عيد الاستقلال', date: '2027-06-26', type: 'national' },
+        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2027-07-01', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 3 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 4 },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-07-01', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 3 },
+        { name: 'Independence Day (26 June)', nameAr: 'عيد الاستقلال', date: '2028-06-26', type: 'national' },
+        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2028-07-01', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ]
     }
   },
@@ -842,33 +973,37 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2025-06-26', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-06-27', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2026-03-20', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2026-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2026-05-26', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2026-06-16', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2026-06-27', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2026-08-25', type: 'religious' }
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2027-06-06', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-06-27', type: 'national' },
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2027-08-14', type: 'religious' }
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 2 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 2 },
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2028-05-25', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-06-27', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ]
     }
   },
@@ -881,9 +1016,9 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2025-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2025-03-30', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2025-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-07', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2025-06-06', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2025-07-06', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-04', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2025-09-05', type: 'religious' }
       ],
       2026: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2026-01-01', type: 'national' },
@@ -895,7 +1030,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
       ],
       2027: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2027-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-09', type: 'religious', duration: 2 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2027-03-10', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2027-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2027-05-16', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2027-07-06', type: 'national' },
@@ -903,16 +1038,15 @@ const countriesHolidays: Record<string, CountryInfo> = {
       ],
       2028: [
         { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2028-01-01', type: 'national' },
-        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-26', type: 'religious', duration: 2 },
+        { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2028-02-27', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2028-05-01', type: 'national' },
-        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-03', type: 'religious', duration: 2 },
+        { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2028-05-04', type: 'religious', duration: 2 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-07-06', type: 'national' },
-        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-02', type: 'religious' }
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ]
     }
   }
 };
-
 export const getHolidaysForCountryYear = (countryCode: string, year: number): Holiday[] => {
   const countryData = countriesHolidays[countryCode];
   if (!countryData || !countryData.holidays[year]) {
