@@ -1,66 +1,127 @@
-Meta Injection Audit — 2026-03-28T18:11:39.359Z
-Updated: 61 | Skipped: 0 | Errors: 0
+Meta Injection Audit — 2026-03-28T18:32:42.820Z
+Updated: 122 | Skipped: 0 | Errors: 0
 ────────────────────────────────────────────────────────────────────────────────
 [PASS] /index.html | TITLE: إجازات الدول العربية 2026 — دليل العطل الرسمية | إجازات | DESC_LENGTH: 119 | OG: present | LANG_DIR: present
+[PASS] /en.html | TITLE: Arab Public Holidays 2026 — Official Calendar | Egazat | DESC_LENGTH: 130 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ae/2026.html | TITLE: إجازات الإمارات 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 150 | OG: present | LANG_DIR: present
+[PASS] /en/country/ae/2026.html | TITLE: UAE Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ae/2027.html | TITLE: إجازات الإمارات 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
+[PASS] /en/country/ae/2027.html | TITLE: UAE Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 138 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ae/2028.html | TITLE: إجازات الإمارات 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
+[PASS] /en/country/ae/2028.html | TITLE: UAE Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 138 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sa/2026.html | TITLE: إجازات السعودية 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 150 | OG: present | LANG_DIR: present
+[PASS] /en/country/sa/2026.html | TITLE: Saudi Arabia Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 141 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sa/2027.html | TITLE: إجازات السعودية 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 136 | OG: present | LANG_DIR: present
+[PASS] /en/country/sa/2027.html | TITLE: Saudi Arabia Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 153 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sa/2028.html | TITLE: إجازات السعودية 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 136 | OG: present | LANG_DIR: present
+[PASS] /en/country/sa/2028.html | TITLE: Saudi Arabia Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 153 | OG: present | LANG_DIR: present
 [PASS] /ar/country/eg/2026.html | TITLE: إجازات مصر 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 151 | OG: present | LANG_DIR: present
+[PASS] /en/country/eg/2026.html | TITLE: Egypt Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 145 | OG: present | LANG_DIR: present
 [PASS] /ar/country/eg/2027.html | TITLE: إجازات مصر 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 154 | OG: present | LANG_DIR: present
+[PASS] /en/country/eg/2027.html | TITLE: Egypt Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/eg/2028.html | TITLE: إجازات مصر 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 154 | OG: present | LANG_DIR: present
+[PASS] /en/country/eg/2028.html | TITLE: Egypt Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/jo/2026.html | TITLE: إجازات الأردن 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 147 | OG: present | LANG_DIR: present
+[PASS] /en/country/jo/2026.html | TITLE: Jordan Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
 [PASS] /ar/country/jo/2027.html | TITLE: إجازات الأردن 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/jo/2027.html | TITLE: Jordan Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 141 | OG: present | LANG_DIR: present
 [PASS] /ar/country/jo/2028.html | TITLE: إجازات الأردن 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/jo/2028.html | TITLE: Jordan Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 141 | OG: present | LANG_DIR: present
 [PASS] /ar/country/lb/2026.html | TITLE: إجازات لبنان 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 148 | OG: present | LANG_DIR: present
+[PASS] /en/country/lb/2026.html | TITLE: Lebanon Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 139 | OG: present | LANG_DIR: present
 [PASS] /ar/country/lb/2027.html | TITLE: إجازات لبنان 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/lb/2027.html | TITLE: Lebanon Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/lb/2028.html | TITLE: إجازات لبنان 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/lb/2028.html | TITLE: Lebanon Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sy/2026.html | TITLE: إجازات سوريا 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 151 | OG: present | LANG_DIR: present
+[PASS] /en/country/sy/2026.html | TITLE: Syria Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 141 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sy/2027.html | TITLE: إجازات سوريا 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/sy/2027.html | TITLE: Syria Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sy/2028.html | TITLE: إجازات سوريا 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/sy/2028.html | TITLE: Syria Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/iq/2026.html | TITLE: إجازات العراق 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 147 | OG: present | LANG_DIR: present
+[PASS] /en/country/iq/2026.html | TITLE: Iraq Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 155 | OG: present | LANG_DIR: present
 [PASS] /ar/country/iq/2027.html | TITLE: إجازات العراق 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/iq/2027.html | TITLE: Iraq Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 139 | OG: present | LANG_DIR: present
 [PASS] /ar/country/iq/2028.html | TITLE: إجازات العراق 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/iq/2028.html | TITLE: Iraq Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 139 | OG: present | LANG_DIR: present
 [PASS] /ar/country/kw/2026.html | TITLE: إجازات الكويت 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 148 | OG: present | LANG_DIR: present
+[PASS] /en/country/kw/2026.html | TITLE: Kuwait Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 135 | OG: present | LANG_DIR: present
 [PASS] /ar/country/kw/2027.html | TITLE: إجازات الكويت 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/kw/2027.html | TITLE: Kuwait Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 141 | OG: present | LANG_DIR: present
 [PASS] /ar/country/kw/2028.html | TITLE: إجازات الكويت 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/kw/2028.html | TITLE: Kuwait Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 141 | OG: present | LANG_DIR: present
 [PASS] /ar/country/qa/2026.html | TITLE: إجازات قطر 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 145 | OG: present | LANG_DIR: present
+[PASS] /en/country/qa/2026.html | TITLE: Qatar Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/qa/2027.html | TITLE: إجازات قطر 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 154 | OG: present | LANG_DIR: present
+[PASS] /en/country/qa/2027.html | TITLE: Qatar Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/qa/2028.html | TITLE: إجازات قطر 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 154 | OG: present | LANG_DIR: present
+[PASS] /en/country/qa/2028.html | TITLE: Qatar Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/bh/2026.html | TITLE: إجازات البحرين 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 149 | OG: present | LANG_DIR: present
+[PASS] /en/country/bh/2026.html | TITLE: Bahrain Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 136 | OG: present | LANG_DIR: present
 [PASS] /ar/country/bh/2027.html | TITLE: إجازات البحرين 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/bh/2027.html | TITLE: Bahrain Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/bh/2028.html | TITLE: إجازات البحرين 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/bh/2028.html | TITLE: Bahrain Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/om/2026.html | TITLE: إجازات عمان 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 146 | OG: present | LANG_DIR: present
+[PASS] /en/country/om/2026.html | TITLE: Oman Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
 [PASS] /ar/country/om/2027.html | TITLE: إجازات عمان 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 155 | OG: present | LANG_DIR: present
+[PASS] /en/country/om/2027.html | TITLE: Oman Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 139 | OG: present | LANG_DIR: present
 [PASS] /ar/country/om/2028.html | TITLE: إجازات عمان 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 155 | OG: present | LANG_DIR: present
+[PASS] /en/country/om/2028.html | TITLE: Oman Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 139 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ye/2026.html | TITLE: إجازات اليمن 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 146 | OG: present | LANG_DIR: present
+[PASS] /en/country/ye/2026.html | TITLE: Yemen Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ye/2027.html | TITLE: إجازات اليمن 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/ye/2027.html | TITLE: Yemen Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ye/2028.html | TITLE: إجازات اليمن 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/ye/2028.html | TITLE: Yemen Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ma/2026.html | TITLE: إجازات المغرب 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 147 | OG: present | LANG_DIR: present
+[PASS] /en/country/ma/2026.html | TITLE: Morocco Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ma/2027.html | TITLE: إجازات المغرب 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/ma/2027.html | TITLE: Morocco Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ma/2028.html | TITLE: إجازات المغرب 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/ma/2028.html | TITLE: Morocco Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/tn/2026.html | TITLE: إجازات تونس 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 145 | OG: present | LANG_DIR: present
+[PASS] /en/country/tn/2026.html | TITLE: Tunisia Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/tn/2027.html | TITLE: إجازات تونس 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 155 | OG: present | LANG_DIR: present
+[PASS] /en/country/tn/2027.html | TITLE: Tunisia Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/tn/2028.html | TITLE: إجازات تونس 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 155 | OG: present | LANG_DIR: present
+[PASS] /en/country/tn/2028.html | TITLE: Tunisia Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/dz/2026.html | TITLE: إجازات الجزائر 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 148 | OG: present | LANG_DIR: present
+[PASS] /en/country/dz/2026.html | TITLE: Algeria Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/dz/2027.html | TITLE: إجازات الجزائر 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/dz/2027.html | TITLE: Algeria Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/dz/2028.html | TITLE: إجازات الجزائر 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/dz/2028.html | TITLE: Algeria Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ly/2026.html | TITLE: إجازات ليبيا 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 147 | OG: present | LANG_DIR: present
+[PASS] /en/country/ly/2026.html | TITLE: Libya Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ly/2027.html | TITLE: إجازات ليبيا 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/ly/2027.html | TITLE: Libya Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/ly/2028.html | TITLE: إجازات ليبيا 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 131 | OG: present | LANG_DIR: present
+[PASS] /en/country/ly/2028.html | TITLE: Libya Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sd/2026.html | TITLE: إجازات السودان 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 149 | OG: present | LANG_DIR: present
+[PASS] /en/country/sd/2026.html | TITLE: Sudan Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sd/2027.html | TITLE: إجازات السودان 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/sd/2027.html | TITLE: Sudan Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/sd/2028.html | TITLE: إجازات السودان 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/sd/2028.html | TITLE: Sudan Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 140 | OG: present | LANG_DIR: present
 [PASS] /ar/country/so/2026.html | TITLE: إجازات الصومال 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 148 | OG: present | LANG_DIR: present
+[PASS] /en/country/so/2026.html | TITLE: Somalia Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/so/2027.html | TITLE: إجازات الصومال 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/so/2027.html | TITLE: Somalia Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/so/2028.html | TITLE: إجازات الصومال 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 133 | OG: present | LANG_DIR: present
+[PASS] /en/country/so/2028.html | TITLE: Somalia Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/dj/2026.html | TITLE: إجازات جيبوتي 2026 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 147 | OG: present | LANG_DIR: present
+[PASS] /en/country/dj/2026.html | TITLE: Djibouti Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 135 | OG: present | LANG_DIR: present
 [PASS] /ar/country/dj/2027.html | TITLE: إجازات جيبوتي 2027 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/dj/2027.html | TITLE: Djibouti Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 143 | OG: present | LANG_DIR: present
 [PASS] /ar/country/dj/2028.html | TITLE: إجازات جيبوتي 2028 — العطل الرسمية والأعياد الوطنية | إجازات | DESC_LENGTH: 132 | OG: present | LANG_DIR: present
+[PASS] /en/country/dj/2028.html | TITLE: Djibouti Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 143 | OG: present | LANG_DIR: present
 [PASS] /ar/country/km/2026.html | TITLE: إجازات جزر القمر 2026 — العطل الرسمية | إجازات | DESC_LENGTH: 150 | OG: present | LANG_DIR: present
+[PASS] /en/country/km/2026.html | TITLE: Comoros Public Holidays 2026 — Official Dates | Egazat | DESC_LENGTH: 134 | OG: present | LANG_DIR: present
 [PASS] /ar/country/km/2027.html | TITLE: إجازات جزر القمر 2027 — العطل الرسمية | إجازات | DESC_LENGTH: 135 | OG: present | LANG_DIR: present
+[PASS] /en/country/km/2027.html | TITLE: Comoros Public Holidays 2027 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 [PASS] /ar/country/km/2028.html | TITLE: إجازات جزر القمر 2028 — العطل الرسمية | إجازات | DESC_LENGTH: 135 | OG: present | LANG_DIR: present
+[PASS] /en/country/km/2028.html | TITLE: Comoros Public Holidays 2028 — Official Dates | Egazat | DESC_LENGTH: 142 | OG: present | LANG_DIR: present
 ────────────────────────────────────────────────────────────────────────────────
 ✅ All meta tags injected successfully.
