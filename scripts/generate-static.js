@@ -506,7 +506,7 @@ ${links}
 const generateRoutes = () => {
   const routes = [];
   const countries = Object.keys(countryNames);
-  const years = [2026, 2027, 2028];
+  const years = [2025, 2026, 2027, 2028];
   const languages = ['en', 'ar'];
   
   routes.push({ path: '/index.html', route: '/', lang: 'ar', title: 'العطل الرسمية العربية', description: 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية' });
@@ -599,6 +599,10 @@ const generateHTML = async (route) => {
     .replace(/<meta property="og:locale"[^>]*>/, `<meta property="og:locale" content="${lang === 'ar' ? 'ar_AR' : 'en_US'}" />`)
     .replace(/<meta name="twitter:title"[^>]*>/, `<meta name="twitter:title" content="${title}" />`)
     .replace(/<meta name="twitter:description"[^>]*>/, `<meta name="twitter:description" content="${description}" />`);
+
+  // CRITICAL: Strip any existing canonical and hreflang tags to prevent duplicates
+  updatedHtml = updatedHtml.replace(/<link[^>]*rel="canonical"[^>]*>/gi, '');
+  updatedHtml = updatedHtml.replace(/<link[^>]*rel="alternate"[^>]*hreflang[^>]*>/gi, '');
 
   // Inject canonical + hreflang into <head>
   const headClose = updatedHtml.indexOf('</head>');
