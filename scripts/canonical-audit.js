@@ -16,7 +16,7 @@ const distDir = path.join(__dirname, '../dist');
 const BASE_URL = 'https://egazat.com';
 
 const countries = ['ae','sa','eg','jo','lb','sy','iq','kw','qa','bh','om','ye','ma','tn','dz','ly','sd','so','dj','km'];
-const years = [2025, 2026, 2027, 2028];
+const years = [2026, 2027, 2028];
 const languages = ['ar', 'en'];
 
 async function audit() {
