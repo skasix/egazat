@@ -500,6 +500,46 @@ ${links}
 }
 
 // ──────────────────────────────────────────────
+// Sitemap Page HTML Generation
+// ──────────────────────────────────────────────
+
+function generateSitemapPageHTML() {
+  const countries = Object.entries(countryNames);
+  const years = [2026, 2027, 2028];
+
+  let countryBlocks = countries.map(([code, cn]) => {
+    const arLinks = years.map(y => `<li><a href="/ar/country/${code}/${y}.html">العطل الرسمية ${y}</a></li>`).join('');
+    const enLinks = years.map(y => `<li><a href="/en/country/${code}/${y}.html">Public Holidays ${y}</a></li>`).join('');
+    return `<div>
+      <h3>${cn.nameAr}</h3>
+      <h4>الصفحات العربية</h4><ul>${arLinks}</ul>
+      <h4>English Pages</h4><ul>${enLinks}</ul>
+    </div>`;
+  }).join('\n');
+
+  return `<main>
+    <h1>خريطة الموقع</h1>
+    <section>
+      <h2>الصفحة الرئيسية</h2>
+      <ul>
+        <li><a href="/">الصفحة الرئيسية (عربي)</a></li>
+        <li><a href="/en.html">Homepage (English)</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>صفحات الدول</h2>
+      ${countryBlocks}
+    </section>
+    <section>
+      <p>📍 ${countries.length} دولة عربية</p>
+      <p>📅 ${years.length} سنوات (${years.join(', ')})</p>
+      <p>🌐 لغتين (العربية والإنجليزية)</p>
+      <p>📄 إجمالي الصفحات: ${countries.length * years.length * 2 + 2}</p>
+    </section>
+  </main>`;
+}
+
+// ──────────────────────────────────────────────
 // Route Generation
 // ──────────────────────────────────────────────
 
