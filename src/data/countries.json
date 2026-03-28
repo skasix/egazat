@@ -1,0 +1,145 @@
+{
+  "countries": [
+    {
+      "code": "ae",
+      "name_ar": "دولة الإمارات العربية المتحدة",
+      "short_name_ar": "الإمارات",
+      "title_keyword": "إجازات الإمارات",
+      "weekend_days": ["Saturday", "Sunday"]
+    },
+    {
+      "code": "sa",
+      "name_ar": "المملكة العربية السعودية",
+      "short_name_ar": "السعودية",
+      "title_keyword": "إجازات السعودية",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "eg",
+      "name_ar": "جمهورية مصر العربية",
+      "short_name_ar": "مصر",
+      "title_keyword": "إجازات مصر",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "jo",
+      "name_ar": "المملكة الأردنية الهاشمية",
+      "short_name_ar": "الأردن",
+      "title_keyword": "إجازات الأردن",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "lb",
+      "name_ar": "الجمهورية اللبنانية",
+      "short_name_ar": "لبنان",
+      "title_keyword": "إجازات لبنان",
+      "weekend_days": ["Saturday", "Sunday"]
+    },
+    {
+      "code": "sy",
+      "name_ar": "الجمهورية العربية السورية",
+      "short_name_ar": "سوريا",
+      "title_keyword": "إجازات سوريا",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "iq",
+      "name_ar": "جمهورية العراق",
+      "short_name_ar": "العراق",
+      "title_keyword": "إجازات العراق",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "kw",
+      "name_ar": "دولة الكويت",
+      "short_name_ar": "الكويت",
+      "title_keyword": "إجازات الكويت",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "qa",
+      "name_ar": "دولة قطر",
+      "short_name_ar": "قطر",
+      "title_keyword": "إجازات قطر",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "bh",
+      "name_ar": "مملكة البحرين",
+      "short_name_ar": "البحرين",
+      "title_keyword": "إجازات البحرين",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "om",
+      "name_ar": "سلطنة عمان",
+      "short_name_ar": "عمان",
+      "title_keyword": "إجازات عمان",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "ye",
+      "name_ar": "الجمهورية اليمنية",
+      "short_name_ar": "اليمن",
+      "title_keyword": "إجازات اليمن",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "ma",
+      "name_ar": "المملكة المغربية",
+      "short_name_ar": "المغرب",
+      "title_keyword": "إجازات المغرب",
+      "weekend_days": ["Saturday", "Sunday"]
+    },
+    {
+      "code": "tn",
+      "name_ar": "الجمهورية التونسية",
+      "short_name_ar": "تونس",
+      "title_keyword": "إجازات تونس",
+      "weekend_days": ["Saturday", "Sunday"]
+    },
+    {
+      "code": "dz",
+      "name_ar": "الجمهورية الجزائرية الديمقراطية الشعبية",
+      "short_name_ar": "الجزائر",
+      "title_keyword": "إجازات الجزائر",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "ly",
+      "name_ar": "دولة ليبيا",
+      "short_name_ar": "ليبيا",
+      "title_keyword": "إجازات ليبيا",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "sd",
+      "name_ar": "جمهورية السودان",
+      "short_name_ar": "السودان",
+      "title_keyword": "إجازات السودان",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "so",
+      "name_ar": "جمهورية الصومال",
+      "short_name_ar": "الصومال",
+      "title_keyword": "إجازات الصومال",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "dj",
+      "name_ar": "جمهورية جيبوتي",
+      "short_name_ar": "جيبوتي",
+      "title_keyword": "إجازات جيبوتي",
+      "weekend_days": ["Friday", "Saturday"]
+    },
+    {
+      "code": "km",
+      "name_ar": "جزر القمر",
+      "short_name_ar": "جزر القمر",
+      "title_keyword": "إجازات جزر القمر",
+      "weekend_days": ["Saturday", "Sunday"]
+    }
+  ],
+  "years": [2026, 2027, 2028]
+}
