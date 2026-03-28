@@ -5,6 +5,9 @@
       "name_ar": "دولة الإمارات العربية المتحدة",
       "short_name_ar": "الإمارات",
       "title_keyword": "إجازات الإمارات",
+      "name_en": "United Arab Emirates",
+      "short_name_en": "UAE",
+      "title_keyword_en": "UAE Public Holidays",
       "weekend_days": ["Saturday", "Sunday"]
     },
     {
@@ -12,6 +15,9 @@
       "name_ar": "المملكة العربية السعودية",
       "short_name_ar": "السعودية",
       "title_keyword": "إجازات السعودية",
+      "name_en": "Saudi Arabia",
+      "short_name_en": "Saudi Arabia",
+      "title_keyword_en": "Saudi Arabia Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -19,6 +25,9 @@
       "name_ar": "جمهورية مصر العربية",
       "short_name_ar": "مصر",
       "title_keyword": "إجازات مصر",
+      "name_en": "Egypt",
+      "short_name_en": "Egypt",
+      "title_keyword_en": "Egypt Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -26,6 +35,9 @@
       "name_ar": "المملكة الأردنية الهاشمية",
       "short_name_ar": "الأردن",
       "title_keyword": "إجازات الأردن",
+      "name_en": "Jordan",
+      "short_name_en": "Jordan",
+      "title_keyword_en": "Jordan Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -33,6 +45,9 @@
       "name_ar": "الجمهورية اللبنانية",
       "short_name_ar": "لبنان",
       "title_keyword": "إجازات لبنان",
+      "name_en": "Lebanon",
+      "short_name_en": "Lebanon",
+      "title_keyword_en": "Lebanon Public Holidays",
       "weekend_days": ["Saturday", "Sunday"]
     },
     {
@@ -40,6 +55,9 @@
       "name_ar": "الجمهورية العربية السورية",
       "short_name_ar": "سوريا",
       "title_keyword": "إجازات سوريا",
+      "name_en": "Syria",
+      "short_name_en": "Syria",
+      "title_keyword_en": "Syria Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -47,6 +65,9 @@
       "name_ar": "جمهورية العراق",
       "short_name_ar": "العراق",
       "title_keyword": "إجازات العراق",
+      "name_en": "Iraq",
+      "short_name_en": "Iraq",
+      "title_keyword_en": "Iraq Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -54,6 +75,9 @@
       "name_ar": "دولة الكويت",
       "short_name_ar": "الكويت",
       "title_keyword": "إجازات الكويت",
+      "name_en": "Kuwait",
+      "short_name_en": "Kuwait",
+      "title_keyword_en": "Kuwait Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -61,6 +85,9 @@
       "name_ar": "دولة قطر",
       "short_name_ar": "قطر",
       "title_keyword": "إجازات قطر",
+      "name_en": "Qatar",
+      "short_name_en": "Qatar",
+      "title_keyword_en": "Qatar Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -68,6 +95,9 @@
       "name_ar": "مملكة البحرين",
       "short_name_ar": "البحرين",
       "title_keyword": "إجازات البحرين",
+      "name_en": "Bahrain",
+      "short_name_en": "Bahrain",
+      "title_keyword_en": "Bahrain Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -75,6 +105,9 @@
       "name_ar": "سلطنة عمان",
       "short_name_ar": "عمان",
       "title_keyword": "إجازات عمان",
+      "name_en": "Oman",
+      "short_name_en": "Oman",
+      "title_keyword_en": "Oman Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -82,6 +115,9 @@
       "name_ar": "الجمهورية اليمنية",
       "short_name_ar": "اليمن",
       "title_keyword": "إجازات اليمن",
+      "name_en": "Yemen",
+      "short_name_en": "Yemen",
+      "title_keyword_en": "Yemen Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -89,6 +125,9 @@
       "name_ar": "المملكة المغربية",
       "short_name_ar": "المغرب",
       "title_keyword": "إجازات المغرب",
+      "name_en": "Morocco",
+      "short_name_en": "Morocco",
+      "title_keyword_en": "Morocco Public Holidays",
       "weekend_days": ["Saturday", "Sunday"]
     },
     {
@@ -96,6 +135,9 @@
       "name_ar": "الجمهورية التونسية",
       "short_name_ar": "تونس",
       "title_keyword": "إجازات تونس",
+      "name_en": "Tunisia",
+      "short_name_en": "Tunisia",
+      "title_keyword_en": "Tunisia Public Holidays",
       "weekend_days": ["Saturday", "Sunday"]
     },
     {
@@ -103,6 +145,9 @@
       "name_ar": "الجمهورية الجزائرية الديمقراطية الشعبية",
       "short_name_ar": "الجزائر",
       "title_keyword": "إجازات الجزائر",
+      "name_en": "Algeria",
+      "short_name_en": "Algeria",
+      "title_keyword_en": "Algeria Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -110,6 +155,9 @@
       "name_ar": "دولة ليبيا",
       "short_name_ar": "ليبيا",
       "title_keyword": "إجازات ليبيا",
+      "name_en": "Libya",
+      "short_name_en": "Libya",
+      "title_keyword_en": "Libya Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -117,6 +165,9 @@
       "name_ar": "جمهورية السودان",
       "short_name_ar": "السودان",
       "title_keyword": "إجازات السودان",
+      "name_en": "Sudan",
+      "short_name_en": "Sudan",
+      "title_keyword_en": "Sudan Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -124,6 +175,9 @@
       "name_ar": "جمهورية الصومال",
       "short_name_ar": "الصومال",
       "title_keyword": "إجازات الصومال",
+      "name_en": "Somalia",
+      "short_name_en": "Somalia",
+      "title_keyword_en": "Somalia Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -131,6 +185,9 @@
       "name_ar": "جمهورية جيبوتي",
       "short_name_ar": "جيبوتي",
       "title_keyword": "إجازات جيبوتي",
+      "name_en": "Djibouti",
+      "short_name_en": "Djibouti",
+      "title_keyword_en": "Djibouti Public Holidays",
       "weekend_days": ["Friday", "Saturday"]
     },
     {
@@ -138,6 +195,9 @@
       "name_ar": "جزر القمر",
       "short_name_ar": "جزر القمر",
       "title_keyword": "إجازات جزر القمر",
+      "name_en": "Comoros",
+      "short_name_en": "Comoros",
+      "title_keyword_en": "Comoros Public Holidays",
       "weekend_days": ["Saturday", "Sunday"]
     }
   ],
