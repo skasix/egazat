@@ -506,7 +506,7 @@ ${links}
 const generateRoutes = () => {
   const routes = [];
   const countries = Object.keys(countryNames);
-  const years = [2025, 2026, 2027, 2028];
+  const years = [2026, 2027, 2028];
   const languages = ['en', 'ar'];
   
   routes.push({ path: '/index.html', route: '/', lang: 'ar', title: 'العطل الرسمية العربية', description: 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية' });
