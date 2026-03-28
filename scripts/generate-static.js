@@ -511,6 +511,7 @@ const generateRoutes = () => {
   
   routes.push({ path: '/index.html', route: '/', lang: 'ar', title: 'العطل الرسمية العربية', description: 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية' });
   routes.push({ path: '/en.html', route: '/en', lang: 'en', title: 'Arabic Public Holidays', description: 'Complete Guide to Public Holidays in Arab Countries' });
+  routes.push({ path: '/sitemap.html', route: '/sitemap', lang: 'ar', isSitemap: true, title: 'خريطة الموقع - العطل الرسمية العربية', description: 'خريطة الموقع الكاملة لجميع صفحات العطل الرسمية في الدول العربية' });
   
   languages.forEach(lang => {
     countries.forEach(country => {
@@ -559,7 +560,9 @@ const generateHTML = async (route) => {
   let seoContent = '';
   let structuredDataScripts = '';
   
-  if (country && year) {
+  if (route.isSitemap) {
+    seoContent = generateSitemapPageHTML();
+  } else if (country && year) {
     const cn = countryNames[country];
     const countryName = lang === 'ar' ? cn.nameAr : cn.name;
     const holidays = holidaysDB[country]?.[year] || [];
