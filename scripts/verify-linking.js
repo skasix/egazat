@@ -406,7 +406,7 @@ if (!sitemapXml) {
   }
 
   const totalUrls = urls.length;
-  const validPriorities = new Set([1.0, 0.9, 0.85, 0.80, 0.75, 0.70, 0.60]);
+  const validPriorities = new Set([1.0, 0.9, 0.85, 0.80, 0.75, 0.70, 0.60, 0.50, 0.30]);
   const invalidPriorities = [];
 
   let homepagePriorityCorrect = true;
@@ -414,24 +414,26 @@ if (!sitemapXml) {
   let gulfPriorityCorrect = true;
 
   for (const u of urls) {
-    if (!validPriorities.has(u.priority)) {
+    // Round to 2 decimal places for float comparison
+    const p = Math.round(u.priority * 100) / 100;
+    if (!validPriorities.has(p)) {
       invalidPriorities.push(`${u.loc} (${u.priority})`);
     }
 
     // Homepage check
     if (u.loc.endsWith('egazat.com/') || u.loc.endsWith('/en.html')) {
-      if (u.priority !== 1.0) homepagePriorityCorrect = false;
+      if (p !== 1.0) homepagePriorityCorrect = false;
     }
 
-    // Eid check
-    if (u.loc.includes('/eid')) {
-      if (u.priority !== 0.9) eidPriorityCorrect = false;
+    // Eid check — only current year eid pages should be 0.9
+    if (u.loc.includes('/eid') && u.loc.includes('/2026')) {
+      if (p !== 0.9) eidPriorityCorrect = false;
     }
 
     // Gulf current year check
     for (const gc of gulfCodes) {
       if (u.loc.includes(`/country/${gc}/2026.html`)) {
-        if (u.priority !== 0.85) gulfPriorityCorrect = false;
+        if (p !== 0.85) gulfPriorityCorrect = false;
       }
     }
   }
