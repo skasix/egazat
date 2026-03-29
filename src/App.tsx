@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import Index from "./pages/Index";
 import { CountryPage } from "./pages/CountryPage";
+import { EidTracker } from "./pages/EidTracker";
 import { Sitemap } from "./pages/Sitemap";
 import NotFound from "./pages/NotFound";
 
@@ -29,6 +30,12 @@ const AppContent = () => {
             {/* Legacy routes for backward compatibility */}
             <Route path="/country/:countryCode/:year" element={<CountryPage />} />
             <Route path="/country/:countryCode/:year.html" element={<CountryPage />} />
+            
+            {/* Eid tracker routes */}
+            <Route path="/:lang/eid" element={<EidTracker />} />
+            <Route path="/:lang/eid.html" element={<EidTracker />} />
+            <Route path="/:lang/eid/:year" element={<EidTracker />} />
+            <Route path="/:lang/eid/:year.html" element={<EidTracker />} />
             
             {/* Sitemap routes */}
             <Route path="/sitemap" element={<Sitemap language="ar" />} />

@@ -100,7 +100,7 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
       {/* Hreflang Links */}
       <link rel="alternate" hrefLang="ar" href={hreflangUrls.ar} />
       <link rel="alternate" hrefLang="en" href={hreflangUrls.en} />
-      <link rel="alternate" hrefLang="x-default" href={hreflangUrls.ar} />
+      <link rel="alternate" hrefLang="x-default" href={hreflangUrls.en} />
       
       {/* Open Graph Tags */}
       <meta property="og:type" content="website" />

@@ -23,6 +23,30 @@ const sitemapPlugin = () => ({
     } catch (error) {
       console.error('❌ Failed to generate static pages:', error);
     }
+
+    console.log('🔨 Injecting meta tags...');
+    try {
+      execSync('node scripts/inject-meta.js', { stdio: 'inherit' });
+      console.log('✅ Meta tags injected');
+    } catch (error) {
+      console.error('❌ Failed to inject meta tags:', error);
+    }
+
+    console.log('🔨 Injecting hreflang tags...');
+    try {
+      execSync('node scripts/inject-hreflang.js', { stdio: 'inherit' });
+      console.log('✅ Hreflang tags injected');
+    } catch (error) {
+      console.error('❌ Failed to inject hreflang tags:', error);
+    }
+
+    console.log('🔨 Running canonical verification...');
+    try {
+      execSync('node scripts/canonical-verify.js', { stdio: 'inherit' });
+      console.log('✅ Canonical verification passed');
+    } catch (error) {
+      console.error('❌ Canonical verification failed:', error);
+    }
   }
 });
 

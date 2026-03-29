@@ -75,6 +75,20 @@ const Index = () => {
       
       <CountryQuickSelector language={language} year={selectedYear} />
       
+      {/* Eid Tracker Banner */}
+      <div className="container mx-auto px-4 pt-8">
+        <a
+          href={`/${language}/eid/2026.html`}
+          className="block bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-4 text-center hover:border-primary/40 transition-colors"
+        >
+          <span className={`text-lg font-semibold text-foreground ${language === 'ar' ? 'arabic-text' : ''}`}>
+            {language === 'ar'
+              ? '🌙 مواعيد عيد الفطر وعيد الأضحى 2026 — جميع الدول العربية'
+              : '🌙 Eid Al-Fitr & Eid Al-Adha 2026 Dates — All Arab Countries'}
+          </span>
+        </a>
+      </div>
+      
       <main className="container mx-auto px-4 py-12">
         <CountryCards language={language} year={selectedYear} />
       </main>

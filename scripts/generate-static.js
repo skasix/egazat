@@ -543,6 +543,132 @@ function generateSitemapPageHTML() {
 // Route Generation
 // ──────────────────────────────────────────────
 
+const generateEidPageHTML = (year, lang) => {
+  const isAr = lang === 'ar';
+  const countries = Object.entries(countryNames);
+
+  const findEid = (countryCode, eidType) => {
+    const holidays = holidaysDB[countryCode]?.[year] || [];
+    return holidays.find(h => h.name.toLowerCase().includes(eidType));
+  };
+
+  const buildTable = (eidType, title) => {
+    const rows = countries.map(([code, cn]) => {
+      const h = findEid(code, eidType);
+      if (!h) return '';
+      const d = new Date(h.date);
+      const dateStr = d.toLocaleDateString(isAr ? 'ar-SA' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      const dayStr = d.toLocaleDateString(isAr ? 'ar-SA' : 'en-US', { weekday: 'long' });
+      const name = isAr ? cn.nameAr : cn.name;
+      const duration = h.duration || 1;
+      return `<tr><td>${name}</td><td>${dateStr}</td><td>${duration} ${isAr ? 'أيام' : duration === 1 ? 'day' : 'days'}</td><td>${dayStr}</td><td>${isAr ? 'متوقع' : 'Expected'}</td></tr>`;
+    }).filter(Boolean).join('\n');
+
+    return `<section><h2>${title}</h2><table><thead><tr><th>${isAr ? 'الدولة' : 'Country'}</th><th>${isAr ? 'التاريخ' : 'Holiday Date'}</th><th>${isAr ? 'المدة' : 'Duration'}</th><th>${isAr ? 'اليوم' : 'Day of Week'}</th><th>${isAr ? 'الحالة' : 'Status'}</th></tr></thead><tbody>${rows}</tbody></table></section>`;
+  };
+
+  const fitrTable = buildTable('fitr', isAr ? `عيد الفطر ${year}` : `Eid Al-Fitr ${year}`);
+  const adhaTable = buildTable('adha', isAr ? `عيد الأضحى ${year}` : `Eid Al-Adha ${year}`);
+
+  const yearLinks = [2025, 2026, 2027, 2028].map(y =>
+    `<a href="${BASE_URL}/${lang}/eid/${y}.html">${y}</a>`
+  ).join(' | ');
+
+  const countryLinks = countries.map(([code, cn]) =>
+    `<li><a href="${BASE_URL}/${lang}/country/${code}/2026.html">${isAr ? cn.nameAr : cn.name}</a></li>`
+  ).join('\n');
+
+  return `
+    <article dir="${isAr ? 'rtl' : 'ltr'}" lang="${lang}">
+      <h1>${isAr ? `مواعيد عيد الفطر وعيد الأضحى ${year} في الدول العربية` : `Eid Al-Fitr & Eid Al-Adha ${year} Dates in Arab Countries`}</h1>
+      <p>${isAr
+        ? 'تُحدد مواعيد عيد الفطر وعيد الأضحى وفقاً للتقويم الهجري القمري. تعتمد التواريخ الدقيقة على رؤية الهلال، وقد تختلف بيوم واحد بين الدول.'
+        : 'Eid Al-Fitr and Eid Al-Adha dates are determined by the Islamic lunar calendar. Exact dates depend on moon sighting confirmation (hilal), and may differ by one day between countries.'}</p>
+      ${fitrTable}
+      ${adhaTable}
+      <nav>${yearLinks}</nav>
+      <section><h2>${isAr ? 'صفحات الدول' : 'Country Pages'}</h2><ul>${countryLinks}</ul></section>
+    </article>`;
+};
+
+// ──────────────────────────────────────────────
+// FAQPage Schema Builder
+// ──────────────────────────────────────────────
+
+function buildFAQSchema(countryCode, year, countryName, lang, holidays) {
+  const isAr = lang === 'ar';
+  const wkd = weekendDays[countryCode] || ['Friday', 'Saturday'];
+  const total = holidays.length;
+  const nationalCount = holidays.filter(h => h.type === 'national').length;
+  const religiousCount = holidays.filter(h => h.type === 'religious').length;
+
+  const eidFitr = holidays.find(h => h.name.toLowerCase().includes('fitr'));
+  const eidAdha = holidays.find(h => h.name.toLowerCase().includes('adha'));
+
+  const formatDate = (dateStr) => {
+    const d = new Date(dateStr);
+    if (isAr) return d.toLocaleDateString('ar-SA', { year: 'numeric', month: 'long', day: 'numeric' });
+    const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+  };
+
+  const faqs = [];
+
+  faqs.push({
+    '@type': 'Question',
+    name: isAr ? `كم عدد العطل الرسمية في ${countryName} ${year}؟` : `How many public holidays does ${countryName} have in ${year}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: isAr
+        ? `${countryName} لديها ${total} عطلة رسمية في ${year}، منها ${nationalCount} عطلة وطنية و${religiousCount} عطلة دينية.`
+        : `${countryName} has ${total} public holidays in ${year}, including ${nationalCount} national holidays and ${religiousCount} religious holidays.`
+    }
+  });
+
+  if (eidFitr) {
+    faqs.push({
+      '@type': 'Question',
+      name: isAr ? `متى عيد الفطر ${year} في ${countryName}؟` : `When is Eid Al-Fitr ${year} in ${countryName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: isAr
+          ? `عيد الفطر ${year} في ${countryName} متوقع في ${formatDate(eidFitr.date)}. قد يتغير التاريخ بيوم واحد حسب رؤية الهلال.`
+          : `Eid Al-Fitr ${year} in ${countryName} is expected on ${formatDate(eidFitr.date)}. The date may shift by one day subject to moon sighting confirmation.`
+      }
+    });
+  }
+
+  if (eidAdha) {
+    faqs.push({
+      '@type': 'Question',
+      name: isAr ? `متى عيد الأضحى ${year} في ${countryName}؟` : `When is Eid Al-Adha ${year} in ${countryName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: isAr
+          ? `عيد الأضحى ${year} في ${countryName} متوقع في ${formatDate(eidAdha.date)}. قد يتغير التاريخ بيوم واحد حسب رؤية الهلال.`
+          : `Eid Al-Adha ${year} in ${countryName} is expected on ${formatDate(eidAdha.date)}. The date may shift by one day subject to moon sighting confirmation.`
+      }
+    });
+  }
+
+  faqs.push({
+    '@type': 'Question',
+    name: isAr ? `ما هي أيام عطلة نهاية الأسبوع في ${countryName}؟` : `What are the weekend days in ${countryName}?`,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: isAr
+        ? `أيام العطلة الأسبوعية الرسمية في ${countryName} هي ${wkd.join(' و ')}.`
+        : `The official weekend days in ${countryName} are ${wkd.join(' and ')}.`
+    }
+  });
+
+  return { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs };
+}
+
+// ──────────────────────────────────────────────
+// Route Generation
+// ──────────────────────────────────────────────
+
 const generateRoutes = () => {
   const routes = [];
   const countries = Object.keys(countryNames);
@@ -553,6 +679,33 @@ const generateRoutes = () => {
   routes.push({ path: '/en.html', route: '/en', lang: 'en', title: 'Arabic Public Holidays', description: 'Complete Guide to Public Holidays in Arab Countries' });
   routes.push({ path: '/sitemap.html', route: '/sitemap', lang: 'ar', isSitemap: true, title: 'خريطة الموقع - العطل الرسمية العربية', description: 'خريطة الموقع الكاملة لجميع صفحات العطل الرسمية في الدول العربية' });
   
+  // Eid tracker pages
+  languages.forEach(lang => {
+    const isAr = lang === 'ar';
+    // Main eid page (defaults to 2026)
+    routes.push({
+      path: `/${lang}/eid.html`,
+      route: `/${lang}/eid`,
+      lang, isEid: true, eidYear: 2026,
+      title: isAr ? 'مواعيد عيد الفطر وعيد الأضحى 2026 | إجازات' : 'Eid Al-Fitr & Eid Al-Adha 2026 Dates | Egazat',
+      description: isAr
+        ? 'مواعيد عيد الفطر وعيد الأضحى 2026 في السعودية والإمارات ومصر وجميع الدول العربية.'
+        : 'Eid Al-Fitr and Eid Al-Adha 2026 dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.'
+    });
+    // Per-year eid pages
+    years.forEach(year => {
+      routes.push({
+        path: `/${lang}/eid/${year}.html`,
+        route: `/${lang}/eid/${year}`,
+        lang, isEid: true, eidYear: year,
+        title: isAr ? `مواعيد عيد الفطر وعيد الأضحى ${year} | إجازات` : `Eid Al-Fitr & Eid Al-Adha ${year} Dates | Egazat`,
+        description: isAr
+          ? `مواعيد عيد الفطر وعيد الأضحى ${year} في السعودية والإمارات ومصر وجميع الدول العربية.`
+          : `Eid Al-Fitr and Eid Al-Adha ${year} dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.`
+      });
+    });
+  });
+
   languages.forEach(lang => {
     countries.forEach(country => {
       years.forEach(year => {
@@ -602,6 +755,15 @@ const generateHTML = async (route) => {
   
   if (route.isSitemap) {
     seoContent = generateSitemapPageHTML();
+  } else if (route.isEid) {
+    seoContent = generateEidPageHTML(route.eidYear, lang);
+    const websiteSchema = {
+      '@context': 'https://schema.org', '@type': 'WebPage',
+      name: route.title,
+      url: `${BASE_URL}${route.path}`,
+      inLanguage: lang
+    };
+    structuredDataScripts = `    <script type="application/ld+json">${JSON.stringify(websiteSchema)}</script>`;
   } else if (country && year) {
     const cn = countryNames[country];
     const countryName = lang === 'ar' ? cn.nameAr : cn.name;
@@ -609,10 +771,11 @@ const generateHTML = async (route) => {
     
     seoContent = generateHolidayTableHTML(holidays, lang, countryName, year, country);
     
-    // Build JSON-LD structured data
+    // Build JSON-LD structured data including FAQPage
     const schemas = [
       buildItemListSchema(holidays, country, year, countryName, lang),
       buildBreadcrumbSchema(country, year, countryName, lang),
+      buildFAQSchema(country, year, countryName, lang, holidays),
       ...holidays.map(h => buildEventSchema(h, country, countryName, lang))
     ];
     structuredDataScripts = schemas.map(s => `    <script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n');
@@ -627,8 +790,20 @@ const generateHTML = async (route) => {
   }
 
   const canonicalUrl = route.path === '/index.html' ? `${BASE_URL}/` : `${BASE_URL}${route.path}`;
-  const altArUrl = country && year ? `${BASE_URL}/ar/country/${country}/${year}.html` : `${BASE_URL}/`;
-  const altEnUrl = country && year ? `${BASE_URL}/en/country/${country}/${year}.html` : `${BASE_URL}/en.html`;
+  
+  // Compute hreflang alternate URLs
+  let altArUrl, altEnUrl;
+  if (route.isEid) {
+    const eidPath = route.eidYear ? `/eid/${route.eidYear}.html` : '/eid.html';
+    altArUrl = `${BASE_URL}/ar${eidPath}`;
+    altEnUrl = `${BASE_URL}/en${eidPath}`;
+  } else if (country && year) {
+    altArUrl = `${BASE_URL}/ar/country/${country}/${year}.html`;
+    altEnUrl = `${BASE_URL}/en/country/${country}/${year}.html`;
+  } else {
+    altArUrl = `${BASE_URL}/`;
+    altEnUrl = `${BASE_URL}/en.html`;
+  }
 
   let updatedHtml = baseHtml
     .replace(/<html[^>]*>/, `<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">`)
@@ -653,7 +828,7 @@ const generateHTML = async (route) => {
     <link rel="canonical" href="${canonicalUrl}" />
     <link rel="alternate" hreflang="ar" href="${altArUrl}" />
     <link rel="alternate" hreflang="en" href="${altEnUrl}" />
-    <link rel="alternate" hreflang="x-default" href="${altArUrl}" />
+    <link rel="alternate" hreflang="x-default" href="${altEnUrl}" />
 ${structuredDataScripts}
   `;
   updatedHtml = updatedHtml.slice(0, headClose) + seoHeadTags + updatedHtml.slice(headClose);

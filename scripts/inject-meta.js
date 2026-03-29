@@ -75,6 +75,24 @@ function generateTitle(countryCode, year, lang = 'ar') {
   return title;
 }
 
+function generateEidTitle(year, lang = 'ar') {
+  if (lang === 'en') {
+    let t = `Eid Al-Fitr & Eid Al-Adha ${year} Dates — All Arab Countries | Egazat`;
+    if (t.length > 60) t = `Eid Al-Fitr & Eid Al-Adha ${year} | Egazat`;
+    return t;
+  }
+  let t = `مواعيد عيد الفطر وعيد الأضحى ${year} — جميع الدول العربية | إجازات`;
+  if (t.length > 60) t = `مواعيد عيد الفطر وعيد الأضحى ${year} | إجازات`;
+  return t;
+}
+
+function generateEidDescription(year, lang = 'ar') {
+  if (lang === 'en') {
+    return `Eid Al-Fitr and Eid Al-Adha ${year} dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.`;
+  }
+  return `مواعيد عيد الفطر وعيد الأضحى ${year} في السعودية والإمارات ومصر وجميع الدول العربية. تواريخ رسمية ومتوقعة محدّثة.`;
+}
+
 // ──────────────────────────────────────────────
 // Next holiday lookup
 // ──────────────────────────────────────────────
@@ -230,6 +248,40 @@ async function injectMeta(filePath, countryCode, year, lang = 'ar') {
 }
 
 // ──────────────────────────────────────────────
+// Eid page meta injection
+// ──────────────────────────────────────────────
+
+async function injectEidMeta(filePath, year, lang) {
+  let html = await fs.readFile(filePath, 'utf8');
+
+  const title = generateEidTitle(year, lang);
+  const description = generateEidDescription(year, lang);
+  const canonicalUrl = `${BASE_URL}/${lang}/eid/${year}.html`;
+  const locale = lang === 'en' ? 'en_US' : 'ar_AR';
+  const siteName = lang === 'en' ? 'Egazat' : 'إجازات';
+
+  html = html.replace(/<title>.*?<\/title>/g, '');
+  html = html.replace('<head>', `<head>\n    <title>${escapeAttr(title)}</title>`);
+  html = replaceMeta(html, 'description', description);
+  html = replaceProperty(html, 'og:title', title);
+  html = replaceProperty(html, 'og:description', description);
+  html = replaceProperty(html, 'og:type', 'website');
+  html = replaceProperty(html, 'og:url', canonicalUrl);
+  html = replaceProperty(html, 'og:locale', locale);
+  html = replaceProperty(html, 'og:site_name', siteName);
+  html = replaceMeta(html, 'twitter:card', 'summary');
+  html = replaceMeta(html, 'twitter:title', title);
+  html = replaceMeta(html, 'twitter:description', description);
+
+  const expectedLang = lang === 'en' ? 'en' : 'ar';
+  const expectedDir = lang === 'en' ? 'ltr' : 'rtl';
+  html = html.replace(/<html[^>]*>/, `<html lang="${expectedLang}" dir="${expectedDir}">`);
+
+  await fs.writeFile(filePath, html, 'utf8');
+  return { status: 'PASS', title, descLength: description.length };
+}
+
+// ──────────────────────────────────────────────
 // Main
 // ──────────────────────────────────────────────
 
@@ -266,6 +318,26 @@ async function main() {
     }
   }
 
+  // Helper to process Eid pages
+  async function processEidFile(relPath, year, lang) {
+    const filePath = path.join(distDir, relPath);
+    try {
+      await fs.access(filePath);
+    } catch {
+      auditLines.push(`[SKIP] /${relPath} | FILE_NOT_FOUND`);
+      skipped++;
+      return;
+    }
+    try {
+      const result = await injectEidMeta(filePath, year, lang);
+      auditLines.push(`[${result.status}] /${relPath} | TITLE: ${result.title} | DESC_LENGTH: ${result.descLength} | OG: present | LANG_DIR: present`);
+      updated++;
+    } catch (e) {
+      auditLines.push(`[FAIL] /${relPath} | ERROR: ${e.message}`);
+      errors++;
+    }
+  }
+
   // Arabic homepage
   await processFile('index.html', null, null, 'ar');
 
@@ -274,6 +346,14 @@ async function main() {
 
   const countries = countriesData.countries;
   const years = countriesData.years;
+
+  // Eid tracker pages
+  for (const lang of ['ar', 'en']) {
+    await processEidFile(`${lang}/eid.html`, 2026, lang);
+    for (const year of years) {
+      await processEidFile(`${lang}/eid/${year}.html`, year, lang);
+    }
+  }
 
   for (const country of countries) {
     for (const year of years) {
