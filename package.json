@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-sitemap.js && vite build && node scripts/generate-static.js && node scripts/inject-meta.js && node scripts/canonical-verify.js && node scripts/canonical-audit.js && node scripts/verify-linking.js && node scripts/verify-editorial.js",
+    "build": "node scripts/generate-sitemap.js && vite build && node scripts/generate-static.js && node scripts/inject-meta.js && node scripts/canonical-verify.js && node scripts/canonical-audit.js && node scripts/verify-linking.js && node scripts/verify-editorial.js && node scripts/verify-seo.js",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"
