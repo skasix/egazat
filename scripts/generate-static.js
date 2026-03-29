@@ -755,6 +755,15 @@ const generateHTML = async (route) => {
   
   if (route.isSitemap) {
     seoContent = generateSitemapPageHTML();
+  } else if (route.isEid) {
+    seoContent = generateEidPageHTML(route.eidYear, lang);
+    const websiteSchema = {
+      '@context': 'https://schema.org', '@type': 'WebPage',
+      name: route.title,
+      url: `${BASE_URL}${route.path}`,
+      inLanguage: lang
+    };
+    structuredDataScripts = `    <script type="application/ld+json">${JSON.stringify(websiteSchema)}</script>`;
   } else if (country && year) {
     const cn = countryNames[country];
     const countryName = lang === 'ar' ? cn.nameAr : cn.name;
@@ -762,10 +771,11 @@ const generateHTML = async (route) => {
     
     seoContent = generateHolidayTableHTML(holidays, lang, countryName, year, country);
     
-    // Build JSON-LD structured data
+    // Build JSON-LD structured data including FAQPage
     const schemas = [
       buildItemListSchema(holidays, country, year, countryName, lang),
       buildBreadcrumbSchema(country, year, countryName, lang),
+      buildFAQSchema(country, year, countryName, lang, holidays),
       ...holidays.map(h => buildEventSchema(h, country, countryName, lang))
     ];
     structuredDataScripts = schemas.map(s => `    <script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n');
