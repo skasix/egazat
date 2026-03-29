@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import countriesData from '@/data/countries.json';
+import { ClusterNavBar } from '@/components/ClusterNavBar';
 
 interface Holiday {
   name: string;
@@ -10,6 +10,8 @@ interface Holiday {
   duration?: number;
   description_ar?: string;
   description_en?: string;
+  name_en?: string;
+  is_lunar?: boolean;
 }
 
 interface CountryData {
@@ -27,7 +29,6 @@ interface CountryData {
     items_ar: string[];
     items_en: string[];
   };
-  related_countries?: string[];
 }
 
 interface CountryEditorialContentProps {
@@ -77,15 +78,6 @@ const styles = {
     padding: '0.75rem',
     background: '#fafafa',
     borderRadius: '4px',
-  } as React.CSSProperties,
-  pill: {
-    display: 'inline-block',
-    background: '#f0f4ff',
-    borderRadius: '20px',
-    padding: '0.3rem 0.9rem',
-    margin: '0.25rem',
-    textDecoration: 'none',
-    color: '#2c5282',
   } as React.CSSProperties,
   badgeNational: {
     display: 'inline-block',
@@ -164,6 +156,12 @@ const getDayOfWeek = (dateStr: string, language: string): string => {
   return d.toLocaleDateString(language === 'ar' ? 'ar-SA' : 'en-GB', { weekday: 'long' });
 };
 
+// Check if a holiday is an Eid holiday that should get a contextual link
+const isEidHoliday = (holiday: Holiday): boolean => {
+  const nameEn = (holiday.name_en || holiday.name || '').toLowerCase();
+  return nameEn.includes('eid') && holiday.type === 'religious';
+};
+
 export const CountryEditorialContent = ({ country, year, holidays, language }: CountryEditorialContentProps) => {
   const isAr = language === 'ar';
 
@@ -179,16 +177,6 @@ export const CountryEditorialContent = ({ country, year, holidays, language }: C
     const next = upcoming[0] || null;
     return { total, national, religious, cultural, next };
   }, [holidays]);
-
-  const relatedCountries = useMemo(() => {
-    if (!country.related_countries) return [];
-    return country.related_countries
-      .map(code => {
-        const c = countriesData.countries.find((cd: any) => cd.code === code);
-        return c ? { code: c.code, name_ar: c.short_name_ar, name_en: c.short_name_en } : null;
-      })
-      .filter(Boolean) as Array<{ code: string; name_ar: string; name_en: string }>;
-  }, [country.related_countries]);
 
   const weekendText = isAr
     ? country.weekend_days.map(d => {
@@ -289,7 +277,7 @@ export const CountryEditorialContent = ({ country, year, holidays, language }: C
         </section>
       )}
 
-      {/* SECTION D — Individual Holiday Descriptions */}
+      {/* SECTION D — Individual Holiday Descriptions (with Eid contextual links) */}
       <section style={styles.section}>
         <details style={styles.details}>
           <summary style={styles.summary}>
@@ -304,6 +292,8 @@ export const CountryEditorialContent = ({ country, year, holidays, language }: C
             const durationText = isAr
               ? `${duration} ${duration === 1 ? 'يوم' : 'أيام'}`
               : `${duration} ${duration === 1 ? 'day' : 'days'}`;
+
+            const showEidLink = isEidHoliday(holiday);
 
             return (
               <div key={i} style={styles.holidayCard}>
@@ -330,6 +320,20 @@ export const CountryEditorialContent = ({ country, year, holidays, language }: C
                     className={isP ? 'placeholder-content' : undefined}
                   >
                     {desc}
+                    {showEidLink && (
+                      <>
+                        {' '}
+                        {isAr ? (
+                          <>
+                            راجع <a href={`/ar/eid/${year}.html`} style={{ color: '#2c5282', textDecoration: 'underline' }}>صفحة مواعيد العيد لجميع الدول العربية</a> للاطلاع على تواريخ العيد في سائر الدول.
+                          </>
+                        ) : (
+                          <>
+                            See our <a href={`/en/eid/${year}.html`} style={{ color: '#2c5282', textDecoration: 'underline' }}>Eid dates for all Arab countries</a> for dates across the region.
+                          </>
+                        )}
+                      </>
+                    )}
                   </p>
                 )}
               </div>
@@ -338,27 +342,12 @@ export const CountryEditorialContent = ({ country, year, holidays, language }: C
         </details>
       </section>
 
-      {/* SECTION E — Related Countries */}
-      {relatedCountries.length > 0 && (
-        <section style={styles.section}>
-          <h3 style={{ fontWeight: 700, fontSize: '1.25rem', marginBottom: '0.75rem' }}>
-            {isAr ? 'عطل الدول المجاورة' : 'Holidays in Neighboring Countries'}
-          </h3>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.25rem' }}>
-            {relatedCountries.map(rc => (
-              <Link
-                key={rc.code}
-                to={`/${language}/country/${rc.code}/${year}.html`}
-                style={styles.pill}
-                onMouseEnter={e => { (e.target as HTMLElement).style.background = '#dbeafe'; }}
-                onMouseLeave={e => { (e.target as HTMLElement).style.background = '#f0f4ff'; }}
-              >
-                {isAr ? `عطل ${rc.name_ar} ${year}` : `${rc.name_en} Holidays ${year}`}
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
+      {/* LAYER 1 — Cluster Navigation (replaces old Section E) */}
+      <ClusterNavBar
+        currentCode={country.code}
+        year={year}
+        language={language}
+      />
     </div>
   );
 };
