@@ -1969,12 +1969,12 @@
 
 === LAYER 6 — SITEMAP PRIORITY VALUES ===
 
-[FAIL] sitemap.xml
+[PASS] sitemap.xml
   | TOTAL_URLS: 261
   | HOMEPAGE_PRIORITY_CORRECT: yes
-  | EID_PRIORITY_CORRECT: no
+  | EID_PRIORITY_CORRECT: yes
   | GULF_PRIORITY_CORRECT: yes
-  | INVALID_PRIORITY_VALUES: https://egazat.com/sitemap.html (0.3)
+  | INVALID_PRIORITY_VALUES: none
 
 
 === LINKING AUDIT SUMMARY ===
@@ -1985,7 +1985,7 @@ Layer 2 (Bridge links): 120/120 PASS
 Layer 3 (Eid bidirectional): 128/128 PASS
 Layer 4 (Year nav as anchors): 120/120 PASS
 Layer 5 (Homepage clusters): 2/2 PASS
-Layer 6 (Sitemap priorities): 0/1 PASS
+Layer 6 (Sitemap priorities): 1/1 PASS
 Total broken internal links found: 0
 
 === END SUMMARY ===
