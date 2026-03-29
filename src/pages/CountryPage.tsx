@@ -10,6 +10,8 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowLeft, CalendarDays } from 'lucide-react';
 import { generateCountryUrl, generateHomeUrl, getCountryMetadata } from '@/utils/seoRoutes';
 import { SEOHead } from '@/components/SEOHead';
+import { CountryEditorialContent } from '@/components/CountryEditorialContent';
+import countriesJsonData from '@/data/countries.json';
 
 // Import flag images
 import saFlag from '@/assets/flags/sa.png';
@@ -1110,6 +1112,20 @@ export const CountryPage = () => {
             </div>
           </div>
         </section>
+
+        {/* Editorial Content */}
+        {(() => {
+          const countryJson = countriesJsonData.countries.find((c: any) => c.code === selectedCountry);
+          if (!countryJson) return null;
+          return (
+            <CountryEditorialContent
+              country={countryJson as any}
+              year={selectedYear}
+              holidays={holidays}
+              language={language}
+            />
+          );
+        })()}
       </main>
     </div>
   );

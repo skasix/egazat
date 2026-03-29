@@ -8,7 +8,36 @@
       "name_en": "United Arab Emirates",
       "short_name_en": "UAE",
       "title_keyword_en": "UAE Public Holidays",
-      "weekend_days": ["Saturday", "Sunday"]
+      "weekend_days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_AE",
+        "about_en": "PLACEHOLDER_ABOUT_EN_AE"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_AE",
+          "PLACEHOLDER_PRACTICAL_AR_2_AE",
+          "PLACEHOLDER_PRACTICAL_AR_3_AE",
+          "PLACEHOLDER_PRACTICAL_AR_4_AE"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_AE",
+          "PLACEHOLDER_PRACTICAL_EN_2_AE",
+          "PLACEHOLDER_PRACTICAL_EN_3_AE",
+          "PLACEHOLDER_PRACTICAL_EN_4_AE"
+        ]
+      },
+      "related_countries": [
+        "sa",
+        "kw",
+        "qa",
+        "bh",
+        "om",
+        "jo"
+      ]
     },
     {
       "code": "sa",
@@ -18,7 +47,36 @@
       "name_en": "Saudi Arabia",
       "short_name_en": "Saudi Arabia",
       "title_keyword_en": "Saudi Arabia Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_SA",
+        "about_en": "PLACEHOLDER_ABOUT_EN_SA"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_SA",
+          "PLACEHOLDER_PRACTICAL_AR_2_SA",
+          "PLACEHOLDER_PRACTICAL_AR_3_SA",
+          "PLACEHOLDER_PRACTICAL_AR_4_SA"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_SA",
+          "PLACEHOLDER_PRACTICAL_EN_2_SA",
+          "PLACEHOLDER_PRACTICAL_EN_3_SA",
+          "PLACEHOLDER_PRACTICAL_EN_4_SA"
+        ]
+      },
+      "related_countries": [
+        "ae",
+        "kw",
+        "qa",
+        "bh",
+        "om",
+        "jo"
+      ]
     },
     {
       "code": "eg",
@@ -28,7 +86,36 @@
       "name_en": "Egypt",
       "short_name_en": "Egypt",
       "title_keyword_en": "Egypt Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_EG",
+        "about_en": "PLACEHOLDER_ABOUT_EN_EG"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_EG",
+          "PLACEHOLDER_PRACTICAL_AR_2_EG",
+          "PLACEHOLDER_PRACTICAL_AR_3_EG",
+          "PLACEHOLDER_PRACTICAL_AR_4_EG"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_EG",
+          "PLACEHOLDER_PRACTICAL_EN_2_EG",
+          "PLACEHOLDER_PRACTICAL_EN_3_EG",
+          "PLACEHOLDER_PRACTICAL_EN_4_EG"
+        ]
+      },
+      "related_countries": [
+        "jo",
+        "lb",
+        "sa",
+        "ma",
+        "tn",
+        "ly"
+      ]
     },
     {
       "code": "jo",
@@ -38,7 +125,36 @@
       "name_en": "Jordan",
       "short_name_en": "Jordan",
       "title_keyword_en": "Jordan Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_JO",
+        "about_en": "PLACEHOLDER_ABOUT_EN_JO"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_JO",
+          "PLACEHOLDER_PRACTICAL_AR_2_JO",
+          "PLACEHOLDER_PRACTICAL_AR_3_JO",
+          "PLACEHOLDER_PRACTICAL_AR_4_JO"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_JO",
+          "PLACEHOLDER_PRACTICAL_EN_2_JO",
+          "PLACEHOLDER_PRACTICAL_EN_3_JO",
+          "PLACEHOLDER_PRACTICAL_EN_4_JO"
+        ]
+      },
+      "related_countries": [
+        "eg",
+        "lb",
+        "sy",
+        "iq",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "lb",
@@ -48,7 +164,36 @@
       "name_en": "Lebanon",
       "short_name_en": "Lebanon",
       "title_keyword_en": "Lebanon Public Holidays",
-      "weekend_days": ["Saturday", "Sunday"]
+      "weekend_days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_LB",
+        "about_en": "PLACEHOLDER_ABOUT_EN_LB"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_LB",
+          "PLACEHOLDER_PRACTICAL_AR_2_LB",
+          "PLACEHOLDER_PRACTICAL_AR_3_LB",
+          "PLACEHOLDER_PRACTICAL_AR_4_LB"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_LB",
+          "PLACEHOLDER_PRACTICAL_EN_2_LB",
+          "PLACEHOLDER_PRACTICAL_EN_3_LB",
+          "PLACEHOLDER_PRACTICAL_EN_4_LB"
+        ]
+      },
+      "related_countries": [
+        "jo",
+        "sy",
+        "eg",
+        "iq",
+        "ae",
+        "sa"
+      ]
     },
     {
       "code": "sy",
@@ -58,7 +203,36 @@
       "name_en": "Syria",
       "short_name_en": "Syria",
       "title_keyword_en": "Syria Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_SY",
+        "about_en": "PLACEHOLDER_ABOUT_EN_SY"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_SY",
+          "PLACEHOLDER_PRACTICAL_AR_2_SY",
+          "PLACEHOLDER_PRACTICAL_AR_3_SY",
+          "PLACEHOLDER_PRACTICAL_AR_4_SY"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_SY",
+          "PLACEHOLDER_PRACTICAL_EN_2_SY",
+          "PLACEHOLDER_PRACTICAL_EN_3_SY",
+          "PLACEHOLDER_PRACTICAL_EN_4_SY"
+        ]
+      },
+      "related_countries": [
+        "jo",
+        "lb",
+        "iq",
+        "eg",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "iq",
@@ -68,7 +242,36 @@
       "name_en": "Iraq",
       "short_name_en": "Iraq",
       "title_keyword_en": "Iraq Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_IQ",
+        "about_en": "PLACEHOLDER_ABOUT_EN_IQ"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_IQ",
+          "PLACEHOLDER_PRACTICAL_AR_2_IQ",
+          "PLACEHOLDER_PRACTICAL_AR_3_IQ",
+          "PLACEHOLDER_PRACTICAL_AR_4_IQ"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_IQ",
+          "PLACEHOLDER_PRACTICAL_EN_2_IQ",
+          "PLACEHOLDER_PRACTICAL_EN_3_IQ",
+          "PLACEHOLDER_PRACTICAL_EN_4_IQ"
+        ]
+      },
+      "related_countries": [
+        "kw",
+        "jo",
+        "sy",
+        "sa",
+        "ae",
+        "bh"
+      ]
     },
     {
       "code": "kw",
@@ -78,7 +281,36 @@
       "name_en": "Kuwait",
       "short_name_en": "Kuwait",
       "title_keyword_en": "Kuwait Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_KW",
+        "about_en": "PLACEHOLDER_ABOUT_EN_KW"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_KW",
+          "PLACEHOLDER_PRACTICAL_AR_2_KW",
+          "PLACEHOLDER_PRACTICAL_AR_3_KW",
+          "PLACEHOLDER_PRACTICAL_AR_4_KW"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_KW",
+          "PLACEHOLDER_PRACTICAL_EN_2_KW",
+          "PLACEHOLDER_PRACTICAL_EN_3_KW",
+          "PLACEHOLDER_PRACTICAL_EN_4_KW"
+        ]
+      },
+      "related_countries": [
+        "sa",
+        "ae",
+        "qa",
+        "bh",
+        "om",
+        "iq"
+      ]
     },
     {
       "code": "qa",
@@ -88,7 +320,36 @@
       "name_en": "Qatar",
       "short_name_en": "Qatar",
       "title_keyword_en": "Qatar Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_QA",
+        "about_en": "PLACEHOLDER_ABOUT_EN_QA"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_QA",
+          "PLACEHOLDER_PRACTICAL_AR_2_QA",
+          "PLACEHOLDER_PRACTICAL_AR_3_QA",
+          "PLACEHOLDER_PRACTICAL_AR_4_QA"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_QA",
+          "PLACEHOLDER_PRACTICAL_EN_2_QA",
+          "PLACEHOLDER_PRACTICAL_EN_3_QA",
+          "PLACEHOLDER_PRACTICAL_EN_4_QA"
+        ]
+      },
+      "related_countries": [
+        "ae",
+        "sa",
+        "kw",
+        "bh",
+        "om",
+        "jo"
+      ]
     },
     {
       "code": "bh",
@@ -98,7 +359,36 @@
       "name_en": "Bahrain",
       "short_name_en": "Bahrain",
       "title_keyword_en": "Bahrain Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_BH",
+        "about_en": "PLACEHOLDER_ABOUT_EN_BH"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_BH",
+          "PLACEHOLDER_PRACTICAL_AR_2_BH",
+          "PLACEHOLDER_PRACTICAL_AR_3_BH",
+          "PLACEHOLDER_PRACTICAL_AR_4_BH"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_BH",
+          "PLACEHOLDER_PRACTICAL_EN_2_BH",
+          "PLACEHOLDER_PRACTICAL_EN_3_BH",
+          "PLACEHOLDER_PRACTICAL_EN_4_BH"
+        ]
+      },
+      "related_countries": [
+        "sa",
+        "ae",
+        "kw",
+        "qa",
+        "om",
+        "jo"
+      ]
     },
     {
       "code": "om",
@@ -108,7 +398,36 @@
       "name_en": "Oman",
       "short_name_en": "Oman",
       "title_keyword_en": "Oman Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_OM",
+        "about_en": "PLACEHOLDER_ABOUT_EN_OM"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_OM",
+          "PLACEHOLDER_PRACTICAL_AR_2_OM",
+          "PLACEHOLDER_PRACTICAL_AR_3_OM",
+          "PLACEHOLDER_PRACTICAL_AR_4_OM"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_OM",
+          "PLACEHOLDER_PRACTICAL_EN_2_OM",
+          "PLACEHOLDER_PRACTICAL_EN_3_OM",
+          "PLACEHOLDER_PRACTICAL_EN_4_OM"
+        ]
+      },
+      "related_countries": [
+        "ae",
+        "sa",
+        "kw",
+        "qa",
+        "bh",
+        "ye"
+      ]
     },
     {
       "code": "ye",
@@ -118,7 +437,36 @@
       "name_en": "Yemen",
       "short_name_en": "Yemen",
       "title_keyword_en": "Yemen Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_YE",
+        "about_en": "PLACEHOLDER_ABOUT_EN_YE"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_YE",
+          "PLACEHOLDER_PRACTICAL_AR_2_YE",
+          "PLACEHOLDER_PRACTICAL_AR_3_YE",
+          "PLACEHOLDER_PRACTICAL_AR_4_YE"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_YE",
+          "PLACEHOLDER_PRACTICAL_EN_2_YE",
+          "PLACEHOLDER_PRACTICAL_EN_3_YE",
+          "PLACEHOLDER_PRACTICAL_EN_4_YE"
+        ]
+      },
+      "related_countries": [
+        "om",
+        "sa",
+        "dj",
+        "so",
+        "ae",
+        "eg"
+      ]
     },
     {
       "code": "ma",
@@ -128,7 +476,36 @@
       "name_en": "Morocco",
       "short_name_en": "Morocco",
       "title_keyword_en": "Morocco Public Holidays",
-      "weekend_days": ["Saturday", "Sunday"]
+      "weekend_days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_MA",
+        "about_en": "PLACEHOLDER_ABOUT_EN_MA"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_MA",
+          "PLACEHOLDER_PRACTICAL_AR_2_MA",
+          "PLACEHOLDER_PRACTICAL_AR_3_MA",
+          "PLACEHOLDER_PRACTICAL_AR_4_MA"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_MA",
+          "PLACEHOLDER_PRACTICAL_EN_2_MA",
+          "PLACEHOLDER_PRACTICAL_EN_3_MA",
+          "PLACEHOLDER_PRACTICAL_EN_4_MA"
+        ]
+      },
+      "related_countries": [
+        "tn",
+        "dz",
+        "ly",
+        "eg",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "tn",
@@ -138,7 +515,36 @@
       "name_en": "Tunisia",
       "short_name_en": "Tunisia",
       "title_keyword_en": "Tunisia Public Holidays",
-      "weekend_days": ["Saturday", "Sunday"]
+      "weekend_days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_TN",
+        "about_en": "PLACEHOLDER_ABOUT_EN_TN"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_TN",
+          "PLACEHOLDER_PRACTICAL_AR_2_TN",
+          "PLACEHOLDER_PRACTICAL_AR_3_TN",
+          "PLACEHOLDER_PRACTICAL_AR_4_TN"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_TN",
+          "PLACEHOLDER_PRACTICAL_EN_2_TN",
+          "PLACEHOLDER_PRACTICAL_EN_3_TN",
+          "PLACEHOLDER_PRACTICAL_EN_4_TN"
+        ]
+      },
+      "related_countries": [
+        "ma",
+        "dz",
+        "ly",
+        "eg",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "dz",
@@ -148,7 +554,36 @@
       "name_en": "Algeria",
       "short_name_en": "Algeria",
       "title_keyword_en": "Algeria Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_DZ",
+        "about_en": "PLACEHOLDER_ABOUT_EN_DZ"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_DZ",
+          "PLACEHOLDER_PRACTICAL_AR_2_DZ",
+          "PLACEHOLDER_PRACTICAL_AR_3_DZ",
+          "PLACEHOLDER_PRACTICAL_AR_4_DZ"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_DZ",
+          "PLACEHOLDER_PRACTICAL_EN_2_DZ",
+          "PLACEHOLDER_PRACTICAL_EN_3_DZ",
+          "PLACEHOLDER_PRACTICAL_EN_4_DZ"
+        ]
+      },
+      "related_countries": [
+        "ma",
+        "tn",
+        "ly",
+        "eg",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "ly",
@@ -158,7 +593,36 @@
       "name_en": "Libya",
       "short_name_en": "Libya",
       "title_keyword_en": "Libya Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_LY",
+        "about_en": "PLACEHOLDER_ABOUT_EN_LY"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_LY",
+          "PLACEHOLDER_PRACTICAL_AR_2_LY",
+          "PLACEHOLDER_PRACTICAL_AR_3_LY",
+          "PLACEHOLDER_PRACTICAL_AR_4_LY"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_LY",
+          "PLACEHOLDER_PRACTICAL_EN_2_LY",
+          "PLACEHOLDER_PRACTICAL_EN_3_LY",
+          "PLACEHOLDER_PRACTICAL_EN_4_LY"
+        ]
+      },
+      "related_countries": [
+        "tn",
+        "dz",
+        "eg",
+        "ma",
+        "sd",
+        "sa"
+      ]
     },
     {
       "code": "sd",
@@ -168,7 +632,36 @@
       "name_en": "Sudan",
       "short_name_en": "Sudan",
       "title_keyword_en": "Sudan Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_SD",
+        "about_en": "PLACEHOLDER_ABOUT_EN_SD"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_SD",
+          "PLACEHOLDER_PRACTICAL_AR_2_SD",
+          "PLACEHOLDER_PRACTICAL_AR_3_SD",
+          "PLACEHOLDER_PRACTICAL_AR_4_SD"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_SD",
+          "PLACEHOLDER_PRACTICAL_EN_2_SD",
+          "PLACEHOLDER_PRACTICAL_EN_3_SD",
+          "PLACEHOLDER_PRACTICAL_EN_4_SD"
+        ]
+      },
+      "related_countries": [
+        "eg",
+        "ly",
+        "so",
+        "dj",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "so",
@@ -178,7 +671,36 @@
       "name_en": "Somalia",
       "short_name_en": "Somalia",
       "title_keyword_en": "Somalia Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_SO",
+        "about_en": "PLACEHOLDER_ABOUT_EN_SO"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_SO",
+          "PLACEHOLDER_PRACTICAL_AR_2_SO",
+          "PLACEHOLDER_PRACTICAL_AR_3_SO",
+          "PLACEHOLDER_PRACTICAL_AR_4_SO"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_SO",
+          "PLACEHOLDER_PRACTICAL_EN_2_SO",
+          "PLACEHOLDER_PRACTICAL_EN_3_SO",
+          "PLACEHOLDER_PRACTICAL_EN_4_SO"
+        ]
+      },
+      "related_countries": [
+        "dj",
+        "ye",
+        "sd",
+        "eg",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "dj",
@@ -188,7 +710,36 @@
       "name_en": "Djibouti",
       "short_name_en": "Djibouti",
       "title_keyword_en": "Djibouti Public Holidays",
-      "weekend_days": ["Friday", "Saturday"]
+      "weekend_days": [
+        "Friday",
+        "Saturday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_DJ",
+        "about_en": "PLACEHOLDER_ABOUT_EN_DJ"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_DJ",
+          "PLACEHOLDER_PRACTICAL_AR_2_DJ",
+          "PLACEHOLDER_PRACTICAL_AR_3_DJ",
+          "PLACEHOLDER_PRACTICAL_AR_4_DJ"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_DJ",
+          "PLACEHOLDER_PRACTICAL_EN_2_DJ",
+          "PLACEHOLDER_PRACTICAL_EN_3_DJ",
+          "PLACEHOLDER_PRACTICAL_EN_4_DJ"
+        ]
+      },
+      "related_countries": [
+        "so",
+        "ye",
+        "sd",
+        "eg",
+        "sa",
+        "ae"
+      ]
     },
     {
       "code": "km",
@@ -198,8 +749,41 @@
       "name_en": "Comoros",
       "short_name_en": "Comoros",
       "title_keyword_en": "Comoros Public Holidays",
-      "weekend_days": ["Saturday", "Sunday"]
+      "weekend_days": [
+        "Saturday",
+        "Sunday"
+      ],
+      "editorial": {
+        "about_ar": "PLACEHOLDER_ABOUT_AR_KM",
+        "about_en": "PLACEHOLDER_ABOUT_EN_KM"
+      },
+      "practical": {
+        "items_ar": [
+          "PLACEHOLDER_PRACTICAL_AR_1_KM",
+          "PLACEHOLDER_PRACTICAL_AR_2_KM",
+          "PLACEHOLDER_PRACTICAL_AR_3_KM",
+          "PLACEHOLDER_PRACTICAL_AR_4_KM"
+        ],
+        "items_en": [
+          "PLACEHOLDER_PRACTICAL_EN_1_KM",
+          "PLACEHOLDER_PRACTICAL_EN_2_KM",
+          "PLACEHOLDER_PRACTICAL_EN_3_KM",
+          "PLACEHOLDER_PRACTICAL_EN_4_KM"
+        ]
+      },
+      "related_countries": [
+        "dj",
+        "so",
+        "ae",
+        "sa",
+        "eg",
+        "ma"
+      ]
     }
   ],
-  "years": [2026, 2027, 2028]
+  "years": [
+    2026,
+    2027,
+    2028
+  ]
 }
