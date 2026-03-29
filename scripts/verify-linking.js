@@ -380,13 +380,21 @@ summary.layer6.total = 1;
 if (!sitemapXml) {
   report.push('[FAIL] sitemap.xml | FILE NOT FOUND');
 } else {
-  // Parse all <url> entries
-  const urlRegex = /<url>\s*<loc>(.*?)<\/loc>[\s\S]*?<priority>(.*?)<\/priority>\s*<\/url>/g;
-  let match;
+  // Parse all <url> entries from all sitemap files
   const urls = [];
-  while ((match = urlRegex.exec(sitemapXml)) !== null) {
-    urls.push({ loc: match[1], priority: parseFloat(match[2]) });
-  }
+  
+  const parseSitemapUrls = (xml) => {
+    const blocks = xml.split('<url>').slice(1);
+    for (const block of blocks) {
+      const locMatch = block.match(/<loc>(.*?)<\/loc>/);
+      const prioMatch = block.match(/<priority>(.*?)<\/priority>/);
+      if (locMatch && prioMatch) {
+        urls.push({ loc: locMatch[1], priority: parseFloat(prioMatch[1]) });
+      }
+    }
+  };
+  
+  parseSitemapUrls(sitemapXml);
 
   // Also parse per-country sitemaps
   const sitemapFiles = await fs.readdir(DIST);
