@@ -6,7 +6,9 @@
         "date_ar": "٢٢ فبراير ٢٠٢٦",
         "name_ar": "يوم التأسيس السعودي",
         "name_en": "Saudi Founding Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_SAUDIFOUNDINGDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_SAUDIFOUNDINGDA"
       },
       {
         "date": "2026-03-20",
@@ -14,7 +16,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -22,21 +26,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-09-23",
         "date_ar": "٢٣ سبتمبر ٢٠٢٦",
         "name_ar": "اليوم الوطني السعودي",
         "name_en": "Saudi National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_SAUDINATIONALDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_SAUDINATIONALDA"
       }
     ],
     "2027": [
@@ -45,7 +55,9 @@
         "date_ar": "٢٢ فبراير ٢٠٢٧",
         "name_ar": "يوم التأسيس السعودي",
         "name_en": "Saudi Founding Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_SAUDIFOUNDINGDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_SAUDIFOUNDINGDA"
       },
       {
         "date": "2027-03-09",
@@ -53,7 +65,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -61,21 +75,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-09-23",
         "date_ar": "٢٣ سبتمبر ٢٠٢٧",
         "name_ar": "اليوم الوطني السعودي",
         "name_en": "Saudi National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_SAUDINATIONALDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_SAUDINATIONALDA"
       }
     ],
     "2028": [
@@ -84,7 +104,9 @@
         "date_ar": "٢٢ فبراير ٢٠٢٨",
         "name_ar": "يوم التأسيس السعودي",
         "name_en": "Saudi Founding Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_SAUDIFOUNDINGDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_SAUDIFOUNDINGDA"
       },
       {
         "date": "2028-02-26",
@@ -92,7 +114,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -100,21 +124,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-09-23",
         "date_ar": "٢٣ سبتمبر ٢٠٢٨",
         "name_ar": "اليوم الوطني السعودي",
         "name_en": "Saudi National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SA_SAUDINATIONALDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SA_SAUDINATIONALDA"
       }
     ]
   },
@@ -125,7 +155,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -133,7 +165,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -141,21 +175,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_EIDALADHA"
       },
       {
         "date": "2026-06-16",
         "date_ar": "١٦ يونيو ٢٠٢٦",
         "name_ar": "رأس السنة الهجرية",
         "name_en": "Islamic New Year",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_ISLAMICNEWYEAR",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_ISLAMICNEWYEAR"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-12-02",
@@ -163,7 +203,9 @@
         "name_ar": "اليوم الوطني الإماراتي",
         "name_en": "UAE National Day",
         "type": "national",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_UAENATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_UAENATIONALDAY"
       }
     ],
     "2027": [
@@ -172,7 +214,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -180,7 +224,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -188,21 +234,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_EIDALADHA"
       },
       {
         "date": "2027-06-06",
         "date_ar": "٦ يونيو ٢٠٢٧",
         "name_ar": "رأس السنة الهجرية",
         "name_en": "Islamic New Year",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_ISLAMICNEWYEAR",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_ISLAMICNEWYEAR"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-12-02",
@@ -210,7 +262,9 @@
         "name_ar": "اليوم الوطني الإماراتي",
         "name_en": "UAE National Day",
         "type": "national",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_UAENATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_UAENATIONALDAY"
       }
     ],
     "2028": [
@@ -219,7 +273,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -227,7 +283,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -235,21 +293,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_EIDALADHA"
       },
       {
         "date": "2028-05-25",
         "date_ar": "٢٥ مايو ٢٠٢٨",
         "name_ar": "رأس السنة الهجرية",
         "name_en": "Islamic New Year",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_ISLAMICNEWYEAR",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_ISLAMICNEWYEAR"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-12-02",
@@ -257,7 +321,9 @@
         "name_ar": "اليوم الوطني الإماراتي",
         "name_en": "UAE National Day",
         "type": "national",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_AE_UAENATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_AE_UAENATIONALDAY"
       }
     ]
   },
@@ -268,21 +334,27 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_NEWYEARSDAY"
       },
       {
         "date": "2026-01-07",
         "date_ar": "٧ يناير ٢٠٢٦",
         "name_ar": "عيد الميلاد المجيد",
         "name_en": "Coptic Christmas",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_COPTICCHRISTMAS",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_COPTICCHRISTMAS"
       },
       {
         "date": "2026-01-25",
         "date_ar": "٢٥ يناير ٢٠٢٦",
         "name_ar": "ثورة 25 يناير",
         "name_en": "25 January Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_JANUARYREVOLUTI",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_JANUARYREVOLUTI"
       },
       {
         "date": "2026-03-20",
@@ -290,21 +362,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_EIDALFITR"
       },
       {
         "date": "2026-04-25",
         "date_ar": "٢٥ أبريل ٢٠٢٦",
         "name_ar": "عيد تحرير سيناء",
         "name_en": "Sinai Liberation Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_SINAILIBERATION",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_SINAILIBERATION"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -312,21 +390,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_EIDALADHA"
       },
       {
         "date": "2026-07-23",
         "date_ar": "٢٣ يوليو ٢٠٢٦",
         "name_ar": "ثورة 23 يوليو",
         "name_en": "23 July Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_JULYREVOLUTIOND",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_JULYREVOLUTIOND"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -335,21 +419,27 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_NEWYEARSDAY"
       },
       {
         "date": "2027-01-07",
         "date_ar": "٧ يناير ٢٠٢٧",
         "name_ar": "عيد الميلاد المجيد",
         "name_en": "Coptic Christmas",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_COPTICCHRISTMAS",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_COPTICCHRISTMAS"
       },
       {
         "date": "2027-01-25",
         "date_ar": "٢٥ يناير ٢٠٢٧",
         "name_ar": "ثورة 25 يناير",
         "name_en": "25 January Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_JANUARYREVOLUTI",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_JANUARYREVOLUTI"
       },
       {
         "date": "2027-03-09",
@@ -357,21 +447,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_EIDALFITR"
       },
       {
         "date": "2027-04-25",
         "date_ar": "٢٥ أبريل ٢٠٢٧",
         "name_ar": "عيد تحرير سيناء",
         "name_en": "Sinai Liberation Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_SINAILIBERATION",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_SINAILIBERATION"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -379,21 +475,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_EIDALADHA"
       },
       {
         "date": "2027-07-23",
         "date_ar": "٢٣ يوليو ٢٠٢٧",
         "name_ar": "ثورة 23 يوليو",
         "name_en": "23 July Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_JULYREVOLUTIOND",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_JULYREVOLUTIOND"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -402,21 +504,27 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_NEWYEARSDAY"
       },
       {
         "date": "2028-01-07",
         "date_ar": "٧ يناير ٢٠٢٨",
         "name_ar": "عيد الميلاد المجيد",
         "name_en": "Coptic Christmas",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_COPTICCHRISTMAS",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_COPTICCHRISTMAS"
       },
       {
         "date": "2028-01-25",
         "date_ar": "٢٥ يناير ٢٠٢٨",
         "name_ar": "ثورة 25 يناير",
         "name_en": "25 January Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_JANUARYREVOLUTI",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_JANUARYREVOLUTI"
       },
       {
         "date": "2028-02-26",
@@ -424,21 +532,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_EIDALFITR"
       },
       {
         "date": "2028-04-25",
         "date_ar": "٢٥ أبريل ٢٠٢٨",
         "name_ar": "عيد تحرير سيناء",
         "name_en": "Sinai Liberation Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_SINAILIBERATION",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_SINAILIBERATION"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -446,21 +560,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_EIDALADHA"
       },
       {
         "date": "2028-07-23",
         "date_ar": "٢٣ يوليو ٢٠٢٨",
         "name_ar": "ثورة 23 يوليو",
         "name_en": "23 July Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_JULYREVOLUTIOND",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_JULYREVOLUTIOND"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_EG_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_EG_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -471,14 +591,18 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_NEWYEARSDAY"
       },
       {
         "date": "2026-01-30",
         "date_ar": "٣٠ يناير ٢٠٢٦",
         "name_ar": "عيد ميلاد الملك",
         "name_en": "King's Birthday",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_KINGSBIRTHDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_KINGSBIRTHDAY"
       },
       {
         "date": "2026-03-20",
@@ -486,28 +610,36 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_EIDALFITR"
       },
       {
         "date": "2026-03-22",
         "date_ar": "٢٢ مارس ٢٠٢٦",
         "name_ar": "يوم الجامعة العربية",
         "name_en": "Arab League Day",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_ARABLEAGUEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_ARABLEAGUEDAY"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_LABOURDAY"
       },
       {
         "date": "2026-05-25",
         "date_ar": "٢٥ مايو ٢٠٢٦",
         "name_ar": "يوم الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_INDEPENDENCEDAY"
       },
       {
         "date": "2026-05-26",
@@ -515,14 +647,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -531,14 +667,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_NEWYEARSDAY"
       },
       {
         "date": "2027-01-30",
         "date_ar": "٣٠ يناير ٢٠٢٧",
         "name_ar": "عيد ميلاد الملك",
         "name_en": "King's Birthday",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_KINGSBIRTHDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_KINGSBIRTHDAY"
       },
       {
         "date": "2027-03-09",
@@ -546,21 +686,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_EIDALFITR"
       },
       {
         "date": "2027-03-22",
         "date_ar": "٢٢ مارس ٢٠٢٧",
         "name_ar": "يوم الجامعة العربية",
         "name_en": "Arab League Day",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_ARABLEAGUEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_ARABLEAGUEDAY"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -568,21 +714,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_EIDALADHA"
       },
       {
         "date": "2027-05-25",
         "date_ar": "٢٥ مايو ٢٠٢٧",
         "name_ar": "يوم الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_INDEPENDENCEDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -591,14 +743,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_NEWYEARSDAY"
       },
       {
         "date": "2028-01-30",
         "date_ar": "٣٠ يناير ٢٠٢٨",
         "name_ar": "عيد ميلاد الملك",
         "name_en": "King's Birthday",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_KINGSBIRTHDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_KINGSBIRTHDAY"
       },
       {
         "date": "2028-02-26",
@@ -606,21 +762,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_EIDALFITR"
       },
       {
         "date": "2028-03-22",
         "date_ar": "٢٢ مارس ٢٠٢٨",
         "name_ar": "يوم الجامعة العربية",
         "name_en": "Arab League Day",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_ARABLEAGUEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_ARABLEAGUEDAY"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -628,21 +790,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_EIDALADHA"
       },
       {
         "date": "2028-05-25",
         "date_ar": "٢٥ مايو ٢٠٢٨",
         "name_ar": "يوم الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_INDEPENDENCEDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_JO_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_JO_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -653,21 +821,27 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_NEWYEARSDAY"
       },
       {
         "date": "2026-02-25",
         "date_ar": "٢٥ فبراير ٢٠٢٦",
         "name_ar": "اليوم الوطني",
         "name_en": "National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_NATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_NATIONALDAY"
       },
       {
         "date": "2026-02-26",
         "date_ar": "٢٦ فبراير ٢٠٢٦",
         "name_ar": "يوم التحرير",
         "name_en": "Liberation Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_LIBERATIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_LIBERATIONDAY"
       },
       {
         "date": "2026-03-20",
@@ -675,7 +849,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -683,14 +859,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -699,21 +879,27 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_NEWYEARSDAY"
       },
       {
         "date": "2027-02-25",
         "date_ar": "٢٥ فبراير ٢٠٢٧",
         "name_ar": "اليوم الوطني",
         "name_en": "National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_NATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_NATIONALDAY"
       },
       {
         "date": "2027-02-26",
         "date_ar": "٢٦ فبراير ٢٠٢٧",
         "name_ar": "يوم التحرير",
         "name_en": "Liberation Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_LIBERATIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_LIBERATIONDAY"
       },
       {
         "date": "2027-03-09",
@@ -721,7 +907,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -729,14 +917,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -745,21 +937,27 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_NEWYEARSDAY"
       },
       {
         "date": "2028-02-25",
         "date_ar": "٢٥ فبراير ٢٠٢٨",
         "name_ar": "اليوم الوطني",
         "name_en": "National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_NATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_NATIONALDAY"
       },
       {
         "date": "2028-02-26",
         "date_ar": "٢٦ فبراير ٢٠٢٨",
         "name_ar": "يوم التحرير",
         "name_en": "Liberation Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_LIBERATIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_LIBERATIONDAY"
       },
       {
         "date": "2028-02-26",
@@ -767,7 +965,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -775,14 +975,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_KW_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_KW_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -793,7 +997,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -801,7 +1007,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -809,21 +1017,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-12-18",
         "date_ar": "١٨ ديسمبر ٢٠٢٦",
         "name_ar": "اليوم الوطني القطري",
         "name_en": "Qatar National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_QATARNATIONALDA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_QATARNATIONALDA"
       }
     ],
     "2027": [
@@ -832,7 +1046,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -840,7 +1056,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -848,21 +1066,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-12-18",
         "date_ar": "١٨ ديسمبر ٢٠٢٧",
         "name_ar": "اليوم الوطني القطري",
         "name_en": "Qatar National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_QATARNATIONALDA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_QATARNATIONALDA"
       }
     ],
     "2028": [
@@ -871,7 +1095,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -879,7 +1105,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -887,21 +1115,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-12-18",
         "date_ar": "١٨ ديسمبر ٢٠٢٨",
         "name_ar": "اليوم الوطني القطري",
         "name_en": "Qatar National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_QA_QATARNATIONALDA",
+        "description_en": "PLACEHOLDER_DESC_EN_QA_QATARNATIONALDA"
       }
     ]
   },
@@ -912,7 +1146,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -920,7 +1156,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -928,14 +1166,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-12-16",
@@ -943,7 +1185,9 @@
         "name_ar": "اليوم الوطني البحريني",
         "name_en": "Bahrain National Day",
         "type": "national",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_BAHRAINNATIONAL",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_BAHRAINNATIONAL"
       }
     ],
     "2027": [
@@ -952,7 +1196,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -960,7 +1206,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -968,14 +1216,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-12-16",
@@ -983,7 +1235,9 @@
         "name_ar": "اليوم الوطني البحريني",
         "name_en": "Bahrain National Day",
         "type": "national",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_BAHRAINNATIONAL",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_BAHRAINNATIONAL"
       }
     ],
     "2028": [
@@ -992,7 +1246,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -1000,7 +1256,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -1008,14 +1266,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-12-16",
@@ -1023,7 +1285,9 @@
         "name_ar": "اليوم الوطني البحريني",
         "name_en": "Bahrain National Day",
         "type": "national",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_BH_BAHRAINNATIONAL",
+        "description_en": "PLACEHOLDER_DESC_EN_BH_BAHRAINNATIONAL"
       }
     ]
   },
@@ -1034,7 +1298,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -1042,7 +1308,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -1050,28 +1318,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-11-18",
         "date_ar": "١٨ نوفمبر ٢٠٢٦",
         "name_ar": "عيد ميلاد السلطان",
         "name_en": "Sultan's Birthday",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_SULTANSBIRTHDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_SULTANSBIRTHDAY"
       },
       {
         "date": "2026-11-19",
         "date_ar": "١٩ نوفمبر ٢٠٢٦",
         "name_ar": "اليوم الوطني العماني",
         "name_en": "Oman National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_OMANNATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_OMANNATIONALDAY"
       }
     ],
     "2027": [
@@ -1080,7 +1356,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -1088,7 +1366,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -1096,28 +1376,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-11-18",
         "date_ar": "١٨ نوفمبر ٢٠٢٧",
         "name_ar": "عيد ميلاد السلطان",
         "name_en": "Sultan's Birthday",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_SULTANSBIRTHDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_SULTANSBIRTHDAY"
       },
       {
         "date": "2027-11-19",
         "date_ar": "١٩ نوفمبر ٢٠٢٧",
         "name_ar": "اليوم الوطني العماني",
         "name_en": "Oman National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_OMANNATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_OMANNATIONALDAY"
       }
     ],
     "2028": [
@@ -1126,7 +1414,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -1134,7 +1424,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -1142,28 +1434,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-11-18",
         "date_ar": "١٨ نوفمبر ٢٠٢٨",
         "name_ar": "عيد ميلاد السلطان",
         "name_en": "Sultan's Birthday",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_SULTANSBIRTHDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_SULTANSBIRTHDAY"
       },
       {
         "date": "2028-11-19",
         "date_ar": "١٩ نوفمبر ٢٠٢٨",
         "name_ar": "اليوم الوطني العماني",
         "name_en": "Oman National Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_OM_OMANNATIONALDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_OM_OMANNATIONALDAY"
       }
     ]
   },
@@ -1174,7 +1474,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -1182,21 +1484,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EIDALFITR"
       },
       {
         "date": "2026-04-06",
         "date_ar": "٦ أبريل ٢٠٢٦",
         "name_ar": "اثنين الفصح",
         "name_en": "Easter Monday",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EASTERMONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EASTERMONDAY"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -1204,21 +1512,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-11-22",
         "date_ar": "٢٢ نوفمبر ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_INDEPENDENCEDAY"
       }
     ],
     "2027": [
@@ -1227,7 +1541,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -1235,21 +1551,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EIDALFITR"
       },
       {
         "date": "2027-03-29",
         "date_ar": "٢٩ مارس ٢٠٢٧",
         "name_ar": "اثنين الفصح",
         "name_en": "Easter Monday",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EASTERMONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EASTERMONDAY"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -1257,21 +1579,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-11-22",
         "date_ar": "٢٢ نوفمبر ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_INDEPENDENCEDAY"
       }
     ],
     "2028": [
@@ -1280,7 +1608,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -1288,21 +1618,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EIDALFITR"
       },
       {
         "date": "2028-04-17",
         "date_ar": "١٧ أبريل ٢٠٢٨",
         "name_ar": "اثنين الفصح",
         "name_en": "Easter Monday",
-        "type": "cultural"
+        "type": "cultural",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EASTERMONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EASTERMONDAY"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -1310,21 +1646,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-11-22",
         "date_ar": "٢٢ نوفمبر ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LB_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LB_INDEPENDENCEDAY"
       }
     ]
   },
@@ -1335,14 +1677,18 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_NEWYEARSDAY"
       },
       {
         "date": "2026-03-08",
         "date_ar": "٨ مارس ٢٠٢٦",
         "name_ar": "يوم الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_REVOLUTIONDAY"
       },
       {
         "date": "2026-03-20",
@@ -1350,21 +1696,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_EIDALFITR"
       },
       {
         "date": "2026-04-17",
         "date_ar": "١٧ أبريل ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_INDEPENDENCEDAY"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -1372,14 +1724,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -1388,14 +1744,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_NEWYEARSDAY"
       },
       {
         "date": "2027-03-08",
         "date_ar": "٨ مارس ٢٠٢٧",
         "name_ar": "يوم الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_REVOLUTIONDAY"
       },
       {
         "date": "2027-03-09",
@@ -1403,21 +1763,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_EIDALFITR"
       },
       {
         "date": "2027-04-17",
         "date_ar": "١٧ أبريل ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_INDEPENDENCEDAY"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -1425,14 +1791,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -1441,14 +1811,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_NEWYEARSDAY"
       },
       {
         "date": "2028-03-08",
         "date_ar": "٨ مارس ٢٠٢٨",
         "name_ar": "يوم الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_REVOLUTIONDAY"
       },
       {
         "date": "2028-02-26",
@@ -1456,21 +1830,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_EIDALFITR"
       },
       {
         "date": "2028-04-17",
         "date_ar": "١٧ أبريل ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_INDEPENDENCEDAY"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -1478,14 +1858,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SY_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SY_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -1496,14 +1880,18 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_NEWYEARSDAY"
       },
       {
         "date": "2026-01-06",
         "date_ar": "٦ يناير ٢٠٢٦",
         "name_ar": "يوم الجيش",
         "name_en": "Army Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_ARMYDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_ARMYDAY"
       },
       {
         "date": "2026-03-20",
@@ -1511,14 +1899,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -1526,21 +1918,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_EIDALADHA"
       },
       {
         "date": "2026-07-14",
         "date_ar": "١٤ يوليو ٢٠٢٦",
         "name_ar": "يوم الجمهورية",
         "name_en": "Republic Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_REPUBLICDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_REPUBLICDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -1549,14 +1947,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_NEWYEARSDAY"
       },
       {
         "date": "2027-01-06",
         "date_ar": "٦ يناير ٢٠٢٧",
         "name_ar": "يوم الجيش",
         "name_en": "Army Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_ARMYDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_ARMYDAY"
       },
       {
         "date": "2027-03-09",
@@ -1564,14 +1966,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -1579,21 +1985,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_EIDALADHA"
       },
       {
         "date": "2027-07-14",
         "date_ar": "١٤ يوليو ٢٠٢٧",
         "name_ar": "يوم الجمهورية",
         "name_en": "Republic Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_REPUBLICDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_REPUBLICDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -1602,14 +2014,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_NEWYEARSDAY"
       },
       {
         "date": "2028-01-06",
         "date_ar": "٦ يناير ٢٠٢٨",
         "name_ar": "يوم الجيش",
         "name_en": "Army Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_ARMYDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_ARMYDAY"
       },
       {
         "date": "2028-02-26",
@@ -1617,14 +2033,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -1632,21 +2052,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_EIDALADHA"
       },
       {
         "date": "2028-07-14",
         "date_ar": "١٤ يوليو ٢٠٢٨",
         "name_ar": "يوم الجمهورية",
         "name_en": "Republic Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_REPUBLICDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_REPUBLICDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_IQ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_IQ_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -1657,7 +2083,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -1665,21 +2093,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_LABOURDAY"
       },
       {
         "date": "2026-05-22",
         "date_ar": "٢٢ مايو ٢٠٢٦",
         "name_ar": "عيد الوحدة",
         "name_en": "Unification Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_UNIFICATIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_UNIFICATIONDAY"
       },
       {
         "date": "2026-05-26",
@@ -1687,35 +2121,45 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-09-26",
         "date_ar": "٢٦ سبتمبر ٢٠٢٦",
         "name_ar": "يوم الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_REVOLUTIONDAY"
       },
       {
         "date": "2026-10-14",
         "date_ar": "١٤ أكتوبر ٢٠٢٦",
         "name_ar": "ثورة أكتوبر",
         "name_en": "Revolution Day (Oct)",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_REVOLUTIONDAYOC",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_REVOLUTIONDAYOC"
       },
       {
         "date": "2026-11-30",
         "date_ar": "٣٠ نوفمبر ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_INDEPENDENCEDAY"
       }
     ],
     "2027": [
@@ -1724,7 +2168,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -1732,14 +2178,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -1747,42 +2197,54 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_EIDALADHA"
       },
       {
         "date": "2027-05-22",
         "date_ar": "٢٢ مايو ٢٠٢٧",
         "name_ar": "عيد الوحدة",
         "name_en": "Unification Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_UNIFICATIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_UNIFICATIONDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-09-26",
         "date_ar": "٢٦ سبتمبر ٢٠٢٧",
         "name_ar": "يوم الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_REVOLUTIONDAY"
       },
       {
         "date": "2027-10-14",
         "date_ar": "١٤ أكتوبر ٢٠٢٧",
         "name_ar": "ثورة أكتوبر",
         "name_en": "Revolution Day (Oct)",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_REVOLUTIONDAYOC",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_REVOLUTIONDAYOC"
       },
       {
         "date": "2027-11-30",
         "date_ar": "٣٠ نوفمبر ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_INDEPENDENCEDAY"
       }
     ],
     "2028": [
@@ -1791,7 +2253,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -1799,14 +2263,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -1814,42 +2282,54 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 4
+        "duration": 4,
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_EIDALADHA"
       },
       {
         "date": "2028-05-22",
         "date_ar": "٢٢ مايو ٢٠٢٨",
         "name_ar": "عيد الوحدة",
         "name_en": "Unification Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_UNIFICATIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_UNIFICATIONDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-09-26",
         "date_ar": "٢٦ سبتمبر ٢٠٢٨",
         "name_ar": "يوم الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_REVOLUTIONDAY"
       },
       {
         "date": "2028-10-14",
         "date_ar": "١٤ أكتوبر ٢٠٢٨",
         "name_ar": "ثورة أكتوبر",
         "name_en": "Revolution Day (Oct)",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_REVOLUTIONDAYOC",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_REVOLUTIONDAYOC"
       },
       {
         "date": "2028-11-30",
         "date_ar": "٣٠ نوفمبر ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_YE_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_YE_INDEPENDENCEDAY"
       }
     ]
   },
@@ -1860,14 +2340,18 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_NEWYEARSDAY"
       },
       {
         "date": "2026-01-11",
         "date_ar": "١١ يناير ٢٠٢٦",
         "name_ar": "ذكرى تقديم وثيقة الاستقلال",
         "name_en": "Independence Manifesto Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_INDEPENDENCEMAN",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_INDEPENDENCEMAN"
       },
       {
         "date": "2026-03-20",
@@ -1875,14 +2359,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -1890,28 +2378,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_EIDALADHA"
       },
       {
         "date": "2026-07-30",
         "date_ar": "٣٠ يوليو ٢٠٢٦",
         "name_ar": "عيد العرش",
         "name_en": "Throne Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_THRONEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_THRONEDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-11-18",
         "date_ar": "١٨ نوفمبر ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_INDEPENDENCEDAY"
       }
     ],
     "2027": [
@@ -1920,14 +2416,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_NEWYEARSDAY"
       },
       {
         "date": "2027-01-11",
         "date_ar": "١١ يناير ٢٠٢٧",
         "name_ar": "ذكرى تقديم وثيقة الاستقلال",
         "name_en": "Independence Manifesto Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_INDEPENDENCEMAN",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_INDEPENDENCEMAN"
       },
       {
         "date": "2027-03-09",
@@ -1935,14 +2435,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -1950,28 +2454,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_EIDALADHA"
       },
       {
         "date": "2027-07-30",
         "date_ar": "٣٠ يوليو ٢٠٢٧",
         "name_ar": "عيد العرش",
         "name_en": "Throne Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_THRONEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_THRONEDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-11-18",
         "date_ar": "١٨ نوفمبر ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_INDEPENDENCEDAY"
       }
     ],
     "2028": [
@@ -1980,14 +2492,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_NEWYEARSDAY"
       },
       {
         "date": "2028-01-11",
         "date_ar": "١١ يناير ٢٠٢٨",
         "name_ar": "ذكرى تقديم وثيقة الاستقلال",
         "name_en": "Independence Manifesto Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_INDEPENDENCEMAN",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_INDEPENDENCEMAN"
       },
       {
         "date": "2028-02-26",
@@ -1995,14 +2511,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -2010,28 +2530,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_EIDALADHA"
       },
       {
         "date": "2028-07-30",
         "date_ar": "٣٠ يوليو ٢٠٢٨",
         "name_ar": "عيد العرش",
         "name_en": "Throne Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_THRONEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_THRONEDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-11-18",
         "date_ar": "١٨ نوفمبر ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_MA_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_MA_INDEPENDENCEDAY"
       }
     ]
   },
@@ -2042,21 +2570,27 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_NEWYEARSDAY"
       },
       {
         "date": "2026-01-14",
         "date_ar": "١٤ يناير ٢٠٢٦",
         "name_ar": "عيد الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_REVOLUTIONDAY"
       },
       {
         "date": "2026-03-20",
         "date_ar": "٢٠ مارس ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_INDEPENDENCEDAY"
       },
       {
         "date": "2026-03-20",
@@ -2064,14 +2598,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -2079,21 +2617,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_EIDALADHA"
       },
       {
         "date": "2026-07-25",
         "date_ar": "٢٥ يوليو ٢٠٢٦",
         "name_ar": "عيد الجمهورية",
         "name_en": "Republic Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_REPUBLICDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_REPUBLICDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -2102,14 +2646,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_NEWYEARSDAY"
       },
       {
         "date": "2027-01-14",
         "date_ar": "١٤ يناير ٢٠٢٧",
         "name_ar": "عيد الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_REVOLUTIONDAY"
       },
       {
         "date": "2027-03-09",
@@ -2117,21 +2665,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_EIDALFITR"
       },
       {
         "date": "2027-03-20",
         "date_ar": "٢٠ مارس ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_INDEPENDENCEDAY"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -2139,21 +2693,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_EIDALADHA"
       },
       {
         "date": "2027-07-25",
         "date_ar": "٢٥ يوليو ٢٠٢٧",
         "name_ar": "عيد الجمهورية",
         "name_en": "Republic Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_REPUBLICDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_REPUBLICDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -2162,14 +2722,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_NEWYEARSDAY"
       },
       {
         "date": "2028-01-14",
         "date_ar": "١٤ يناير ٢٠٢٨",
         "name_ar": "عيد الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_REVOLUTIONDAY"
       },
       {
         "date": "2028-02-26",
@@ -2177,21 +2741,27 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_EIDALFITR"
       },
       {
         "date": "2028-03-20",
         "date_ar": "٢٠ مارس ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_INDEPENDENCEDAY"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -2199,21 +2769,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_EIDALADHA"
       },
       {
         "date": "2028-07-25",
         "date_ar": "٢٥ يوليو ٢٠٢٨",
         "name_ar": "عيد الجمهورية",
         "name_en": "Republic Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_REPUBLICDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_REPUBLICDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_TN_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_TN_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -2224,7 +2800,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -2232,14 +2810,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -2247,28 +2829,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_EIDALADHA"
       },
       {
         "date": "2026-07-05",
         "date_ar": "٥ يوليو ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_INDEPENDENCEDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-11-01",
         "date_ar": "١ نوفمبر ٢٠٢٦",
         "name_ar": "ذكرى اندلاع الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_REVOLUTIONDAY"
       }
     ],
     "2027": [
@@ -2277,7 +2867,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -2285,14 +2877,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -2300,28 +2896,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_EIDALADHA"
       },
       {
         "date": "2027-07-05",
         "date_ar": "٥ يوليو ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_INDEPENDENCEDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-11-01",
         "date_ar": "١ نوفمبر ٢٠٢٧",
         "name_ar": "ذكرى اندلاع الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_REVOLUTIONDAY"
       }
     ],
     "2028": [
@@ -2330,7 +2934,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -2338,14 +2944,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -2353,28 +2963,36 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_EIDALADHA"
       },
       {
         "date": "2028-07-05",
         "date_ar": "٥ يوليو ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_INDEPENDENCEDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-11-01",
         "date_ar": "١ نوفمبر ٢٠٢٨",
         "name_ar": "ذكرى اندلاع الثورة",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DZ_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DZ_REVOLUTIONDAY"
       }
     ]
   },
@@ -2385,14 +3003,18 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_NEWYEARSDAY"
       },
       {
         "date": "2026-02-17",
         "date_ar": "١٧ فبراير ٢٠٢٦",
         "name_ar": "ذكرى ثورة فبراير",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_REVOLUTIONDAY"
       },
       {
         "date": "2026-03-20",
@@ -2400,7 +3022,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -2408,21 +3032,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_PROPHETSBIRTHDA"
       },
       {
         "date": "2026-12-24",
         "date_ar": "٢٤ ديسمبر ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_INDEPENDENCEDAY"
       }
     ],
     "2027": [
@@ -2431,14 +3061,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_NEWYEARSDAY"
       },
       {
         "date": "2027-02-17",
         "date_ar": "١٧ فبراير ٢٠٢٧",
         "name_ar": "ذكرى ثورة فبراير",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_REVOLUTIONDAY"
       },
       {
         "date": "2027-03-09",
@@ -2446,7 +3080,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -2454,21 +3090,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_PROPHETSBIRTHDA"
       },
       {
         "date": "2027-12-24",
         "date_ar": "٢٤ ديسمبر ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_INDEPENDENCEDAY"
       }
     ],
     "2028": [
@@ -2477,14 +3119,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_NEWYEARSDAY"
       },
       {
         "date": "2028-02-17",
         "date_ar": "١٧ فبراير ٢٠٢٨",
         "name_ar": "ذكرى ثورة فبراير",
         "name_en": "Revolution Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_REVOLUTIONDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_REVOLUTIONDAY"
       },
       {
         "date": "2028-02-26",
@@ -2492,7 +3138,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -2500,21 +3148,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_PROPHETSBIRTHDA"
       },
       {
         "date": "2028-12-24",
         "date_ar": "٢٤ ديسمبر ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_LY_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_LY_INDEPENDENCEDAY"
       }
     ]
   },
@@ -2525,14 +3179,18 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_NEWYEARSDAY"
       },
       {
         "date": "2026-01-01",
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_INDEPENDENCEDAY"
       },
       {
         "date": "2026-03-20",
@@ -2540,7 +3198,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_EIDALFITR"
       },
       {
         "date": "2026-05-26",
@@ -2548,14 +3208,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_EIDALADHA"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -2564,14 +3228,18 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_NEWYEARSDAY"
       },
       {
         "date": "2027-01-01",
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_INDEPENDENCEDAY"
       },
       {
         "date": "2027-03-09",
@@ -2579,7 +3247,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_EIDALFITR"
       },
       {
         "date": "2027-05-16",
@@ -2587,14 +3257,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_EIDALADHA"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -2603,14 +3277,18 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_NEWYEARSDAY"
       },
       {
         "date": "2028-01-01",
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_INDEPENDENCEDAY"
       },
       {
         "date": "2028-02-26",
@@ -2618,7 +3296,9 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_EIDALFITR"
       },
       {
         "date": "2028-05-03",
@@ -2626,14 +3306,18 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 3
+        "duration": 3,
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_EIDALADHA"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SD_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SD_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -2644,7 +3328,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -2652,14 +3338,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -2667,21 +3357,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_EIDALADHA"
       },
       {
         "date": "2026-07-01",
         "date_ar": "١ يوليو ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_INDEPENDENCEDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -2690,7 +3386,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -2698,14 +3396,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -2713,21 +3415,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_EIDALADHA"
       },
       {
         "date": "2027-07-01",
         "date_ar": "١ يوليو ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_INDEPENDENCEDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -2736,7 +3444,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -2744,14 +3454,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -2759,21 +3473,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_EIDALADHA"
       },
       {
         "date": "2028-07-01",
         "date_ar": "١ يوليو ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_INDEPENDENCEDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_SO_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_SO_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -2784,7 +3504,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -2792,14 +3514,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -2807,21 +3533,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_EIDALADHA"
       },
       {
         "date": "2026-06-27",
         "date_ar": "٢٧ يونيو ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_INDEPENDENCEDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -2830,7 +3562,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -2838,14 +3572,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -2853,21 +3591,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_EIDALADHA"
       },
       {
         "date": "2027-06-27",
         "date_ar": "٢٧ يونيو ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_INDEPENDENCEDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -2876,7 +3620,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -2884,14 +3630,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -2899,21 +3649,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_EIDALADHA"
       },
       {
         "date": "2028-06-27",
         "date_ar": "٢٧ يونيو ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_INDEPENDENCEDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_DJ_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_DJ_PROPHETSBIRTHDA"
       }
     ]
   },
@@ -2924,7 +3680,9 @@
         "date_ar": "١ يناير ٢٠٢٦",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_NEWYEARSDAY"
       },
       {
         "date": "2026-03-20",
@@ -2932,14 +3690,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_EIDALFITR"
       },
       {
         "date": "2026-05-01",
         "date_ar": "١ مايو ٢٠٢٦",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_LABOURDAY"
       },
       {
         "date": "2026-05-26",
@@ -2947,21 +3709,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_EIDALADHA"
       },
       {
         "date": "2026-07-06",
         "date_ar": "٦ يوليو ٢٠٢٦",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_INDEPENDENCEDAY"
       },
       {
         "date": "2026-08-25",
         "date_ar": "٢٥ أغسطس ٢٠٢٦",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_PROPHETSBIRTHDA"
       }
     ],
     "2027": [
@@ -2970,7 +3738,9 @@
         "date_ar": "١ يناير ٢٠٢٧",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_NEWYEARSDAY"
       },
       {
         "date": "2027-03-09",
@@ -2978,14 +3748,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_EIDALFITR"
       },
       {
         "date": "2027-05-01",
         "date_ar": "١ مايو ٢٠٢٧",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_LABOURDAY"
       },
       {
         "date": "2027-05-16",
@@ -2993,21 +3767,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_EIDALADHA"
       },
       {
         "date": "2027-07-06",
         "date_ar": "٦ يوليو ٢٠٢٧",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_INDEPENDENCEDAY"
       },
       {
         "date": "2027-08-14",
         "date_ar": "١٤ أغسطس ٢٠٢٧",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_PROPHETSBIRTHDA"
       }
     ],
     "2028": [
@@ -3016,7 +3796,9 @@
         "date_ar": "١ يناير ٢٠٢٨",
         "name_ar": "رأس السنة الميلادية",
         "name_en": "New Year's Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_NEWYEARSDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_NEWYEARSDAY"
       },
       {
         "date": "2028-02-26",
@@ -3024,14 +3806,18 @@
         "name_ar": "عيد الفطر",
         "name_en": "Eid al-Fitr",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_EIDALFITR",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_EIDALFITR"
       },
       {
         "date": "2028-05-01",
         "date_ar": "١ مايو ٢٠٢٨",
         "name_ar": "عيد العمال",
         "name_en": "Labour Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_LABOURDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_LABOURDAY"
       },
       {
         "date": "2028-05-03",
@@ -3039,21 +3825,27 @@
         "name_ar": "عيد الأضحى",
         "name_en": "Eid al-Adha",
         "type": "religious",
-        "duration": 2
+        "duration": 2,
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_EIDALADHA",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_EIDALADHA"
       },
       {
         "date": "2028-07-06",
         "date_ar": "٦ يوليو ٢٠٢٨",
         "name_ar": "عيد الاستقلال",
         "name_en": "Independence Day",
-        "type": "national"
+        "type": "national",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_INDEPENDENCEDAY",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_INDEPENDENCEDAY"
       },
       {
         "date": "2028-08-02",
         "date_ar": "٢ أغسطس ٢٠٢٨",
         "name_ar": "المولد النبوي",
         "name_en": "Prophet's Birthday",
-        "type": "religious"
+        "type": "religious",
+        "description_ar": "PLACEHOLDER_DESC_AR_KM_PROPHETSBIRTHDA",
+        "description_en": "PLACEHOLDER_DESC_EN_KM_PROPHETSBIRTHDA"
       }
     ]
   }
