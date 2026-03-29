@@ -248,6 +248,40 @@ async function injectMeta(filePath, countryCode, year, lang = 'ar') {
 }
 
 // ──────────────────────────────────────────────
+// Eid page meta injection
+// ──────────────────────────────────────────────
+
+async function injectEidMeta(filePath, year, lang) {
+  let html = await fs.readFile(filePath, 'utf8');
+
+  const title = generateEidTitle(year, lang);
+  const description = generateEidDescription(year, lang);
+  const canonicalUrl = `${BASE_URL}/${lang}/eid/${year}.html`;
+  const locale = lang === 'en' ? 'en_US' : 'ar_AR';
+  const siteName = lang === 'en' ? 'Egazat' : 'إجازات';
+
+  html = html.replace(/<title>.*?<\/title>/g, '');
+  html = html.replace('<head>', `<head>\n    <title>${escapeAttr(title)}</title>`);
+  html = replaceMeta(html, 'description', description);
+  html = replaceProperty(html, 'og:title', title);
+  html = replaceProperty(html, 'og:description', description);
+  html = replaceProperty(html, 'og:type', 'website');
+  html = replaceProperty(html, 'og:url', canonicalUrl);
+  html = replaceProperty(html, 'og:locale', locale);
+  html = replaceProperty(html, 'og:site_name', siteName);
+  html = replaceMeta(html, 'twitter:card', 'summary');
+  html = replaceMeta(html, 'twitter:title', title);
+  html = replaceMeta(html, 'twitter:description', description);
+
+  const expectedLang = lang === 'en' ? 'en' : 'ar';
+  const expectedDir = lang === 'en' ? 'ltr' : 'rtl';
+  html = html.replace(/<html[^>]*>/, `<html lang="${expectedLang}" dir="${expectedDir}">`);
+
+  await fs.writeFile(filePath, html, 'utf8');
+  return { status: 'PASS', title, descLength: description.length };
+}
+
+// ──────────────────────────────────────────────
 // Main
 // ──────────────────────────────────────────────
 
