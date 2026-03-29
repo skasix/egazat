@@ -2,638 +2,864 @@
   "countries": [
     {
       "code": "ae",
+      "code_iso2": "AE",
       "name_ar": "دولة الإمارات العربية المتحدة",
-      "short_name_ar": "الإمارات",
-      "title_keyword": "إجازات الإمارات",
       "name_en": "United Arab Emirates",
+      "short_name_ar": "الإمارات",
       "short_name_en": "UAE",
+      "title_keyword": "إجازات الإمارات",
       "title_keyword_en": "UAE Public Holidays",
       "weekend_days": [
         "Saturday",
         "Sunday"
       ],
+      "government_name_ar": "حكومة دولة الإمارات العربية المتحدة",
+      "government_url": "https://u.ae",
+      "cluster": "gulf",
+      "related_countries": [
+        "sa",
+        "kw",
+        "qa",
+        "bh",
+        "om"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_AE",
-        "about_en": "PLACEHOLDER_ABOUT_EN_AE"
+        "about_ar": "تحتفل دولة الإمارات العربية المتحدة بمجموعة من العطل الرسمية التي تجمع بين المناسبات الوطنية والأعياد الإسلامية. تشمل العطل الوطنية اليوم الوطني في الثاني من ديسمبر الذي يُحيي ذكرى قيام الاتحاد عام 1971، فضلاً عن رأس السنة الميلادية باعتبارها مركزاً تجارياً دولياً. أما العطل الدينية فتتبع التقويم الهجري وتشمل عيد الفطر وعيد الأضحى ورأس السنة الهجرية والمولد النبوي الشريف، وتُحدد مواعيدها وفق رؤية الهلال التي تُعلنها الجهات الرسمية المختصة. والجدير بالذكر أن الإمارات عدّلت عطلة نهاية الأسبوع في يناير 2022 لتصبح يومَي السبت والأحد بدلاً من الجمعة والسبت، وذلك لمواءمة ساعات العمل مع الأسواق المالية الدولية.",
+        "about_en": "The United Arab Emirates observes a blend of national and Islamic public holidays reflecting both its modern federal identity and its Islamic heritage. National holidays include UAE National Day on 2 December, commemorating the formation of the federation in 1971, as well as New Year's Day in recognition of the country's international business role. Religious holidays follow the Islamic lunar calendar and include Eid Al-Fitr, Eid Al-Adha, the Islamic New Year, and the Prophet's Birthday, with exact dates confirmed annually by official moon sighting committees. A notable distinction sets the UAE apart from most Gulf neighbours: in January 2022, the country shifted its official weekend from Thursday-Friday to Saturday-Sunday, aligning its working week with global financial markets and making it easier for international businesses to operate across time zones."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_AE",
-          "PLACEHOLDER_PRACTICAL_AR_2_AE",
-          "PLACEHOLDER_PRACTICAL_AR_3_AE",
-          "PLACEHOLDER_PRACTICAL_AR_4_AE"
+          "تُغلق جميع الدوائر الحكومية الاتحادية والمحلية في أيام العطل الرسمية.",
+          "يلتزم القطاع الخاص بمنح موظفيه إجازة مدفوعة في العطل الرسمية وفق قانون العمل الإماراتي.",
+          "قد تعمل مراكز التسوق والمطاعم بساعات موسعة خلال عيد الفطر وعيد الأضحى.",
+          "تُعلن هيئة رؤية الهلال الرسمية تواريخ الأعياد الدينية عادةً قبل يوم إلى يومين من الحدث."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_AE",
-          "PLACEHOLDER_PRACTICAL_EN_2_AE",
-          "PLACEHOLDER_PRACTICAL_EN_3_AE",
-          "PLACEHOLDER_PRACTICAL_EN_4_AE"
+          "All federal and local government offices close on official public holidays.",
+          "Private sector employers are legally required to grant paid leave on public holidays under UAE Labour Law.",
+          "Shopping malls and restaurants typically operate extended hours during Eid Al-Fitr and Eid Al-Adha.",
+          "The official UAE moon sighting committee confirms Islamic holiday dates, usually one to two days before the event."
         ]
       }
     },
     {
       "code": "sa",
+      "code_iso2": "SA",
       "name_ar": "المملكة العربية السعودية",
-      "short_name_ar": "السعودية",
-      "title_keyword": "إجازات السعودية",
       "name_en": "Saudi Arabia",
+      "short_name_ar": "السعودية",
       "short_name_en": "Saudi Arabia",
+      "title_keyword": "إجازات السعودية",
       "title_keyword_en": "Saudi Arabia Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
-      "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_SA",
-        "about_en": "PLACEHOLDER_ABOUT_EN_SA"
-      },
-      "practical": {
-        "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_SA",
-          "PLACEHOLDER_PRACTICAL_AR_2_SA",
-          "PLACEHOLDER_PRACTICAL_AR_3_SA",
-          "PLACEHOLDER_PRACTICAL_AR_4_SA"
-        ],
-        "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_SA",
-          "PLACEHOLDER_PRACTICAL_EN_2_SA",
-          "PLACEHOLDER_PRACTICAL_EN_3_SA",
-          "PLACEHOLDER_PRACTICAL_EN_4_SA"
-        ]
-      },
+      "government_name_ar": "حكومة المملكة العربية السعودية",
+      "government_url": "https://www.gov.sa",
+      "cluster": "gulf",
+      "related_countries": [
+        "ae",
+        "kw",
+        "qa",
+        "bh",
+        "om"
+      ],
       "bridge_links": [
         "ae",
         "eg",
         "jo",
         "ma"
-      ]
+      ],
+      "editorial": {
+        "about_ar": "تتميز المملكة العربية السعودية بمنظومة عطل رسمية تعكس هويتها الوطنية وإرثها الإسلامي العريق. تتصدر هذه العطل اليوم الوطني في الثالث والعشرين من سبتمبر الذي يُحيي ذكرى توحيد المملكة على يد الملك المؤسس عبدالعزيز بن سعود عام 1932. وفي عام 2022 أُضيف يوم التأسيس في الثاني والعشرين من فبراير إلى قائمة العطل الرسمية، إحياءً لذكرى تأسيس الدولة السعودية الأولى عام 1727م. أما العطل الدينية فتشمل عيد الفطر وعيد الأضحى والمولد النبوي الشريف، وتعتمد في تحديد مواعيدها على رؤية الهلال وفق ما تُعلنه هيئة كبار العلماء والجهات الدينية المختصة. ويُلاحظ أن عيد الأضحى يمتد في السعودية أربعة أيام بدلاً من ثلاثة في كثير من الدول الأخرى.",
+        "about_en": "Saudi Arabia's public holiday calendar reflects both its role as the custodian of Islam's two holiest sites and its distinct national history. National Day on 23 September commemorates the unification of the kingdom under King Abdulaziz in 1932, while Founding Day on 22 February — added as an official holiday in 2022 — marks the establishment of the First Saudi State in 1727. Religious holidays follow the Islamic lunar calendar and include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, with dates determined by official moon sighting announcements from religious authorities. One important distinction: Saudi Arabia observes four days of Eid Al-Adha — longer than most Arab countries — reflecting the holiday's deep significance during the Hajj pilgrimage season, when millions of pilgrims are gathered in Mecca and Mina."
+      },
+      "practical": {
+        "items_ar": [
+          "تُغلق جميع الجهات الحكومية والمصالح الرسمية في أيام العطل الرسمية المعتمدة.",
+          "يُلزم نظام العمل السعودي القطاع الخاص بمنح موظفيه إجازة مدفوعة كاملة في العطل الرسمية.",
+          "قد تعمل بعض المحلات التجارية بساعات مختصرة خلال فترات الأعياد، خاصةً في أوقات الصلوات.",
+          "تُعلن هيئة كبار العلماء وجهات حكومية مختصة تواريخ الأعياد الدينية رسمياً قبل يوم أو يومين."
+        ],
+        "items_en": [
+          "All government ministries and public institutions close on officially declared public holidays.",
+          "Saudi Labour Law requires private sector employers to grant full paid leave on all official public holidays.",
+          "Retail outlets may operate reduced hours during Eid periods, particularly around prayer times.",
+          "Religious holiday dates are officially announced by the Saudi moon sighting committee, typically one to two days in advance."
+        ]
+      }
     },
     {
       "code": "eg",
+      "code_iso2": "EG",
       "name_ar": "جمهورية مصر العربية",
-      "short_name_ar": "مصر",
-      "title_keyword": "إجازات مصر",
       "name_en": "Egypt",
+      "short_name_ar": "مصر",
       "short_name_en": "Egypt",
+      "title_keyword": "إجازات مصر",
       "title_keyword_en": "Egypt Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
-      "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_EG",
-        "about_en": "PLACEHOLDER_ABOUT_EN_EG"
-      },
-      "practical": {
-        "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_EG",
-          "PLACEHOLDER_PRACTICAL_AR_2_EG",
-          "PLACEHOLDER_PRACTICAL_AR_3_EG",
-          "PLACEHOLDER_PRACTICAL_AR_4_EG"
-        ],
-        "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_EG",
-          "PLACEHOLDER_PRACTICAL_EN_2_EG",
-          "PLACEHOLDER_PRACTICAL_EN_3_EG",
-          "PLACEHOLDER_PRACTICAL_EN_4_EG"
-        ]
-      },
+      "government_name_ar": "حكومة جمهورية مصر العربية",
+      "government_url": "https://www.egypt.gov.eg",
+      "cluster": "north-africa",
+      "related_countries": [
+        "jo",
+        "lb",
+        "sa",
+        "ma",
+        "tn"
+      ],
       "bridge_links": [
         "sa",
         "jo",
         "ma",
         "tn"
-      ]
+      ],
+      "editorial": {
+        "about_ar": "تتمتع جمهورية مصر العربية بأحد أغنى تقاويم العطل الرسمية في المنطقة العربية، إذ تجمع بين العطل الوطنية والدينية الإسلامية والمسيحية. ومن أبرز ما يميز مصر عن سائر الدول العربية الاحتفال بعيد الميلاد المجيد للأقباط في السابع من يناير إجازةً رسمية، اعترافاً بمكانة الكنيسة القبطية الأرثوذكسية وعمق الحضور المسيحي في المجتمع المصري. وتشمل العطل الوطنية ثورة الخامس والعشرين من يناير وعيد تحرير سيناء في الخامس والعشرين من أبريل وعيد العمال وثورة الثالث والعشرين من يوليو. أما العطل الدينية الإسلامية فتتبع التقويم الهجري وتحددها دار الإفتاء المصرية وفق رؤية الهلال.",
+        "about_en": "Egypt has one of the most diverse public holiday calendars in the Arab world, combining national commemorations, Islamic religious observances, and a unique Coptic Christian holiday. Uniquely among Arab countries, Egypt observes Coptic Christmas on 7 January as an official public holiday, reflecting the significant presence of the Coptic Orthodox Church and the country's ancient Christian heritage. National holidays include the 25 January Revolution, Sinai Liberation Day on 25 April, Labour Day, and the 23 July Revolution. Islamic religious holidays follow the lunar Hijri calendar, with dates officially confirmed by Dar Al-Iftaa Egypt based on moon sighting observations. Egypt's holiday calendar is among the longest in the region, with nine distinct public holidays in 2026."
+      },
+      "practical": {
+        "items_ar": [
+          "تُغلق الوزارات والجهات الحكومية أبوابها في جميع أيام العطل الرسمية المعتمدة.",
+          "يستحق موظفو القطاع الخاص إجازة مدفوعة في العطل الرسمية وفق أحكام قانون العمل المصري.",
+          "تواصل كثير من المحلات التجارية والمطاعم عملها في أيام الأعياد بساعات مختلفة.",
+          "تُعلن دار الإفتاء المصرية تواريخ الأعياد الدينية رسمياً بعد رؤية الهلال، وقد تتغير بيوم واحد."
+        ],
+        "items_en": [
+          "Government ministries and public authorities close on all officially declared public holidays.",
+          "Private sector employees are entitled to paid leave on public holidays under Egyptian Labour Law.",
+          "Many shops and restaurants remain open during holidays, often with adjusted hours.",
+          "Dar Al-Iftaa Egypt officially announces Islamic holiday dates following moon sighting; dates may shift by one day."
+        ]
+      }
     },
     {
       "code": "jo",
+      "code_iso2": "JO",
       "name_ar": "المملكة الأردنية الهاشمية",
-      "short_name_ar": "الأردن",
-      "title_keyword": "إجازات الأردن",
       "name_en": "Jordan",
+      "short_name_ar": "الأردن",
       "short_name_en": "Jordan",
+      "title_keyword": "إجازات الأردن",
       "title_keyword_en": "Jordan Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة المملكة الأردنية الهاشمية",
+      "government_url": "https://www.jordan.gov.jo",
+      "cluster": "levant",
+      "related_countries": [
+        "lb",
+        "sy",
+        "iq",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_JO",
-        "about_en": "PLACEHOLDER_ABOUT_EN_JO"
+        "about_ar": "تتوزع العطل الرسمية في المملكة الأردنية الهاشمية بين العطل الوطنية المرتبطة بالهوية الهاشمية والعطل الدينية الإسلامية. تحتل عيد الاستقلال في الخامس والعشرين من مايو مكانة بارزة، إذ يُحيي ذكرى استقلال الأردن عام 1946. وفي عام 2023 أُعيد إحياء الاحتفال بعيد الجلوس الملكي رسمياً تكريماً للعائلة الهاشمية المالكة. أما العطل الدينية فتشمل عيد الفطر وعيد الأضحى والمولد النبوي الشريف، وتُحدد مواعيدها وفق رؤية الهلال الرسمية. ويتسم تقويم العطل الأردني بالاستقرار النسبي مقارنةً ببعض دول الجوار، مما يُسهل التخطيط المسبق للإجازات.",
+        "about_en": "Jordan's public holiday calendar balances Hashemite national commemorations with Islamic religious observances. Independence Day on 25 May holds central importance, marking Jordan's independence in 1946, while the Royal Accession Day — reinstated as an official holiday in 2023 — honours the Hashemite royal family. Islamic religious holidays include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, with dates confirmed through official moon sighting. Jordan's holiday calendar is relatively stable compared to some regional neighbours, making it straightforward for residents and businesses to plan around. The country observes the standard Gulf-adjacent weekend of Friday and Saturday."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_JO",
-          "PLACEHOLDER_PRACTICAL_AR_2_JO",
-          "PLACEHOLDER_PRACTICAL_AR_3_JO",
-          "PLACEHOLDER_PRACTICAL_AR_4_JO"
+          "تُغلق المؤسسات الحكومية والوزارات أبوابها في جميع العطل الرسمية المعتمدة.",
+          "يكفل قانون العمل الأردني للموظفين في القطاع الخاص الحصول على إجازة مدفوعة في أيام العطل.",
+          "تعمل معظم المحلات التجارية والمراكز التجارية بصورة طبيعية أو بساعات موسعة خلال العيدين.",
+          "تُعلن الجهات الدينية الرسمية تواريخ الأعياد الإسلامية بعد رؤية الهلال مباشرةً."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_JO",
-          "PLACEHOLDER_PRACTICAL_EN_2_JO",
-          "PLACEHOLDER_PRACTICAL_EN_3_JO",
-          "PLACEHOLDER_PRACTICAL_EN_4_JO"
+          "Government institutions and ministries close on all official public holidays.",
+          "Jordanian Labour Law guarantees private sector employees paid leave on public holidays.",
+          "Most retail outlets and shopping centres operate normally or with extended hours during Eid periods.",
+          "Official Islamic holiday dates are announced by religious authorities immediately following moon sighting confirmation."
         ]
       }
     },
     {
       "code": "lb",
+      "code_iso2": "LB",
       "name_ar": "الجمهورية اللبنانية",
-      "short_name_ar": "لبنان",
-      "title_keyword": "إجازات لبنان",
       "name_en": "Lebanon",
+      "short_name_ar": "لبنان",
       "short_name_en": "Lebanon",
+      "title_keyword": "إجازات لبنان",
       "title_keyword_en": "Lebanon Public Holidays",
       "weekend_days": [
         "Saturday",
         "Sunday"
       ],
+      "government_name_ar": "حكومة الجمهورية اللبنانية",
+      "government_url": "https://www.presidency.gov.lb",
+      "cluster": "levant",
+      "related_countries": [
+        "jo",
+        "sy",
+        "iq",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_LB",
-        "about_en": "PLACEHOLDER_ABOUT_EN_LB"
+        "about_ar": "يتميز لبنان بتقويم عطل رسمية فريد في المنطقة العربية، يعكس تعدديته الدينية والثقافية المعهودة. فضلاً عن الأعياد الإسلامية كعيد الفطر وعيد الأضحى والمولد النبوي، يحتفل لبنان بعدد من العطل المسيحية التي لا نظير لها في سائر الدول العربية، منها عيد الميلاد في الخامس والعشرين من ديسمبر وعيد الفصح ويوم الاستقلال في عيد سيدة الانتصارات. كما يتضمن التقويم يوم الاستقلال في الثاني والعشرين من نوفمبر والعيد الوطني لمقاومة الاحتلال. ويعتمد لبنان نهاية أسبوع السبت والأحد على غرار الدول ذات التوجه الغربي، مما يجعله متميزاً عن أغلب دول الجوار العربي.",
+        "about_en": "Lebanon has the most religiously diverse public holiday calendar in the Arab world, reflecting its unique multi-confessional society. Alongside Islamic holidays including Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, Lebanon observes several Christian public holidays found nowhere else in the Arab world — including Christmas on 25 December, Easter Monday, and the Feast of the Assumption. National holidays include Independence Day on 22 November and Liberation Day on 25 May. Lebanon follows a Saturday-Sunday weekend, distinguishing it from most Arab neighbours. This diversity of holidays means Lebanon has one of the longest official holiday calendars in the region, though economic disruptions in recent years have sometimes affected how uniformly these are observed across sectors."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_LB",
-          "PLACEHOLDER_PRACTICAL_AR_2_LB",
-          "PLACEHOLDER_PRACTICAL_AR_3_LB",
-          "PLACEHOLDER_PRACTICAL_AR_4_LB"
+          "تُعطّل الدوائر الحكومية والمصارف ومعظم المؤسسات الرسمية في أيام العطل الرسمية.",
+          "يستحق موظفو القطاع الخاص إجازات مدفوعة في العطل الرسمية وفق قانون العمل اللبناني.",
+          "كثير من المتاجر والمطاعم تعمل بصورة طبيعية أو مع ساعات معدّلة في أيام الأعياد.",
+          "تواريخ الأعياد الإسلامية تُحدد وفق رؤية الهلال وقد تتغير بيوم واحد."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_LB",
-          "PLACEHOLDER_PRACTICAL_EN_2_LB",
-          "PLACEHOLDER_PRACTICAL_EN_3_LB",
-          "PLACEHOLDER_PRACTICAL_EN_4_LB"
+          "Government offices, banks, and most official institutions close on all public holidays.",
+          "Private sector employees are entitled to paid leave on public holidays under Lebanese Labour Law.",
+          "Many shops and restaurants remain open on holidays, often with adjusted hours.",
+          "Islamic holiday dates are subject to moon sighting confirmation and may shift by one day."
         ]
       }
     },
     {
       "code": "sy",
+      "code_iso2": "SY",
       "name_ar": "الجمهورية العربية السورية",
-      "short_name_ar": "سوريا",
-      "title_keyword": "إجازات سوريا",
       "name_en": "Syria",
+      "short_name_ar": "سوريا",
       "short_name_en": "Syria",
+      "title_keyword": "إجازات سوريا",
       "title_keyword_en": "Syria Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة الجمهورية العربية السورية",
+      "government_url": "https://www.gov.sy",
+      "cluster": "levant",
+      "related_countries": [
+        "jo",
+        "lb",
+        "iq",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_SY",
-        "about_en": "PLACEHOLDER_ABOUT_EN_SY"
+        "about_ar": "تشتمل العطل الرسمية في الجمهورية العربية السورية على مزيج من المناسبات الوطنية والأعياد الدينية الإسلامية والمسيحية. وعلى غرار لبنان، يحتفل بعيد الميلاد إجازةً رسمية تقديراً للمكون المسيحي في المجتمع السوري. وتضم العطل الوطنية يوم الجلاء في السابع عشر من أبريل الذي يُحيي ذكرى انسحاب القوات الفرنسية عام 1946. تتبع العطل الدينية الإسلامية التقويم الهجري وتشمل عيد الفطر وعيد الأضحى والمولد النبوي الشريف، إضافةً إلى عيد العمال في الأول من مايو.",
+        "about_en": "Syria's official public holiday calendar combines national commemorations with both Islamic and Christian religious observances. Like Lebanon, Syria recognises Christmas as an official public holiday, acknowledging the country's historic Christian communities. National holidays include Evacuation Day on 17 April, marking the withdrawal of French forces in 1946. Islamic religious holidays follow the Hijri lunar calendar and include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday. Labour Day on 1 May is also observed as a public holiday. Syria observes Friday and Saturday as its official weekend."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_SY",
-          "PLACEHOLDER_PRACTICAL_AR_2_SY",
-          "PLACEHOLDER_PRACTICAL_AR_3_SY",
-          "PLACEHOLDER_PRACTICAL_AR_4_SY"
+          "تتوقف الدوائر الحكومية والمؤسسات الرسمية عن العمل في أيام العطل المعتمدة.",
+          "يحق لموظفي القطاع الخاص الحصول على إجازة مدفوعة في أيام العطل الرسمية.",
+          "تتغير ساعات عمل التجزئة والمطاعم خلال فترات الأعياد وقد تتوقف جزئياً.",
+          "تُحدد تواريخ الأعياد الدينية الإسلامية بناءً على رؤية الهلال الرسمية."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_SY",
-          "PLACEHOLDER_PRACTICAL_EN_2_SY",
-          "PLACEHOLDER_PRACTICAL_EN_3_SY",
-          "PLACEHOLDER_PRACTICAL_EN_4_SY"
+          "Government offices and official institutions suspend operations on all public holidays.",
+          "Private sector employees are entitled to paid leave on official public holidays.",
+          "Retail and restaurant hours vary significantly during Eid periods.",
+          "Islamic holiday dates are determined by official moon sighting and may vary by one day."
         ]
       }
     },
     {
       "code": "iq",
+      "code_iso2": "IQ",
       "name_ar": "جمهورية العراق",
-      "short_name_ar": "العراق",
-      "title_keyword": "إجازات العراق",
       "name_en": "Iraq",
+      "short_name_ar": "العراق",
       "short_name_en": "Iraq",
+      "title_keyword": "إجازات العراق",
       "title_keyword_en": "Iraq Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة جمهورية العراق",
+      "government_url": "https://www.cabinet.iq",
+      "cluster": "levant",
+      "related_countries": [
+        "jo",
+        "lb",
+        "sy",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_IQ",
-        "about_en": "PLACEHOLDER_ABOUT_EN_IQ"
+        "about_ar": "يجمع تقويم العطل الرسمية في جمهورية العراق بين الأعياد الوطنية والمناسبات الدينية الإسلامية بشقيها السني والشيعي. وتُعدّ ذكرى ثورة الرابع عشر من يوليو 1958 من أبرز العطل الوطنية، إضافةً إلى يوم الجيش ورأس السنة الميلادية. وبحكم الثقل الشيعي في التركيبة الديموغرافية العراقية، تُحتسب بعض المناسبات الدينية الشيعية ضمن العطل الرسمية، مما يجعل العراق متميزاً في هذا الشأن عن أغلب الدول العربية. تتبع العطل الإسلامية التقويم الهجري، وتُعلنها وزارة الداخلية وجهات دينية معتمدة وفق رؤية الهلال.",
+        "about_en": "Iraq's public holiday calendar reflects its complex demographic and political makeup, combining national commemorations with both Sunni and Shia Islamic observances. The 14 July Revolution anniversary and Army Day are prominent national holidays. Given Iraq's significant Shia Muslim population, certain Shia religious occasions are included as official public holidays — a distinction not found in most other Arab countries. Islamic religious holidays follow the Hijri calendar, with dates announced by the Interior Ministry and recognised religious authorities. Iraq observes Friday and Saturday as its official weekend, consistent with most Gulf-adjacent Arab states."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_IQ",
-          "PLACEHOLDER_PRACTICAL_AR_2_IQ",
-          "PLACEHOLDER_PRACTICAL_AR_3_IQ",
-          "PLACEHOLDER_PRACTICAL_AR_4_IQ"
+          "تُغلق الوزارات والمؤسسات الحكومية أبوابها في جميع العطل الرسمية المعتمدة.",
+          "يستحق الموظفون في القطاع الخاص إجازةً مدفوعة في أيام العطل وفق قانون العمل العراقي.",
+          "قد تُعلن السلطات المحلية أحياناً عطلاً إضافية لظروف استثنائية.",
+          "تواريخ الأعياد الدينية رهينة رؤية الهلال الرسمية وقد تتغير بيوم واحد."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_IQ",
-          "PLACEHOLDER_PRACTICAL_EN_2_IQ",
-          "PLACEHOLDER_PRACTICAL_EN_3_IQ",
-          "PLACEHOLDER_PRACTICAL_EN_4_IQ"
+          "Ministries and government bodies close on all officially declared public holidays.",
+          "Iraqi Labour Law entitles private sector employees to paid leave on public holidays.",
+          "Local authorities may occasionally declare additional holidays in exceptional circumstances.",
+          "Religious holiday dates depend on official moon sighting and may shift by one day."
         ]
       }
     },
     {
       "code": "kw",
+      "code_iso2": "KW",
       "name_ar": "دولة الكويت",
-      "short_name_ar": "الكويت",
-      "title_keyword": "إجازات الكويت",
       "name_en": "Kuwait",
+      "short_name_ar": "الكويت",
       "short_name_en": "Kuwait",
+      "title_keyword": "إجازات الكويت",
       "title_keyword_en": "Kuwait Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة دولة الكويت",
+      "government_url": "https://www.e.gov.kw",
+      "cluster": "gulf",
+      "related_countries": [
+        "ae",
+        "sa",
+        "qa",
+        "bh",
+        "om"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_KW",
-        "about_en": "PLACEHOLDER_ABOUT_EN_KW"
+        "about_ar": "تحتضن دولة الكويت تقويماً للعطل الرسمية يجمع بين المناسبات الوطنية العزيزة والأعياد الإسلامية. ويتصدر هذه العطل اليوم الوطني الكويتي في الخامس والعشرين من فبراير الذي يُحيي ذكرى استقلال الكويت عام 1961، ويتبعه مباشرةً يوم التحرير في السادس والعشرين من فبراير الذي يستحضر ذكرى تحرير الكويت من الاحتلال العراقي عام 1991. وتُشكّل هاتان الذكريان المتتاليتان أهم مناسبة وطنية في العام، إذ تتوقف خلالها الحياة الرسمية بصورة شبه تامة. أما العطل الدينية فتشمل عيد الفطر وعيد الأضحى والمولد النبوي ورأس السنة الميلادية، وتعتمد في تحديد مواعيدها على رؤية الهلال.",
+        "about_en": "Kuwait's public holiday calendar is shaped by two defining national events celebrated on consecutive days. National Day on 25 February marks Kuwait's independence in 1961, immediately followed by Liberation Day on 26 February, commemorating the liberation of Kuwait from Iraqi occupation in 1991. These back-to-back national holidays form the centrepiece of Kuwait's annual celebrations and are observed with significant public festivities. Islamic religious holidays include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, all determined by official moon sighting. New Year's Day is also observed, reflecting Kuwait's openness as an international business hub."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_KW",
-          "PLACEHOLDER_PRACTICAL_AR_2_KW",
-          "PLACEHOLDER_PRACTICAL_AR_3_KW",
-          "PLACEHOLDER_PRACTICAL_AR_4_KW"
+          "تُغلق الجهات الحكومية والمؤسسات الرسمية في جميع أيام العطل الرسمية.",
+          "يضمن قانون العمل الكويتي حق موظفي القطاع الخاص في إجازة مدفوعة خلال العطل.",
+          "خلال اليوم الوطني ويوم التحرير تُنظَّم احتفالات شعبية واسعة وقد تُغلق بعض الطرق.",
+          "تُعلن الجهات الدينية الرسمية تواريخ الأعياد الإسلامية وفق رؤية الهلال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_KW",
-          "PLACEHOLDER_PRACTICAL_EN_2_KW",
-          "PLACEHOLDER_PRACTICAL_EN_3_KW",
-          "PLACEHOLDER_PRACTICAL_EN_4_KW"
+          "Government offices and official institutions close on all public holidays.",
+          "Kuwaiti Labour Law guarantees private sector employees paid leave on public holidays.",
+          "National Day and Liberation Day see large public celebrations; some roads may be closed.",
+          "Islamic holiday dates are officially announced by religious authorities following moon sighting."
         ]
       }
     },
     {
       "code": "qa",
+      "code_iso2": "QA",
       "name_ar": "دولة قطر",
-      "short_name_ar": "قطر",
-      "title_keyword": "إجازات قطر",
       "name_en": "Qatar",
+      "short_name_ar": "قطر",
       "short_name_en": "Qatar",
+      "title_keyword": "إجازات قطر",
       "title_keyword_en": "Qatar Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة دولة قطر",
+      "government_url": "https://www.gov.qa",
+      "cluster": "gulf",
+      "related_countries": [
+        "ae",
+        "sa",
+        "kw",
+        "bh",
+        "om"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_QA",
-        "about_en": "PLACEHOLDER_ABOUT_EN_QA"
+        "about_ar": "تتسم عطل دولة قطر الرسمية بالإيجاز والتركيز على أبرز المناسبات الوطنية والدينية. ويُعدّ اليوم الوطني القطري في الثامن عشر من ديسمبر أبرز هذه العطل، إذ يُحيي ذكرى توحيد قطر على يد الشيخ جاسم بن محمد آل ثاني عام 1878. وتشمل العطل الدينية الإسلامية عيد الفطر وعيد الأضحى والمولد النبوي الشريف، وتتحدد مواعيدها عبر رؤية الهلال الرسمية التي تُعلنها الجهات المختصة. ويتمتع العمال في قطر بأحد أكثر أنظمة حماية حقوق العمل شمولاً في المنطقة.",
+        "about_en": "Qatar's public holiday calendar is concise, focusing on the country's most significant national and Islamic occasions. Qatar National Day on 18 December is the premier celebration, marking the unification of Qatar under Sheikh Jassim bin Mohammed Al Thani in 1878 and observed with major public events and fireworks. Qatar occasionally adds Sport Day as a public holiday in certain years. Islamic religious holidays include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, confirmed through official moon sighting. Qatar has invested significantly in workers rights protections in recent years, and private sector employees are entitled to full paid leave on all public holidays under Qatari Labour Law."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_QA",
-          "PLACEHOLDER_PRACTICAL_AR_2_QA",
-          "PLACEHOLDER_PRACTICAL_AR_3_QA",
-          "PLACEHOLDER_PRACTICAL_AR_4_QA"
+          "تُغلق الوزارات والجهات الحكومية الرسمية في أيام العطل المعتمدة.",
+          "يكفل قانون العمل القطري لموظفي القطاع الخاص الحصول على إجازة مدفوعة في العطل الرسمية.",
+          "يحتفل القطريون والمقيمون باليوم الوطني احتفالاً واسعاً مع تزيين الشوارع والفعاليات العامة.",
+          "تُعلن الجهات الدينية الرسمية في قطر تواريخ الأعياد الإسلامية بعد رؤية الهلال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_QA",
-          "PLACEHOLDER_PRACTICAL_EN_2_QA",
-          "PLACEHOLDER_PRACTICAL_EN_3_QA",
-          "PLACEHOLDER_PRACTICAL_EN_4_QA"
+          "Government ministries and official bodies close on all officially declared public holidays.",
+          "Qatari Labour Law ensures private sector employees receive paid leave on public holidays.",
+          "Qatar National Day is celebrated extensively with public events, fireworks, and street decorations.",
+          "Islamic holiday dates are announced by Qatar's official religious authorities following moon sighting."
         ]
       }
     },
     {
       "code": "bh",
+      "code_iso2": "BH",
       "name_ar": "مملكة البحرين",
-      "short_name_ar": "البحرين",
-      "title_keyword": "إجازات البحرين",
       "name_en": "Bahrain",
+      "short_name_ar": "البحرين",
       "short_name_en": "Bahrain",
+      "title_keyword": "إجازات البحرين",
       "title_keyword_en": "Bahrain Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة مملكة البحرين",
+      "government_url": "https://www.bahrain.bh",
+      "cluster": "gulf",
+      "related_countries": [
+        "ae",
+        "sa",
+        "kw",
+        "qa",
+        "om"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_BH",
-        "about_en": "PLACEHOLDER_ABOUT_EN_BH"
+        "about_ar": "تشتمل عطل مملكة البحرين الرسمية على مزيج متوازن من المناسبات الوطنية والأعياد الإسلامية. ومن أبرز خصائص تقويم البحرين احتفاله بعيد الجلوس السنوي الذي يُحيي ذكرى تولي جلالة الملك الحكم، فضلاً عن اليوم الوطني في السادس عشر من ديسمبر الذي يُصادف إعلان استقلال البحرين عام 1971. وعلى غرار العراق، تتضمن البحرين بعض المناسبات الدينية الشيعية ضمن العطل الرسمية نظراً للثقل الديموغرافي لهذه الشريحة في المجتمع البحريني. وتُحدد مواعيد العطل الإسلامية وفق رؤية الهلال التي تُعلنها الجهات الدينية المختصة.",
+        "about_en": "Bahrain's public holiday calendar combines national celebrations with both Sunni and Shia Islamic observances, reflecting the kingdom's diverse population. National Day on 16 December marks Bahrain's independence in 1971, while the annual Accession Day commemorates the king's ascension to the throne. Like Iraq, Bahrain includes certain Shia religious occasions among its official public holidays, distinguishing it from several Gulf neighbours. Islamic religious holidays are confirmed by official moon sighting. Bahrain has a well-developed private sector employment framework, and workers are entitled to paid leave on all official public holidays under Bahraini Labour Law."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_BH",
-          "PLACEHOLDER_PRACTICAL_AR_2_BH",
-          "PLACEHOLDER_PRACTICAL_AR_3_BH",
-          "PLACEHOLDER_PRACTICAL_AR_4_BH"
+          "تتوقف الجهات الحكومية والمؤسسات الرسمية عن العمل في أيام العطل الرسمية المعتمدة.",
+          "يستحق موظفو القطاع الخاص إجازة مدفوعة في العطل الرسمية وفق قانون العمل البحريني.",
+          "تُنظَّم احتفالات رسمية وشعبية في اليوم الوطني وعيد الجلوس.",
+          "تُحدد مواعيد الأعياد الدينية الإسلامية بناءً على رؤية الهلال وقد تتغير بيوم واحد."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_BH",
-          "PLACEHOLDER_PRACTICAL_EN_2_BH",
-          "PLACEHOLDER_PRACTICAL_EN_3_BH",
-          "PLACEHOLDER_PRACTICAL_EN_4_BH"
+          "Government offices and official institutions close on all officially declared public holidays.",
+          "Bahraini Labour Law entitles private sector employees to paid leave on public holidays.",
+          "Official and public celebrations are held on National Day and Accession Day.",
+          "Islamic holiday dates are subject to official moon sighting confirmation and may shift by one day."
         ]
       }
     },
     {
       "code": "om",
+      "code_iso2": "OM",
       "name_ar": "سلطنة عمان",
-      "short_name_ar": "عمان",
-      "title_keyword": "إجازات عمان",
       "name_en": "Oman",
+      "short_name_ar": "عمان",
       "short_name_en": "Oman",
+      "title_keyword": "إجازات عمان",
       "title_keyword_en": "Oman Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة سلطنة عمان",
+      "government_url": "https://www.oman.om",
+      "cluster": "gulf",
+      "related_countries": [
+        "ae",
+        "sa",
+        "kw",
+        "qa",
+        "bh"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_OM",
-        "about_en": "PLACEHOLDER_ABOUT_EN_OM"
+        "about_ar": "تتبع سلطنة عُمان نهجاً راسخاً في تقويم عطلها الرسمية، إذ تجمع بين العيد الوطني والأعياد الإسلامية الكبرى. ويحتل العيد الوطني العُماني في الثامن عشر من نوفمبر مكانةً استثنائية، ارتباطاً بذكرى ميلاد المغفور له بإذن الله السلطان قابوس بن سعيد ثم تحوّل لاحقاً إلى احتفاء بذكرى تأسيس الدولة العُمانية الحديثة. وبعد تولي السلطان هيثم بن طارق مقاليد الحكم في يناير 2020 باتت ذكرى الجلوس السلطاني تُحتفى بها أيضاً ضمن المناسبات الوطنية. أما العطل الإسلامية فتشمل عيد الفطر وعيد الأضحى والمولد النبوي الشريف وتُعلن مواعيدها وفق رؤية الهلال الرسمية.",
+        "about_en": "Oman's public holiday calendar reflects the sultanate's distinct identity and its blend of national pride with Islamic tradition. National Day on 18 November has historically been tied to the birthday of the late Sultan Qaboos bin Said and now commemorates the founding of the modern Omani state. Following Sultan Haitham bin Tariq's accession in January 2020, the Royal Accession Day has also been observed as a national occasion. Islamic religious holidays include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, confirmed through official moon sighting. Oman tends to observe slightly fewer public holidays than some Gulf neighbours, maintaining a predictable annual calendar that benefits businesses and residents alike."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_OM",
-          "PLACEHOLDER_PRACTICAL_AR_2_OM",
-          "PLACEHOLDER_PRACTICAL_AR_3_OM",
-          "PLACEHOLDER_PRACTICAL_AR_4_OM"
+          "تُغلق الوزارات والجهات الحكومية أبوابها في جميع العطل الرسمية المعتمدة.",
+          "يلتزم أصحاب العمل في القطاع الخاص بمنح موظفيهم إجازة مدفوعة وفق قانون العمل العُماني.",
+          "احتفالات العيد الوطني واسعة النطاق وتشمل فعاليات رسمية وأنشطة شعبية في مختلف المحافظات.",
+          "تُعلن الجهات الدينية في عُمان تواريخ الأعياد الإسلامية رسمياً بعد رؤية الهلال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_OM",
-          "PLACEHOLDER_PRACTICAL_EN_2_OM",
-          "PLACEHOLDER_PRACTICAL_EN_3_OM",
-          "PLACEHOLDER_PRACTICAL_EN_4_OM"
+          "Government ministries and official bodies close on all declared public holidays.",
+          "Omani Labour Law requires private sector employers to grant paid leave on public holidays.",
+          "National Day celebrations are held across all governorates with official events and public activities.",
+          "Oman's religious authorities officially announce Islamic holiday dates following moon sighting confirmation."
         ]
       }
     },
     {
       "code": "ye",
+      "code_iso2": "YE",
       "name_ar": "الجمهورية اليمنية",
-      "short_name_ar": "اليمن",
-      "title_keyword": "إجازات اليمن",
       "name_en": "Yemen",
+      "short_name_ar": "اليمن",
       "short_name_en": "Yemen",
+      "title_keyword": "إجازات اليمن",
       "title_keyword_en": "Yemen Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة الجمهورية اليمنية",
+      "government_url": "https://www.yemengov.net",
+      "cluster": "horn-africa",
+      "related_countries": [
+        "sd",
+        "so",
+        "dj",
+        "km"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_YE",
-        "about_en": "PLACEHOLDER_ABOUT_EN_YE"
+        "about_ar": "يضم تقويم العطل الرسمية في الجمهورية اليمنية عدداً من المناسبات الوطنية والأعياد الإسلامية. ويأتي في مقدمة العطل الوطنية يوم الوحدة في الثاني والعشرين من مايو الذي يُحيي ذكرى توحيد شطري اليمن الشمالي والجنوبي عام 1990، وثورة السادس والعشرين من سبتمبر ذكرى الثورة اليمنية عام 1962. تتبع العطل الدينية التقويم الهجري وتشمل عيد الفطر وعيد الأضحى والمولد النبوي الشريف ورأس السنة الهجرية. وتجدر الإشارة إلى أن الأوضاع في اليمن منذ عام 2015 قد أثّرت على مدى الالتزام الرسمي بهذه العطل في مناطق مختلفة.",
+        "about_en": "Yemen's public holiday calendar includes both national commemorations and Islamic religious observances. Unity Day on 22 May is the most significant national holiday, marking the reunification of North and South Yemen in 1990, while 26 September Revolution Day commemorates the 1962 revolution. Islamic holidays follow the Hijri lunar calendar and include Eid Al-Fitr, Eid Al-Adha, the Prophet's Birthday, and Islamic New Year. The ongoing conflict since 2015 has significantly affected the uniform observance of public holidays across different regions of the country."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_YE",
-          "PLACEHOLDER_PRACTICAL_AR_2_YE",
-          "PLACEHOLDER_PRACTICAL_AR_3_YE",
-          "PLACEHOLDER_PRACTICAL_AR_4_YE"
+          "العطل الرسمية مُعلنة رسمياً وإن كان تطبيقها يتفاوت من منطقة إلى أخرى.",
+          "تشمل العطل الوطنية يوم الوحدة وأعياد الثورة وعطل الأعياد الإسلامية.",
+          "مواعيد الأعياد الدينية تتبع رؤية الهلال وقد تتغير بيوم واحد.",
+          "ينبغي التحقق من الأوضاع المحلية قبل التخطيط لأي سفر أو نشاط تجاري."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_YE",
-          "PLACEHOLDER_PRACTICAL_EN_2_YE",
-          "PLACEHOLDER_PRACTICAL_EN_3_YE",
-          "PLACEHOLDER_PRACTICAL_EN_4_YE"
+          "Public holidays are officially declared, though their observance varies by region.",
+          "National holidays include Unity Day, revolution anniversaries, and Islamic holidays.",
+          "Religious holiday dates follow moon sighting confirmation and may shift by one day.",
+          "Travellers and businesses should verify local conditions before planning activities."
         ]
       }
     },
     {
       "code": "ma",
+      "code_iso2": "MA",
       "name_ar": "المملكة المغربية",
-      "short_name_ar": "المغرب",
-      "title_keyword": "إجازات المغرب",
       "name_en": "Morocco",
+      "short_name_ar": "المغرب",
       "short_name_en": "Morocco",
+      "title_keyword": "إجازات المغرب",
       "title_keyword_en": "Morocco Public Holidays",
       "weekend_days": [
         "Saturday",
         "Sunday"
       ],
+      "government_name_ar": "حكومة المملكة المغربية",
+      "government_url": "https://www.maroc.ma",
+      "cluster": "north-africa",
+      "related_countries": [
+        "tn",
+        "dz",
+        "ly",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_MA",
-        "about_en": "PLACEHOLDER_ABOUT_EN_MA"
+        "about_ar": "تتمتع المملكة المغربية بتقويم عطل رسمية يعكس تعدد مكوناتها الحضارية وهويتها الوطنية الراسخة. فضلاً عن الأعياد الإسلامية المشتركة كعيد الفطر وعيد الأضحى، تحتفل المملكة بعيد العرش في الثلاثين من يوليو إحياءً لجلوس جلالة الملك محمد السادس على العرش عام 1999. وتضم العطل الوطنية ذكرى تقديم وثيقة الاستقلال وعيد العرش وعيد الشباب في الحادي والعشرين من أغسطس وعيد الاستقلال في الثامن عشر من نوفمبر. ويُعدّ المغرب من الدول التي تعتمد نهاية أسبوع على غرار الدول الغربية أي السبت والأحد مما يجعله مختلفاً عن أغلب دول الخليج والمشرق.",
+        "about_en": "Morocco's public holiday calendar reflects its rich blend of Amazigh, Arab, Islamic, and modern national identity. In addition to shared Islamic holidays like Eid Al-Fitr and Eid Al-Adha, Morocco celebrates Throne Day on 30 July, marking King Mohammed VI's accession in 1999 — one of the country's most festive national occasions. Other national holidays include Manifesto of Independence Day on 11 January, Youth Day on 21 August, and Independence Day on 18 November. Morocco stands out among Arab countries by observing a Saturday-Sunday weekend, aligning with European business practices and reflecting its close economic ties with the EU. The country also observes Labour Day on 1 May as a public holiday."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_MA",
-          "PLACEHOLDER_PRACTICAL_AR_2_MA",
-          "PLACEHOLDER_PRACTICAL_AR_3_MA",
-          "PLACEHOLDER_PRACTICAL_AR_4_MA"
+          "تُغلق الإدارات الحكومية والمؤسسات العمومية في جميع أيام العطل الرسمية.",
+          "يكفل قانون الشغل المغربي لموظفي القطاع الخاص الحصول على إجازة مدفوعة في العطل الرسمية.",
+          "تعمل كثير من المحلات التجارية والمطاعم بساعات معدّلة خلال فترات الأعياد.",
+          "تواريخ الأعياد الدينية تُعلنها الوزارة المكلفة بالشؤون الإسلامية وفق رؤية الهلال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_MA",
-          "PLACEHOLDER_PRACTICAL_EN_2_MA",
-          "PLACEHOLDER_PRACTICAL_EN_3_MA",
-          "PLACEHOLDER_PRACTICAL_EN_4_MA"
+          "Government administrations and public institutions close on all official public holidays.",
+          "Moroccan Labour Law guarantees private sector employees paid leave on public holidays.",
+          "Many shops and restaurants operate with adjusted hours during Eid periods.",
+          "Religious holiday dates are announced by the Ministry of Islamic Affairs following official moon sighting."
         ]
       }
     },
     {
       "code": "tn",
+      "code_iso2": "TN",
       "name_ar": "الجمهورية التونسية",
-      "short_name_ar": "تونس",
-      "title_keyword": "إجازات تونس",
       "name_en": "Tunisia",
+      "short_name_ar": "تونس",
       "short_name_en": "Tunisia",
+      "title_keyword": "إجازات تونس",
       "title_keyword_en": "Tunisia Public Holidays",
       "weekend_days": [
         "Saturday",
         "Sunday"
       ],
+      "government_name_ar": "حكومة الجمهورية التونسية",
+      "government_url": "https://www.premiers.tn",
+      "cluster": "north-africa",
+      "related_countries": [
+        "ma",
+        "dz",
+        "ly",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_TN",
-        "about_en": "PLACEHOLDER_ABOUT_EN_TN"
+        "about_ar": "تجمع عطل الجمهورية التونسية بين الموروث الوطني والبُعد الإسلامي والطابع الاجتماعي الحديث. ويأتي عيد الاستقلال في العشرين من مارس ليُحيي ذكرى استقلال تونس عن الحماية الفرنسية عام 1956، فيما تُذكّر ذكرى ثورة الرابع عشر من يناير بانتفاضة 2011. وعلى خلاف الدول المغاربية الأخرى تتزامن في بعض السنوات عطل عيد الاستقلال وعيد الفطر في تاريخ واحد كما هو الحال في 2026 مما يجعل التقويم فريداً. وتحتفل تونس بعيد الجمهورية في الخامس والعشرين من يوليو إحياءً لإعلان الجمهورية عام 1957. وتعتمد تونس نهاية أسبوع غربية على يومَي السبت والأحد.",
+        "about_en": "Tunisia's public holiday calendar combines national history, Islamic tradition, and a distinctly modern social character. Independence Day on 20 March marks Tunisia's independence from French protectorate in 1956, while 14 January Revolution Day commemorates the 2011 uprising. In some years Independence Day and Eid Al-Fitr fall on the same date — as is the case in 2026 — creating an unusual confluence in the holiday calendar. Republic Day on 25 July commemorates the declaration of the Tunisian Republic in 1957. Tunisia observes a Saturday-Sunday weekend like Morocco and Lebanon, reflecting its historically strong ties with Europe. Labour Day on 1 May is also observed as a public holiday."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_TN",
-          "PLACEHOLDER_PRACTICAL_AR_2_TN",
-          "PLACEHOLDER_PRACTICAL_AR_3_TN",
-          "PLACEHOLDER_PRACTICAL_AR_4_TN"
+          "تُغلق الوزارات والمؤسسات الحكومية في أيام العطل الرسمية المعتمدة.",
+          "يستحق موظفو القطاع الخاص إجازة مدفوعة في أيام العطل وفق مجلة الشغل التونسية.",
+          "تواصل معظم محلات التجزئة والمطاعم عملها بساعات معدّلة خلال فترات الأعياد.",
+          "تُعلن مواعيد الأعياد الدينية الإسلامية وفق رؤية الهلال من قِبل الجهات المختصة."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_TN",
-          "PLACEHOLDER_PRACTICAL_EN_2_TN",
-          "PLACEHOLDER_PRACTICAL_EN_3_TN",
-          "PLACEHOLDER_PRACTICAL_EN_4_TN"
+          "Government ministries and public institutions close on all officially declared public holidays.",
+          "Tunisian Labour Code entitles private sector employees to paid leave on public holidays.",
+          "Most retail outlets and restaurants continue operating with adjusted hours during Eid periods.",
+          "Islamic holiday dates are announced by official religious authorities following moon sighting."
         ]
       }
     },
     {
       "code": "dz",
+      "code_iso2": "DZ",
       "name_ar": "الجمهورية الجزائرية الديمقراطية الشعبية",
-      "short_name_ar": "الجزائر",
-      "title_keyword": "إجازات الجزائر",
       "name_en": "Algeria",
+      "short_name_ar": "الجزائر",
       "short_name_en": "Algeria",
+      "title_keyword": "إجازات الجزائر",
       "title_keyword_en": "Algeria Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة الجمهورية الجزائرية",
+      "government_url": "https://www.premier-ministre.gov.dz",
+      "cluster": "north-africa",
+      "related_countries": [
+        "ma",
+        "tn",
+        "ly",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_DZ",
-        "about_en": "PLACEHOLDER_ABOUT_EN_DZ"
+        "about_ar": "تحمل عطل الجمهورية الجزائرية الديمقراطية الشعبية بُعداً تاريخياً ونضالياً بارزاً، إذ تستحضر ذكريات ثورة التحرير الوطني بكل فخر. وتُعدّ ذكرى اندلاع الثورة في الأول من نوفمبر 1954 من أبرز العطل الوطنية وأعمقها في الوجدان الجزائري. وتضم العطل الوطنية أيضاً يوم الاستقلال في الخامس من يوليو الذي يُحيي ذكرى استقلال الجزائر عام 1962 بعد ثورة تحريرية طويلة. وتتميز الجزائر عن جاراتها المغاربيتين تونس والمغرب باعتمادها نهاية أسبوع على الجمعة والسبت بدلاً من السبت والأحد. أما العطل الدينية فتشمل عيد الفطر وعيد الأضحى والمولد النبوي ورأس السنة الهجرية.",
+        "about_en": "Algeria's public holiday calendar carries a strong historical and revolutionary character, shaped by the country's long struggle for independence from France. Revolution Day on 1 November is one of the most deeply felt national holidays, marking the launch of the liberation revolution in 1954. Independence Day on 5 July commemorates Algeria's independence in 1962 following a seven-year war. Algeria differs from its Maghreb neighbours Tunisia and Morocco by observing a Friday-Saturday weekend rather than Saturday-Sunday. Islamic religious holidays include Eid Al-Fitr, Eid Al-Adha, the Prophet's Birthday, and the Islamic New Year, all confirmed by official moon sighting."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_DZ",
-          "PLACEHOLDER_PRACTICAL_AR_2_DZ",
-          "PLACEHOLDER_PRACTICAL_AR_3_DZ",
-          "PLACEHOLDER_PRACTICAL_AR_4_DZ"
+          "تُغلق الإدارات والمؤسسات العمومية أبوابها في جميع العطل الرسمية المعتمدة.",
+          "يضمن قانون العمل الجزائري لموظفي القطاع الخاص إجازة مدفوعة في أيام العطل.",
+          "تُحيي الجزائر ذكرى اندلاع الثورة في أول نوفمبر بمراسم رسمية وشعبية على مستوى وطني.",
+          "تواريخ الأعياد الإسلامية تُعلنها الجهات الدينية المختصة بعد رؤية الهلال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_DZ",
-          "PLACEHOLDER_PRACTICAL_EN_2_DZ",
-          "PLACEHOLDER_PRACTICAL_EN_3_DZ",
-          "PLACEHOLDER_PRACTICAL_EN_4_DZ"
+          "Government administrations and public bodies close on all officially declared public holidays.",
+          "Algerian Labour Law guarantees private sector employees paid leave on public holidays.",
+          "Revolution Day on 1 November is marked with official national ceremonies across the country.",
+          "Islamic holiday dates are confirmed by official religious authorities following moon sighting."
         ]
       }
     },
     {
       "code": "ly",
+      "code_iso2": "LY",
       "name_ar": "دولة ليبيا",
-      "short_name_ar": "ليبيا",
-      "title_keyword": "إجازات ليبيا",
       "name_en": "Libya",
+      "short_name_ar": "ليبيا",
       "short_name_en": "Libya",
+      "title_keyword": "إجازات ليبيا",
       "title_keyword_en": "Libya Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة ليبيا",
+      "government_url": "https://www.gov.ly",
+      "cluster": "north-africa",
+      "related_countries": [
+        "ma",
+        "tn",
+        "dz",
+        "eg"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_LY",
-        "about_en": "PLACEHOLDER_ABOUT_EN_LY"
+        "about_ar": "يضم تقويم العطل الرسمية في دولة ليبيا عدداً من الأعياد الوطنية المرتبطة بالتحولات التاريخية الكبرى والأعياد الإسلامية. ومن أبرز العطل الوطنية ذكرى ثورة السابع عشر من فبراير 2011 وذكرى استقلال ليبيا في الرابع والعشرين من ديسمبر 1951. وتتبع العطل الدينية التقويم الهجري وتشمل عيد الفطر وعيد الأضحى والمولد النبوي ورأس السنة الهجرية. وتجدر الإشارة إلى أن التقلبات السياسية التي شهدتها ليبيا في السنوات الأخيرة قد أثّرت على انتظام الإعلان عن بعض العطل وتطبيقها.",
+        "about_en": "Libya's public holiday calendar marks key historical turning points alongside Islamic religious observances. National holidays include the 17 February Revolution anniversary commemorating the 2011 uprising, and Independence Day on 24 December marking Libya's independence in 1951. Islamic religious holidays follow the Hijri lunar calendar and include Eid Al-Fitr, Eid Al-Adha, the Prophet's Birthday, and the Islamic New Year, confirmed through moon sighting. The political instability Libya has experienced in recent years has at times affected the consistent announcement and observance of public holidays across different regions of the country."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_LY",
-          "PLACEHOLDER_PRACTICAL_AR_2_LY",
-          "PLACEHOLDER_PRACTICAL_AR_3_LY",
-          "PLACEHOLDER_PRACTICAL_AR_4_LY"
+          "تُعلن العطل الرسمية من الجهات الحكومية المختصة وقد يتفاوت تطبيقها بحسب المنطقة.",
+          "تشمل العطل الوطنية ذكريات الثورة والاستقلال والأعياد الإسلامية.",
+          "تواريخ الأعياد الدينية الإسلامية مبنية على رؤية الهلال وقد تتغير.",
+          "يُنصح بمتابعة الإعلانات الرسمية قبل التخطيط للسفر أو الأعمال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_LY",
-          "PLACEHOLDER_PRACTICAL_EN_2_LY",
-          "PLACEHOLDER_PRACTICAL_EN_3_LY",
-          "PLACEHOLDER_PRACTICAL_EN_4_LY"
+          "Public holidays are officially declared, though observance may vary by region.",
+          "National holidays include revolution and independence anniversaries alongside Islamic holidays.",
+          "Islamic holiday dates are based on moon sighting and may shift by one day.",
+          "It is advisable to monitor official announcements before planning travel or business activities."
         ]
       }
     },
     {
       "code": "sd",
+      "code_iso2": "SD",
       "name_ar": "جمهورية السودان",
-      "short_name_ar": "السودان",
-      "title_keyword": "إجازات السودان",
       "name_en": "Sudan",
+      "short_name_ar": "السودان",
       "short_name_en": "Sudan",
+      "title_keyword": "إجازات السودان",
       "title_keyword_en": "Sudan Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة جمهورية السودان",
+      "government_url": "https://www.sudan.gov.sd",
+      "cluster": "horn-africa",
+      "related_countries": [
+        "ye",
+        "so",
+        "dj",
+        "km"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_SD",
-        "about_en": "PLACEHOLDER_ABOUT_EN_SD"
+        "about_ar": "تتشكل عطل جمهورية السودان الرسمية من مزيج العطل الوطنية التي تُجسّد مسيرة الاستقلال والأعياد الإسلامية. ويتصدر هذه العطل يوم الاستقلال في الأول من يناير الذي يُحيي ذكرى استقلال السودان عام 1956 ليكون من أوائل الدول الأفريقية الحصول على الاستقلال. وتتبع العطل الدينية التقويم الهجري وتشمل عيد الفطر وعيد الأضحى والمولد النبوي ورأس السنة الهجرية. وقد شهد السودان في السنوات الأخيرة تحولات سياسية وأمنية بالغة الأثر على مجريات الحياة اليومية بما فيها الالتزام بالعطل الرسمية.",
+        "about_en": "Sudan's public holiday calendar reflects the country's independence history and Islamic heritage. Independence Day on 1 January marks Sudan's independence in 1956, making it one of the first African nations to gain independence from colonial rule. Islamic religious holidays follow the Hijri calendar and include Eid Al-Fitr, Eid Al-Adha, the Prophet's Birthday, and the Islamic New Year, confirmed through moon sighting. Sudan has experienced significant political and security upheaval in recent years, which has affected the consistent observance of public holidays across the country."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_SD",
-          "PLACEHOLDER_PRACTICAL_AR_2_SD",
-          "PLACEHOLDER_PRACTICAL_AR_3_SD",
-          "PLACEHOLDER_PRACTICAL_AR_4_SD"
+          "تُعلن العطل الرسمية رسمياً وإن كان الوضع الراهن قد يؤثر على مدى التزام القطاعات المختلفة.",
+          "تشمل العطل الوطنية يوم الاستقلال والأعياد الإسلامية.",
+          "تُحدد مواعيد الأعياد الدينية وفق رؤية الهلال.",
+          "يُوصى بمتابعة التطورات الميدانية والإعلانات الرسمية قبل التخطيط."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_SD",
-          "PLACEHOLDER_PRACTICAL_EN_2_SD",
-          "PLACEHOLDER_PRACTICAL_EN_3_SD",
-          "PLACEHOLDER_PRACTICAL_EN_4_SD"
+          "Public holidays are officially declared, though current conditions may affect sector-wide observance.",
+          "National holidays include Independence Day and Islamic religious holidays.",
+          "Religious holiday dates are determined by official moon sighting.",
+          "Monitoring local developments and official announcements before planning is strongly advised."
         ]
       }
     },
     {
       "code": "so",
+      "code_iso2": "SO",
       "name_ar": "جمهورية الصومال",
-      "short_name_ar": "الصومال",
-      "title_keyword": "إجازات الصومال",
       "name_en": "Somalia",
+      "short_name_ar": "الصومال",
       "short_name_en": "Somalia",
+      "title_keyword": "إجازات الصومال",
       "title_keyword_en": "Somalia Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة جمهورية الصومال",
+      "government_url": "https://www.villasomalia.gov.so",
+      "cluster": "horn-africa",
+      "related_countries": [
+        "ye",
+        "sd",
+        "dj",
+        "km"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_SO",
-        "about_en": "PLACEHOLDER_ABOUT_EN_SO"
+        "about_ar": "تتضمن عطل جمهورية الصومال الرسمية مناسبات وطنية تُجسّد مسيرة الدولة الصومالية وأعياداً إسلامية بارزة. ويُعدّ يوم الوحدة في الأول من يوليو من أبرز العطل الوطنية، إذ يُحيي ذكرى توحيد الصومال الإيطالي والصومال البريطاني عام 1960 وإعلان الجمهورية الصومالية. تتبع العطل الدينية التقويم الهجري وتشمل عيد الفطر وعيد الأضحى والمولد النبوي الشريف. ونظراً لما تمر به الصومال من ظروف أمنية وسياسية استثنائية قد يتفاوت تطبيق هذه العطل من منطقة إلى أخرى.",
+        "about_en": "Somalia's public holiday calendar includes national commemorations and Islamic religious observances. Union Day on 1 July is the principal national holiday, marking the unification of Italian Somalia and British Somaliland in 1960 and the establishment of the Somali Republic. Islamic holidays follow the Hijri calendar and include Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday, confirmed through moon sighting. Due to the complex security and political situation in parts of Somalia, the observance of public holidays may vary significantly across different regions and administrative areas."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_SO",
-          "PLACEHOLDER_PRACTICAL_AR_2_SO",
-          "PLACEHOLDER_PRACTICAL_AR_3_SO",
-          "PLACEHOLDER_PRACTICAL_AR_4_SO"
+          "تُعلن العطل الرسمية من الحكومة المركزية وقد يتفاوت تطبيقها في المناطق المختلفة.",
+          "تشمل العطل الرسمية يوم الوحدة والأعياد الإسلامية الكبرى.",
+          "تواريخ الأعياد الدينية رهينة رؤية الهلال وقد تتغير بيوم واحد.",
+          "يُنصح بمراجعة المصادر المحلية للتحقق من الأوضاع قبل السفر."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_SO",
-          "PLACEHOLDER_PRACTICAL_EN_2_SO",
-          "PLACEHOLDER_PRACTICAL_EN_3_SO",
-          "PLACEHOLDER_PRACTICAL_EN_4_SO"
+          "Public holidays are declared by the federal government, with observance varying by region.",
+          "Recognised holidays include Union Day and major Islamic religious celebrations.",
+          "Religious holiday dates depend on moon sighting confirmation and may shift by one day.",
+          "Consulting local sources to verify conditions before travel is strongly recommended."
         ]
       }
     },
     {
       "code": "dj",
+      "code_iso2": "DJ",
       "name_ar": "جمهورية جيبوتي",
-      "short_name_ar": "جيبوتي",
-      "title_keyword": "إجازات جيبوتي",
       "name_en": "Djibouti",
+      "short_name_ar": "جيبوتي",
       "short_name_en": "Djibouti",
+      "title_keyword": "إجازات جيبوتي",
       "title_keyword_en": "Djibouti Public Holidays",
       "weekend_days": [
         "Friday",
         "Saturday"
       ],
+      "government_name_ar": "حكومة جمهورية جيبوتي",
+      "government_url": "https://www.presidence.dj",
+      "cluster": "horn-africa",
+      "related_countries": [
+        "ye",
+        "sd",
+        "so",
+        "km"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_DJ",
-        "about_en": "PLACEHOLDER_ABOUT_EN_DJ"
+        "about_ar": "تحتفل جمهورية جيبوتي بعدد من العطل الوطنية والدينية التي تعكس هويتها ذات الطابع الأفريقي والعربي والإسلامي. ويُمثّل يوم الاستقلال في السابع والعشرين من يونيو أبرز المناسبات الوطنية، إذ يُحيي ذكرى استقلال جيبوتي عن الحكم الفرنسي عام 1977. وتتبع العطل الدينية التقويم الهجري وتشمل عيد الفطر وعيد الأضحى والمولد النبوي ورأس السنة الهجرية. وتتسم جيبوتي بموقعها الاستراتيجي على مضيق باب المندب مما يجعلها ملتقى تجارياً وثقافياً بين العالمين العربي والأفريقي.",
+        "about_en": "Djibouti's public holiday calendar reflects its unique identity at the crossroads of Arab and African culture. Independence Day on 27 June is the foremost national holiday, marking Djibouti's independence from France in 1977. Islamic religious holidays follow the Hijri calendar and include Eid Al-Fitr, Eid Al-Adha, the Prophet's Birthday, and the Islamic New Year. Djibouti's strategic position at the Bab-el-Mandeb strait makes it a significant commercial hub, and its official holiday calendar is relatively compact, supporting a business-friendly environment for the many international organisations and military bases hosted in the country."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_DJ",
-          "PLACEHOLDER_PRACTICAL_AR_2_DJ",
-          "PLACEHOLDER_PRACTICAL_AR_3_DJ",
-          "PLACEHOLDER_PRACTICAL_AR_4_DJ"
+          "تُغلق الجهات الحكومية في أيام العطل الرسمية المعتمدة.",
+          "يستحق موظفو القطاع الخاص إجازة مدفوعة في العطل وفق قانون العمل الجيبوتي.",
+          "يوم الاستقلال يُحتفل به على المستوى الوطني مع فعاليات رسمية وشعبية.",
+          "مواعيد الأعياد الدينية تُحدد بناءً على رؤية الهلال."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_DJ",
-          "PLACEHOLDER_PRACTICAL_EN_2_DJ",
-          "PLACEHOLDER_PRACTICAL_EN_3_DJ",
-          "PLACEHOLDER_PRACTICAL_EN_4_DJ"
+          "Government offices close on all officially declared public holidays.",
+          "Djiboutian Labour Law entitles private sector employees to paid leave on public holidays.",
+          "Independence Day is celebrated nationally with official and public events.",
+          "Islamic holiday dates are determined by official moon sighting and may shift by one day."
         ]
       }
     },
     {
       "code": "km",
+      "code_iso2": "KM",
       "name_ar": "جزر القمر",
-      "short_name_ar": "جزر القمر",
-      "title_keyword": "إجازات جزر القمر",
       "name_en": "Comoros",
+      "short_name_ar": "جزر القمر",
       "short_name_en": "Comoros",
+      "title_keyword": "إجازات جزر القمر",
       "title_keyword_en": "Comoros Public Holidays",
       "weekend_days": [
-        "Saturday",
-        "Sunday"
+        "Friday",
+        "Saturday"
       ],
+      "government_name_ar": "حكومة اتحاد جزر القمر",
+      "government_url": "https://www.beit-salam.km",
+      "cluster": "horn-africa",
+      "related_countries": [
+        "ye",
+        "sd",
+        "so",
+        "dj"
+      ],
+      "bridge_links": [],
       "editorial": {
-        "about_ar": "PLACEHOLDER_ABOUT_AR_KM",
-        "about_en": "PLACEHOLDER_ABOUT_EN_KM"
+        "about_ar": "يجمع تقويم العطل الرسمية في اتحاد جزر القمر بين الاحتفاء بالمناسبات الوطنية والأعياد الإسلامية الكبرى. ويُعدّ يوم الاستقلال في السادس من يوليو المناسبة الوطنية الأبرز، إذ يُحيي ذكرى استقلال جزر القمر عن فرنسا عام 1975. وتُشكّل جزر القمر المجتمع العربي الإسلامي الأكثر جنوبيةً في المحيط الهندي، وتحتفل بالأعياد الإسلامية كعيد الفطر وعيد الأضحى والمولد النبوي الشريف احتفالاً بالغاً. ويتمتع السكان بتقاليد إسلامية راسخة تجعل من أعياد رمضان وما يليها محوراً للحياة الاجتماعية السنوية.",
+        "about_en": "Comoros observes a combination of national independence celebrations and Islamic religious holidays, reflecting its identity as the southernmost Arab Muslim state in the Indian Ocean. Independence Day on 6 July marks Comoros' independence from France in 1975 and is the country's principal national holiday. Islamic holidays are central to Comorian social life; Eid Al-Fitr, Eid Al-Adha, and the Prophet's Birthday are observed with significant community celebrations rooted in the country's deeply Islamic cultural traditions. The Comoros islands observe Friday and Saturday as the official weekend, consistent with Islamic tradition."
       },
       "practical": {
         "items_ar": [
-          "PLACEHOLDER_PRACTICAL_AR_1_KM",
-          "PLACEHOLDER_PRACTICAL_AR_2_KM",
-          "PLACEHOLDER_PRACTICAL_AR_3_KM",
-          "PLACEHOLDER_PRACTICAL_AR_4_KM"
+          "تُغلق المؤسسات الحكومية في أيام العطل الرسمية المعتمدة.",
+          "يستحق الموظفون في القطاع الخاص إجازة مدفوعة في أيام العطل.",
+          "الأعياد الإسلامية تحتل مكانة اجتماعية بارزة وتُحتفل بها على مستوى المجتمعات المحلية.",
+          "تواريخ الأعياد الدينية تتبع رؤية الهلال وقد تتغير بيوم."
         ],
         "items_en": [
-          "PLACEHOLDER_PRACTICAL_EN_1_KM",
-          "PLACEHOLDER_PRACTICAL_EN_2_KM",
-          "PLACEHOLDER_PRACTICAL_EN_3_KM",
-          "PLACEHOLDER_PRACTICAL_EN_4_KM"
+          "Government institutions close on all officially declared public holidays.",
+          "Private sector employees are entitled to paid leave on public holidays.",
+          "Islamic holidays hold central social importance and are celebrated at community level.",
+          "Religious holiday dates follow moon sighting confirmation and may shift by one day."
         ]
       }
     }
   ],
   "years": [
+    2025,
     2026,
     2027,
     2028
