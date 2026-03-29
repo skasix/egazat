@@ -135,6 +135,7 @@ const generateFlatSitemap = () => {
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en.html" />
   </url>`);
 
   urls.push(`  <url>
@@ -144,7 +145,23 @@ const generateFlatSitemap = () => {
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en.html" />
   </url>`);
+
+  // Eid tracker pages
+  ['ar', 'en'].forEach(lang => {
+    eidYears.forEach(year => {
+      urls.push(`  <url>
+    <loc>${BASE_URL}/${lang}/eid/${year}.html</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/ar/eid/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/eid/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/eid/${year}.html" />
+  </url>`);
+    });
+  });
 
   countries.forEach(country => {
     years.forEach(year => {
@@ -163,6 +180,7 @@ const generateFlatSitemap = () => {
     <priority>${priority}</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/ar/country/${country}/${year}.html" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/country/${country}/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/country/${country}/${year}.html" />
   </url>`);
       });
     });
