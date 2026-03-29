@@ -40,6 +40,12 @@ const getLang = (f) => isAr(f) ? 'ar' : 'en';
 const isCountryPage = (f) => /\/(ar|en)\/country\/[a-z]{2}\/\d{4}\.html$/.test(relPath(f));
 const isEidPage = (f) => /\/(ar|en)\/eid/.test(relPath(f));
 const isHomepage = (f) => relPath(f) === '/index.html' || relPath(f) === '/en.html';
+const isSitemap = (f) => relPath(f) === '/sitemap.html';
+
+// Known Eid page pairs that intentionally share titles/descriptions
+// (eid.html is the main tracker, eid/2026.html is the default year view)
+const eidDupPairs = new Set(['/ar/eid.html', '/ar/eid/2026.html', '/en/eid.html', '/en/eid/2026.html']);
+const isKnownEidDupPair = (files) => files.length === 2 && files.every(f => eidDupPairs.has(f));
 
 // Sort: ar country by code, en country by code, eid, homepages
 const sortedFiles = [...allFiles].sort((a, b) => {
