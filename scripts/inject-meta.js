@@ -75,6 +75,24 @@ function generateTitle(countryCode, year, lang = 'ar') {
   return title;
 }
 
+function generateEidTitle(year, lang = 'ar') {
+  if (lang === 'en') {
+    let t = `Eid Al-Fitr & Eid Al-Adha ${year} Dates — All Arab Countries | Egazat`;
+    if (t.length > 60) t = `Eid Al-Fitr & Eid Al-Adha ${year} | Egazat`;
+    return t;
+  }
+  let t = `مواعيد عيد الفطر وعيد الأضحى ${year} — جميع الدول العربية | إجازات`;
+  if (t.length > 60) t = `مواعيد عيد الفطر وعيد الأضحى ${year} | إجازات`;
+  return t;
+}
+
+function generateEidDescription(year, lang = 'ar') {
+  if (lang === 'en') {
+    return `Eid Al-Fitr and Eid Al-Adha ${year} dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.`;
+  }
+  return `مواعيد عيد الفطر وعيد الأضحى ${year} في السعودية والإمارات ومصر وجميع الدول العربية. تواريخ رسمية ومتوقعة محدّثة.`;
+}
+
 // ──────────────────────────────────────────────
 // Next holiday lookup
 // ──────────────────────────────────────────────
@@ -274,6 +292,14 @@ async function main() {
 
   const countries = countriesData.countries;
   const years = countriesData.years;
+
+  // Eid tracker pages
+  for (const lang of ['ar', 'en']) {
+    await processEidFile(`${lang}/eid.html`, 2026, lang);
+    for (const year of years) {
+      await processEidFile(`${lang}/eid/${year}.html`, year, lang);
+    }
+  }
 
   for (const country of countries) {
     for (const year of years) {
