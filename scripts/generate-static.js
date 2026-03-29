@@ -653,7 +653,7 @@ const generateHTML = async (route) => {
     <link rel="canonical" href="${canonicalUrl}" />
     <link rel="alternate" hreflang="ar" href="${altArUrl}" />
     <link rel="alternate" hreflang="en" href="${altEnUrl}" />
-    <link rel="alternate" hreflang="x-default" href="${altArUrl}" />
+    <link rel="alternate" hreflang="x-default" href="${altEnUrl}" />
 ${structuredDataScripts}
   `;
   updatedHtml = updatedHtml.slice(0, headClose) + seoHeadTags + updatedHtml.slice(headClose);
