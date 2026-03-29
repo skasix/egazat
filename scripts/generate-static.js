@@ -897,19 +897,28 @@ const createDirectories = async (routes) => {
   }
 };
 
+// Cached base template — loaded once before any route generation
+let cachedBaseHtml = null;
+
+const loadBaseTemplate = async () => {
+  if (cachedBaseHtml) return cachedBaseHtml;
+  const distDir = path.join(__dirname, '../dist');
+  const indexPath = path.join(distDir, 'index.html');
+  
+  let html;
+  try { html = await fs.readFile(indexPath, 'utf8'); }
+  catch { html = `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Egazat</title></head><body><div id="root"></div></body></html>`; }
+  
+  // Strip any pre-existing content inside #root to get a clean template
+  html = html.replace(/<div id="root">[\s\S]*?<\/div>/, '<div id="root"></div>');
+  cachedBaseHtml = html;
+  return html;
+};
+
 const generateHTML = async (route) => {
   const { title, description, lang, country, year } = route;
-  const distDir = path.join(__dirname, '../dist');
   
-  let baseHtml;
-  try {
-    const backupPath = path.join(distDir, 'index.original.html');
-    const indexPath = path.join(distDir, 'index.html');
-    try { baseHtml = await fs.readFile(backupPath, 'utf8'); }
-    catch { baseHtml = await fs.readFile(indexPath, 'utf8'); }
-  } catch {
-    baseHtml = `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Egazat</title></head><body><div id="root"></div></body></html>`;
-  }
+  const baseHtml = await loadBaseTemplate();
   
   // Generate real HTML content for bots
   let seoContent = '';
