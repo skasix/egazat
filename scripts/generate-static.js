@@ -790,8 +790,20 @@ const generateHTML = async (route) => {
   }
 
   const canonicalUrl = route.path === '/index.html' ? `${BASE_URL}/` : `${BASE_URL}${route.path}`;
-  const altArUrl = country && year ? `${BASE_URL}/ar/country/${country}/${year}.html` : `${BASE_URL}/`;
-  const altEnUrl = country && year ? `${BASE_URL}/en/country/${country}/${year}.html` : `${BASE_URL}/en.html`;
+  
+  // Compute hreflang alternate URLs
+  let altArUrl, altEnUrl;
+  if (route.isEid) {
+    const eidPath = route.eidYear ? `/eid/${route.eidYear}.html` : '/eid.html';
+    altArUrl = `${BASE_URL}/ar${eidPath}`;
+    altEnUrl = `${BASE_URL}/en${eidPath}`;
+  } else if (country && year) {
+    altArUrl = `${BASE_URL}/ar/country/${country}/${year}.html`;
+    altEnUrl = `${BASE_URL}/en/country/${country}/${year}.html`;
+  } else {
+    altArUrl = `${BASE_URL}/`;
+    altEnUrl = `${BASE_URL}/en.html`;
+  }
 
   let updatedHtml = baseHtml
     .replace(/<html[^>]*>/, `<html lang="${lang}" dir="${lang === 'ar' ? 'rtl' : 'ltr'}">`)
