@@ -402,11 +402,7 @@ if (!sitemapXml) {
   
   for (const sf of subSitemaps) {
     const subXml = await fs.readFile(path.join(DIST, sf), 'utf8');
-    let m;
-    const subRegex = /<url>\s*<loc>(.*?)<\/loc>[\s\S]*?<priority>(.*?)<\/priority>\s*<\/url>/g;
-    while ((m = subRegex.exec(subXml)) !== null) {
-      urls.push({ loc: m[1], priority: parseFloat(m[2]) });
-    }
+    parseSitemapUrls(subXml);
   }
 
   const totalUrls = urls.length;
