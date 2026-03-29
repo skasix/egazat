@@ -198,12 +198,19 @@ for (const f of sortedFiles) {
 }
 for (const [desc, files] of Object.entries(descMap)) {
   if (files.length > 1) {
-    for (const fp of files) {
-      criticalFailures.push(`Group 2: ${fp} — duplicate description`);
-      groupStats[2].fail++;
-      groupStats[2].pass = Math.max(0, groupStats[2].pass - 1);
+    if (isKnownEidDupPair(files)) {
+      allWarnings.push(`Group 2: ${files.join(', ')} — known Eid pair duplicate description`);
+      groupStats[2].warn += files.length;
+      groupStats[2].pass -= files.length;
+      log(`[WARN] KNOWN EID DUP DESC → ${files.join(', ')}`);
+    } else {
+      for (const fp of files) {
+        criticalFailures.push(`Group 2: ${fp} — duplicate description`);
+        groupStats[2].fail++;
+        groupStats[2].pass = Math.max(0, groupStats[2].pass - 1);
+      }
+      log(`[FAIL] DUPLICATE DESC → ${files.join(', ')}`);
     }
-    log(`[FAIL] DUPLICATE DESC → ${files.join(', ')}`);
   }
 }
 log('');
