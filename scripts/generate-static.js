@@ -15,6 +15,34 @@ const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://egazat.com';
 
+// Load countries.json for clusters and editorial data
+const countriesJsonPath = path.join(__dirname, '../src/data/countries.json');
+let countriesJsonData = { countries: [], clusters: [] };
+try {
+  const raw = await fs.readFile(countriesJsonPath, 'utf8');
+  countriesJsonData = JSON.parse(raw);
+} catch (e) { console.warn('⚠️ Could not load countries.json:', e.message); }
+
+const clusters = countriesJsonData.clusters || [];
+const countriesJsonMap = {};
+for (const c of countriesJsonData.countries) {
+  countriesJsonMap[c.code] = c;
+}
+
+// Bridge links
+const bridgeLinks = {
+  eg: ['sa', 'jo', 'ma', 'tn'],
+  sa: ['ae', 'eg', 'jo', 'ma']
+};
+
+// Load holidays.json for descriptions
+const holidaysJsonPath = path.join(__dirname, '../src/data/holidays.json');
+let holidaysJsonData = {};
+try {
+  const raw = await fs.readFile(holidaysJsonPath, 'utf8');
+  holidaysJsonData = JSON.parse(raw);
+} catch (e) { console.warn('⚠️ Could not load holidays.json:', e.message); }
+
 // ──────────────────────────────────────────────
 // Complete holiday database (mirrored from CountryPage.tsx)
 // ──────────────────────────────────────────────
@@ -443,6 +471,121 @@ function generateHolidayTableHTML(holidays, lang, countryName, year, countryCode
 
   const wkd = weekendDays[countryCode] || ['Friday', 'Saturday'];
 
+  // --- SECTION A: Holiday Summary ---
+  const total = holidays.length;
+  const nationalCount = holidays.filter(h => h.type === 'national').length;
+  const religiousCount = holidays.filter(h => h.type === 'religious').length;
+  const summaryBlock = `
+      <section style="margin-top:2rem">
+        <h3>${isAr ? `ملخص العطل الرسمية ${year}` : `${year} Holiday Summary`}</h3>
+        <div style="background:#f8f9fa;border:1px solid #dee2e6;border-radius:8px;padding:1.25rem">
+          <p><strong>${isAr ? 'إجمالي العطل الرسمية:' : 'Total public holidays:'}</strong> ${total}</p>
+          <p>${isAr ? 'عطل وطنية:' : 'National holidays:'} ${nationalCount}</p>
+          <p>${isAr ? 'عطل دينية:' : 'Religious holidays:'} ${religiousCount}</p>
+          <p>${isAr ? 'أيام العطلة الأسبوعية:' : 'Weekend days:'} ${wkd.join(' & ')}</p>
+        </div>
+      </section>`;
+
+  // --- SECTION B: Editorial About ---
+  const cJson = countriesJsonMap[countryCode];
+  let editorialBlock = '';
+  if (cJson?.editorial) {
+    const text = isAr ? cJson.editorial.about_ar : cJson.editorial.about_en;
+    const shortName = isAr ? cJson.short_name_ar : cJson.short_name_en;
+    editorialBlock = `
+      <section style="margin-top:2rem">
+        <h3>${isAr ? `عن العطل الرسمية في ${shortName}` : `About Public Holidays in ${shortName}`}</h3>
+        <p>${text}</p>
+      </section>`;
+  }
+
+  // --- SECTION C: Practical Information ---
+  let practicalBlock = '';
+  if (cJson?.practical) {
+    const items = isAr ? cJson.practical.items_ar : cJson.practical.items_en;
+    const listItems = items.map(item => `<li>${item}</li>`).join('\n');
+    practicalBlock = `
+      <section style="margin-top:2rem">
+        <h3>${isAr ? 'معلومات عملية للمقيمين والزوار' : 'Practical Information for Residents and Visitors'}</h3>
+        <ul>${listItems}</ul>
+      </section>`;
+  }
+
+  // --- SECTION D: Holiday Details with Eid contextual links ---
+  const hjData = holidaysJsonData[countryCode]?.[String(year)] || [];
+  const detailCards = holidays.map(h => {
+    const d = new Date(h.date);
+    const dateStr = d.toLocaleDateString(isAr ? 'ar-SA' : 'en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+    const dayStr = d.toLocaleDateString(isAr ? 'ar-SA' : 'en-US', { weekday: 'long' });
+    const duration = h.duration || 1;
+    const durationText = isAr ? `${duration} ${duration === 1 ? 'يوم' : 'أيام'}` : `${duration} ${duration === 1 ? 'day' : 'days'}`;
+    
+    const hjMatch = hjData.find(hj => hj.date === h.date);
+    let desc = hjMatch ? (isAr ? hjMatch.description_ar : hjMatch.description_en) || '' : '';
+    
+    const nameEn = (h.name || '').toLowerCase();
+    if (nameEn.includes('eid') && h.type === 'religious') {
+      desc += isAr
+        ? ` راجع <a href="/${lang}/eid/${year}.html">صفحة مواعيد العيد لجميع الدول العربية</a> للاطلاع على تواريخ العيد في سائر الدول.`
+        : ` See our <a href="/${lang}/eid/${year}.html">Eid dates for all Arab countries</a> for dates across the region.`;
+    }
+
+    return `<div style="margin-top:1rem;padding:0.75rem;background:#fafafa;border-radius:4px">
+        <strong>${isAr ? h.nameAr : h.name}</strong> <span style="font-size:0.75rem;padding:0.1rem 0.5rem;border-radius:4px;background:${h.type === 'religious' ? '#fff3e0' : '#e6f4ea'};color:${h.type === 'religious' ? '#b45309' : '#2d6a4f'}">${typeLabel(h.type)}</span>
+        <div style="font-size:0.875rem;color:#555">${dateStr} • ${dayStr} • ${durationText}</div>
+        ${desc ? `<p>${desc}</p>` : ''}
+      </div>`;
+  }).join('\n');
+
+  const detailsBlock = `
+      <section style="margin-top:2rem">
+        <details style="border:1px solid #e0e0e0;border-radius:6px;padding:0.75rem">
+          <summary style="font-weight:600;cursor:pointer">${isAr ? `تفاصيل العطل الرسمية ${year}` : `Public Holiday Details ${year}`}</summary>
+          ${detailCards}
+        </details>
+      </section>`;
+
+  // --- CLUSTER NAVIGATION ---
+  const cluster = clusters.find(cl => cl.countries.includes(countryCode));
+  let clusterNav = '';
+  if (cluster) {
+    const links = cluster.countries.map(code => {
+      const c = countriesJsonMap[code];
+      if (!c) return '';
+      const name = isAr ? c.short_name_ar : c.short_name_en;
+      if (code === countryCode) {
+        return `<span style="display:inline-block;background:#2c5282;color:#fff;border-radius:20px;padding:0.4rem 1rem;font-weight:700;text-decoration:underline;margin:0.25rem">${name}</span>`;
+      }
+      return `<a href="/${lang}/country/${code}/${year}.html" style="display:inline-block;background:#f0f4ff;border-radius:20px;padding:0.4rem 1rem;text-decoration:none;color:#2c5282;margin:0.25rem">${name}</a>`;
+    }).join('\n');
+
+    clusterNav = `
+      <section style="margin-top:2rem">
+        <h3>${isAr ? cluster.name_ar : cluster.name_en}</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:0.25rem">${links}</div>
+      </section>`;
+  }
+
+  // --- BRIDGE LINKS (SA and EG only) ---
+  let bridgeBlock = '';
+  const bLinks = bridgeLinks[countryCode];
+  if (bLinks && cluster) {
+    const bCountries = bLinks.filter(code => !cluster.countries.includes(code));
+    if (bCountries.length > 0) {
+      const bPills = bCountries.map(code => {
+        const c = countriesJsonMap[code];
+        if (!c) return '';
+        const name = isAr ? c.short_name_ar : c.short_name_en;
+        return `<a href="/${lang}/country/${code}/${year}.html" style="display:inline-block;background:#f0f4ff;border-radius:20px;padding:0.3rem 0.9rem;text-decoration:none;color:#2c5282;margin:0.25rem">${name} ${year}</a>`;
+      }).join('\n');
+      bridgeBlock = `
+      <section style="margin-top:1rem">
+        <h4>${isAr ? 'دول عربية أخرى' : 'Other Arab Countries'}</h4>
+        <div style="display:flex;flex-wrap:wrap;gap:0.25rem">${bPills}</div>
+      </section>`;
+    }
+  }
+
   return `
     <article dir="${dir}" lang="${lang}" itemscope itemtype="https://schema.org/WebPage">
       <header>
@@ -465,13 +608,21 @@ function generateHolidayTableHTML(holidays, lang, countryName, year, countryCode
 ${rows}
         </tbody>
       </table>
+      ${summaryBlock}
+      ${editorialBlock}
+      ${practicalBlock}
+      ${detailsBlock}
+      ${clusterNav}
+      ${bridgeBlock}
       <footer>
         <p>${isAr
           ? 'ملاحظة: تواريخ العطل الدينية قد تختلف حسب رؤية الهلال وقد تتغير بيوم واحد.'
           : 'Note: Religious holiday dates may vary based on moon sighting and could change by one day.'}</p>
         <nav aria-label="${isAr ? 'روابط سنوات أخرى' : 'Other years'}">
           ${[2026, 2027, 2028].map(y =>
-            `<a href="${BASE_URL}/${lang}/country/${countryCode}/${y}.html">${y}</a>`
+            y === year
+              ? `<span class="year-active">${y}</span>`
+              : `<a href="/${lang}/country/${countryCode}/${y}.html">${y}</a>`
           ).join(' | ')}
         </nav>
       </footer>
@@ -480,22 +631,33 @@ ${rows}
 
 function generateHomepageHTML(lang) {
   const isAr = lang === 'ar';
-  const countries = Object.entries(countryNames);
-  const links = countries.map(([code, cn]) => {
-    const name = isAr ? cn.nameAr : cn.name;
-    return `      <li><a href="${BASE_URL}/${lang}/country/${code}/2026.html">${name}</a></li>`;
+  const currentYear = new Date().getFullYear();
+
+  // Eid banner
+  const eidBanner = `<a href="/${lang}/eid/2026.html" style="display:block;text-align:center;padding:1rem;background:#f0f4ff;border-radius:8px;margin-bottom:2rem;text-decoration:none;color:#2c5282;font-weight:600">${isAr ? '🌙 مواعيد عيد الفطر وعيد الأضحى 2026 — جميع الدول العربية' : '🌙 Eid Al-Fitr & Eid Al-Adha 2026 Dates — All Arab Countries'}</a>`;
+
+  // Build clustered sections
+  const clusterSections = clusters.map(cluster => {
+    const heading = isAr ? cluster.name_ar : cluster.name_en;
+    const links = cluster.countries.map(code => {
+      const c = countriesJsonMap[code];
+      if (!c) return '';
+      const name = isAr ? c.short_name_ar : c.short_name_en;
+      return `<li><a href="/${lang}/country/${code}/2026.html">${name}</a></li>`;
+    }).join('\n');
+    return `<section><h3>${heading}</h3><ul>${links}</ul></section>`;
   }).join('\n');
-  
+
   return `
     <article dir="${isAr ? 'rtl' : 'ltr'}" lang="${lang}">
       <h1>${isAr ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}</h1>
       <p>${isAr
         ? 'دليل شامل للعطل والمناسبات الرسمية في جميع الدول العربية. تقويم كامل للعطل الرسمية والإجازات الوطنية.'
         : 'Complete guide to public holidays and official celebrations in all Arab countries.'}</p>
+      <p>${isAr ? `آخر تحديث: ${currentYear}` : `Last updated: ${currentYear}`}</p>
+      ${eidBanner}
       <h2>${isAr ? 'اختر دولة' : 'Select a Country'}</h2>
-      <ul>
-${links}
-      </ul>
+      ${clusterSections}
     </article>`;
 }
 
@@ -735,19 +897,28 @@ const createDirectories = async (routes) => {
   }
 };
 
+// Cached base template — loaded once before any route generation
+let cachedBaseHtml = null;
+
+const loadBaseTemplate = async () => {
+  if (cachedBaseHtml) return cachedBaseHtml;
+  const distDir = path.join(__dirname, '../dist');
+  const indexPath = path.join(distDir, 'index.html');
+  
+  let html;
+  try { html = await fs.readFile(indexPath, 'utf8'); }
+  catch { html = `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Egazat</title></head><body><div id="root"></div></body></html>`; }
+  
+  // Strip any pre-existing content inside #root to get a clean template
+  html = html.replace(/<div id="root">[\s\S]*?<\/div>/, '<div id="root"></div>');
+  cachedBaseHtml = html;
+  return html;
+};
+
 const generateHTML = async (route) => {
   const { title, description, lang, country, year } = route;
-  const distDir = path.join(__dirname, '../dist');
   
-  let baseHtml;
-  try {
-    const backupPath = path.join(distDir, 'index.original.html');
-    const indexPath = path.join(distDir, 'index.html');
-    try { baseHtml = await fs.readFile(backupPath, 'utf8'); }
-    catch { baseHtml = await fs.readFile(indexPath, 'utf8'); }
-  } catch {
-    baseHtml = `<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Egazat</title></head><body><div id="root"></div></body></html>`;
-  }
+  const baseHtml = await loadBaseTemplate();
   
   // Generate real HTML content for bots
   let seoContent = '';
