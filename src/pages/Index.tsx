@@ -29,6 +29,7 @@ const Index = () => {
 
   const handleCountryChange = (newCountry: string) => {
     setSelectedCountry(newCountry);
+    navigate(`/${language}/country/${newCountry}/${selectedYear}.html`);
   };
 
   // Sync local language state with URL param, default to Arabic for root path
