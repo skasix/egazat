@@ -631,22 +631,33 @@ ${rows}
 
 function generateHomepageHTML(lang) {
   const isAr = lang === 'ar';
-  const countries = Object.entries(countryNames);
-  const links = countries.map(([code, cn]) => {
-    const name = isAr ? cn.nameAr : cn.name;
-    return `      <li><a href="${BASE_URL}/${lang}/country/${code}/2026.html">${name}</a></li>`;
+  const currentYear = new Date().getFullYear();
+
+  // Eid banner
+  const eidBanner = `<a href="/${lang}/eid/2026.html" style="display:block;text-align:center;padding:1rem;background:#f0f4ff;border-radius:8px;margin-bottom:2rem;text-decoration:none;color:#2c5282;font-weight:600">${isAr ? '🌙 مواعيد عيد الفطر وعيد الأضحى 2026 — جميع الدول العربية' : '🌙 Eid Al-Fitr & Eid Al-Adha 2026 Dates — All Arab Countries'}</a>`;
+
+  // Build clustered sections
+  const clusterSections = clusters.map(cluster => {
+    const heading = isAr ? cluster.name_ar : cluster.name_en;
+    const links = cluster.countries.map(code => {
+      const c = countriesJsonMap[code];
+      if (!c) return '';
+      const name = isAr ? c.short_name_ar : c.short_name_en;
+      return `<li><a href="/${lang}/country/${code}/2026.html">${name}</a></li>`;
+    }).join('\n');
+    return `<section><h3>${heading}</h3><ul>${links}</ul></section>`;
   }).join('\n');
-  
+
   return `
     <article dir="${isAr ? 'rtl' : 'ltr'}" lang="${lang}">
       <h1>${isAr ? 'العطل الرسمية العربية' : 'Arabic Public Holidays'}</h1>
       <p>${isAr
         ? 'دليل شامل للعطل والمناسبات الرسمية في جميع الدول العربية. تقويم كامل للعطل الرسمية والإجازات الوطنية.'
         : 'Complete guide to public holidays and official celebrations in all Arab countries.'}</p>
+      <p>${isAr ? `آخر تحديث: ${currentYear}` : `Last updated: ${currentYear}`}</p>
+      ${eidBanner}
       <h2>${isAr ? 'اختر دولة' : 'Select a Country'}</h2>
-      <ul>
-${links}
-      </ul>
+      ${clusterSections}
     </article>`;
 }
 
