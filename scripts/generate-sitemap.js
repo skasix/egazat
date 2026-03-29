@@ -40,6 +40,7 @@ const generateCountrySitemap = (country) => {
     <priority>${priority}</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/ar/country/${country}/${year}.html" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/country/${country}/${year}.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/country/${country}/${year}.html" />
   </url>`);
     });
   });
