@@ -1,0 +1,192 @@
+=== GROUP 1 — JSON DATA INTEGRITY ===
+[PASS] ae
+[PASS] sa
+[PASS] eg
+[PASS] jo
+[PASS] lb
+[PASS] sy
+[PASS] iq
+[PASS] kw
+[PASS] qa
+[PASS] bh
+[PASS] om
+[PASS] ye
+[PASS] ma
+[PASS] tn
+[PASS] dz
+[PASS] ly
+[PASS] sd
+[PASS] so
+[PASS] dj
+[PASS] km
+
+Group 1 summary: 20/20 countries passed
+
+=== GROUP 2 — STATIC HTML CONTENT PRESENCE (2026) ===
+[PASS] /ar/country/ae/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 611 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /ar/country/sa/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 623 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /ar/country/eg/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 561 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/jo/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 524 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /ar/country/lb/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 541 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /ar/country/sy/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 444 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /ar/country/iq/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 488 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /ar/country/kw/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 552 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /ar/country/qa/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 432 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /ar/country/bh/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 495 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /ar/country/om/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 539 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /ar/country/ye/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 496 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/ma/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 523 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/tn/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 527 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/dz/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 546 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/ly/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 457 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/sd/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 472 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/so/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 441 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/dj/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 453 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /ar/country/km/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 481 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/ae/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 869 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /en/country/sa/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 833 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /en/country/eg/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 784 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/jo/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 693 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /en/country/lb/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 797 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /en/country/sy/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 606 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /en/country/iq/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 670 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 3 (expected 3)
+[PASS] /en/country/kw/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 667 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /en/country/qa/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 708 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /en/country/bh/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 678 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /en/country/om/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 730 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 5 (expected 5)
+[PASS] /en/country/ye/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 569 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/ma/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 709 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/tn/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 696 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/dz/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 677 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/ly/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 649 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/sd/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 588 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/so/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 599 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/dj/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 646 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+[PASS] /en/country/km/2026.html | SECTION_A: pass | SECTION_B_LENGTH: 635 | SECTION_C_ITEMS: 4 (expected 4) | SECTION_D_DETAILS_TAG: present | SECTION_E_LINKS: 4 (expected 4)
+
+Group 2 summary: 40/40 files passed
+
+=== GROUP 3 — TYPOGRAPHY AND LAYOUT SANITY ===
+[FAIL] /ar/country/ae/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/sa/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/eg/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/jo/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/lb/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/sy/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/iq/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/kw/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/qa/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/bh/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/om/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/ye/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/ma/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/tn/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/dz/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/ly/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/sd/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/so/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/dj/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /ar/country/km/2026.html | HTML_LANG: ar | HTML_DIR: rtl | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/ae/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/sa/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/eg/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/jo/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/lb/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/sy/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/iq/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/kw/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/qa/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/bh/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/om/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/ye/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/ma/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/tn/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/dz/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/ly/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/sd/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/so/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/dj/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+[FAIL] /en/country/km/2026.html | HTML_LANG: en | HTML_DIR: ltr | EDITORIAL_FONT_CLASS_OR_STYLE: missing
+
+Group 3 summary: 0/40 files passed
+
+=== GROUP 4 — BRIDGE LINKS CONTENT ACCURACY ===
+[FAIL] /ar/country/sa/2025.html — FILE NOT FOUND
+[FAIL] /ar/country/sa/2026.html | BRIDGE_LINKS: [eg, jo, ma] (expected [ae, eg, jo, ma])
+[FAIL] /ar/country/sa/2027.html | BRIDGE_LINKS: [eg, jo, ma] (expected [ae, eg, jo, ma])
+[FAIL] /ar/country/sa/2028.html | BRIDGE_LINKS: [eg, jo, ma] (expected [ae, eg, jo, ma])
+[FAIL] /en/country/sa/2025.html — FILE NOT FOUND
+[FAIL] /en/country/sa/2026.html | BRIDGE_LINKS: [eg, jo, ma] (expected [ae, eg, jo, ma])
+[FAIL] /en/country/sa/2027.html | BRIDGE_LINKS: [eg, jo, ma] (expected [ae, eg, jo, ma])
+[FAIL] /en/country/sa/2028.html | BRIDGE_LINKS: [eg, jo, ma] (expected [ae, eg, jo, ma])
+[FAIL] /ar/country/eg/2025.html — FILE NOT FOUND
+[FAIL] /ar/country/eg/2026.html | BRIDGE_LINKS: [jo, sa] (expected [jo, ma, sa, tn])
+[FAIL] /ar/country/eg/2027.html | BRIDGE_LINKS: [jo, sa] (expected [jo, ma, sa, tn])
+[FAIL] /ar/country/eg/2028.html | BRIDGE_LINKS: [jo, sa] (expected [jo, ma, sa, tn])
+[FAIL] /en/country/eg/2025.html — FILE NOT FOUND
+[FAIL] /en/country/eg/2026.html | BRIDGE_LINKS: [jo, sa] (expected [jo, ma, sa, tn])
+[FAIL] /en/country/eg/2027.html | BRIDGE_LINKS: [jo, sa] (expected [jo, ma, sa, tn])
+[FAIL] /en/country/eg/2028.html | BRIDGE_LINKS: [jo, sa] (expected [jo, ma, sa, tn])
+
+Group 4 summary: 0/16 files passed
+
+=== GROUP 5 — WORD COUNT RANGES ===
+[FAIL] ae | about_ar: 95 words
+[PASS] ae | about_en: 129 words
+[PASS] sa | about_ar: 104 words
+[PASS] sa | about_en: 129 words
+[FAIL] eg | about_ar: 88 words
+[PASS] eg | about_en: 115 words
+[FAIL] jo | about_ar: 79 words
+[FAIL] jo | about_en: 95 words
+[FAIL] lb | about_ar: 88 words
+[PASS] lb | about_en: 115 words
+[FAIL] sy | about_ar: 70 words
+[FAIL] sy | about_en: 86 words
+[FAIL] iq | about_ar: 75 words
+[FAIL] iq | about_en: 92 words
+[FAIL] kw | about_ar: 87 words
+[FAIL] kw | about_en: 93 words
+[FAIL] qa | about_ar: 73 words
+[PASS] qa | about_en: 106 words
+[FAIL] bh | about_ar: 77 words
+[FAIL] bh | about_en: 93 words
+[FAIL] om | about_ar: 87 words
+[PASS] om | about_en: 108 words
+[FAIL] ye | about_ar: 82 words
+[FAIL] ye | about_en: 82 words
+[FAIL] ma | about_ar: 86 words
+[PASS] ma | about_en: 111 words
+[FAIL] tn | about_ar: 87 words
+[PASS] tn | about_en: 108 words
+[FAIL] dz | about_ar: 86 words
+[FAIL] dz | about_en: 97 words
+[FAIL] ly | about_ar: 73 words
+[FAIL] ly | about_en: 89 words
+[FAIL] sd | about_ar: 74 words
+[FAIL] sd | about_en: 84 words
+[FAIL] so | about_ar: 70 words
+[FAIL] so | about_en: 85 words
+[FAIL] dj | about_ar: 69 words
+[FAIL] dj | about_en: 91 words
+[FAIL] km | about_ar: 73 words
+[FAIL] km | about_en: 89 words
+
+Group 5 summary: 9/40 checks passed
+
+
+=== EDITORIAL CONTENT AUDIT SUMMARY ===
+Group 1 — JSON integrity:       20/20 countries
+Group 2 — HTML content present: 40/40 files (ar+en, 2026 only)
+Group 3 — Typography/layout:    0/40 files
+Group 4 — Bridge links:         0/16 files (bridge countries, ar+en, 4 years)
+Group 5 — Word counts:          9/40 checks (20 countries × 2 langs)
+
+Critical failures (require immediate fix):
+  None
+
+Warnings (review but not blocking):
+  None
+
+Overall status: NEEDS FIXES
+=== END SUMMARY ===
