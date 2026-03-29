@@ -848,7 +848,7 @@ const generateRoutes = () => {
     routes.push({
       path: `/${lang}/eid.html`,
       route: `/${lang}/eid`,
-      lang, isEid: true, eidYear: 2026,
+      lang, isEid: true, isEidMain: true, eidYear: 2026,
       title: isAr ? 'مواعيد عيد الفطر وعيد الأضحى 2026 | إجازات' : 'Eid Al-Fitr & Eid Al-Adha 2026 Dates | Egazat',
       description: isAr
         ? 'مواعيد عيد الفطر وعيد الأضحى 2026 في السعودية والإمارات ومصر وجميع الدول العربية.'
@@ -965,7 +965,7 @@ const generateHTML = async (route) => {
   // Compute hreflang alternate URLs
   let altArUrl, altEnUrl;
   if (route.isEid) {
-    const eidPath = route.eidYear ? `/eid/${route.eidYear}.html` : '/eid.html';
+    const eidPath = route.isEidMain ? '/eid.html' : `/eid/${route.eidYear}.html`;
     altArUrl = `${BASE_URL}/ar${eidPath}`;
     altEnUrl = `${BASE_URL}/en${eidPath}`;
   } else if (country && year) {
