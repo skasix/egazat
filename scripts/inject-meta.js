@@ -318,6 +318,26 @@ async function main() {
     }
   }
 
+  // Helper to process Eid pages
+  async function processEidFile(relPath, year, lang) {
+    const filePath = path.join(distDir, relPath);
+    try {
+      await fs.access(filePath);
+    } catch {
+      auditLines.push(`[SKIP] /${relPath} | FILE_NOT_FOUND`);
+      skipped++;
+      return;
+    }
+    try {
+      const result = await injectEidMeta(filePath, year, lang);
+      auditLines.push(`[${result.status}] /${relPath} | TITLE: ${result.title} | DESC_LENGTH: ${result.descLength} | OG: present | LANG_DIR: present`);
+      updated++;
+    } catch (e) {
+      auditLines.push(`[FAIL] /${relPath} | ERROR: ${e.message}`);
+      errors++;
+    }
+  }
+
   // Arabic homepage
   await processFile('index.html', null, null, 'ar');
 
