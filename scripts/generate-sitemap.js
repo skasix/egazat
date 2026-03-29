@@ -2,6 +2,7 @@
 
 /**
  * Sitemap Generator — produces sitemap-index.xml + per-country sitemaps + main sitemap.xml
+ * Updated with priority hierarchy per Layer 6
  */
 
 import { promises as fs } from 'fs';
@@ -21,6 +22,22 @@ const eidYears = [2025, 2026, 2027, 2028];
 const today = new Date().toISOString().split('T')[0];
 const currentYear = new Date().getFullYear();
 
+// Priority hierarchy
+const gulfCountries = ['ae', 'sa', 'kw', 'qa', 'bh', 'om'];
+const levantCountries = ['jo', 'lb', 'sy', 'iq', 'eg'];
+const northAfricaCountries = ['ma', 'tn', 'dz', 'ly'];
+const hornAfricaCountries = ['ye', 'sd', 'so', 'dj', 'km'];
+
+const getCountryPriority = (country, year) => {
+  const isCurrent = year === currentYear;
+  if (!isCurrent) return '0.60';
+  if (gulfCountries.includes(country)) return '0.85';
+  if (levantCountries.includes(country)) return '0.80';
+  if (northAfricaCountries.includes(country)) return '0.75';
+  if (hornAfricaCountries.includes(country)) return '0.70';
+  return '0.70';
+};
+
 const generateCountrySitemap = (country) => {
   const urls = [];
   
@@ -29,7 +46,7 @@ const generateCountrySitemap = (country) => {
       const isCurrent = year === currentYear;
       const isFuture = year > currentYear;
       const isPast = year < currentYear;
-      const priority = isCurrent ? '0.9' : isFuture ? '0.7' : '0.5';
+      const priority = getCountryPriority(country, year);
       const changefreq = isCurrent ? 'weekly' : isFuture ? 'monthly' : 'yearly';
       const lastmod = isPast ? `${year}-12-31` : today;
 
@@ -71,7 +88,7 @@ ${sitemaps}
 const generatePagesSitemap = () => {
   let urls = [];
   
-  // Home pages
+  // Home pages — priority 1.0
   urls.push(`  <url>
     <loc>${BASE_URL}/</loc>
     <lastmod>${today}</lastmod>
@@ -85,13 +102,13 @@ const generatePagesSitemap = () => {
     <loc>${BASE_URL}/en.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en.html" />
   </url>`);
 
-  // Eid tracker pages
+  // Eid tracker pages — priority 0.9
   ['ar', 'en'].forEach(lang => {
     eidYears.forEach(year => {
       const isCurrent = year === currentYear;
@@ -124,7 +141,7 @@ ${urls.join('\n')}
 </urlset>`;
 };
 
-// Also generate a flat sitemap.xml for backward compatibility
+// Flat sitemap.xml for backward compatibility
 const generateFlatSitemap = () => {
   let urls = [];
   
@@ -142,20 +159,22 @@ const generateFlatSitemap = () => {
     <loc>${BASE_URL}/en.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en.html" />
   </url>`);
 
-  // Eid tracker pages
+  // Eid tracker pages — priority 0.9
   ['ar', 'en'].forEach(lang => {
     eidYears.forEach(year => {
+      const isCurrent = year === currentYear;
+      const priority = isCurrent ? '0.90' : '0.70';
       urls.push(`  <url>
     <loc>${BASE_URL}/${lang}/eid/${year}.html</loc>
     <lastmod>${today}</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>${priority}</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="${BASE_URL}/ar/eid/${year}.html" />
     <xhtml:link rel="alternate" hreflang="en" href="${BASE_URL}/en/eid/${year}.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/en/eid/${year}.html" />
@@ -165,12 +184,12 @@ const generateFlatSitemap = () => {
 
   countries.forEach(country => {
     years.forEach(year => {
+      const isPast = year < currentYear;
+      const lastmod = isPast ? `${year}-12-31` : today;
+      const priority = getCountryPriority(country, year);
       const isCurrent = year === currentYear;
       const isFuture = year > currentYear;
-      const isPast = year < currentYear;
-      const priority = isCurrent ? '0.8' : isFuture ? '0.7' : '0.5';
       const changefreq = isCurrent ? 'weekly' : isFuture ? 'monthly' : 'yearly';
-      const lastmod = isPast ? `${year}-12-31` : today;
 
       ['ar', 'en'].forEach(lang => {
         urls.push(`  <url>
@@ -201,7 +220,6 @@ const generateSitemap = async () => {
   
   await fs.mkdir(publicDir, { recursive: true });
 
-  // Write to both public and dist
   const writeFile = async (filename, content) => {
     await fs.writeFile(path.join(publicDir, filename), content, 'utf8');
     try {
@@ -212,24 +230,20 @@ const generateSitemap = async () => {
     }
   };
 
-  // 1. Generate sitemap index
   await writeFile('sitemap-index.xml', generateSitemapIndex());
   console.log('✅ Generated sitemap-index.xml');
 
-  // 2. Generate pages sitemap
   await writeFile('sitemap-pages.xml', generatePagesSitemap());
   console.log('✅ Generated sitemap-pages.xml');
 
-  // 3. Generate per-country sitemaps
   for (const country of countries) {
     await writeFile(`sitemap-${country}.xml`, generateCountrySitemap(country));
   }
   console.log(`✅ Generated ${countries.length} country sitemaps`);
 
-  // 4. Generate flat sitemap.xml (backward compat)
   await writeFile('sitemap.xml', generateFlatSitemap());
   
-  const totalUrls = 2 + countries.length * years.length * 2; // home pages + country pages
+  const totalUrls = 2 + countries.length * years.length * 2;
   console.log(`✅ Generated sitemap.xml with ${totalUrls} URLs`);
   
   console.log(`📊 Sitemap Summary:`);
@@ -237,6 +251,7 @@ const generateSitemap = async () => {
   console.log(`   - Total URLs: ${totalUrls}`);
   console.log(`   - Countries: ${countries.length}`);
   console.log(`   - Years: ${years.join(', ')}`);
+  console.log(`   - Priority: Gulf=0.85, Levant+Egypt=0.80, N.Africa=0.75, Horn=0.70, Non-current year=0.60`);
 };
 
 generateSitemap().catch(console.error);

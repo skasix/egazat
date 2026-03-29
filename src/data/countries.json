@@ -29,15 +29,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_AE",
           "PLACEHOLDER_PRACTICAL_EN_4_AE"
         ]
-      },
-      "related_countries": [
-        "sa",
-        "kw",
-        "qa",
-        "bh",
-        "om",
-        "jo"
-      ]
+      }
     },
     {
       "code": "sa",
@@ -69,13 +61,11 @@
           "PLACEHOLDER_PRACTICAL_EN_4_SA"
         ]
       },
-      "related_countries": [
+      "bridge_links": [
         "ae",
-        "kw",
-        "qa",
-        "bh",
-        "om",
-        "jo"
+        "eg",
+        "jo",
+        "ma"
       ]
     },
     {
@@ -108,13 +98,11 @@
           "PLACEHOLDER_PRACTICAL_EN_4_EG"
         ]
       },
-      "related_countries": [
-        "jo",
-        "lb",
+      "bridge_links": [
         "sa",
+        "jo",
         "ma",
-        "tn",
-        "ly"
+        "tn"
       ]
     },
     {
@@ -146,15 +134,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_JO",
           "PLACEHOLDER_PRACTICAL_EN_4_JO"
         ]
-      },
-      "related_countries": [
-        "eg",
-        "lb",
-        "sy",
-        "iq",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "lb",
@@ -185,15 +165,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_LB",
           "PLACEHOLDER_PRACTICAL_EN_4_LB"
         ]
-      },
-      "related_countries": [
-        "jo",
-        "sy",
-        "eg",
-        "iq",
-        "ae",
-        "sa"
-      ]
+      }
     },
     {
       "code": "sy",
@@ -224,15 +196,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_SY",
           "PLACEHOLDER_PRACTICAL_EN_4_SY"
         ]
-      },
-      "related_countries": [
-        "jo",
-        "lb",
-        "iq",
-        "eg",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "iq",
@@ -263,15 +227,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_IQ",
           "PLACEHOLDER_PRACTICAL_EN_4_IQ"
         ]
-      },
-      "related_countries": [
-        "kw",
-        "jo",
-        "sy",
-        "sa",
-        "ae",
-        "bh"
-      ]
+      }
     },
     {
       "code": "kw",
@@ -302,15 +258,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_KW",
           "PLACEHOLDER_PRACTICAL_EN_4_KW"
         ]
-      },
-      "related_countries": [
-        "sa",
-        "ae",
-        "qa",
-        "bh",
-        "om",
-        "iq"
-      ]
+      }
     },
     {
       "code": "qa",
@@ -341,15 +289,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_QA",
           "PLACEHOLDER_PRACTICAL_EN_4_QA"
         ]
-      },
-      "related_countries": [
-        "ae",
-        "sa",
-        "kw",
-        "bh",
-        "om",
-        "jo"
-      ]
+      }
     },
     {
       "code": "bh",
@@ -380,15 +320,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_BH",
           "PLACEHOLDER_PRACTICAL_EN_4_BH"
         ]
-      },
-      "related_countries": [
-        "sa",
-        "ae",
-        "kw",
-        "qa",
-        "om",
-        "jo"
-      ]
+      }
     },
     {
       "code": "om",
@@ -419,15 +351,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_OM",
           "PLACEHOLDER_PRACTICAL_EN_4_OM"
         ]
-      },
-      "related_countries": [
-        "ae",
-        "sa",
-        "kw",
-        "qa",
-        "bh",
-        "ye"
-      ]
+      }
     },
     {
       "code": "ye",
@@ -458,15 +382,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_YE",
           "PLACEHOLDER_PRACTICAL_EN_4_YE"
         ]
-      },
-      "related_countries": [
-        "om",
-        "sa",
-        "dj",
-        "so",
-        "ae",
-        "eg"
-      ]
+      }
     },
     {
       "code": "ma",
@@ -497,15 +413,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_MA",
           "PLACEHOLDER_PRACTICAL_EN_4_MA"
         ]
-      },
-      "related_countries": [
-        "tn",
-        "dz",
-        "ly",
-        "eg",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "tn",
@@ -536,15 +444,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_TN",
           "PLACEHOLDER_PRACTICAL_EN_4_TN"
         ]
-      },
-      "related_countries": [
-        "ma",
-        "dz",
-        "ly",
-        "eg",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "dz",
@@ -575,15 +475,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_DZ",
           "PLACEHOLDER_PRACTICAL_EN_4_DZ"
         ]
-      },
-      "related_countries": [
-        "ma",
-        "tn",
-        "ly",
-        "eg",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "ly",
@@ -614,15 +506,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_LY",
           "PLACEHOLDER_PRACTICAL_EN_4_LY"
         ]
-      },
-      "related_countries": [
-        "tn",
-        "dz",
-        "eg",
-        "ma",
-        "sd",
-        "sa"
-      ]
+      }
     },
     {
       "code": "sd",
@@ -653,15 +537,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_SD",
           "PLACEHOLDER_PRACTICAL_EN_4_SD"
         ]
-      },
-      "related_countries": [
-        "eg",
-        "ly",
-        "so",
-        "dj",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "so",
@@ -692,15 +568,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_SO",
           "PLACEHOLDER_PRACTICAL_EN_4_SO"
         ]
-      },
-      "related_countries": [
-        "dj",
-        "ye",
-        "sd",
-        "eg",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "dj",
@@ -731,15 +599,7 @@
           "PLACEHOLDER_PRACTICAL_EN_3_DJ",
           "PLACEHOLDER_PRACTICAL_EN_4_DJ"
         ]
-      },
-      "related_countries": [
-        "so",
-        "ye",
-        "sd",
-        "eg",
-        "sa",
-        "ae"
-      ]
+      }
     },
     {
       "code": "km",
@@ -770,20 +630,62 @@
           "PLACEHOLDER_PRACTICAL_EN_3_KM",
           "PLACEHOLDER_PRACTICAL_EN_4_KM"
         ]
-      },
-      "related_countries": [
-        "dj",
-        "so",
-        "ae",
-        "sa",
-        "eg",
-        "ma"
-      ]
+      }
     }
   ],
   "years": [
     2026,
     2027,
     2028
+  ],
+  "clusters": [
+    {
+      "name_ar": "دول الخليج العربي",
+      "name_en": "Gulf States",
+      "slug": "gulf",
+      "countries": [
+        "ae",
+        "sa",
+        "kw",
+        "qa",
+        "bh",
+        "om"
+      ]
+    },
+    {
+      "name_ar": "بلاد الشام والعراق",
+      "name_en": "Levant & Iraq",
+      "slug": "levant",
+      "countries": [
+        "jo",
+        "lb",
+        "sy",
+        "iq"
+      ]
+    },
+    {
+      "name_ar": "شمال أفريقيا",
+      "name_en": "North Africa",
+      "slug": "north-africa",
+      "countries": [
+        "eg",
+        "ma",
+        "tn",
+        "dz",
+        "ly"
+      ]
+    },
+    {
+      "name_ar": "أفريقيا جنوب الصحراء والقرن الأفريقي",
+      "name_en": "Horn of Africa & East Africa",
+      "slug": "horn-africa",
+      "countries": [
+        "ye",
+        "sd",
+        "so",
+        "dj",
+        "km"
+      ]
+    }
   ]
 }
