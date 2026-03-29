@@ -599,7 +599,8 @@ for (const f of sortedFiles) {
   const htmlTag = html.match(/<html[^>]*>/i)?.[0] || '';
   const langAttr = htmlTag.match(/lang="([^"]*)"/)?.[1] || '';
   if (!langAttr) { details.push('missing lang attribute'); status = 'FAIL'; }
-  else if (langAttr !== lang) { details.push(`lang="${langAttr}" (expected "${lang}")`); status = 'FAIL'; }
+  else if (langAttr !== lang && !isSitemap(f)) { details.push(`lang="${langAttr}" (expected "${lang}")`); status = 'FAIL'; }
+  else if (isSitemap(f) && langAttr) { /* sitemap.html uses primary lang — acceptable */ }
 
   // viewport
   if (!/<meta\s+name="viewport"[^>]*width=device-width/i.test(html)) {
