@@ -15,6 +15,34 @@ const __dirname = path.dirname(__filename);
 
 const BASE_URL = 'https://egazat.com';
 
+// Load countries.json for clusters and editorial data
+const countriesJsonPath = path.join(__dirname, '../src/data/countries.json');
+let countriesJsonData = { countries: [], clusters: [] };
+try {
+  const raw = await fs.readFile(countriesJsonPath, 'utf8');
+  countriesJsonData = JSON.parse(raw);
+} catch (e) { console.warn('⚠️ Could not load countries.json:', e.message); }
+
+const clusters = countriesJsonData.clusters || [];
+const countriesJsonMap = {};
+for (const c of countriesJsonData.countries) {
+  countriesJsonMap[c.code] = c;
+}
+
+// Bridge links
+const bridgeLinks = {
+  eg: ['sa', 'jo', 'ma', 'tn'],
+  sa: ['ae', 'eg', 'jo', 'ma']
+};
+
+// Load holidays.json for descriptions
+const holidaysJsonPath = path.join(__dirname, '../src/data/holidays.json');
+let holidaysJsonData = {};
+try {
+  const raw = await fs.readFile(holidaysJsonPath, 'utf8');
+  holidaysJsonData = JSON.parse(raw);
+} catch (e) { console.warn('⚠️ Could not load holidays.json:', e.message); }
+
 // ──────────────────────────────────────────────
 // Complete holiday database (mirrored from CountryPage.tsx)
 // ──────────────────────────────────────────────
