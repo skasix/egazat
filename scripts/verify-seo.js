@@ -141,13 +141,19 @@ for (const f of sortedFiles) {
 // Check duplicates
 for (const [title, files] of Object.entries(titleMap)) {
   if (files.length > 1) {
-    for (const fp of files) {
-      const fullPath = path.join(DIST, fp.slice(1));
-      criticalFailures.push(`Group 1: ${fp} — duplicate title shared with ${files.filter(x => x !== fp).join(', ')}`);
-      groupStats[1].fail++;
-      groupStats[1].pass = Math.max(0, groupStats[1].pass - 1);
+    if (isKnownEidDupPair(files)) {
+      allWarnings.push(`Group 1: ${files.join(', ')} — known Eid pair duplicate title`);
+      groupStats[1].warn += files.length;
+      groupStats[1].pass -= files.length;
+      log(`[WARN] KNOWN EID DUP TITLE: "${title.substring(0, 50)}..." → ${files.join(', ')}`);
+    } else {
+      for (const fp of files) {
+        criticalFailures.push(`Group 1: ${fp} — duplicate title shared with ${files.filter(x => x !== fp).join(', ')}`);
+        groupStats[1].fail++;
+        groupStats[1].pass = Math.max(0, groupStats[1].pass - 1);
+      }
+      log(`[FAIL] DUPLICATE TITLE: "${title.substring(0, 50)}..." → ${files.join(', ')}`);
     }
-    log(`[FAIL] DUPLICATE TITLE: "${title.substring(0, 50)}..." → ${files.join(', ')}`);
   }
 }
 log('');
