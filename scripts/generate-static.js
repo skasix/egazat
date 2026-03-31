@@ -984,7 +984,15 @@ const generateHTML = async (route) => {
     const websiteSchema = {
       '@context': 'https://schema.org', '@type': 'WebSite',
       name: lang === 'ar' ? 'Egazat — العطل الرسمية العربية' : 'Egazat — Arabic Public Holidays',
-      url: BASE_URL, inLanguage: lang
+      url: BASE_URL, inLanguage: lang,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${BASE_URL}/${lang}/country/{country_code}/2026.html`
+        },
+        'query-input': 'required name=country_code'
+      }
     };
     structuredDataScripts = `    <script type="application/ld+json">${JSON.stringify(websiteSchema)}</script>`;
   }

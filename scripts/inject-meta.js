@@ -75,7 +75,13 @@ function generateTitle(countryCode, year, lang = 'ar') {
   return title;
 }
 
-function generateEidTitle(year, lang = 'ar') {
+function generateEidTitle(year, lang = 'ar', isMainPage = false) {
+  if (isMainPage) {
+    if (lang === 'en') {
+      return 'Eid Al-Fitr & Eid Al-Adha Dates — 2026, 2027 & 2028 | Egazat';
+    }
+    return 'مواعيد عيد الفطر وعيد الأضحى — 2026 و2027 و2028 | إجازات';
+  }
   if (lang === 'en') {
     let t = `Eid Al-Fitr & Eid Al-Adha ${year} Dates — All Arab Countries | Egazat`;
     if (t.length > 60) t = `Eid Al-Fitr & Eid Al-Adha ${year} | Egazat`;
@@ -86,7 +92,13 @@ function generateEidTitle(year, lang = 'ar') {
   return t;
 }
 
-function generateEidDescription(year, lang = 'ar') {
+function generateEidDescription(year, lang = 'ar', isMainPage = false) {
+  if (isMainPage) {
+    if (lang === 'en') {
+      return 'Eid Al-Fitr and Eid Al-Adha dates from 2026 to 2028 across all Arab countries. Official and expected dates for three years.';
+    }
+    return 'مواعيد عيد الفطر وعيد الأضحى من 2026 إلى 2028 في جميع الدول العربية. تواريخ رسمية ومتوقعة لثلاث سنوات.';
+  }
   if (lang === 'en') {
     return `Eid Al-Fitr and Eid Al-Adha ${year} dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.`;
   }
