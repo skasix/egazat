@@ -920,7 +920,8 @@ const generateRoutes = () => {
 const createDirectories = async (routes) => {
   const distDir = path.join(__dirname, '../dist');
   for (const route of routes) {
-    const filePath = path.join(distDir, route.path);
+    // Use forward-slash concatenation to avoid OS-dependent path.join backslashes
+    const filePath = distDir + route.path;
     await fs.mkdir(path.dirname(filePath), { recursive: true });
   }
 };
