@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { getCountryMetadata } from '@/utils/seoRoutes';
 import { buildEventSchema, buildItemListSchema, buildBreadcrumbSchema, buildWebsiteSchema } from '@/utils/schemaBuilder';
 import { getHolidaysForCountryYear } from '@/pages/CountryPage';
+import countriesJsonData from '@/data/countries.json';
 
 interface SEOHeadProps {
   title?: string;
@@ -69,6 +70,14 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
     const countryName = countryMetadata.name || '';
     const holidays = getHolidaysForCountryYear(countryCode, year);
     
+    // Get organizer info from countries.json
+    const countriesArr = (countriesJsonData as any)?.countries || [];
+    const cJson = countriesArr.find((c: any) => c.code === countryCode);
+    const organizerName = cJson?.government_name_ar && language === 'ar'
+      ? cJson.government_name_ar
+      : cJson ? `Government of ${cJson.short_name_en || countryName}` : undefined;
+    const governmentUrl = cJson?.government_url;
+    
     // ItemList schema
     structuredDataScripts.push(buildItemListSchema(holidays, countryCode, year, countryName, language));
     
@@ -77,7 +86,7 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
     
     // Event schema for each holiday
     holidays.forEach(holiday => {
-      structuredDataScripts.push(buildEventSchema(holiday, countryCode, countryName, language));
+      structuredDataScripts.push(buildEventSchema(holiday, countryCode, countryName, language, organizerName, governmentUrl));
     });
   } else {
     // Homepage — WebSite schema

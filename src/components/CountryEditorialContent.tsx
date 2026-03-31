@@ -284,10 +284,11 @@ export const CountryEditorialContent = ({ country, year, holidays, language }: C
             {isAr ? `تفاصيل العطل الرسمية ${year}` : `Public Holiday Details ${year}`}
           </summary>
           {holidays.map((holiday, i) => {
-            const desc = isAr
+            const rawDesc = isAr
               ? (holiday as any).description_ar || ''
               : (holiday as any).description_en || '';
-            const isP = isPlaceholder(desc);
+            const desc = isPlaceholder(rawDesc) ? '' : rawDesc;
+            const isP = false;
             const duration = holiday.duration || 1;
             const durationText = isAr
               ? `${duration} ${duration === 1 ? 'يوم' : 'أيام'}`
