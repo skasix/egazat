@@ -957,13 +957,31 @@ const generateHTML = async (route) => {
     seoContent = generateSitemapPageHTML();
   } else if (route.isEid) {
     seoContent = generateEidPageHTML(route.eidYear, lang);
-    const websiteSchema = {
+    const isAr = lang === 'ar';
+    const webPageSchema = {
       '@context': 'https://schema.org', '@type': 'WebPage',
       name: route.title,
       url: `${BASE_URL}${route.path}`,
       inLanguage: lang
     };
-    structuredDataScripts = `    <script type="application/ld+json">${JSON.stringify(websiteSchema)}</script>`;
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Egazat', item: BASE_URL },
+        { '@type': 'ListItem', position: 2, name: isAr ? 'مواعيد الأعياد' : 'Eid Dates', item: `${BASE_URL}/${lang}/eid.html` },
+        ...(route.isEidMain ? [] : [{ '@type': 'ListItem', position: 3, name: String(route.eidYear), item: `${BASE_URL}${route.path}` }])
+      ]
+    };
+    const eidItemList = {
+      '@context': 'https://schema.org', '@type': 'ItemList',
+      name: route.title,
+      numberOfItems: 20,
+      description: route.description,
+      url: `${BASE_URL}${route.path}`,
+      inLanguage: lang
+    };
+    const eidSchemas = [webPageSchema, breadcrumbSchema, eidItemList];
+    structuredDataScripts = eidSchemas.map(s => `    <script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n');
   } else if (country && year) {
     const cn = countryNames[country];
     const countryName = lang === 'ar' ? cn.nameAr : cn.name;
