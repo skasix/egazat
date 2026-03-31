@@ -405,15 +405,42 @@ function buildEventSchema(holiday, countryCode, countryName, lang) {
   const endDate = holiday.duration && holiday.duration > 1
     ? new Date(new Date(holiday.date).getTime() + (holiday.duration - 1) * 86400000).toISOString().split('T')[0]
     : holiday.date;
+
+  // Get description from holidays.json, fall back to generic
+  const hjData = holidaysJsonData[countryCode]?.[String(new Date(holiday.date).getFullYear())] || [];
+  const hjMatch = hjData.find(hj => hj.date === holiday.date);
+  let desc = '';
+  if (hjMatch) {
+    const raw = lang === 'ar' ? hjMatch.description_ar : hjMatch.description_en;
+    if (raw && !raw.startsWith('PLACEHOLDER_')) desc = raw;
+  }
+  if (!desc) {
+    desc = lang === 'ar'
+      ? `${holiday.nameAr} — عطلة رسمية في ${countryName}`
+      : `${holiday.name} — Public Holiday in ${countryName}`;
+  }
+
+  // Get government/organizer info from countries.json
+  const cJson = countriesJsonMap[countryCode];
+  const organizerName = cJson
+    ? (lang === 'ar' ? cJson.government_name_ar : `Government of ${cJson.short_name_en || countryName}`)
+    : (lang === 'ar' ? `حكومة ${countryName}` : `Government of ${countryName}`);
+
   return {
     '@context': 'https://schema.org', '@type': 'Event',
     name: lang === 'ar' ? holiday.nameAr : holiday.name,
     startDate: holiday.date, endDate,
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    description: lang === 'ar' ? `${holiday.nameAr} — عطلة رسمية في ${countryName}` : `${holiday.name} — Public Holiday in ${countryName}`,
+    description: desc,
     inLanguage: lang,
-    location: { '@type': 'Country', name: countryName, address: { '@type': 'PostalAddress', addressCountry: countryCode.toUpperCase() } }
+    isAccessibleForFree: true,
+    location: { '@type': 'Country', name: countryName, address: { '@type': 'PostalAddress', addressCountry: countryCode.toUpperCase() } },
+    organizer: {
+      '@type': 'GovernmentOrganization',
+      name: organizerName,
+      url: cJson?.government_url || `${BASE_URL}/${lang}/country/${countryCode}/`
+    }
   };
 }
 
