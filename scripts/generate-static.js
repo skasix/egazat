@@ -548,7 +548,8 @@ function generateHolidayTableHTML(holidays, lang, countryName, year, countryCode
     const durationText = isAr ? `${duration} ${duration === 1 ? 'يوم' : 'أيام'}` : `${duration} ${duration === 1 ? 'day' : 'days'}`;
     
     const hjMatch = hjData.find(hj => hj.date === h.date);
-    let desc = hjMatch ? (isAr ? hjMatch.description_ar : hjMatch.description_en) || '' : '';
+    const rawDesc = hjMatch ? (isAr ? hjMatch.description_ar : hjMatch.description_en) || '' : '';
+    let desc = rawDesc.startsWith('PLACEHOLDER_') ? '' : rawDesc;
     
     const nameEn = (h.name || '').toLowerCase();
     if (nameEn.includes('eid') && h.type === 'religious') {

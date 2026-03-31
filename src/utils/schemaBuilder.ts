@@ -13,7 +13,7 @@ interface HolidayForSchema {
 /**
  * Event schema for a single public holiday
  */
-export function buildEventSchema(holiday: HolidayForSchema, countryCode: string, countryName: string, lang: string) {
+export function buildEventSchema(holiday: HolidayForSchema, countryCode: string, countryName: string, lang: string, organizerName?: string, governmentUrl?: string) {
   const endDate = holiday.duration && holiday.duration > 1
     ? new Date(new Date(holiday.date).getTime() + (holiday.duration - 1) * 86400000).toISOString().split('T')[0]
     : holiday.date;
@@ -30,6 +30,7 @@ export function buildEventSchema(holiday: HolidayForSchema, countryCode: string,
       ? `${holiday.nameAr} — عطلة رسمية في ${countryName}`
       : `${holiday.name} — Public Holiday in ${countryName}`,
     inLanguage: lang,
+    isAccessibleForFree: true,
     location: {
       '@type': 'Country',
       name: countryName,
@@ -40,8 +41,8 @@ export function buildEventSchema(holiday: HolidayForSchema, countryCode: string,
     },
     organizer: {
       '@type': 'GovernmentOrganization',
-      name: lang === 'ar' ? `حكومة ${countryName}` : `Government of ${countryName}`,
-      url: `${BASE_URL}/${lang}/country/${countryCode}/`
+      name: organizerName || (lang === 'ar' ? `حكومة ${countryName}` : `Government of ${countryName}`),
+      url: governmentUrl || `${BASE_URL}/${lang}/country/${countryCode}/`
     }
   };
 }
