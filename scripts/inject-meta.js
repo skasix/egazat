@@ -331,7 +331,7 @@ async function main() {
   }
 
   // Helper to process Eid pages
-  async function processEidFile(relPath, year, lang) {
+  async function processEidFile(relPath, year, lang, isMainPage = false) {
     const filePath = path.join(distDir, relPath);
     try {
       await fs.access(filePath);
@@ -341,7 +341,7 @@ async function main() {
       return;
     }
     try {
-      const result = await injectEidMeta(filePath, year, lang);
+      const result = await injectEidMeta(filePath, year, lang, isMainPage);
       auditLines.push(`[${result.status}] /${relPath} | TITLE: ${result.title} | DESC_LENGTH: ${result.descLength} | OG: present | LANG_DIR: present`);
       updated++;
     } catch (e) {
