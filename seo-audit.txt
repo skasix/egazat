@@ -917,14 +917,14 @@
 [PASS] /en/country/ye/2026.html | JSON-LD: 13 blocks, all valid
 [PASS] /en/country/ye/2027.html | JSON-LD: 13 blocks, all valid
 [PASS] /en/country/ye/2028.html | JSON-LD: 13 blocks, all valid
-[FAIL] /ar/eid.html | json-ld blocks: 2 (<3)
-[FAIL] /ar/eid/2026.html | json-ld blocks: 2 (<3)
-[FAIL] /ar/eid/2027.html | json-ld blocks: 2 (<3)
-[FAIL] /ar/eid/2028.html | json-ld blocks: 2 (<3)
-[FAIL] /en/eid.html | json-ld blocks: 2 (<3)
-[FAIL] /en/eid/2026.html | json-ld blocks: 2 (<3)
-[FAIL] /en/eid/2027.html | json-ld blocks: 2 (<3)
-[FAIL] /en/eid/2028.html | json-ld blocks: 2 (<3)
+[PASS] /ar/eid.html | JSON-LD: 4 blocks, all valid
+[WARN] /ar/eid/2026.html | BreadcrumbList items: 3 (expected 2)
+[WARN] /ar/eid/2027.html | BreadcrumbList items: 3 (expected 2)
+[WARN] /ar/eid/2028.html | BreadcrumbList items: 3 (expected 2)
+[PASS] /en/eid.html | JSON-LD: 4 blocks, all valid
+[WARN] /en/eid/2026.html | BreadcrumbList items: 3 (expected 2)
+[WARN] /en/eid/2027.html | BreadcrumbList items: 3 (expected 2)
+[WARN] /en/eid/2028.html | BreadcrumbList items: 3 (expected 2)
 [PASS] /en.html | JSON-LD: 2 blocks, all valid
 [PASS] /index.html | JSON-LD: 2 blocks, all valid
 [PASS] /sitemap.html | JSON-LD: 1 blocks, all valid
@@ -1466,7 +1466,7 @@
 EGAZAT.COM COMPREHENSIVE SEO AUDIT
 ======================================
 Total files audited: 131
-Audit date: 2026-03-31T19:53:39.303Z
+Audit date: 2026-03-31T19:54:24.551Z
 
 Group  1 — Title tags          : 131/131 PASS | 0 FAIL | 0 WARN
 Group  2 — Meta descriptions   :  84/131 PASS | 0 FAIL | 47 WARN
@@ -1474,21 +1474,14 @@ Group  3 — Canonical tags      : 131/131 PASS | 0 FAIL | 0 WARN
 Group  4 — Hreflang tags       : 131/131 PASS | 0 FAIL | 0 WARN
 Group  5 — Open Graph markup   : 130/131 PASS | 0 FAIL | 1 WARN
 Group  6 — Twitter card tags   : 131/131 PASS | 0 FAIL | 0 WARN
-Group  7 — Structured data     : 123/131 PASS | 8 FAIL | 0 WARN
+Group  7 — Structured data     : 125/131 PASS | 0 FAIL | 6 WARN
 Group  8 — Image alt tags      : 131/131 PASS | 0 FAIL | 0 WARN
 Group  9 — Heading structure   : 131/131 PASS | 0 FAIL | 0 WARN
 Group 10 — Page speed signals  : 131/131 PASS | 0 FAIL | 0 WARN
 Group 11 — URL and link quality: 131/131 PASS | 0 FAIL | 0 WARN
 
 CRITICAL FAILURES (block deploy):
-  Group 7: /ar/eid.html — json-ld blocks: 2 (<3)
-  Group 7: /ar/eid/2026.html — json-ld blocks: 2 (<3)
-  Group 7: /ar/eid/2027.html — json-ld blocks: 2 (<3)
-  Group 7: /ar/eid/2028.html — json-ld blocks: 2 (<3)
-  Group 7: /en/eid.html — json-ld blocks: 2 (<3)
-  Group 7: /en/eid/2026.html — json-ld blocks: 2 (<3)
-  Group 7: /en/eid/2027.html — json-ld blocks: 2 (<3)
-  Group 7: /en/eid/2028.html — json-ld blocks: 2 (<3)
+  None
 
 WARNINGS (review before deploy):
   Group 2: /ar/country/ae/2027.html — length: 134 | missing holiday keyword (ar)
@@ -1539,6 +1532,12 @@ WARNINGS (review before deploy):
   Group 2: /index.html — length: 119 (<120)
   Group 2: /sitemap.html — length: 63 (<120)
   Group 5: /sitemap.html — og:locale: "ar_AR" (expected en_*) | og:site_name: "إجازات" (expected "Egazat")
+  Group 7: /ar/eid/2026.html — BreadcrumbList items: 3 (expected 2)
+  Group 7: /ar/eid/2027.html — BreadcrumbList items: 3 (expected 2)
+  Group 7: /ar/eid/2028.html — BreadcrumbList items: 3 (expected 2)
+  Group 7: /en/eid/2026.html — BreadcrumbList items: 3 (expected 2)
+  Group 7: /en/eid/2027.html — BreadcrumbList items: 3 (expected 2)
+  Group 7: /en/eid/2028.html — BreadcrumbList items: 3 (expected 2)
 
-OVERALL VERDICT: FAIL
+OVERALL VERDICT: PASS
 ======================================
