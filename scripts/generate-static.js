@@ -872,15 +872,15 @@ const generateRoutes = () => {
   // Eid tracker pages
   languages.forEach(lang => {
     const isAr = lang === 'ar';
-    // Main eid page (defaults to 2026)
+    // Main eid page (multi-year overview, distinct from year-specific pages)
     routes.push({
       path: `/${lang}/eid.html`,
       route: `/${lang}/eid`,
       lang, isEid: true, isEidMain: true, eidYear: 2026,
-      title: isAr ? 'مواعيد عيد الفطر وعيد الأضحى 2026 | إجازات' : 'Eid Al-Fitr & Eid Al-Adha 2026 Dates | Egazat',
+      title: isAr ? 'مواعيد عيد الفطر وعيد الأضحى — 2026 و2027 و2028 | إجازات' : 'Eid Al-Fitr & Eid Al-Adha Dates — 2026, 2027 & 2028 | Egazat',
       description: isAr
-        ? 'مواعيد عيد الفطر وعيد الأضحى 2026 في السعودية والإمارات ومصر وجميع الدول العربية.'
-        : 'Eid Al-Fitr and Eid Al-Adha 2026 dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.'
+        ? 'مواعيد عيد الفطر وعيد الأضحى من 2026 إلى 2028 في جميع الدول العربية. تواريخ رسمية ومتوقعة لثلاث سنوات.'
+        : 'Eid Al-Fitr and Eid Al-Adha dates from 2026 to 2028 across all Arab countries. Official and expected dates for three years.'
     });
     // Per-year eid pages
     years.forEach(year => {
@@ -957,13 +957,31 @@ const generateHTML = async (route) => {
     seoContent = generateSitemapPageHTML();
   } else if (route.isEid) {
     seoContent = generateEidPageHTML(route.eidYear, lang);
-    const websiteSchema = {
+    const isAr = lang === 'ar';
+    const webPageSchema = {
       '@context': 'https://schema.org', '@type': 'WebPage',
       name: route.title,
       url: `${BASE_URL}${route.path}`,
       inLanguage: lang
     };
-    structuredDataScripts = `    <script type="application/ld+json">${JSON.stringify(websiteSchema)}</script>`;
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Egazat', item: BASE_URL },
+        { '@type': 'ListItem', position: 2, name: isAr ? 'مواعيد الأعياد' : 'Eid Dates', item: `${BASE_URL}/${lang}/eid.html` },
+        ...(route.isEidMain ? [] : [{ '@type': 'ListItem', position: 3, name: String(route.eidYear), item: `${BASE_URL}${route.path}` }])
+      ]
+    };
+    const eidItemList = {
+      '@context': 'https://schema.org', '@type': 'ItemList',
+      name: route.title,
+      numberOfItems: 20,
+      description: route.description,
+      url: `${BASE_URL}${route.path}`,
+      inLanguage: lang
+    };
+    const eidSchemas = [webPageSchema, breadcrumbSchema, eidItemList];
+    structuredDataScripts = eidSchemas.map(s => `    <script type="application/ld+json">${JSON.stringify(s)}</script>`).join('\n');
   } else if (country && year) {
     const cn = countryNames[country];
     const countryName = lang === 'ar' ? cn.nameAr : cn.name;
@@ -984,7 +1002,15 @@ const generateHTML = async (route) => {
     const websiteSchema = {
       '@context': 'https://schema.org', '@type': 'WebSite',
       name: lang === 'ar' ? 'Egazat — العطل الرسمية العربية' : 'Egazat — Arabic Public Holidays',
-      url: BASE_URL, inLanguage: lang
+      url: BASE_URL, inLanguage: lang,
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: {
+          '@type': 'EntryPoint',
+          urlTemplate: `${BASE_URL}/${lang}/country/{country_code}/2026.html`
+        },
+        'query-input': 'required name=country_code'
+      }
     };
     structuredDataScripts = `    <script type="application/ld+json">${JSON.stringify(websiteSchema)}</script>`;
   }

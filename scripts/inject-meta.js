@@ -75,7 +75,13 @@ function generateTitle(countryCode, year, lang = 'ar') {
   return title;
 }
 
-function generateEidTitle(year, lang = 'ar') {
+function generateEidTitle(year, lang = 'ar', isMainPage = false) {
+  if (isMainPage) {
+    if (lang === 'en') {
+      return 'Eid Al-Fitr & Eid Al-Adha Dates — 2026, 2027 & 2028 | Egazat';
+    }
+    return 'مواعيد عيد الفطر وعيد الأضحى — 2026 و2027 و2028 | إجازات';
+  }
   if (lang === 'en') {
     let t = `Eid Al-Fitr & Eid Al-Adha ${year} Dates — All Arab Countries | Egazat`;
     if (t.length > 60) t = `Eid Al-Fitr & Eid Al-Adha ${year} | Egazat`;
@@ -86,7 +92,13 @@ function generateEidTitle(year, lang = 'ar') {
   return t;
 }
 
-function generateEidDescription(year, lang = 'ar') {
+function generateEidDescription(year, lang = 'ar', isMainPage = false) {
+  if (isMainPage) {
+    if (lang === 'en') {
+      return 'Eid Al-Fitr and Eid Al-Adha dates from 2026 to 2028 across all Arab countries. Official and expected dates for three years.';
+    }
+    return 'مواعيد عيد الفطر وعيد الأضحى من 2026 إلى 2028 في جميع الدول العربية. تواريخ رسمية ومتوقعة لثلاث سنوات.';
+  }
   if (lang === 'en') {
     return `Eid Al-Fitr and Eid Al-Adha ${year} dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.`;
   }
@@ -251,12 +263,12 @@ async function injectMeta(filePath, countryCode, year, lang = 'ar') {
 // Eid page meta injection
 // ──────────────────────────────────────────────
 
-async function injectEidMeta(filePath, year, lang) {
+async function injectEidMeta(filePath, year, lang, isMainPage = false) {
   let html = await fs.readFile(filePath, 'utf8');
 
-  const title = generateEidTitle(year, lang);
-  const description = generateEidDescription(year, lang);
-  const canonicalUrl = `${BASE_URL}/${lang}/eid/${year}.html`;
+  const title = generateEidTitle(year, lang, isMainPage);
+  const description = generateEidDescription(year, lang, isMainPage);
+  const canonicalUrl = isMainPage ? `${BASE_URL}/${lang}/eid.html` : `${BASE_URL}/${lang}/eid/${year}.html`;
   const locale = lang === 'en' ? 'en_US' : 'ar_AR';
   const siteName = lang === 'en' ? 'Egazat' : 'إجازات';
 
@@ -319,7 +331,7 @@ async function main() {
   }
 
   // Helper to process Eid pages
-  async function processEidFile(relPath, year, lang) {
+  async function processEidFile(relPath, year, lang, isMainPage = false) {
     const filePath = path.join(distDir, relPath);
     try {
       await fs.access(filePath);
@@ -329,7 +341,7 @@ async function main() {
       return;
     }
     try {
-      const result = await injectEidMeta(filePath, year, lang);
+      const result = await injectEidMeta(filePath, year, lang, isMainPage);
       auditLines.push(`[${result.status}] /${relPath} | TITLE: ${result.title} | DESC_LENGTH: ${result.descLength} | OG: present | LANG_DIR: present`);
       updated++;
     } catch (e) {
@@ -349,7 +361,7 @@ async function main() {
 
   // Eid tracker pages
   for (const lang of ['ar', 'en']) {
-    await processEidFile(`${lang}/eid.html`, 2026, lang);
+    await processEidFile(`${lang}/eid.html`, 2026, lang, true);
     for (const year of years) {
       await processEidFile(`${lang}/eid/${year}.html`, year, lang);
     }

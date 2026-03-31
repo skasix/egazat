@@ -1,14 +1,14 @@
-Meta Injection Audit — 2026-03-31T19:45:50.080Z
+Meta Injection Audit — 2026-03-31T19:54:23.375Z
 Updated: 130 | Skipped: 42 | Errors: 0
 ────────────────────────────────────────────────────────────────────────────────
 [PASS] /index.html | TITLE: إجازات الدول العربية 2026 — دليل العطل الرسمية | إجازات | DESC_LENGTH: 119 | OG: present | LANG_DIR: present
 [PASS] /en.html | TITLE: Arab Public Holidays 2026 — Official Calendar | Egazat | DESC_LENGTH: 130 | OG: present | LANG_DIR: present
-[PASS] /ar/eid.html | TITLE: مواعيد عيد الفطر وعيد الأضحى 2026 | إجازات | DESC_LENGTH: 110 | OG: present | LANG_DIR: present
+[PASS] /ar/eid.html | TITLE: مواعيد عيد الفطر وعيد الأضحى — 2026 و2027 و2028 | إجازات | DESC_LENGTH: 102 | OG: present | LANG_DIR: present
 [SKIP] /ar/eid/2025.html | FILE_NOT_FOUND
 [PASS] /ar/eid/2026.html | TITLE: مواعيد عيد الفطر وعيد الأضحى 2026 | إجازات | DESC_LENGTH: 110 | OG: present | LANG_DIR: present
 [PASS] /ar/eid/2027.html | TITLE: مواعيد عيد الفطر وعيد الأضحى 2027 | إجازات | DESC_LENGTH: 110 | OG: present | LANG_DIR: present
 [PASS] /ar/eid/2028.html | TITLE: مواعيد عيد الفطر وعيد الأضحى 2028 | إجازات | DESC_LENGTH: 110 | OG: present | LANG_DIR: present
-[PASS] /en/eid.html | TITLE: Eid Al-Fitr & Eid Al-Adha 2026 | Egazat | DESC_LENGTH: 145 | OG: present | LANG_DIR: present
+[PASS] /en/eid.html | TITLE: Eid Al-Fitr & Eid Al-Adha Dates — 2026, 2027 & 2028 | Egazat | DESC_LENGTH: 123 | OG: present | LANG_DIR: present
 [SKIP] /en/eid/2025.html | FILE_NOT_FOUND
 [PASS] /en/eid/2026.html | TITLE: Eid Al-Fitr & Eid Al-Adha 2026 | Egazat | DESC_LENGTH: 145 | OG: present | LANG_DIR: present
 [PASS] /en/eid/2027.html | TITLE: Eid Al-Fitr & Eid Al-Adha 2027 | Egazat | DESC_LENGTH: 145 | OG: present | LANG_DIR: present
