@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { getCountryMetadata } from '@/utils/seoRoutes';
 import { buildEventSchema, buildItemListSchema, buildBreadcrumbSchema, buildWebsiteSchema } from '@/utils/schemaBuilder';
 import { getHolidaysForCountryYear } from '@/pages/CountryPage';
+import countriesJsonData from '@/data/countries.json';
 
 interface SEOHeadProps {
   title?: string;
