@@ -263,12 +263,12 @@ async function injectMeta(filePath, countryCode, year, lang = 'ar') {
 // Eid page meta injection
 // ──────────────────────────────────────────────
 
-async function injectEidMeta(filePath, year, lang) {
+async function injectEidMeta(filePath, year, lang, isMainPage = false) {
   let html = await fs.readFile(filePath, 'utf8');
 
-  const title = generateEidTitle(year, lang);
-  const description = generateEidDescription(year, lang);
-  const canonicalUrl = `${BASE_URL}/${lang}/eid/${year}.html`;
+  const title = generateEidTitle(year, lang, isMainPage);
+  const description = generateEidDescription(year, lang, isMainPage);
+  const canonicalUrl = isMainPage ? `${BASE_URL}/${lang}/eid.html` : `${BASE_URL}/${lang}/eid/${year}.html`;
   const locale = lang === 'en' ? 'en_US' : 'ar_AR';
   const siteName = lang === 'en' ? 'Egazat' : 'إجازات';
 
