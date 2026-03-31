@@ -1072,7 +1072,8 @@ const generateStaticFiles = async () => {
   for (const route of routes) {
     const html = await generateHTML(route);
     const fileName = route.path === '/index.html' ? 'index.html' : route.path;
-    const filePath = path.join(distDir, fileName);
+    // Use forward-slash concatenation to avoid OS-dependent path.join backslashes
+    const filePath = distDir + '/' + fileName.replace(/^\//, '');
     
     try {
       await fs.writeFile(filePath, html, 'utf8');
