@@ -872,15 +872,15 @@ const generateRoutes = () => {
   // Eid tracker pages
   languages.forEach(lang => {
     const isAr = lang === 'ar';
-    // Main eid page (defaults to 2026)
+    // Main eid page (multi-year overview, distinct from year-specific pages)
     routes.push({
       path: `/${lang}/eid.html`,
       route: `/${lang}/eid`,
       lang, isEid: true, isEidMain: true, eidYear: 2026,
-      title: isAr ? 'مواعيد عيد الفطر وعيد الأضحى 2026 | إجازات' : 'Eid Al-Fitr & Eid Al-Adha 2026 Dates | Egazat',
+      title: isAr ? 'مواعيد عيد الفطر وعيد الأضحى — 2026 و2027 و2028 | إجازات' : 'Eid Al-Fitr & Eid Al-Adha Dates — 2026, 2027 & 2028 | Egazat',
       description: isAr
-        ? 'مواعيد عيد الفطر وعيد الأضحى 2026 في السعودية والإمارات ومصر وجميع الدول العربية.'
-        : 'Eid Al-Fitr and Eid Al-Adha 2026 dates for Saudi Arabia, UAE, Egypt and all Arab countries. Official and expected dates updated by moon sighting.'
+        ? 'مواعيد عيد الفطر وعيد الأضحى من 2026 إلى 2028 في جميع الدول العربية. تواريخ رسمية ومتوقعة لثلاث سنوات.'
+        : 'Eid Al-Fitr and Eid Al-Adha dates from 2026 to 2028 across all Arab countries. Official and expected dates for three years.'
     });
     // Per-year eid pages
     years.forEach(year => {
