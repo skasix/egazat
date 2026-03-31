@@ -361,7 +361,7 @@ async function main() {
 
   // Eid tracker pages
   for (const lang of ['ar', 'en']) {
-    await processEidFile(`${lang}/eid.html`, 2026, lang);
+    await processEidFile(`${lang}/eid.html`, 2026, lang, true);
     for (const year of years) {
       await processEidFile(`${lang}/eid/${year}.html`, year, lang);
     }
