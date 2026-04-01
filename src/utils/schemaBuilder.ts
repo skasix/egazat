@@ -10,6 +10,40 @@ interface HolidayForSchema {
   duration?: number;
 }
 
+function getEventDescription(holiday: HolidayForSchema, countryName: string, lang: string): string {
+  const nameEn = (holiday.name || '').toLowerCase();
+  const type = (holiday.type || '').toLowerCase();
+
+  const descMap: Record<string, Record<string, string>> = {
+    ar: {
+      'eid al-fitr':      'عيد الفطر المبارك — احتفال إسلامي يُقام في اليوم الأول من شهر شوال بعد انتهاء شهر رمضان المبارك.',
+      'eid al-adha':      'عيد الأضحى المبارك — احتفال إسلامي يُقام في اليوم العاشر من شهر ذي الحجة، ويتزامن مع موسم الحج.',
+      "prophet's birthday":'المولد النبوي الشريف — إحياء ذكرى مولد النبي محمد صلى الله عليه وسلم في الثاني عشر من ربيع الأول.',
+      'mawlid':           'المولد النبوي الشريف — إحياء ذكرى مولد النبي محمد صلى الله عليه وسلم في الثاني عشر من ربيع الأول.',
+      'islamic new year':  'رأس السنة الهجرية — بداية العام الهجري الجديد وفق التقويم الإسلامي القمري.',
+      'arafat day':        'يوم عرفة — يوم وقوف الحجاج على جبل عرفة، يسبق عيد الأضحى بيوم واحد.',
+      'day of arafat':     'يوم عرفة — يوم وقوف الحجاج على جبل عرفة، يسبق عيد الأضحى بيوم واحد.',
+    },
+    en: {
+      'eid al-fitr':      'Eid al-Fitr — Islamic celebration marking the end of Ramadan, observed on the first day of Shawwal.',
+      'eid al-adha':      'Eid al-Adha — Islamic Feast of the Sacrifice, observed on the 10th of Dhul Hijja during the Hajj season.',
+      "prophet's birthday":"Mawlid al-Nabi — Commemoration of the Prophet Muhammad's birthday on the 12th of Rabi al-Awwal.",
+      'mawlid':           "Mawlid al-Nabi — Commemoration of the Prophet Muhammad's birthday on the 12th of Rabi al-Awwal.",
+      'islamic new year':  'Islamic New Year — Beginning of the new Hijri lunar calendar year.',
+      'arafat day':        'Arafat Day — The day pilgrims gather at Mount Arafat, the day before Eid al-Adha.',
+      'day of arafat':     'Arafat Day — The day pilgrims gather at Mount Arafat, the day before Eid al-Adha.',
+    }
+  };
+
+  const langMap = descMap[lang] || descMap.en;
+  if (langMap[nameEn]) return langMap[nameEn];
+
+  if (type === 'national' || type === 'وطني') {
+    return lang === 'ar' ? `عطلة رسمية وطنية في ${countryName}.` : `Official national public holiday in ${countryName}.`;
+  }
+  return lang === 'ar' ? `عطلة رسمية في ${countryName}.` : `Official public holiday in ${countryName}.`;
+}
+
 /**
  * Event schema for a single public holiday
  */
@@ -17,6 +51,8 @@ export function buildEventSchema(holiday: HolidayForSchema, countryCode: string,
   const endDate = holiday.duration && holiday.duration > 1
     ? new Date(new Date(holiday.date).getTime() + (holiday.duration - 1) * 86400000).toISOString().split('T')[0]
     : holiday.date;
+
+  const description = getEventDescription(holiday, countryName, lang);
 
   return {
     '@context': 'https://schema.org',
@@ -26,9 +62,7 @@ export function buildEventSchema(holiday: HolidayForSchema, countryCode: string,
     endDate,
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    description: lang === 'ar'
-      ? `${holiday.nameAr} — عطلة رسمية في ${countryName}`
-      : `${holiday.name} — Public Holiday in ${countryName}`,
+    description,
     inLanguage: lang,
     isAccessibleForFree: true,
     location: {
