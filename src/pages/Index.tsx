@@ -91,6 +91,14 @@ const Index = () => {
       </div>
       
       <main className="container mx-auto px-4 py-12">
+        <section className="mb-8">
+          <p className={`text-muted-foreground leading-relaxed text-base ${language === 'ar' ? 'arabic-text text-right' : 'text-left'}`}>
+            {language === 'ar'
+              ? 'تُغطي هذه الصفحة العطل الرسمية والإجازات الوطنية لجميع الدول العربية العشرين، بما فيها دول الخليج كالسعودية والإمارات والكويت وقطر والبحرين وعمان، ودول الشام كالأردن ولبنان وسوريا والعراق، ودول شمال أفريقيا كمصر والمغرب وتونس والجزائر وليبيا، فضلاً عن اليمن والسودان والصومال وجيبوتي وجزر القمر. تشمل البيانات العطل الدينية الإسلامية كعيد الفطر وعيد الأضحى والمولد النبوي، والأعياد الوطنية لكل دولة، مع الإشارة إلى المواعيد الهجرية والميلادية معاً. تُحدَّث المواعيد سنوياً لتغطي أعوام 2026 و2027 و2028.'
+              : 'This directory covers official public holidays and national observances across all 20 Arab countries, including Gulf states (Saudi Arabia, UAE, Kuwait, Qatar, Bahrain, Oman), Levant countries (Jordan, Lebanon, Syria, Iraq), North Africa (Egypt, Morocco, Tunisia, Algeria, Libya), and Horn of Africa (Yemen, Sudan, Somalia, Djibouti, Comoros). Data includes Islamic religious holidays such as Eid al-Fitr, Eid al-Adha, and Mawlid, alongside each country\'s national days, with both Gregorian and Hijri dates. Holiday dates are updated annually covering 2026, 2027, and 2028.'
+            }
+          </p>
+        </section>
         <CountryCards language={language} year={selectedYear} />
       </main>
     </div>

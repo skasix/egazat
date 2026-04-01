@@ -116,7 +116,7 @@ export const SEOHead = ({ title, description, language = 'ar', countryCode, year
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
-      <meta property="og:site_name" content="Egazat" />
+      <meta property="og:site_name" content={language === 'ar' ? 'إجازات' : 'Egazat'} />
       <meta property="og:locale" content={language === 'ar' ? 'ar_AR' : 'en_US'} />
       <meta property="og:locale:alternate" content={language === 'ar' ? 'en_US' : 'ar_AR'} />
       <meta property="og:image" content={countryCode && year ? `https://egazat.com/og/${countryCode}-${year}.jpg` : 'https://egazat.com/og-image.jpg'} />
