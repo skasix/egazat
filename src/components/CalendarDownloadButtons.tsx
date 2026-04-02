@@ -164,7 +164,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
       })
     );
 
-    const result = autoTable(doc, {
+    autoTable(doc, {
       startY: yPos,
       margin: { left: xStart },
       tableWidth: colWidth,
@@ -182,13 +182,14 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
       },
     });
 
+    const tableEndY = (doc as any).lastAutoTable?.finalY ?? yPos + 40;
     if (col === 0) {
       // save Y for next column
     } else {
-      yPos = Math.max((result as any).finalY + 4, yPos);
+      yPos = Math.max(tableEndY + 4, yPos);
     }
     if (col === 1) {
-      yPos = (result as any).finalY + 4;
+      yPos = tableEndY + 4;
     }
   }
 
