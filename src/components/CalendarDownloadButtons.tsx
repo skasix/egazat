@@ -119,12 +119,9 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
 
 async function generatePDF(props: CalendarDownloadButtonsProps) {
   const jsPDFModule = await import('jspdf');
-  const autoTableModule = await import('jspdf-autotable');
   const jsPDF = jsPDFModule.default;
-  // Apply autotable plugin
-  if (typeof autoTableModule.default === 'function') {
-    (autoTableModule.default as any)(jsPDF);
-  }
+  // Import autotable - it attaches itself as side effect
+  await import('jspdf-autotable');
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
