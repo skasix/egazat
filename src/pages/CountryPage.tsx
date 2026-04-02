@@ -994,6 +994,16 @@ export const CountryPage = () => {
           </div>
         </div>
 
+        {/* Download Buttons */}
+        <CalendarDownloadButtons
+          countryName={country.name}
+          countryNameAr={country.nameAr}
+          countryCode={selectedCountry}
+          year={selectedYear}
+          holidays={holidays}
+          language={language}
+        />
+
         {/* Calendar Section */}
         <section className="mb-12">
           <Calendar 
