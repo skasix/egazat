@@ -212,7 +212,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     return [String(i + 1), dateStr, isAr ? h.nameAr : h.name, typeLabel, dur];
   });
 
-  (doc as any).autoTable({
+  const listResult = autoTable(doc, {
     startY: 22,
     head: [headers],
     body: rows,
@@ -221,7 +221,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     headStyles: { fillColor: [41, 128, 185] },
   });
 
-  const finalY = (doc as any).lastAutoTable.finalY + 15;
+  const finalY = (listResult as any).finalY + 15;
   doc.setFontSize(10);
   doc.setTextColor(41, 128, 185);
   doc.textWithLink('https://egazat.com', 105, finalY, { align: 'center', url: 'https://egazat.com' });
