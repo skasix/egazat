@@ -118,8 +118,10 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
 }
 
 async function generatePDF(props: CalendarDownloadButtonsProps) {
-  const { default: jsPDF } = await import('jspdf');
-  await import('jspdf-autotable');
+  const jsPDFModule = await import('jspdf');
+  const autoTableModule = await import('jspdf-autotable');
+  const jsPDF = jsPDFModule.default;
+  const autoTable = autoTableModule.default;
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
@@ -162,7 +164,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
       })
     );
 
-    (doc as any).autoTable({
+    autoTable(doc, {
       startY: yPos,
       margin: { left: xStart },
       tableWidth: colWidth,
@@ -180,13 +182,14 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
       },
     });
 
+    const tableEndY = (doc as any).lastAutoTable?.finalY ?? yPos + 40;
     if (col === 0) {
       // save Y for next column
     } else {
-      yPos = Math.max((doc as any).lastAutoTable.finalY + 4, yPos);
+      yPos = Math.max(tableEndY + 4, yPos);
     }
     if (col === 1) {
-      yPos = (doc as any).lastAutoTable.finalY + 4;
+      yPos = tableEndY + 4;
     }
   }
 
@@ -210,7 +213,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     return [String(i + 1), dateStr, isAr ? h.nameAr : h.name, typeLabel, dur];
   });
 
-  (doc as any).autoTable({
+  autoTable(doc, {
     startY: 22,
     head: [headers],
     body: rows,
@@ -219,7 +222,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     headStyles: { fillColor: [41, 128, 185] },
   });
 
-  const finalY = (doc as any).lastAutoTable.finalY + 15;
+  const finalY = ((doc as any).lastAutoTable?.finalY ?? 200) + 15;
   doc.setFontSize(10);
   doc.setTextColor(41, 128, 185);
   doc.textWithLink('https://egazat.com', 105, finalY, { align: 'center', url: 'https://egazat.com' });
