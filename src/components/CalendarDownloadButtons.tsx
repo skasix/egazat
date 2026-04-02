@@ -56,6 +56,22 @@ function getMonthGrid(year: number, month: number) {
   return weeks;
 }
 
+// Cache for loaded Arabic font
+let arabicFontCache: string | null = null;
+
+async function loadArabicFont(): Promise<string> {
+  if (arabicFontCache) return arabicFontCache;
+  const response = await fetch('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/amiri/Amiri-Regular.ttf');
+  const buffer = await response.arrayBuffer();
+  const bytes = new Uint8Array(buffer);
+  let binary = '';
+  for (let i = 0; i < bytes.length; i++) {
+    binary += String.fromCharCode(bytes[i]);
+  }
+  arabicFontCache = btoa(binary);
+  return arabicFontCache;
+}
+
 async function generateExcel(props: CalendarDownloadButtonsProps) {
   const XLSX = await import('xlsx');
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
@@ -77,7 +93,7 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
     calRows.push(dayNames);
     const grid = getMonthGrid(year, m);
     grid.forEach(week => {
-      calRows.push(week.map((d, di) => {
+      calRows.push(week.map((d) => {
         if (d === null) return '';
         const dateStr = `${year}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
         return holidayDates.has(dateStr) ? `★${d}` : d;
@@ -88,6 +104,11 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
   calRows.push([isAr ? '★ = عطلة رسمية' : '★ = Public Holiday']);
 
   const ws1 = XLSX.utils.aoa_to_sheet(calRows);
+  // Set RTL for Arabic sheets
+  if (isAr) {
+    if (!ws1['!sheetViews']) ws1['!sheetViews'] = [{}];
+    (ws1 as any)['!sheetViews'] = [{ rightToLeft: true }];
+  }
   XLSX.utils.book_append_sheet(wb, ws1, isAr ? 'التقويم' : 'Calendar');
 
   // Page 2: Holiday list
@@ -110,9 +131,16 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
   listRows.push(['https://egazat.com']);
 
   const ws2 = XLSX.utils.aoa_to_sheet(listRows);
+  if (isAr) {
+    (ws2 as any)['!sheetViews'] = [{ rightToLeft: true }];
+  }
   XLSX.utils.book_append_sheet(wb, ws2, isAr ? 'العطل' : 'Holidays');
 
-  const buf = XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+  // Set workbook properties for UTF-8
+  wb.Workbook = wb.Workbook || {};
+  wb.Workbook.WBProps = wb.Workbook.WBProps || {};
+
+  const buf = XLSX.write(wb, { bookType: 'xlsx', type: 'array', bookSST: true });
   const blob = new Blob([buf], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
   downloadBlob(blob, `${countryCode}-holidays-${year}-${language}.xlsx`);
 }
@@ -131,13 +159,20 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
 
   const doc = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
 
+  // Load and add Arabic font for proper encoding
+  if (isAr) {
+    const fontBase64 = await loadArabicFont();
+    doc.addFileToVFS('Amiri-Regular.ttf', fontBase64);
+    doc.addFont('Amiri-Regular.ttf', 'Amiri', 'normal');
+    doc.setFont('Amiri');
+  }
+
   // Page 1: Calendar tables
   const title = isAr ? `تقويم العطل الرسمية - ${name} ${year}` : `Public Holidays Calendar - ${name} ${year}`;
   doc.setFontSize(14);
   doc.text(title, 105, 12, { align: 'center' });
 
   let yPos = 18;
-  const pageWidth = 190;
   const colWidth = 90;
   const gap = 10;
 
@@ -157,12 +192,14 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     const grid = getMonthGrid(year, m);
 
     const tableData = grid.map(week =>
-      week.map((d, di) => {
+      week.map((d) => {
         if (d === null) return '';
         const dateStr = `${year}-${String(m + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
         return holidayDates.has(dateStr) ? `★${d}` : String(d);
       })
     );
+
+    const fontForTable = isAr ? 'Amiri' : 'helvetica';
 
     autoTable(doc, {
       startY: yPos,
@@ -171,8 +208,8 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
       head: [[monthNames[m], '', '', '', '', '', ''], dayNames],
       body: tableData,
       theme: 'grid',
-      styles: { fontSize: 6, cellPadding: 1, halign: 'center', minCellHeight: 5 },
-      headStyles: { fillColor: [41, 128, 185], fontSize: 7, halign: 'center' },
+      styles: { fontSize: 6, cellPadding: 1, halign: 'center', minCellHeight: 5, font: fontForTable },
+      headStyles: { fillColor: [41, 128, 185], fontSize: 7, halign: 'center', font: fontForTable },
       didParseCell: (data: any) => {
         if (data.section === 'body' && typeof data.cell.raw === 'string' && data.cell.raw.startsWith('★')) {
           data.cell.styles.fillColor = [255, 235, 235];
@@ -183,22 +220,19 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     });
 
     const tableEndY = (doc as any).lastAutoTable?.finalY ?? yPos + 40;
-    if (col === 0) {
-      // save Y for next column
-    } else {
-      yPos = Math.max(tableEndY + 4, yPos);
-    }
     if (col === 1) {
       yPos = tableEndY + 4;
     }
   }
 
   doc.setFontSize(8);
+  if (isAr) doc.setFont('Amiri');
   doc.text(isAr ? '★ = عطلة رسمية' : '★ = Public Holiday', 105, 290, { align: 'center' });
 
   // Page 2: Holiday list
   doc.addPage();
   doc.setFontSize(14);
+  if (isAr) doc.setFont('Amiri');
   const listTitle = isAr ? `العطل الرسمية - ${name} ${year}` : `Public Holidays - ${name} ${year}`;
   doc.text(listTitle, 105, 15, { align: 'center' });
 
@@ -213,13 +247,15 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
     return [String(i + 1), dateStr, isAr ? h.nameAr : h.name, typeLabel, dur];
   });
 
+  const fontForList = isAr ? 'Amiri' : 'helvetica';
+
   autoTable(doc, {
     startY: 22,
     head: [headers],
     body: rows,
     theme: 'striped',
-    styles: { fontSize: 9, cellPadding: 3 },
-    headStyles: { fillColor: [41, 128, 185] },
+    styles: { fontSize: 9, cellPadding: 3, font: fontForList },
+    headStyles: { fillColor: [41, 128, 185], font: fontForList },
   });
 
   const finalY = ((doc as any).lastAutoTable?.finalY ?? 200) + 15;
@@ -240,6 +276,10 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
   const monthNames = isAr ? MONTH_NAMES_AR : MONTH_NAMES_EN;
   const holidayDates = getHolidayDatesSet(holidays);
 
+  // Use Arial for Arabic (widely supported), fallback for English
+  const fontName = isAr ? 'Arial' : 'Arial';
+  const textDirection = isAr ? 'rtl' : 'ltr';
+
   const cellBorder = { style: BorderStyle.SINGLE, size: 1, color: 'CCCCCC' };
   const cellBorders = { top: cellBorder, bottom: cellBorder, left: cellBorder, right: cellBorder };
 
@@ -248,7 +288,8 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
     new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 200 },
-      children: [new TextRun({ text: isAr ? `تقويم العطل الرسمية - ${name} ${year}` : `Public Holidays Calendar - ${name} ${year}`, bold: true, size: 28, font: 'Arial' })],
+      bidirectional: isAr,
+      children: [new TextRun({ text: isAr ? `تقويم العطل الرسمية - ${name} ${year}` : `Public Holidays Calendar - ${name} ${year}`, bold: true, size: 28, font: fontName, rightToLeft: isAr })],
     }),
   ];
 
@@ -256,7 +297,8 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
     calendarChildren.push(
       new Paragraph({
         spacing: { before: 200, after: 100 },
-        children: [new TextRun({ text: monthNames[m], bold: true, size: 22, font: 'Arial' })],
+        bidirectional: isAr,
+        children: [new TextRun({ text: monthNames[m], bold: true, size: 22, font: fontName, rightToLeft: isAr })],
       })
     );
 
@@ -267,7 +309,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
           borders: cellBorders,
           width: { size: 1300, type: WidthType.DXA },
           shading: { fill: '2980B9', type: ShadingType.CLEAR },
-          children: [new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: d, bold: true, size: 16, font: 'Arial', color: 'FFFFFF' })] })],
+          children: [new Paragraph({ alignment: AlignmentType.CENTER, bidirectional: isAr, children: [new TextRun({ text: d, bold: true, size: 16, font: fontName, color: 'FFFFFF', rightToLeft: isAr })] })],
         })
       ),
     });
@@ -283,7 +325,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
             shading: isHoliday ? { fill: 'FFEBEB', type: ShadingType.CLEAR } : undefined,
             children: [new Paragraph({
               alignment: AlignmentType.CENTER,
-              children: d ? [new TextRun({ text: String(d), size: 16, font: 'Arial', bold: isHoliday, color: isHoliday ? 'CC0000' : '000000' })] : [],
+              children: d ? [new TextRun({ text: String(d), size: 16, font: fontName, bold: isHoliday, color: isHoliday ? 'CC0000' : '000000' })] : [],
             })],
           });
         }),
@@ -302,7 +344,8 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
   calendarChildren.push(
     new Paragraph({
       spacing: { before: 200 },
-      children: [new TextRun({ text: isAr ? '★ الأيام المظللة بالأحمر = عطلة رسمية' : 'Red-highlighted days = Public Holiday', size: 18, font: 'Arial', italics: true })],
+      bidirectional: isAr,
+      children: [new TextRun({ text: isAr ? '★ الأيام المظللة بالأحمر = عطلة رسمية' : 'Red-highlighted days = Public Holiday', size: 18, font: fontName, italics: true, rightToLeft: isAr })],
     })
   );
 
@@ -311,7 +354,8 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
     new Paragraph({
       alignment: AlignmentType.CENTER,
       spacing: { after: 200 },
-      children: [new TextRun({ text: isAr ? `العطل الرسمية - ${name} ${year}` : `Public Holidays - ${name} ${year}`, bold: true, size: 28, font: 'Arial' })],
+      bidirectional: isAr,
+      children: [new TextRun({ text: isAr ? `العطل الرسمية - ${name} ${year}` : `Public Holidays - ${name} ${year}`, bold: true, size: 28, font: fontName, rightToLeft: isAr })],
     }),
   ];
 
@@ -320,7 +364,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
       new TableCell({
         borders: cellBorders,
         shading: { fill: '2980B9', type: ShadingType.CLEAR },
-        children: [new Paragraph({ children: [new TextRun({ text: h, bold: true, size: 20, font: 'Arial', color: 'FFFFFF' })] })],
+        children: [new Paragraph({ bidirectional: isAr, children: [new TextRun({ text: h, bold: true, size: 20, font: fontName, color: 'FFFFFF', rightToLeft: isAr })] })],
       })
     ),
   });
@@ -337,7 +381,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
       children: [String(i + 1), dateStr, isAr ? h.nameAr : h.name, typeLabel, dur].map(text =>
         new TableCell({
           borders: cellBorders,
-          children: [new Paragraph({ children: [new TextRun({ text, size: 20, font: 'Arial' })] })],
+          children: [new Paragraph({ bidirectional: isAr, children: [new TextRun({ text, size: 20, font: fontName, rightToLeft: isAr })] })],
         })
       ),
     });
@@ -357,7 +401,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
       alignment: AlignmentType.CENTER,
       children: [
         new ExternalHyperlink({
-          children: [new TextRun({ text: 'https://egazat.com', style: 'Hyperlink', size: 22, font: 'Arial' })],
+          children: [new TextRun({ text: 'https://egazat.com', style: 'Hyperlink', size: 22, font: fontName })],
           link: 'https://egazat.com',
         }),
       ],
@@ -366,8 +410,14 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
 
   const doc = new Document({
     sections: [
-      { children: calendarChildren },
-      { children: listChildren },
+      {
+        properties: isAr ? { bidi: true } as any : undefined,
+        children: calendarChildren,
+      },
+      {
+        properties: isAr ? { bidi: true } as any : undefined,
+        children: listChildren,
+      },
     ],
   });
 
@@ -390,24 +440,21 @@ export const CalendarDownloadButtons = (props: CalendarDownloadButtonsProps) => 
   return (
     <div className="flex flex-wrap justify-center gap-3 mb-6">
       <Button
-        variant="outline"
-        className="gap-2"
+        className="gap-2 bg-[#217346] hover:bg-[#1a5c38] text-white border-0"
         onClick={() => generateExcel(props)}
       >
         <FileSpreadsheet className="h-4 w-4" />
         {isAr ? 'تحميل Excel' : 'Download Excel'}
       </Button>
       <Button
-        variant="outline"
-        className="gap-2"
+        className="gap-2 bg-[#DC3545] hover:bg-[#b52d3a] text-white border-0"
         onClick={() => generatePDF(props)}
       >
         <FileText className="h-4 w-4" />
         {isAr ? 'تحميل PDF' : 'Download PDF'}
       </Button>
       <Button
-        variant="outline"
-        className="gap-2"
+        className="gap-2 bg-[#2B579A] hover:bg-[#1e3f6f] text-white border-0"
         onClick={() => generateWord(props)}
       >
         <FileDown className="h-4 w-4" />
