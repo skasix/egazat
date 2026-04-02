@@ -11,6 +11,7 @@ import { ArrowLeft, CalendarDays } from 'lucide-react';
 import { generateCountryUrl, generateHomeUrl, getCountryMetadata } from '@/utils/seoRoutes';
 import { SEOHead } from '@/components/SEOHead';
 import { CountryEditorialContent } from '@/components/CountryEditorialContent';
+import { CalendarDownloadButtons } from '@/components/CalendarDownloadButtons';
 import countriesJsonData from '@/data/countries.json';
 
 // Import flag images
@@ -992,6 +993,16 @@ export const CountryPage = () => {
             </p>
           </div>
         </div>
+
+        {/* Download Buttons */}
+        <CalendarDownloadButtons
+          countryName={country.name}
+          countryNameAr={country.nameAr}
+          countryCode={selectedCountry}
+          year={selectedYear}
+          holidays={holidays}
+          language={language}
+        />
 
         {/* Calendar Section */}
         <section className="mb-12">
