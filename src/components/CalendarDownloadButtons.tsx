@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { FileSpreadsheet, FileText, FileDown } from 'lucide-react';
+import * as XLSX from 'xlsx';
 
 interface Holiday {
   name: string;
