@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { FileSpreadsheet, FileText, FileDown } from 'lucide-react';
+import * as XLSX from 'xlsx';
 
 interface Holiday {
   name: string;
@@ -73,7 +74,6 @@ async function loadArabicFont(): Promise<string> {
 }
 
 async function generateExcel(props: CalendarDownloadButtonsProps) {
-  const XLSX = await import('xlsx');
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
