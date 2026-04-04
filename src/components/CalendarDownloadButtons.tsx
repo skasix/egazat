@@ -75,7 +75,6 @@ async function loadArabicFont(): Promise<string> {
 
 async function generateExcel(props: CalendarDownloadButtonsProps) {
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
-  const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
   const dayNames = isAr ? DAY_NAMES_AR : DAY_NAMES_EN;
