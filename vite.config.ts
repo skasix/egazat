@@ -80,6 +80,8 @@ export default defineConfig(({ mode }) => ({
           utils: ['class-variance-authority', 'clsx', 'tailwind-merge'],
         },
       },
+      // Keep dynamic imports for download libraries resolvable
+      external: [],
     },
     // Enable source maps for production debugging
     sourcemap: mode === 'production' ? 'hidden' : true,
