@@ -118,7 +118,8 @@ async function loadDocx() {
 
 async function loadArabicFont(): Promise<string> {
   if (arabicFontCache) return arabicFontCache;
-  const response = await fetch('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/amiri/Amiri-Regular.ttf');
+  const response = await fetch('/vendor/Amiri-Regular.ttf');
+  if (!response.ok) throw new Error('Failed to load Arabic font');
   const buffer = await response.arrayBuffer();
   const bytes = new Uint8Array(buffer);
   let binary = '';
