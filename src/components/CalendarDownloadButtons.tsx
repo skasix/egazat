@@ -198,10 +198,7 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
 }
 
 async function generatePDF(props: CalendarDownloadButtonsProps) {
-  const jsPDFModule = await import('jspdf');
-  const autoTableModule = await import('jspdf-autotable');
-  const jsPDF = jsPDFModule.default;
-  const autoTable = autoTableModule.default;
+  const { jsPDF, autoTable } = await loadPDFLibraries();
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
@@ -319,8 +316,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
 }
 
 async function generateWord(props: CalendarDownloadButtonsProps) {
-  const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ExternalHyperlink, AlignmentType, WidthType, BorderStyle, ShadingType } = await import('docx');
-  const { saveAs } = await import('file-saver');
+  const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ExternalHyperlink, AlignmentType, WidthType, BorderStyle, ShadingType } = await loadDocx();
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
@@ -474,7 +470,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
   });
 
   const buf = await Packer.toBlob(doc);
-  saveAs(buf, `${countryCode}-holidays-${year}-${language}.docx`);
+  downloadBlob(buf, `${countryCode}-holidays-${year}-${language}.docx`);
 }
 
 function downloadBlob(blob: Blob, filename: string) {
