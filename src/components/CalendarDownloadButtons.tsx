@@ -4,6 +4,9 @@ import { FileSpreadsheet, FileText, FileDown } from 'lucide-react';
 declare global {
   interface Window {
     XLSX?: any;
+    jspdf?: { jsPDF?: any };
+    autoTable?: any;
+    docx?: any;
   }
 }
 
@@ -66,21 +69,46 @@ function getMonthGrid(year: number, month: number) {
 let arabicFontCache: string | null = null;
 
 let xlsxLoader: Promise<any> | null = null;
+const scriptLoaders: Record<string, Promise<void>> = {};
+
+function loadScript(src: string, isReady: () => boolean, label: string): Promise<void> {
+  if (isReady()) return Promise.resolve();
+  if (!scriptLoaders[src]) {
+    scriptLoaders[src] = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.onload = () => isReady() ? resolve() : reject(new Error(`${label} failed to load`));
+      script.onerror = () => reject(new Error(`${label} script failed to load`));
+      document.head.appendChild(script);
+    });
+  }
+  return scriptLoaders[src];
+}
 
 function loadXLSX(): Promise<any> {
   if (window.XLSX) return Promise.resolve(window.XLSX);
   if (xlsxLoader) return xlsxLoader;
 
-  xlsxLoader = new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = '/vendor/xlsx.full.min.js';
-    script.async = true;
-    script.onload = () => window.XLSX ? resolve(window.XLSX) : reject(new Error('XLSX failed to load'));
-    script.onerror = () => reject(new Error('XLSX script failed to load'));
-    document.head.appendChild(script);
-  });
+  xlsxLoader = loadScript('/vendor/xlsx.full.min.js', () => Boolean(window.XLSX), 'XLSX')
+    .then(() => window.XLSX);
 
   return xlsxLoader;
+}
+
+async function loadPDFLibraries() {
+  await loadScript('/vendor/jspdf.umd.min.js', () => Boolean(window.jspdf?.jsPDF), 'jsPDF');
+  await loadScript('/vendor/jspdf.plugin.autotable.min.js', () => typeof window.autoTable === 'function', 'jsPDF AutoTable');
+
+  return {
+    jsPDF: window.jspdf!.jsPDF!,
+    autoTable: window.autoTable,
+  };
+}
+
+async function loadDocx() {
+  await loadScript('/vendor/docx.umd.cjs', () => Boolean(window.docx?.Document), 'DOCX');
+  return window.docx!;
 }
 
 async function loadArabicFont(): Promise<string> {
