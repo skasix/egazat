@@ -4,6 +4,9 @@ import { FileSpreadsheet, FileText, FileDown } from 'lucide-react';
 declare global {
   interface Window {
     XLSX?: any;
+    jspdf?: { jsPDF?: any };
+    autoTable?: any;
+    docx?: any;
   }
 }
 
@@ -66,21 +69,46 @@ function getMonthGrid(year: number, month: number) {
 let arabicFontCache: string | null = null;
 
 let xlsxLoader: Promise<any> | null = null;
+const scriptLoaders: Record<string, Promise<void>> = {};
+
+function loadScript(src: string, isReady: () => boolean, label: string): Promise<void> {
+  if (isReady()) return Promise.resolve();
+  if (!scriptLoaders[src]) {
+    scriptLoaders[src] = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = src;
+      script.async = true;
+      script.onload = () => isReady() ? resolve() : reject(new Error(`${label} failed to load`));
+      script.onerror = () => reject(new Error(`${label} script failed to load`));
+      document.head.appendChild(script);
+    });
+  }
+  return scriptLoaders[src];
+}
 
 function loadXLSX(): Promise<any> {
   if (window.XLSX) return Promise.resolve(window.XLSX);
   if (xlsxLoader) return xlsxLoader;
 
-  xlsxLoader = new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = '/vendor/xlsx.full.min.js';
-    script.async = true;
-    script.onload = () => window.XLSX ? resolve(window.XLSX) : reject(new Error('XLSX failed to load'));
-    script.onerror = () => reject(new Error('XLSX script failed to load'));
-    document.head.appendChild(script);
-  });
+  xlsxLoader = loadScript('/vendor/xlsx.full.min.js', () => Boolean(window.XLSX), 'XLSX')
+    .then(() => window.XLSX);
 
   return xlsxLoader;
+}
+
+async function loadPDFLibraries() {
+  await loadScript('/vendor/jspdf.umd.min.js', () => Boolean(window.jspdf?.jsPDF), 'jsPDF');
+  await loadScript('/vendor/jspdf.plugin.autotable.min.js', () => typeof window.autoTable === 'function', 'jsPDF AutoTable');
+
+  return {
+    jsPDF: window.jspdf!.jsPDF!,
+    autoTable: window.autoTable,
+  };
+}
+
+async function loadDocx() {
+  await loadScript('/vendor/docx.umd.js', () => Boolean(window.docx?.Document), 'DOCX');
+  return window.docx!;
 }
 
 async function loadArabicFont(): Promise<string> {
@@ -170,10 +198,7 @@ async function generateExcel(props: CalendarDownloadButtonsProps) {
 }
 
 async function generatePDF(props: CalendarDownloadButtonsProps) {
-  const jsPDFModule = await import('jspdf');
-  const autoTableModule = await import('jspdf-autotable');
-  const jsPDF = jsPDFModule.default;
-  const autoTable = autoTableModule.default;
+  const { jsPDF, autoTable } = await loadPDFLibraries();
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
@@ -291,8 +316,7 @@ async function generatePDF(props: CalendarDownloadButtonsProps) {
 }
 
 async function generateWord(props: CalendarDownloadButtonsProps) {
-  const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ExternalHyperlink, AlignmentType, WidthType, BorderStyle, ShadingType } = await import('docx');
-  const { saveAs } = await import('file-saver');
+  const { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, ExternalHyperlink, AlignmentType, WidthType, BorderStyle, ShadingType } = await loadDocx();
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
@@ -446,7 +470,7 @@ async function generateWord(props: CalendarDownloadButtonsProps) {
   });
 
   const buf = await Packer.toBlob(doc);
-  saveAs(buf, `${countryCode}-holidays-${year}-${language}.docx`);
+  downloadBlob(buf, `${countryCode}-holidays-${year}-${language}.docx`);
 }
 
 function downloadBlob(blob: Blob, filename: string) {
