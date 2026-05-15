@@ -1,4 +1,4 @@
-Meta Injection Audit — 2026-05-15T12:52:59.178Z
+Meta Injection Audit — 2026-05-15T14:23:39.208Z
 Updated: 130 | Skipped: 42 | Errors: 0
 ────────────────────────────────────────────────────────────────────────────────
 [PASS] /index.html | TITLE: إجازات الدول العربية 2026 — دليل العطل الرسمية | إجازات | DESC_LENGTH: 119 | OG: present | LANG_DIR: present
