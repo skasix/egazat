@@ -98,12 +98,17 @@ function loadXLSX(): Promise<any> {
 
 async function loadPDFLibraries() {
   await loadScript('/vendor/jspdf.umd.min.js', () => Boolean(window.jspdf?.jsPDF), 'jsPDF');
-  await loadScript('/vendor/jspdf.plugin.autotable.min.js', () => typeof window.autoTable === 'function', 'jsPDF AutoTable');
+  await loadScript(
+    '/vendor/jspdf.plugin.autotable.min.js',
+    () => typeof (window.jspdf!.jsPDF!).API?.autoTable === 'function',
+    'jsPDF AutoTable'
+  );
 
-  return {
-    jsPDF: window.jspdf!.jsPDF!,
-    autoTable: window.autoTable,
-  };
+  const JsPDFCtor = window.jspdf!.jsPDF!;
+  // AutoTable v5 attaches as instance method: doc.autoTable(opts)
+  const autoTable = (doc: any, opts: any) => doc.autoTable(opts);
+
+  return { jsPDF: JsPDFCtor, autoTable };
 }
 
 async function loadDocx() {
