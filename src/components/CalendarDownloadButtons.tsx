@@ -1,6 +1,11 @@
 import { Button } from '@/components/ui/button';
 import { FileSpreadsheet, FileText, FileDown } from 'lucide-react';
-import * as XLSX from 'xlsx';
+
+declare global {
+  interface Window {
+    XLSX?: any;
+  }
+}
 
 interface Holiday {
   name: string;
@@ -60,6 +65,24 @@ function getMonthGrid(year: number, month: number) {
 // Cache for loaded Arabic font
 let arabicFontCache: string | null = null;
 
+let xlsxLoader: Promise<any> | null = null;
+
+function loadXLSX(): Promise<any> {
+  if (window.XLSX) return Promise.resolve(window.XLSX);
+  if (xlsxLoader) return xlsxLoader;
+
+  xlsxLoader = new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = '/vendor/xlsx.full.min.js';
+    script.async = true;
+    script.onload = () => window.XLSX ? resolve(window.XLSX) : reject(new Error('XLSX failed to load'));
+    script.onerror = () => reject(new Error('XLSX script failed to load'));
+    document.head.appendChild(script);
+  });
+
+  return xlsxLoader;
+}
+
 async function loadArabicFont(): Promise<string> {
   if (arabicFontCache) return arabicFontCache;
   const response = await fetch('https://cdn.jsdelivr.net/gh/google/fonts@main/ofl/amiri/Amiri-Regular.ttf');
@@ -75,6 +98,7 @@ async function loadArabicFont(): Promise<string> {
 
 async function generateExcel(props: CalendarDownloadButtonsProps) {
   const { countryName, countryNameAr, countryCode, year, holidays, language } = props;
+  const XLSX = await loadXLSX();
   const isAr = language === 'ar';
   const name = isAr ? countryNameAr : countryName;
   const dayNames = isAr ? DAY_NAMES_AR : DAY_NAMES_EN;
