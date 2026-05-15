@@ -138,34 +138,34 @@
 [PASS] /ar/country/bh/2026.html | length: 149
 [WARN] /ar/country/bh/2027.html | length: 133 | missing holiday keyword (ar)
 [WARN] /ar/country/bh/2028.html | length: 133 | missing holiday keyword (ar)
-[PASS] /ar/country/dj/2026.html | length: 147
+[PASS] /ar/country/dj/2026.html | length: 148
 [WARN] /ar/country/dj/2027.html | length: 132 | missing holiday keyword (ar)
 [WARN] /ar/country/dj/2028.html | length: 132 | missing holiday keyword (ar)
-[PASS] /ar/country/dz/2026.html | length: 148
+[PASS] /ar/country/dz/2026.html | length: 149
 [WARN] /ar/country/dz/2027.html | length: 133 | missing holiday keyword (ar)
 [WARN] /ar/country/dz/2028.html | length: 133 | missing holiday keyword (ar)
-[PASS] /ar/country/eg/2026.html | length: 151
+[PASS] /ar/country/eg/2026.html | length: 145
 [WARN] /ar/country/eg/2027.html | length: 154 | missing holiday keyword (ar)
 [WARN] /ar/country/eg/2028.html | length: 154 | missing holiday keyword (ar)
-[PASS] /ar/country/iq/2026.html | length: 147
+[PASS] /ar/country/iq/2026.html | length: 148
 [WARN] /ar/country/iq/2027.html | length: 132 | missing holiday keyword (ar)
 [WARN] /ar/country/iq/2028.html | length: 132 | missing holiday keyword (ar)
-[PASS] /ar/country/jo/2026.html | length: 147
+[WARN] /ar/country/jo/2026.html | length: 151 | missing holiday keyword (ar)
 [WARN] /ar/country/jo/2027.html | length: 132 | missing holiday keyword (ar)
 [WARN] /ar/country/jo/2028.html | length: 132 | missing holiday keyword (ar)
-[PASS] /ar/country/km/2026.html | length: 150
+[PASS] /ar/country/km/2026.html | length: 151
 [WARN] /ar/country/km/2027.html | length: 135 | missing holiday keyword (ar)
 [WARN] /ar/country/km/2028.html | length: 135 | missing holiday keyword (ar)
 [PASS] /ar/country/kw/2026.html | length: 148
 [WARN] /ar/country/kw/2027.html | length: 132 | missing holiday keyword (ar)
 [WARN] /ar/country/kw/2028.html | length: 132 | missing holiday keyword (ar)
-[WARN] /ar/country/lb/2026.html | length: 148 | missing holiday keyword (ar)
+[PASS] /ar/country/lb/2026.html | length: 147
 [WARN] /ar/country/lb/2027.html | length: 131 | missing holiday keyword (ar)
 [WARN] /ar/country/lb/2028.html | length: 131 | missing holiday keyword (ar)
 [PASS] /ar/country/ly/2026.html | length: 147
 [WARN] /ar/country/ly/2027.html | length: 131 | missing holiday keyword (ar)
 [WARN] /ar/country/ly/2028.html | length: 131 | missing holiday keyword (ar)
-[PASS] /ar/country/ma/2026.html | length: 147
+[PASS] /ar/country/ma/2026.html | length: 148
 [WARN] /ar/country/ma/2027.html | length: 132 | missing holiday keyword (ar)
 [WARN] /ar/country/ma/2028.html | length: 132 | missing holiday keyword (ar)
 [PASS] /ar/country/om/2026.html | length: 146
@@ -180,16 +180,16 @@
 [PASS] /ar/country/sd/2026.html | length: 149
 [WARN] /ar/country/sd/2027.html | length: 133 | missing holiday keyword (ar)
 [WARN] /ar/country/sd/2028.html | length: 133 | missing holiday keyword (ar)
-[PASS] /ar/country/so/2026.html | length: 148
+[PASS] /ar/country/so/2026.html | length: 149
 [WARN] /ar/country/so/2027.html | length: 133 | missing holiday keyword (ar)
 [WARN] /ar/country/so/2028.html | length: 133 | missing holiday keyword (ar)
-[PASS] /ar/country/sy/2026.html | length: 151
+[PASS] /ar/country/sy/2026.html | length: 147
 [WARN] /ar/country/sy/2027.html | length: 131 | missing holiday keyword (ar)
 [WARN] /ar/country/sy/2028.html | length: 131 | missing holiday keyword (ar)
-[PASS] /ar/country/tn/2026.html | length: 145
+[PASS] /ar/country/tn/2026.html | length: 146
 [WARN] /ar/country/tn/2027.html | length: 155 | missing holiday keyword (ar)
 [WARN] /ar/country/tn/2028.html | length: 155 | missing holiday keyword (ar)
-[PASS] /ar/country/ye/2026.html | length: 146
+[PASS] /ar/country/ye/2026.html | length: 147
 [WARN] /ar/country/ye/2027.html | length: 131 | missing holiday keyword (ar)
 [WARN] /ar/country/ye/2028.html | length: 131 | missing holiday keyword (ar)
 [PASS] /en/country/ae/2026.html | length: 132
@@ -198,34 +198,34 @@
 [PASS] /en/country/bh/2026.html | length: 136
 [PASS] /en/country/bh/2027.html | length: 142
 [PASS] /en/country/bh/2028.html | length: 142
-[PASS] /en/country/dj/2026.html | length: 135
+[PASS] /en/country/dj/2026.html | length: 137
 [PASS] /en/country/dj/2027.html | length: 143
 [PASS] /en/country/dj/2028.html | length: 143
-[PASS] /en/country/dz/2026.html | length: 134
+[PASS] /en/country/dz/2026.html | length: 136
 [PASS] /en/country/dz/2027.html | length: 142
 [PASS] /en/country/dz/2028.html | length: 142
-[PASS] /en/country/eg/2026.html | length: 145
+[PASS] /en/country/eg/2026.html | length: 134
 [PASS] /en/country/eg/2027.html | length: 140
 [PASS] /en/country/eg/2028.html | length: 140
-[PASS] /en/country/iq/2026.html | length: 155
+[PASS] /en/country/iq/2026.html | length: 133
 [PASS] /en/country/iq/2027.html | length: 139
 [PASS] /en/country/iq/2028.html | length: 139
-[PASS] /en/country/jo/2026.html | length: 133
+[PASS] /en/country/jo/2026.html | length: 140
 [PASS] /en/country/jo/2027.html | length: 141
 [PASS] /en/country/jo/2028.html | length: 141
-[PASS] /en/country/km/2026.html | length: 134
+[PASS] /en/country/km/2026.html | length: 136
 [PASS] /en/country/km/2027.html | length: 142
 [PASS] /en/country/km/2028.html | length: 142
 [PASS] /en/country/kw/2026.html | length: 135
 [PASS] /en/country/kw/2027.html | length: 141
 [PASS] /en/country/kw/2028.html | length: 141
-[PASS] /en/country/lb/2026.html | length: 139
+[PASS] /en/country/lb/2026.html | length: 136
 [PASS] /en/country/lb/2027.html | length: 142
 [PASS] /en/country/lb/2028.html | length: 142
 [PASS] /en/country/ly/2026.html | length: 134
 [PASS] /en/country/ly/2027.html | length: 140
 [PASS] /en/country/ly/2028.html | length: 140
-[PASS] /en/country/ma/2026.html | length: 134
+[PASS] /en/country/ma/2026.html | length: 136
 [PASS] /en/country/ma/2027.html | length: 142
 [PASS] /en/country/ma/2028.html | length: 142
 [PASS] /en/country/om/2026.html | length: 133
@@ -240,16 +240,16 @@
 [PASS] /en/country/sd/2026.html | length: 134
 [PASS] /en/country/sd/2027.html | length: 140
 [PASS] /en/country/sd/2028.html | length: 140
-[PASS] /en/country/so/2026.html | length: 134
+[PASS] /en/country/so/2026.html | length: 136
 [PASS] /en/country/so/2027.html | length: 142
 [PASS] /en/country/so/2028.html | length: 142
-[PASS] /en/country/sy/2026.html | length: 141
+[PASS] /en/country/sy/2026.html | length: 134
 [PASS] /en/country/sy/2027.html | length: 140
 [PASS] /en/country/sy/2028.html | length: 140
-[PASS] /en/country/tn/2026.html | length: 134
+[PASS] /en/country/tn/2026.html | length: 136
 [PASS] /en/country/tn/2027.html | length: 142
 [PASS] /en/country/tn/2028.html | length: 142
-[PASS] /en/country/ye/2026.html | length: 132
+[PASS] /en/country/ye/2026.html | length: 138
 [PASS] /en/country/ye/2027.html | length: 140
 [PASS] /en/country/ye/2028.html | length: 140
 [WARN] /ar/eid.html | length: 102 (<120)
@@ -1466,7 +1466,7 @@
 EGAZAT.COM COMPREHENSIVE SEO AUDIT
 ======================================
 Total files audited: 131
-Audit date: 2026-04-01T07:19:36.902Z
+Audit date: 2026-05-15T14:36:07.320Z
 
 Group  1 — Title tags          : 131/131 PASS | 0 FAIL | 0 WARN
 Group  2 — Meta descriptions   :  84/131 PASS | 0 FAIL | 47 WARN
@@ -1496,13 +1496,13 @@ WARNINGS (review before deploy):
   Group 2: /ar/country/eg/2028.html — length: 154 | missing holiday keyword (ar)
   Group 2: /ar/country/iq/2027.html — length: 132 | missing holiday keyword (ar)
   Group 2: /ar/country/iq/2028.html — length: 132 | missing holiday keyword (ar)
+  Group 2: /ar/country/jo/2026.html — length: 151 | missing holiday keyword (ar)
   Group 2: /ar/country/jo/2027.html — length: 132 | missing holiday keyword (ar)
   Group 2: /ar/country/jo/2028.html — length: 132 | missing holiday keyword (ar)
   Group 2: /ar/country/km/2027.html — length: 135 | missing holiday keyword (ar)
   Group 2: /ar/country/km/2028.html — length: 135 | missing holiday keyword (ar)
   Group 2: /ar/country/kw/2027.html — length: 132 | missing holiday keyword (ar)
   Group 2: /ar/country/kw/2028.html — length: 132 | missing holiday keyword (ar)
-  Group 2: /ar/country/lb/2026.html — length: 148 | missing holiday keyword (ar)
   Group 2: /ar/country/lb/2027.html — length: 131 | missing holiday keyword (ar)
   Group 2: /ar/country/lb/2028.html — length: 131 | missing holiday keyword (ar)
   Group 2: /ar/country/ly/2027.html — length: 131 | missing holiday keyword (ar)
