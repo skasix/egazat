@@ -107,7 +107,7 @@ async function loadPDFLibraries() {
 }
 
 async function loadDocx() {
-  await loadScript('/vendor/docx.umd.cjs', () => Boolean(window.docx?.Document), 'DOCX');
+  await loadScript('/vendor/docx.umd.js', () => Boolean(window.docx?.Document), 'DOCX');
   return window.docx!;
 }
 
