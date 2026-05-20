@@ -2,215 +2,215 @@
 [PASS] /ar/country/ae/2026.html | length: 45
 [PASS] /ar/country/ae/2027.html | length: 45
 [PASS] /ar/country/ae/2028.html | length: 45
-[WARN] /ar/country/ae/2029.html | length: 57 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/ae/2030.html | length: 57 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/ae/2029.html | length: 57 | missing brand suffix "إجازات"
+[WARN] /ar/country/ae/2030.html | length: 57 | missing brand suffix "إجازات"
 [PASS] /ar/country/bh/2026.html | length: 44
 [PASS] /ar/country/bh/2027.html | length: 44
 [PASS] /ar/country/bh/2028.html | length: 44
-[WARN] /ar/country/bh/2029.html | length: 41 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/bh/2030.html | length: 41 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/bh/2029.html | length: 41 | missing brand suffix "إجازات"
+[WARN] /ar/country/bh/2030.html | length: 41 | missing brand suffix "إجازات"
 [PASS] /ar/country/dj/2026.html | length: 60
 [PASS] /ar/country/dj/2027.html | length: 60
 [PASS] /ar/country/dj/2028.html | length: 60
-[WARN] /ar/country/dj/2029.html | length: 42 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/dj/2030.html | length: 42 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/dj/2029.html | length: 42 | missing brand suffix "إجازات"
+[WARN] /ar/country/dj/2030.html | length: 42 | missing brand suffix "إجازات"
 [PASS] /ar/country/dz/2026.html | length: 44
 [PASS] /ar/country/dz/2027.html | length: 44
 [PASS] /ar/country/dz/2028.html | length: 44
-[WARN] /ar/country/dz/2029.html | length: 67 (>60) | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/dz/2030.html | length: 67 (>60) | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/dz/2029.html | length: 67 (>60) | missing brand suffix "إجازات"
+[WARN] /ar/country/dz/2030.html | length: 67 (>60) | missing brand suffix "إجازات"
 [PASS] /ar/country/eg/2026.html | length: 57
 [PASS] /ar/country/eg/2027.html | length: 57
 [PASS] /ar/country/eg/2028.html | length: 57
-[WARN] /ar/country/eg/2029.html | length: 47 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/eg/2030.html | length: 47 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/eg/2029.html | length: 47 | missing brand suffix "إجازات"
+[WARN] /ar/country/eg/2030.html | length: 47 | missing brand suffix "إجازات"
 [PASS] /ar/country/iq/2026.html | length: 60
 [PASS] /ar/country/iq/2027.html | length: 60
 [PASS] /ar/country/iq/2028.html | length: 60
-[WARN] /ar/country/iq/2029.html | length: 42 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/iq/2030.html | length: 42 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/iq/2029.html | length: 42 | missing brand suffix "إجازات"
+[WARN] /ar/country/iq/2030.html | length: 42 | missing brand suffix "إجازات"
 [PASS] /ar/country/jo/2026.html | length: 60
 [PASS] /ar/country/jo/2027.html | length: 60
 [PASS] /ar/country/jo/2028.html | length: 60
-[WARN] /ar/country/jo/2029.html | length: 53 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/jo/2030.html | length: 53 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/jo/2029.html | length: 53 | missing brand suffix "إجازات"
+[WARN] /ar/country/jo/2030.html | length: 53 | missing brand suffix "إجازات"
 [PASS] /ar/country/km/2026.html | length: 46
 [PASS] /ar/country/km/2027.html | length: 46
 [PASS] /ar/country/km/2028.html | length: 46
-[WARN] /ar/country/km/2029.html | length: 37 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/km/2030.html | length: 37 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/km/2029.html | length: 37 | missing brand suffix "إجازات"
+[WARN] /ar/country/km/2030.html | length: 37 | missing brand suffix "إجازات"
 [PASS] /ar/country/kw/2026.html | length: 60
 [PASS] /ar/country/kw/2027.html | length: 60
 [PASS] /ar/country/kw/2028.html | length: 60
-[WARN] /ar/country/kw/2029.html | length: 39 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/kw/2030.html | length: 39 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/kw/2029.html | length: 39 | missing brand suffix "إجازات"
+[WARN] /ar/country/kw/2030.html | length: 39 | missing brand suffix "إجازات"
 [PASS] /ar/country/lb/2026.html | length: 59
 [PASS] /ar/country/lb/2027.html | length: 59
 [PASS] /ar/country/lb/2028.html | length: 59
-[WARN] /ar/country/lb/2029.html | length: 47 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/lb/2030.html | length: 47 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/lb/2029.html | length: 47 | missing brand suffix "إجازات"
+[WARN] /ar/country/lb/2030.html | length: 47 | missing brand suffix "إجازات"
 [PASS] /ar/country/ly/2026.html | length: 59
 [PASS] /ar/country/ly/2027.html | length: 59
 [PASS] /ar/country/ly/2028.html | length: 59
-[WARN] /ar/country/ly/2029.html | length: 38 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/ly/2030.html | length: 38 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/ly/2029.html | length: 38 | missing brand suffix "إجازات"
+[WARN] /ar/country/ly/2030.html | length: 38 | missing brand suffix "إجازات"
 [PASS] /ar/country/ma/2026.html | length: 60
 [PASS] /ar/country/ma/2027.html | length: 60
 [PASS] /ar/country/ma/2028.html | length: 60
-[WARN] /ar/country/ma/2029.html | length: 44 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/ma/2030.html | length: 44 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/ma/2029.html | length: 44 | missing brand suffix "إجازات"
+[WARN] /ar/country/ma/2030.html | length: 44 | missing brand suffix "إجازات"
 [PASS] /ar/country/om/2026.html | length: 58
 [PASS] /ar/country/om/2027.html | length: 58
 [PASS] /ar/country/om/2028.html | length: 58
-[WARN] /ar/country/om/2029.html | length: 38 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/om/2030.html | length: 38 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/om/2029.html | length: 38 | missing brand suffix "إجازات"
+[WARN] /ar/country/om/2030.html | length: 38 | missing brand suffix "إجازات"
 [PASS] /ar/country/qa/2026.html | length: 57
 [PASS] /ar/country/qa/2027.html | length: 57
 [PASS] /ar/country/qa/2028.html | length: 57
-[WARN] /ar/country/qa/2029.html | length: 36 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/qa/2030.html | length: 36 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/qa/2029.html | length: 36 | missing brand suffix "إجازات"
+[WARN] /ar/country/qa/2030.html | length: 36 | missing brand suffix "إجازات"
 [PASS] /ar/country/sa/2026.html | length: 45
 [PASS] /ar/country/sa/2027.html | length: 45
 [PASS] /ar/country/sa/2028.html | length: 45
-[WARN] /ar/country/sa/2029.html | length: 52 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/sa/2030.html | length: 52 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/sa/2029.html | length: 52 | missing brand suffix "إجازات"
+[WARN] /ar/country/sa/2030.html | length: 52 | missing brand suffix "إجازات"
 [PASS] /ar/country/sd/2026.html | length: 44
 [PASS] /ar/country/sd/2027.html | length: 44
 [PASS] /ar/country/sd/2028.html | length: 44
-[WARN] /ar/country/sd/2029.html | length: 43 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/sd/2030.html | length: 43 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/sd/2029.html | length: 43 | missing brand suffix "إجازات"
+[WARN] /ar/country/sd/2030.html | length: 43 | missing brand suffix "إجازات"
 [PASS] /ar/country/so/2026.html | length: 44
 [PASS] /ar/country/so/2027.html | length: 44
 [PASS] /ar/country/so/2028.html | length: 44
-[WARN] /ar/country/so/2029.html | length: 43 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/so/2030.html | length: 43 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/so/2029.html | length: 43 | missing brand suffix "إجازات"
+[WARN] /ar/country/so/2030.html | length: 43 | missing brand suffix "إجازات"
 [PASS] /ar/country/sy/2026.html | length: 59
 [PASS] /ar/country/sy/2027.html | length: 59
 [PASS] /ar/country/sy/2028.html | length: 59
-[WARN] /ar/country/sy/2029.html | length: 53 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/sy/2030.html | length: 53 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/sy/2029.html | length: 53 | missing brand suffix "إجازات"
+[WARN] /ar/country/sy/2030.html | length: 53 | missing brand suffix "إجازات"
 [PASS] /ar/country/tn/2026.html | length: 58
 [PASS] /ar/country/tn/2027.html | length: 58
 [PASS] /ar/country/tn/2028.html | length: 58
-[WARN] /ar/country/tn/2029.html | length: 46 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/tn/2030.html | length: 46 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/tn/2029.html | length: 46 | missing brand suffix "إجازات"
+[WARN] /ar/country/tn/2030.html | length: 46 | missing brand suffix "إجازات"
 [PASS] /ar/country/ye/2026.html | length: 59
 [PASS] /ar/country/ye/2027.html | length: 59
 [PASS] /ar/country/ye/2028.html | length: 59
-[WARN] /ar/country/ye/2029.html | length: 45 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/country/ye/2030.html | length: 45 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/country/ye/2029.html | length: 45 | missing brand suffix "إجازات"
+[WARN] /ar/country/ye/2030.html | length: 45 | missing brand suffix "إجازات"
 [PASS] /en/country/ae/2026.html | length: 50
 [PASS] /en/country/ae/2027.html | length: 50
 [PASS] /en/country/ae/2028.html | length: 50
-[FAIL] /en/country/ae/2029.html | length: 50 | missing year
-[FAIL] /en/country/ae/2030.html | length: 50 | missing year
+[PASS] /en/country/ae/2029.html | length: 50
+[PASS] /en/country/ae/2030.html | length: 50
 [PASS] /en/country/bh/2026.html | length: 54
 [PASS] /en/country/bh/2027.html | length: 54
 [PASS] /en/country/bh/2028.html | length: 54
-[FAIL] /en/country/bh/2029.html | length: 37 | missing year
-[FAIL] /en/country/bh/2030.html | length: 37 | missing year
+[PASS] /en/country/bh/2029.html | length: 37
+[PASS] /en/country/bh/2030.html | length: 37
 [PASS] /en/country/dj/2026.html | length: 55
 [PASS] /en/country/dj/2027.html | length: 55
 [PASS] /en/country/dj/2028.html | length: 55
-[FAIL] /en/country/dj/2029.html | length: 38 | missing year
-[FAIL] /en/country/dj/2030.html | length: 38 | missing year
+[PASS] /en/country/dj/2029.html | length: 38
+[PASS] /en/country/dj/2030.html | length: 38
 [PASS] /en/country/dz/2026.html | length: 54
 [PASS] /en/country/dz/2027.html | length: 54
 [PASS] /en/country/dz/2028.html | length: 54
-[FAIL] /en/country/dz/2029.html | length: 37 | missing year
-[FAIL] /en/country/dz/2030.html | length: 37 | missing year
+[PASS] /en/country/dz/2029.html | length: 37
+[PASS] /en/country/dz/2030.html | length: 37
 [PASS] /en/country/eg/2026.html | length: 52
 [PASS] /en/country/eg/2027.html | length: 52
 [PASS] /en/country/eg/2028.html | length: 52
-[FAIL] /en/country/eg/2029.html | length: 35 | missing year
-[FAIL] /en/country/eg/2030.html | length: 35 | missing year
+[PASS] /en/country/eg/2029.html | length: 35
+[PASS] /en/country/eg/2030.html | length: 35
 [PASS] /en/country/iq/2026.html | length: 51
 [PASS] /en/country/iq/2027.html | length: 51
 [PASS] /en/country/iq/2028.html | length: 51
-[FAIL] /en/country/iq/2029.html | length: 34 | missing year
-[FAIL] /en/country/iq/2030.html | length: 34 | missing year
+[PASS] /en/country/iq/2029.html | length: 34
+[PASS] /en/country/iq/2030.html | length: 34
 [PASS] /en/country/jo/2026.html | length: 53
 [PASS] /en/country/jo/2027.html | length: 53
 [PASS] /en/country/jo/2028.html | length: 53
-[FAIL] /en/country/jo/2029.html | length: 36 | missing year
-[FAIL] /en/country/jo/2030.html | length: 36 | missing year
+[PASS] /en/country/jo/2029.html | length: 36
+[PASS] /en/country/jo/2030.html | length: 36
 [PASS] /en/country/km/2026.html | length: 54
 [PASS] /en/country/km/2027.html | length: 54
 [PASS] /en/country/km/2028.html | length: 54
-[FAIL] /en/country/km/2029.html | length: 37 | missing year
-[FAIL] /en/country/km/2030.html | length: 37 | missing year
+[PASS] /en/country/km/2029.html | length: 37
+[PASS] /en/country/km/2030.html | length: 37
 [PASS] /en/country/kw/2026.html | length: 53
 [PASS] /en/country/kw/2027.html | length: 53
 [PASS] /en/country/kw/2028.html | length: 53
-[FAIL] /en/country/kw/2029.html | length: 36 | missing year
-[FAIL] /en/country/kw/2030.html | length: 36 | missing year
+[PASS] /en/country/kw/2029.html | length: 36
+[PASS] /en/country/kw/2030.html | length: 36
 [PASS] /en/country/lb/2026.html | length: 54
 [PASS] /en/country/lb/2027.html | length: 54
 [PASS] /en/country/lb/2028.html | length: 54
-[FAIL] /en/country/lb/2029.html | length: 37 | missing year
-[FAIL] /en/country/lb/2030.html | length: 37 | missing year
+[PASS] /en/country/lb/2029.html | length: 37
+[PASS] /en/country/lb/2030.html | length: 37
 [PASS] /en/country/ly/2026.html | length: 52
 [PASS] /en/country/ly/2027.html | length: 52
 [PASS] /en/country/ly/2028.html | length: 52
-[FAIL] /en/country/ly/2029.html | length: 35 | missing year
-[FAIL] /en/country/ly/2030.html | length: 35 | missing year
+[PASS] /en/country/ly/2029.html | length: 35
+[PASS] /en/country/ly/2030.html | length: 35
 [PASS] /en/country/ma/2026.html | length: 54
 [PASS] /en/country/ma/2027.html | length: 54
 [PASS] /en/country/ma/2028.html | length: 54
-[FAIL] /en/country/ma/2029.html | length: 37 | missing year
-[FAIL] /en/country/ma/2030.html | length: 37 | missing year
+[PASS] /en/country/ma/2029.html | length: 37
+[PASS] /en/country/ma/2030.html | length: 37
 [PASS] /en/country/om/2026.html | length: 51
 [PASS] /en/country/om/2027.html | length: 51
 [PASS] /en/country/om/2028.html | length: 51
-[FAIL] /en/country/om/2029.html | length: 34 | missing year
-[FAIL] /en/country/om/2030.html | length: 34 | missing year
+[PASS] /en/country/om/2029.html | length: 34
+[PASS] /en/country/om/2030.html | length: 34
 [PASS] /en/country/qa/2026.html | length: 52
 [PASS] /en/country/qa/2027.html | length: 52
 [PASS] /en/country/qa/2028.html | length: 52
-[FAIL] /en/country/qa/2029.html | length: 35 | missing year
-[FAIL] /en/country/qa/2030.html | length: 35 | missing year
+[PASS] /en/country/qa/2029.html | length: 35
+[PASS] /en/country/qa/2030.html | length: 35
 [PASS] /en/country/sa/2026.html | length: 59
 [PASS] /en/country/sa/2027.html | length: 59
 [PASS] /en/country/sa/2028.html | length: 59
-[FAIL] /en/country/sa/2029.html | length: 42 | missing year
-[FAIL] /en/country/sa/2030.html | length: 42 | missing year
+[PASS] /en/country/sa/2029.html | length: 42
+[PASS] /en/country/sa/2030.html | length: 42
 [PASS] /en/country/sd/2026.html | length: 52
 [PASS] /en/country/sd/2027.html | length: 52
 [PASS] /en/country/sd/2028.html | length: 52
-[FAIL] /en/country/sd/2029.html | length: 35 | missing year
-[FAIL] /en/country/sd/2030.html | length: 35 | missing year
+[PASS] /en/country/sd/2029.html | length: 35
+[PASS] /en/country/sd/2030.html | length: 35
 [PASS] /en/country/so/2026.html | length: 54
 [PASS] /en/country/so/2027.html | length: 54
 [PASS] /en/country/so/2028.html | length: 54
-[FAIL] /en/country/so/2029.html | length: 37 | missing year
-[FAIL] /en/country/so/2030.html | length: 37 | missing year
+[PASS] /en/country/so/2029.html | length: 37
+[PASS] /en/country/so/2030.html | length: 37
 [PASS] /en/country/sy/2026.html | length: 52
 [PASS] /en/country/sy/2027.html | length: 52
 [PASS] /en/country/sy/2028.html | length: 52
-[FAIL] /en/country/sy/2029.html | length: 35 | missing year
-[FAIL] /en/country/sy/2030.html | length: 35 | missing year
+[PASS] /en/country/sy/2029.html | length: 35
+[PASS] /en/country/sy/2030.html | length: 35
 [PASS] /en/country/tn/2026.html | length: 54
 [PASS] /en/country/tn/2027.html | length: 54
 [PASS] /en/country/tn/2028.html | length: 54
-[FAIL] /en/country/tn/2029.html | length: 37 | missing year
-[FAIL] /en/country/tn/2030.html | length: 37 | missing year
+[PASS] /en/country/tn/2029.html | length: 37
+[PASS] /en/country/tn/2030.html | length: 37
 [PASS] /en/country/ye/2026.html | length: 52
 [PASS] /en/country/ye/2027.html | length: 52
 [PASS] /en/country/ye/2028.html | length: 52
-[FAIL] /en/country/ye/2029.html | length: 35 | missing year
-[FAIL] /en/country/ye/2030.html | length: 35 | missing year
+[PASS] /en/country/ye/2029.html | length: 35
+[PASS] /en/country/ye/2030.html | length: 35
 [PASS] /ar/eid.html | length: 56
 [PASS] /ar/eid/2026.html | length: 42
 [PASS] /ar/eid/2027.html | length: 42
 [PASS] /ar/eid/2028.html | length: 42
-[WARN] /ar/eid/2029.html | length: 51 | missing year | missing brand suffix "إجازات"
-[WARN] /ar/eid/2030.html | length: 51 | missing year | missing brand suffix "إجازات"
+[WARN] /ar/eid/2029.html | length: 51 | missing brand suffix "إجازات"
+[WARN] /ar/eid/2030.html | length: 51 | missing brand suffix "إجازات"
 [PASS] /en/eid.html | length: 60
 [PASS] /en/eid/2026.html | length: 39
 [PASS] /en/eid/2027.html | length: 39
 [PASS] /en/eid/2028.html | length: 39
-[FAIL] /en/eid/2029.html | length: 54 | missing year
-[FAIL] /en/eid/2030.html | length: 54 | missing year
+[PASS] /en/eid/2029.html | length: 54
+[PASS] /en/eid/2030.html | length: 54
 [PASS] /en.html | length: 54
 [PASS] /index.html | length: 55
 [PASS] /sitemap.html | length: 45
@@ -2390,9 +2390,9 @@
 EGAZAT.COM COMPREHENSIVE SEO AUDIT
 ======================================
 Total files audited: 215
-Audit date: 2026-05-20T10:13:13.539Z
+Audit date: 2026-05-20T10:13:40.720Z
 
-Group  1 — Title tags          : 131/215 PASS | 42 FAIL | 42 WARN
+Group  1 — Title tags          : 173/215 PASS | 0 FAIL | 42 WARN
 Group  2 — Meta descriptions   :  86/215 PASS | 0 FAIL | 129 WARN
 Group  3 — Canonical tags      : 215/215 PASS | 0 FAIL | 0 WARN
 Group  4 — Hreflang tags       : 215/215 PASS | 0 FAIL | 0 WARN
@@ -2405,92 +2405,51 @@ Group 10 — Page speed signals  : 215/215 PASS | 0 FAIL | 0 WARN
 Group 11 — URL and link quality: 215/215 PASS | 0 FAIL | 0 WARN
 
 CRITICAL FAILURES (block deploy):
-  Group 1: /en/country/ae/2029.html — length: 50 | missing year
-  Group 1: /en/country/ae/2030.html — length: 50 | missing year
-  Group 1: /en/country/bh/2029.html — length: 37 | missing year
-  Group 1: /en/country/bh/2030.html — length: 37 | missing year
-  Group 1: /en/country/dj/2029.html — length: 38 | missing year
-  Group 1: /en/country/dj/2030.html — length: 38 | missing year
-  Group 1: /en/country/dz/2029.html — length: 37 | missing year
-  Group 1: /en/country/dz/2030.html — length: 37 | missing year
-  Group 1: /en/country/eg/2029.html — length: 35 | missing year
-  Group 1: /en/country/eg/2030.html — length: 35 | missing year
-  Group 1: /en/country/iq/2029.html — length: 34 | missing year
-  Group 1: /en/country/iq/2030.html — length: 34 | missing year
-  Group 1: /en/country/jo/2029.html — length: 36 | missing year
-  Group 1: /en/country/jo/2030.html — length: 36 | missing year
-  Group 1: /en/country/km/2029.html — length: 37 | missing year
-  Group 1: /en/country/km/2030.html — length: 37 | missing year
-  Group 1: /en/country/kw/2029.html — length: 36 | missing year
-  Group 1: /en/country/kw/2030.html — length: 36 | missing year
-  Group 1: /en/country/lb/2029.html — length: 37 | missing year
-  Group 1: /en/country/lb/2030.html — length: 37 | missing year
-  Group 1: /en/country/ly/2029.html — length: 35 | missing year
-  Group 1: /en/country/ly/2030.html — length: 35 | missing year
-  Group 1: /en/country/ma/2029.html — length: 37 | missing year
-  Group 1: /en/country/ma/2030.html — length: 37 | missing year
-  Group 1: /en/country/om/2029.html — length: 34 | missing year
-  Group 1: /en/country/om/2030.html — length: 34 | missing year
-  Group 1: /en/country/qa/2029.html — length: 35 | missing year
-  Group 1: /en/country/qa/2030.html — length: 35 | missing year
-  Group 1: /en/country/sa/2029.html — length: 42 | missing year
-  Group 1: /en/country/sa/2030.html — length: 42 | missing year
-  Group 1: /en/country/sd/2029.html — length: 35 | missing year
-  Group 1: /en/country/sd/2030.html — length: 35 | missing year
-  Group 1: /en/country/so/2029.html — length: 37 | missing year
-  Group 1: /en/country/so/2030.html — length: 37 | missing year
-  Group 1: /en/country/sy/2029.html — length: 35 | missing year
-  Group 1: /en/country/sy/2030.html — length: 35 | missing year
-  Group 1: /en/country/tn/2029.html — length: 37 | missing year
-  Group 1: /en/country/tn/2030.html — length: 37 | missing year
-  Group 1: /en/country/ye/2029.html — length: 35 | missing year
-  Group 1: /en/country/ye/2030.html — length: 35 | missing year
-  Group 1: /en/eid/2029.html — length: 54 | missing year
-  Group 1: /en/eid/2030.html — length: 54 | missing year
+  None
 
 WARNINGS (review before deploy):
-  Group 1: /ar/country/ae/2029.html — length: 57 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ae/2030.html — length: 57 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/bh/2029.html — length: 41 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/bh/2030.html — length: 41 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/dj/2029.html — length: 42 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/dj/2030.html — length: 42 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/dz/2029.html — length: 67 (>60) | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/dz/2030.html — length: 67 (>60) | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/eg/2029.html — length: 47 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/eg/2030.html — length: 47 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/iq/2029.html — length: 42 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/iq/2030.html — length: 42 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/jo/2029.html — length: 53 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/jo/2030.html — length: 53 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/km/2029.html — length: 37 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/km/2030.html — length: 37 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/kw/2029.html — length: 39 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/kw/2030.html — length: 39 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/lb/2029.html — length: 47 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/lb/2030.html — length: 47 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ly/2029.html — length: 38 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ly/2030.html — length: 38 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ma/2029.html — length: 44 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ma/2030.html — length: 44 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/om/2029.html — length: 38 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/om/2030.html — length: 38 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/qa/2029.html — length: 36 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/qa/2030.html — length: 36 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/sa/2029.html — length: 52 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/sa/2030.html — length: 52 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/sd/2029.html — length: 43 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/sd/2030.html — length: 43 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/so/2029.html — length: 43 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/so/2030.html — length: 43 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/sy/2029.html — length: 53 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/sy/2030.html — length: 53 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/tn/2029.html — length: 46 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/tn/2030.html — length: 46 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ye/2029.html — length: 45 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/country/ye/2030.html — length: 45 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/eid/2029.html — length: 51 | missing year | missing brand suffix "إجازات"
-  Group 1: /ar/eid/2030.html — length: 51 | missing year | missing brand suffix "إجازات"
+  Group 1: /ar/country/ae/2029.html — length: 57 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ae/2030.html — length: 57 | missing brand suffix "إجازات"
+  Group 1: /ar/country/bh/2029.html — length: 41 | missing brand suffix "إجازات"
+  Group 1: /ar/country/bh/2030.html — length: 41 | missing brand suffix "إجازات"
+  Group 1: /ar/country/dj/2029.html — length: 42 | missing brand suffix "إجازات"
+  Group 1: /ar/country/dj/2030.html — length: 42 | missing brand suffix "إجازات"
+  Group 1: /ar/country/dz/2029.html — length: 67 (>60) | missing brand suffix "إجازات"
+  Group 1: /ar/country/dz/2030.html — length: 67 (>60) | missing brand suffix "إجازات"
+  Group 1: /ar/country/eg/2029.html — length: 47 | missing brand suffix "إجازات"
+  Group 1: /ar/country/eg/2030.html — length: 47 | missing brand suffix "إجازات"
+  Group 1: /ar/country/iq/2029.html — length: 42 | missing brand suffix "إجازات"
+  Group 1: /ar/country/iq/2030.html — length: 42 | missing brand suffix "إجازات"
+  Group 1: /ar/country/jo/2029.html — length: 53 | missing brand suffix "إجازات"
+  Group 1: /ar/country/jo/2030.html — length: 53 | missing brand suffix "إجازات"
+  Group 1: /ar/country/km/2029.html — length: 37 | missing brand suffix "إجازات"
+  Group 1: /ar/country/km/2030.html — length: 37 | missing brand suffix "إجازات"
+  Group 1: /ar/country/kw/2029.html — length: 39 | missing brand suffix "إجازات"
+  Group 1: /ar/country/kw/2030.html — length: 39 | missing brand suffix "إجازات"
+  Group 1: /ar/country/lb/2029.html — length: 47 | missing brand suffix "إجازات"
+  Group 1: /ar/country/lb/2030.html — length: 47 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ly/2029.html — length: 38 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ly/2030.html — length: 38 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ma/2029.html — length: 44 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ma/2030.html — length: 44 | missing brand suffix "إجازات"
+  Group 1: /ar/country/om/2029.html — length: 38 | missing brand suffix "إجازات"
+  Group 1: /ar/country/om/2030.html — length: 38 | missing brand suffix "إجازات"
+  Group 1: /ar/country/qa/2029.html — length: 36 | missing brand suffix "إجازات"
+  Group 1: /ar/country/qa/2030.html — length: 36 | missing brand suffix "إجازات"
+  Group 1: /ar/country/sa/2029.html — length: 52 | missing brand suffix "إجازات"
+  Group 1: /ar/country/sa/2030.html — length: 52 | missing brand suffix "إجازات"
+  Group 1: /ar/country/sd/2029.html — length: 43 | missing brand suffix "إجازات"
+  Group 1: /ar/country/sd/2030.html — length: 43 | missing brand suffix "إجازات"
+  Group 1: /ar/country/so/2029.html — length: 43 | missing brand suffix "إجازات"
+  Group 1: /ar/country/so/2030.html — length: 43 | missing brand suffix "إجازات"
+  Group 1: /ar/country/sy/2029.html — length: 53 | missing brand suffix "إجازات"
+  Group 1: /ar/country/sy/2030.html — length: 53 | missing brand suffix "إجازات"
+  Group 1: /ar/country/tn/2029.html — length: 46 | missing brand suffix "إجازات"
+  Group 1: /ar/country/tn/2030.html — length: 46 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ye/2029.html — length: 45 | missing brand suffix "إجازات"
+  Group 1: /ar/country/ye/2030.html — length: 45 | missing brand suffix "إجازات"
+  Group 1: /ar/eid/2029.html — length: 51 | missing brand suffix "إجازات"
+  Group 1: /ar/eid/2030.html — length: 51 | missing brand suffix "إجازات"
   Group 2: /ar/country/ae/2027.html — length: 134 | missing holiday keyword (ar)
   Group 2: /ar/country/ae/2028.html — length: 134 | missing holiday keyword (ar)
   Group 2: /ar/country/ae/2029.html — length: 101 (<120)
@@ -2674,5 +2633,5 @@ WARNINGS (review before deploy):
   Group 7: /en/eid/2029.html — BreadcrumbList items: 3 (expected 2)
   Group 7: /en/eid/2030.html — BreadcrumbList items: 3 (expected 2)
 
-OVERALL VERDICT: FAIL
+OVERALL VERDICT: PASS
 ======================================
