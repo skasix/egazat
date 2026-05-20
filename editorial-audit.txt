@@ -114,17 +114,25 @@ Group 3 summary: 40/40 files passed
 [PASS] /ar/country/sa/2026.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
 [PASS] /ar/country/sa/2027.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
 [PASS] /ar/country/sa/2028.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
+[PASS] /ar/country/sa/2029.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
+[PASS] /ar/country/sa/2030.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
 [PASS] /en/country/sa/2026.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
 [PASS] /en/country/sa/2027.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
 [PASS] /en/country/sa/2028.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
+[PASS] /en/country/sa/2029.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
+[PASS] /en/country/sa/2030.html | BRIDGE_LINKS: [eg, jo, ma] (expected [eg, jo, ma])
 [PASS] /ar/country/eg/2026.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
 [PASS] /ar/country/eg/2027.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
 [PASS] /ar/country/eg/2028.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
+[PASS] /ar/country/eg/2029.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
+[PASS] /ar/country/eg/2030.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
 [PASS] /en/country/eg/2026.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
 [PASS] /en/country/eg/2027.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
 [PASS] /en/country/eg/2028.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
+[PASS] /en/country/eg/2029.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
+[PASS] /en/country/eg/2030.html | BRIDGE_LINKS: [jo, sa] (expected [jo, sa])
 
-Group 4 summary: 12/12 files passed
+Group 4 summary: 20/20 files passed
 
 === GROUP 5 — WORD COUNT RANGES ===
 [PASS] ae | about_ar: 135 words
@@ -175,7 +183,7 @@ Group 5 summary: 40/40 checks passed
 Group 1 — JSON integrity:       20/20 countries
 Group 2 — HTML content present: 40/40 files (ar+en, 2026 only)
 Group 3 — Typography/layout:    40/40 files
-Group 4 — Bridge links:         12/12 files (bridge countries, ar+en, 3 years)
+Group 4 — Bridge links:         20/20 files (bridge countries, ar+en, 5 years)
 Group 5 — Word counts:          40/40 checks (20 countries × 2 langs)
 
 Critical failures (require immediate fix):
