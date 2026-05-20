@@ -95,7 +95,7 @@ export const EidTracker = () => {
   const fitrData = getEidData('fitr', selectedYear, language);
   const adhaData = getEidData('adha', selectedYear, language);
 
-  const years = [2025, 2026, 2027, 2028];
+  const years = [2025, 2026, 2027, 2028, 2029, 2030];
 
   const renderTable = (data: EidEntry[], title: string) => (
     <Card className="mb-8">

@@ -622,7 +622,7 @@ log('');
 // ========== GROUP 11 — URL AND LINK QUALITY ==========
 log('=== GROUP 11 — URL AND LINK QUALITY ===');
 const validCodes = ['ae','sa','eg','jo','lb','sy','iq','kw','qa','bh','om','ye','ma','tn','dz','ly','sd','so','dj','km'];
-const validYears = ['2025','2026','2027','2028'];
+const validYears = ['2025','2026','2027','2028','2029','2030'];
 
 // Build set of existing files for broken link detection
 const existingFiles = new Set(allFiles.map(f => relPath(f)));

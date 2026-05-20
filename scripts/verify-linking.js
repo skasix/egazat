@@ -22,7 +22,7 @@ const countriesMap = {};
 for (const c of countriesJson.countries) countriesMap[c.code] = c;
 
 const allCodes = countriesJson.countries.map(c => c.code);
-const years = [2026, 2027, 2028];
+const years = [2026, 2027, 2028, 2029, 2030];
 const languages = ['ar', 'en'];
 
 const bridgeLinksData = {

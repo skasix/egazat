@@ -25,7 +25,7 @@ for (const cl of countriesJson.clusters) {
     clusterMembers[code] = cl.countries;
   }
 }
-const buildYears = [2026, 2027, 2028];
+const buildYears = [2026, 2027, 2028, 2029, 2030];
 const languages = ['ar', 'en'];
 
 const lines = [];
