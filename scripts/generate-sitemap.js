@@ -17,8 +17,8 @@ const countries = [
   'ae', 'sa', 'eg', 'jo', 'lb', 'sy', 'iq', 'kw', 'qa', 'bh', 'om', 'ye',
   'ma', 'tn', 'dz', 'ly', 'sd', 'so', 'dj', 'km'
 ];
-const years = [2026, 2027, 2028];
-const eidYears = [2025, 2026, 2027, 2028];
+const years = [2026, 2027, 2028, 2029, 2030];
+const eidYears = [2025, 2026, 2027, 2028, 2029, 2030];
 const today = new Date().toISOString().split('T')[0];
 const currentYear = new Date().getFullYear();
 
