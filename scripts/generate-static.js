@@ -830,7 +830,7 @@ ${rows}
           ? 'ملاحظة: تواريخ العطل الدينية قد تختلف حسب رؤية الهلال وقد تتغير بيوم واحد.'
           : 'Note: Religious holiday dates may vary based on moon sighting and could change by one day.'}</p>
         <nav aria-label="${isAr ? 'روابط سنوات أخرى' : 'Other years'}">
-          ${[2026, 2027, 2028].map(y =>
+          ${[2026, 2027, 2028, 2029, 2030].map(y =>
             y === year
               ? `<span class="year-active">${y}</span>`
               : `<a href="/${lang}/country/${countryCode}/${y}.html">${y}</a>`
@@ -878,7 +878,7 @@ function generateHomepageHTML(lang) {
 
 function generateSitemapPageHTML() {
   const countries = Object.entries(countryNames);
-  const years = [2026, 2027, 2028];
+  const years = [2026, 2027, 2028, 2029, 2030];
 
   let countryBlocks = countries.map(([code, cn]) => {
     const arLinks = years.map(y => `<li><a href="/ar/country/${code}/${y}.html">العطل الرسمية ${y}</a></li>`).join('');
@@ -1045,7 +1045,7 @@ function buildFAQSchema(countryCode, year, countryName, lang, holidays) {
 const generateRoutes = () => {
   const routes = [];
   const countries = Object.keys(countryNames);
-  const years = [2026, 2027, 2028];
+  const years = [2026, 2027, 2028, 2029, 2030];
   const languages = ['en', 'ar'];
   
   routes.push({ path: '/index.html', route: '/', lang: 'ar', title: 'العطل الرسمية العربية', description: 'دليل شامل للعطل والمناسبات الرسمية في الدول العربية' });
