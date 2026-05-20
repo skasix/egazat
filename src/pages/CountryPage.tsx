@@ -109,6 +109,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 4 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2029-09-23', type: 'national' }
       ],
       2030: [
@@ -116,6 +117,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 4 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Saudi National Day', nameAr: 'اليوم الوطني السعودي', date: '2030-09-23', type: 'national' }
       ]
     }
@@ -155,16 +157,20 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2028-12-02', type: 'national', duration: 2 }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Commemoration Day', nameAr: 'يوم الشهيد', date: '2029-11-30', type: 'national' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2029-12-02', type: 'national', duration: 2 }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Commemoration Day', nameAr: 'يوم الشهيد', date: '2030-11-30', type: 'national' },
         { name: 'UAE National Day', nameAr: 'اليوم الوطني الإماراتي', date: '2030-12-02', type: 'national', duration: 2 }
       ]
@@ -221,6 +227,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2028-10-06', type: 'national' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2029-01-07', type: 'religious' },
         { name: '25 January Revolution Day', nameAr: 'ثورة 25 يناير', date: '2029-01-25', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
@@ -231,9 +238,11 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
         { name: '30 June Revolution Day', nameAr: 'ثورة 30 يونيو', date: '2029-06-30', type: 'national' },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2029-07-23', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2029-10-06', type: 'national' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Coptic Christmas', nameAr: 'عيد الميلاد المجيد', date: '2030-01-07', type: 'religious' },
         { name: '25 January Revolution Day', nameAr: 'ثورة 25 يناير', date: '2030-01-25', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
@@ -244,6 +253,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
         { name: '30 June Revolution Day', nameAr: 'ثورة 30 يونيو', date: '2030-06-30', type: 'national' },
         { name: '23 July Revolution Day', nameAr: 'ثورة 23 يوليو', date: '2030-07-23', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Armed Forces Day', nameAr: 'عيد القوات المسلحة', date: '2030-10-06', type: 'national' }
       ]
     }
@@ -287,19 +297,25 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2028-12-25', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
+        { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2029-01-30', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2029-05-25', type: 'national' },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2029-12-25', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
+        { name: 'King\'s Birthday', nameAr: 'عيد ميلاد الملك', date: '2030-01-30', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 4 },
         { name: 'Independence Day', nameAr: 'يوم الاستقلال', date: '2030-05-25', type: 'national' },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2030-12-25', type: 'religious' }
       ]
     }
@@ -337,18 +353,22 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2029-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2029-02-26', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 3 },
-        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'National Day', nameAr: 'اليوم الوطني', date: '2030-02-25', type: 'national' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2030-02-26', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 3 },
-        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' }
       ]
     }
   },
@@ -382,12 +402,14 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Sports Day', nameAr: 'اليوم الرياضي', date: '2029-02-08', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 3 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2029-12-18', type: 'national' }
       ],
       2030: [
         { name: 'Sports Day', nameAr: 'اليوم الرياضي', date: '2030-02-08', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 3 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Qatar National Day', nameAr: 'اليوم الوطني القطري', date: '2030-12-18', type: 'national' }
       ]
     }
@@ -428,19 +450,23 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2028-12-16', type: 'national', duration: 2 }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
         { name: 'Ashura', nameAr: 'عاشوراء', date: '2029-05-24', type: 'religious', duration: 2 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2029-12-16', type: 'national', duration: 2 }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 3 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
         { name: 'Ashura', nameAr: 'عاشوراء', date: '2030-05-13', type: 'religious', duration: 2 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Bahrain National Day', nameAr: 'اليوم الوطني البحريني', date: '2030-12-16', type: 'national', duration: 2 }
       ]
     }
@@ -475,15 +501,19 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2028-11-18', type: 'national', duration: 2 }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 4 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2029-11-18', type: 'national', duration: 2 }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 4 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 4 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Oman National Day', nameAr: 'اليوم الوطني العماني', date: '2030-11-18', type: 'national', duration: 2 }
       ]
     }
@@ -539,7 +569,9 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2028-12-25', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Armenian Christmas', nameAr: 'عيد الميلاد الأرمني', date: '2029-01-06', type: 'religious' },
+        { name: 'Saint Maron\'s Day', nameAr: 'عيد مار مارون', date: '2029-02-09', type: 'religious' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 2 },
         { name: 'Good Friday', nameAr: 'الجمعة العظيمة', date: '2029-03-30', type: 'religious' },
         { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2029-04-02', type: 'religious' },
@@ -547,11 +579,14 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 2 },
         { name: 'Resistance & Liberation Day', nameAr: 'عيد المقاومة والتحرير', date: '2029-05-25', type: 'national' },
         { name: 'Assumption of Mary', nameAr: 'عيد انتقال العذراء', date: '2029-08-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-11-22', type: 'national' },
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2029-12-25', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Armenian Christmas', nameAr: 'عيد الميلاد الأرمني', date: '2030-01-06', type: 'religious' },
+        { name: 'Saint Maron\'s Day', nameAr: 'عيد مار مارون', date: '2030-02-09', type: 'religious' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 2 },
         { name: 'Good Friday', nameAr: 'الجمعة العظيمة', date: '2030-04-19', type: 'religious' },
         { name: 'Easter Monday', nameAr: 'اثنين الفصح', date: '2030-04-22', type: 'religious' },
@@ -559,6 +594,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 2 },
         { name: 'Resistance & Liberation Day', nameAr: 'عيد المقاومة والتحرير', date: '2030-05-25', type: 'national' },
         { name: 'Assumption of Mary', nameAr: 'عيد انتقال العذراء', date: '2030-08-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-11-22', type: 'national' },
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2030-12-25', type: 'religious' }
       ]
@@ -600,19 +636,23 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2028-12-25', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2029-03-08', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 4 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2029-12-25', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2030-03-08', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-04-17', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 4 },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Christmas Day', nameAr: 'عيد الميلاد المجيد', date: '2030-12-25', type: 'religious' }
       ]
     }
@@ -659,6 +699,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-10-03', type: 'national' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2029-01-06', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
@@ -666,9 +707,11 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
         { name: 'Ashura', nameAr: 'عاشوراء', date: '2029-05-24', type: 'religious', duration: 2 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2029-07-14', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-10-03', type: 'national' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Army Day', nameAr: 'يوم الجيش', date: '2030-01-06', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
@@ -676,6 +719,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
         { name: 'Ashura', nameAr: 'عاشوراء', date: '2030-05-13', type: 'religious', duration: 2 },
         { name: 'Revolution Day', nameAr: 'يوم الثورة', date: '2030-07-14', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-10-03', type: 'national' }
       ]
     }
@@ -719,19 +763,23 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-11-30', type: 'national' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 4 },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2029-05-22', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Revolution Day (26 September)', nameAr: 'ثورة 26 سبتمبر', date: '2029-09-26', type: 'national' },
         { name: 'Revolution Day (14 October)', nameAr: 'ثورة 14 أكتوبر', date: '2029-10-14', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-11-30', type: 'national' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 4 },
         { name: 'Unity Day', nameAr: 'يوم الوحدة', date: '2030-05-22', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Revolution Day (26 September)', nameAr: 'ثورة 26 سبتمبر', date: '2030-09-26', type: 'national' },
         { name: 'Revolution Day (14 October)', nameAr: 'ثورة 14 أكتوبر', date: '2030-10-14', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-11-30', type: 'national' }
@@ -789,6 +837,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2028-11-18', type: 'national' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2029-01-11', type: 'national' },
         { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2029-01-14', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 2 },
@@ -796,12 +845,14 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2029-07-30', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2029-08-14', type: 'national' },
         { name: 'Revolution of King & People', nameAr: 'ذكرى ثورة الملك والشعب', date: '2029-08-20', type: 'national' },
         { name: 'Green March Day', nameAr: 'ذكرى المسيرة الخضراء', date: '2029-11-06', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-11-18', type: 'national' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Independence Manifesto Day', nameAr: 'ذكرى تقديم وثيقة الاستقلال', date: '2030-01-11', type: 'national' },
         { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2030-01-14', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 2 },
@@ -809,6 +860,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
         { name: 'Throne Day', nameAr: 'عيد العرش', date: '2030-07-30', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Oued Ed-Dahab Day', nameAr: 'ذكرى استرداد وادي الذهب', date: '2030-08-14', type: 'national' },
         { name: 'Revolution of King & People', nameAr: 'ذكرى ثورة الملك والشعب', date: '2030-08-20', type: 'national' },
         { name: 'Green March Day', nameAr: 'ذكرى المسيرة الخضراء', date: '2030-11-06', type: 'national' },
@@ -864,23 +916,31 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2028-10-15', type: 'national' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2029-01-14', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-03-20', type: 'national' },
+        { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2029-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2029-07-25', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
+        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2029-08-13', type: 'national' },
         { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2029-10-15', type: 'national' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2030-01-14', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-03-20', type: 'national' },
+        { name: 'Martyrs\' Day', nameAr: 'عيد الشهداء', date: '2030-04-09', type: 'national' },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
         { name: 'Republic Day', nameAr: 'عيد الجمهورية', date: '2030-07-25', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
+        { name: 'Women\'s Day', nameAr: 'عيد المرأة', date: '2030-08-13', type: 'national' },
         { name: 'Evacuation Day', nameAr: 'عيد الجلاء', date: '2030-10-15', type: 'national' }
       ]
     }
@@ -924,21 +984,25 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2028-11-01', type: 'national' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2029-01-12', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-07-05', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2029-11-01', type: 'national' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Amazigh New Year', nameAr: 'رأس السنة الأمازيغية', date: '2030-01-12', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-07-05', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Revolution Day', nameAr: 'عيد الثورة', date: '2030-11-01', type: 'national' }
       ]
     }
@@ -980,6 +1044,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 4 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2029-10-23', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-12-24', type: 'national' }
       ],
@@ -988,6 +1053,7 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 4 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' },
         { name: 'Liberation Day', nameAr: 'يوم التحرير', date: '2030-10-23', type: 'national' },
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-12-24', type: 'national' }
       ]
@@ -1023,13 +1089,15 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 3 },
-        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' }
       ],
       2030: [
         { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 3 },
-        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' }
+        { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' }
       ]
     }
   },
@@ -1066,18 +1134,22 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 3 },
         { name: 'Independence Day (26 June)', nameAr: 'عيد الاستقلال', date: '2029-06-26', type: 'national' },
-        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2029-07-01', type: 'national' }
+        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2029-07-01', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 3 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 3 },
         { name: 'Independence Day (26 June)', nameAr: 'عيد الاستقلال', date: '2030-06-26', type: 'national' },
-        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2030-07-01', type: 'national' }
+        { name: 'Republic Day (1 July)', nameAr: 'يوم الجمهورية', date: '2030-07-01', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' }
       ]
     }
   },
@@ -1114,18 +1186,22 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2029-05-15', type: 'religious' },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-06-27', type: 'national' }
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-06-27', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 2 },
         { name: 'Islamic New Year', nameAr: 'رأس السنة الهجرية', date: '2030-05-04', type: 'religious' },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-06-27', type: 'national' }
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-06-27', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' }
       ]
     }
   },
@@ -1159,16 +1235,20 @@ const countriesHolidays: Record<string, CountryInfo> = {
         { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2028-08-03', type: 'religious' }
       ],
       2029: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2029-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2029-02-15', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2029-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2029-04-24', type: 'religious', duration: 2 },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-07-06', type: 'national' }
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2029-07-06', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2029-07-24', type: 'religious' }
       ],
       2030: [
+        { name: 'New Year\'s Day', nameAr: 'رأس السنة الميلادية', date: '2030-01-01', type: 'national' },
         { name: 'Eid al-Fitr', nameAr: 'عيد الفطر', date: '2030-02-04', type: 'religious', duration: 2 },
         { name: 'Labour Day', nameAr: 'عيد العمال', date: '2030-05-01', type: 'national' },
         { name: 'Eid al-Adha', nameAr: 'عيد الأضحى', date: '2030-04-13', type: 'religious', duration: 2 },
-        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-07-06', type: 'national' }
+        { name: 'Independence Day', nameAr: 'عيد الاستقلال', date: '2030-07-06', type: 'national' },
+        { name: 'Prophet\'s Birthday', nameAr: 'المولد النبوي', date: '2030-07-13', type: 'religious' }
       ]
     }
   }
