@@ -1,4 +1,4 @@
-Canonical & Hreflang Audit — 2026-05-20T10:00:07.856Z
+Canonical & Hreflang Audit — 2026-05-20T10:02:59.346Z
 Total files: 216 | Violations: 0
 ────────────────────────────────────────────────────────────────────────────────
 [PASS] /ar/country/ae/2026.html | CANONICAL: https://egazat.com/ar/country/ae/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
