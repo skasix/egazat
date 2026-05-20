@@ -125,7 +125,7 @@ for (const f of sortedFiles) {
 
   // Year check for country/eid pages
   if (isCountryPage(f) || isEidPage(f)) {
-    const hasYear = /202[5-8]/.test(title);
+    const hasYear = /20(2[5-9]|30)/.test(title);
     if (!hasYear) { details.push('missing year'); status = 'FAIL'; }
   }
 
