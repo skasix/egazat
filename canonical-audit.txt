@@ -1,127 +1,220 @@
-Canonical Audit Report — 2026-05-15T14:36:06.487Z
-Total: 122 | PASS: 122 | FAIL: 0
+Canonical & Hreflang Audit — 2026-05-20T07:47:35.135Z
+Total files: 216 | Violations: 0
 ────────────────────────────────────────────────────────────────────────────────
-[PASS] /index.html | BEFORE: https://egazat.com/ | AFTER: https://egazat.com/
-[PASS] /en.html | BEFORE: https://egazat.com/en.html | AFTER: https://egazat.com/en.html
-[PASS] /ar/country/ae/2026.html | BEFORE: https://egazat.com/ar/country/ae/2026.html | AFTER: https://egazat.com/ar/country/ae/2026.html
-[PASS] /ar/country/ae/2027.html | BEFORE: https://egazat.com/ar/country/ae/2027.html | AFTER: https://egazat.com/ar/country/ae/2027.html
-[PASS] /ar/country/ae/2028.html | BEFORE: https://egazat.com/ar/country/ae/2028.html | AFTER: https://egazat.com/ar/country/ae/2028.html
-[PASS] /ar/country/sa/2026.html | BEFORE: https://egazat.com/ar/country/sa/2026.html | AFTER: https://egazat.com/ar/country/sa/2026.html
-[PASS] /ar/country/sa/2027.html | BEFORE: https://egazat.com/ar/country/sa/2027.html | AFTER: https://egazat.com/ar/country/sa/2027.html
-[PASS] /ar/country/sa/2028.html | BEFORE: https://egazat.com/ar/country/sa/2028.html | AFTER: https://egazat.com/ar/country/sa/2028.html
-[PASS] /ar/country/eg/2026.html | BEFORE: https://egazat.com/ar/country/eg/2026.html | AFTER: https://egazat.com/ar/country/eg/2026.html
-[PASS] /ar/country/eg/2027.html | BEFORE: https://egazat.com/ar/country/eg/2027.html | AFTER: https://egazat.com/ar/country/eg/2027.html
-[PASS] /ar/country/eg/2028.html | BEFORE: https://egazat.com/ar/country/eg/2028.html | AFTER: https://egazat.com/ar/country/eg/2028.html
-[PASS] /ar/country/jo/2026.html | BEFORE: https://egazat.com/ar/country/jo/2026.html | AFTER: https://egazat.com/ar/country/jo/2026.html
-[PASS] /ar/country/jo/2027.html | BEFORE: https://egazat.com/ar/country/jo/2027.html | AFTER: https://egazat.com/ar/country/jo/2027.html
-[PASS] /ar/country/jo/2028.html | BEFORE: https://egazat.com/ar/country/jo/2028.html | AFTER: https://egazat.com/ar/country/jo/2028.html
-[PASS] /ar/country/lb/2026.html | BEFORE: https://egazat.com/ar/country/lb/2026.html | AFTER: https://egazat.com/ar/country/lb/2026.html
-[PASS] /ar/country/lb/2027.html | BEFORE: https://egazat.com/ar/country/lb/2027.html | AFTER: https://egazat.com/ar/country/lb/2027.html
-[PASS] /ar/country/lb/2028.html | BEFORE: https://egazat.com/ar/country/lb/2028.html | AFTER: https://egazat.com/ar/country/lb/2028.html
-[PASS] /ar/country/sy/2026.html | BEFORE: https://egazat.com/ar/country/sy/2026.html | AFTER: https://egazat.com/ar/country/sy/2026.html
-[PASS] /ar/country/sy/2027.html | BEFORE: https://egazat.com/ar/country/sy/2027.html | AFTER: https://egazat.com/ar/country/sy/2027.html
-[PASS] /ar/country/sy/2028.html | BEFORE: https://egazat.com/ar/country/sy/2028.html | AFTER: https://egazat.com/ar/country/sy/2028.html
-[PASS] /ar/country/iq/2026.html | BEFORE: https://egazat.com/ar/country/iq/2026.html | AFTER: https://egazat.com/ar/country/iq/2026.html
-[PASS] /ar/country/iq/2027.html | BEFORE: https://egazat.com/ar/country/iq/2027.html | AFTER: https://egazat.com/ar/country/iq/2027.html
-[PASS] /ar/country/iq/2028.html | BEFORE: https://egazat.com/ar/country/iq/2028.html | AFTER: https://egazat.com/ar/country/iq/2028.html
-[PASS] /ar/country/kw/2026.html | BEFORE: https://egazat.com/ar/country/kw/2026.html | AFTER: https://egazat.com/ar/country/kw/2026.html
-[PASS] /ar/country/kw/2027.html | BEFORE: https://egazat.com/ar/country/kw/2027.html | AFTER: https://egazat.com/ar/country/kw/2027.html
-[PASS] /ar/country/kw/2028.html | BEFORE: https://egazat.com/ar/country/kw/2028.html | AFTER: https://egazat.com/ar/country/kw/2028.html
-[PASS] /ar/country/qa/2026.html | BEFORE: https://egazat.com/ar/country/qa/2026.html | AFTER: https://egazat.com/ar/country/qa/2026.html
-[PASS] /ar/country/qa/2027.html | BEFORE: https://egazat.com/ar/country/qa/2027.html | AFTER: https://egazat.com/ar/country/qa/2027.html
-[PASS] /ar/country/qa/2028.html | BEFORE: https://egazat.com/ar/country/qa/2028.html | AFTER: https://egazat.com/ar/country/qa/2028.html
-[PASS] /ar/country/bh/2026.html | BEFORE: https://egazat.com/ar/country/bh/2026.html | AFTER: https://egazat.com/ar/country/bh/2026.html
-[PASS] /ar/country/bh/2027.html | BEFORE: https://egazat.com/ar/country/bh/2027.html | AFTER: https://egazat.com/ar/country/bh/2027.html
-[PASS] /ar/country/bh/2028.html | BEFORE: https://egazat.com/ar/country/bh/2028.html | AFTER: https://egazat.com/ar/country/bh/2028.html
-[PASS] /ar/country/om/2026.html | BEFORE: https://egazat.com/ar/country/om/2026.html | AFTER: https://egazat.com/ar/country/om/2026.html
-[PASS] /ar/country/om/2027.html | BEFORE: https://egazat.com/ar/country/om/2027.html | AFTER: https://egazat.com/ar/country/om/2027.html
-[PASS] /ar/country/om/2028.html | BEFORE: https://egazat.com/ar/country/om/2028.html | AFTER: https://egazat.com/ar/country/om/2028.html
-[PASS] /ar/country/ye/2026.html | BEFORE: https://egazat.com/ar/country/ye/2026.html | AFTER: https://egazat.com/ar/country/ye/2026.html
-[PASS] /ar/country/ye/2027.html | BEFORE: https://egazat.com/ar/country/ye/2027.html | AFTER: https://egazat.com/ar/country/ye/2027.html
-[PASS] /ar/country/ye/2028.html | BEFORE: https://egazat.com/ar/country/ye/2028.html | AFTER: https://egazat.com/ar/country/ye/2028.html
-[PASS] /ar/country/ma/2026.html | BEFORE: https://egazat.com/ar/country/ma/2026.html | AFTER: https://egazat.com/ar/country/ma/2026.html
-[PASS] /ar/country/ma/2027.html | BEFORE: https://egazat.com/ar/country/ma/2027.html | AFTER: https://egazat.com/ar/country/ma/2027.html
-[PASS] /ar/country/ma/2028.html | BEFORE: https://egazat.com/ar/country/ma/2028.html | AFTER: https://egazat.com/ar/country/ma/2028.html
-[PASS] /ar/country/tn/2026.html | BEFORE: https://egazat.com/ar/country/tn/2026.html | AFTER: https://egazat.com/ar/country/tn/2026.html
-[PASS] /ar/country/tn/2027.html | BEFORE: https://egazat.com/ar/country/tn/2027.html | AFTER: https://egazat.com/ar/country/tn/2027.html
-[PASS] /ar/country/tn/2028.html | BEFORE: https://egazat.com/ar/country/tn/2028.html | AFTER: https://egazat.com/ar/country/tn/2028.html
-[PASS] /ar/country/dz/2026.html | BEFORE: https://egazat.com/ar/country/dz/2026.html | AFTER: https://egazat.com/ar/country/dz/2026.html
-[PASS] /ar/country/dz/2027.html | BEFORE: https://egazat.com/ar/country/dz/2027.html | AFTER: https://egazat.com/ar/country/dz/2027.html
-[PASS] /ar/country/dz/2028.html | BEFORE: https://egazat.com/ar/country/dz/2028.html | AFTER: https://egazat.com/ar/country/dz/2028.html
-[PASS] /ar/country/ly/2026.html | BEFORE: https://egazat.com/ar/country/ly/2026.html | AFTER: https://egazat.com/ar/country/ly/2026.html
-[PASS] /ar/country/ly/2027.html | BEFORE: https://egazat.com/ar/country/ly/2027.html | AFTER: https://egazat.com/ar/country/ly/2027.html
-[PASS] /ar/country/ly/2028.html | BEFORE: https://egazat.com/ar/country/ly/2028.html | AFTER: https://egazat.com/ar/country/ly/2028.html
-[PASS] /ar/country/sd/2026.html | BEFORE: https://egazat.com/ar/country/sd/2026.html | AFTER: https://egazat.com/ar/country/sd/2026.html
-[PASS] /ar/country/sd/2027.html | BEFORE: https://egazat.com/ar/country/sd/2027.html | AFTER: https://egazat.com/ar/country/sd/2027.html
-[PASS] /ar/country/sd/2028.html | BEFORE: https://egazat.com/ar/country/sd/2028.html | AFTER: https://egazat.com/ar/country/sd/2028.html
-[PASS] /ar/country/so/2026.html | BEFORE: https://egazat.com/ar/country/so/2026.html | AFTER: https://egazat.com/ar/country/so/2026.html
-[PASS] /ar/country/so/2027.html | BEFORE: https://egazat.com/ar/country/so/2027.html | AFTER: https://egazat.com/ar/country/so/2027.html
-[PASS] /ar/country/so/2028.html | BEFORE: https://egazat.com/ar/country/so/2028.html | AFTER: https://egazat.com/ar/country/so/2028.html
-[PASS] /ar/country/dj/2026.html | BEFORE: https://egazat.com/ar/country/dj/2026.html | AFTER: https://egazat.com/ar/country/dj/2026.html
-[PASS] /ar/country/dj/2027.html | BEFORE: https://egazat.com/ar/country/dj/2027.html | AFTER: https://egazat.com/ar/country/dj/2027.html
-[PASS] /ar/country/dj/2028.html | BEFORE: https://egazat.com/ar/country/dj/2028.html | AFTER: https://egazat.com/ar/country/dj/2028.html
-[PASS] /ar/country/km/2026.html | BEFORE: https://egazat.com/ar/country/km/2026.html | AFTER: https://egazat.com/ar/country/km/2026.html
-[PASS] /ar/country/km/2027.html | BEFORE: https://egazat.com/ar/country/km/2027.html | AFTER: https://egazat.com/ar/country/km/2027.html
-[PASS] /ar/country/km/2028.html | BEFORE: https://egazat.com/ar/country/km/2028.html | AFTER: https://egazat.com/ar/country/km/2028.html
-[PASS] /en/country/ae/2026.html | BEFORE: https://egazat.com/en/country/ae/2026.html | AFTER: https://egazat.com/en/country/ae/2026.html
-[PASS] /en/country/ae/2027.html | BEFORE: https://egazat.com/en/country/ae/2027.html | AFTER: https://egazat.com/en/country/ae/2027.html
-[PASS] /en/country/ae/2028.html | BEFORE: https://egazat.com/en/country/ae/2028.html | AFTER: https://egazat.com/en/country/ae/2028.html
-[PASS] /en/country/sa/2026.html | BEFORE: https://egazat.com/en/country/sa/2026.html | AFTER: https://egazat.com/en/country/sa/2026.html
-[PASS] /en/country/sa/2027.html | BEFORE: https://egazat.com/en/country/sa/2027.html | AFTER: https://egazat.com/en/country/sa/2027.html
-[PASS] /en/country/sa/2028.html | BEFORE: https://egazat.com/en/country/sa/2028.html | AFTER: https://egazat.com/en/country/sa/2028.html
-[PASS] /en/country/eg/2026.html | BEFORE: https://egazat.com/en/country/eg/2026.html | AFTER: https://egazat.com/en/country/eg/2026.html
-[PASS] /en/country/eg/2027.html | BEFORE: https://egazat.com/en/country/eg/2027.html | AFTER: https://egazat.com/en/country/eg/2027.html
-[PASS] /en/country/eg/2028.html | BEFORE: https://egazat.com/en/country/eg/2028.html | AFTER: https://egazat.com/en/country/eg/2028.html
-[PASS] /en/country/jo/2026.html | BEFORE: https://egazat.com/en/country/jo/2026.html | AFTER: https://egazat.com/en/country/jo/2026.html
-[PASS] /en/country/jo/2027.html | BEFORE: https://egazat.com/en/country/jo/2027.html | AFTER: https://egazat.com/en/country/jo/2027.html
-[PASS] /en/country/jo/2028.html | BEFORE: https://egazat.com/en/country/jo/2028.html | AFTER: https://egazat.com/en/country/jo/2028.html
-[PASS] /en/country/lb/2026.html | BEFORE: https://egazat.com/en/country/lb/2026.html | AFTER: https://egazat.com/en/country/lb/2026.html
-[PASS] /en/country/lb/2027.html | BEFORE: https://egazat.com/en/country/lb/2027.html | AFTER: https://egazat.com/en/country/lb/2027.html
-[PASS] /en/country/lb/2028.html | BEFORE: https://egazat.com/en/country/lb/2028.html | AFTER: https://egazat.com/en/country/lb/2028.html
-[PASS] /en/country/sy/2026.html | BEFORE: https://egazat.com/en/country/sy/2026.html | AFTER: https://egazat.com/en/country/sy/2026.html
-[PASS] /en/country/sy/2027.html | BEFORE: https://egazat.com/en/country/sy/2027.html | AFTER: https://egazat.com/en/country/sy/2027.html
-[PASS] /en/country/sy/2028.html | BEFORE: https://egazat.com/en/country/sy/2028.html | AFTER: https://egazat.com/en/country/sy/2028.html
-[PASS] /en/country/iq/2026.html | BEFORE: https://egazat.com/en/country/iq/2026.html | AFTER: https://egazat.com/en/country/iq/2026.html
-[PASS] /en/country/iq/2027.html | BEFORE: https://egazat.com/en/country/iq/2027.html | AFTER: https://egazat.com/en/country/iq/2027.html
-[PASS] /en/country/iq/2028.html | BEFORE: https://egazat.com/en/country/iq/2028.html | AFTER: https://egazat.com/en/country/iq/2028.html
-[PASS] /en/country/kw/2026.html | BEFORE: https://egazat.com/en/country/kw/2026.html | AFTER: https://egazat.com/en/country/kw/2026.html
-[PASS] /en/country/kw/2027.html | BEFORE: https://egazat.com/en/country/kw/2027.html | AFTER: https://egazat.com/en/country/kw/2027.html
-[PASS] /en/country/kw/2028.html | BEFORE: https://egazat.com/en/country/kw/2028.html | AFTER: https://egazat.com/en/country/kw/2028.html
-[PASS] /en/country/qa/2026.html | BEFORE: https://egazat.com/en/country/qa/2026.html | AFTER: https://egazat.com/en/country/qa/2026.html
-[PASS] /en/country/qa/2027.html | BEFORE: https://egazat.com/en/country/qa/2027.html | AFTER: https://egazat.com/en/country/qa/2027.html
-[PASS] /en/country/qa/2028.html | BEFORE: https://egazat.com/en/country/qa/2028.html | AFTER: https://egazat.com/en/country/qa/2028.html
-[PASS] /en/country/bh/2026.html | BEFORE: https://egazat.com/en/country/bh/2026.html | AFTER: https://egazat.com/en/country/bh/2026.html
-[PASS] /en/country/bh/2027.html | BEFORE: https://egazat.com/en/country/bh/2027.html | AFTER: https://egazat.com/en/country/bh/2027.html
-[PASS] /en/country/bh/2028.html | BEFORE: https://egazat.com/en/country/bh/2028.html | AFTER: https://egazat.com/en/country/bh/2028.html
-[PASS] /en/country/om/2026.html | BEFORE: https://egazat.com/en/country/om/2026.html | AFTER: https://egazat.com/en/country/om/2026.html
-[PASS] /en/country/om/2027.html | BEFORE: https://egazat.com/en/country/om/2027.html | AFTER: https://egazat.com/en/country/om/2027.html
-[PASS] /en/country/om/2028.html | BEFORE: https://egazat.com/en/country/om/2028.html | AFTER: https://egazat.com/en/country/om/2028.html
-[PASS] /en/country/ye/2026.html | BEFORE: https://egazat.com/en/country/ye/2026.html | AFTER: https://egazat.com/en/country/ye/2026.html
-[PASS] /en/country/ye/2027.html | BEFORE: https://egazat.com/en/country/ye/2027.html | AFTER: https://egazat.com/en/country/ye/2027.html
-[PASS] /en/country/ye/2028.html | BEFORE: https://egazat.com/en/country/ye/2028.html | AFTER: https://egazat.com/en/country/ye/2028.html
-[PASS] /en/country/ma/2026.html | BEFORE: https://egazat.com/en/country/ma/2026.html | AFTER: https://egazat.com/en/country/ma/2026.html
-[PASS] /en/country/ma/2027.html | BEFORE: https://egazat.com/en/country/ma/2027.html | AFTER: https://egazat.com/en/country/ma/2027.html
-[PASS] /en/country/ma/2028.html | BEFORE: https://egazat.com/en/country/ma/2028.html | AFTER: https://egazat.com/en/country/ma/2028.html
-[PASS] /en/country/tn/2026.html | BEFORE: https://egazat.com/en/country/tn/2026.html | AFTER: https://egazat.com/en/country/tn/2026.html
-[PASS] /en/country/tn/2027.html | BEFORE: https://egazat.com/en/country/tn/2027.html | AFTER: https://egazat.com/en/country/tn/2027.html
-[PASS] /en/country/tn/2028.html | BEFORE: https://egazat.com/en/country/tn/2028.html | AFTER: https://egazat.com/en/country/tn/2028.html
-[PASS] /en/country/dz/2026.html | BEFORE: https://egazat.com/en/country/dz/2026.html | AFTER: https://egazat.com/en/country/dz/2026.html
-[PASS] /en/country/dz/2027.html | BEFORE: https://egazat.com/en/country/dz/2027.html | AFTER: https://egazat.com/en/country/dz/2027.html
-[PASS] /en/country/dz/2028.html | BEFORE: https://egazat.com/en/country/dz/2028.html | AFTER: https://egazat.com/en/country/dz/2028.html
-[PASS] /en/country/ly/2026.html | BEFORE: https://egazat.com/en/country/ly/2026.html | AFTER: https://egazat.com/en/country/ly/2026.html
-[PASS] /en/country/ly/2027.html | BEFORE: https://egazat.com/en/country/ly/2027.html | AFTER: https://egazat.com/en/country/ly/2027.html
-[PASS] /en/country/ly/2028.html | BEFORE: https://egazat.com/en/country/ly/2028.html | AFTER: https://egazat.com/en/country/ly/2028.html
-[PASS] /en/country/sd/2026.html | BEFORE: https://egazat.com/en/country/sd/2026.html | AFTER: https://egazat.com/en/country/sd/2026.html
-[PASS] /en/country/sd/2027.html | BEFORE: https://egazat.com/en/country/sd/2027.html | AFTER: https://egazat.com/en/country/sd/2027.html
-[PASS] /en/country/sd/2028.html | BEFORE: https://egazat.com/en/country/sd/2028.html | AFTER: https://egazat.com/en/country/sd/2028.html
-[PASS] /en/country/so/2026.html | BEFORE: https://egazat.com/en/country/so/2026.html | AFTER: https://egazat.com/en/country/so/2026.html
-[PASS] /en/country/so/2027.html | BEFORE: https://egazat.com/en/country/so/2027.html | AFTER: https://egazat.com/en/country/so/2027.html
-[PASS] /en/country/so/2028.html | BEFORE: https://egazat.com/en/country/so/2028.html | AFTER: https://egazat.com/en/country/so/2028.html
-[PASS] /en/country/dj/2026.html | BEFORE: https://egazat.com/en/country/dj/2026.html | AFTER: https://egazat.com/en/country/dj/2026.html
-[PASS] /en/country/dj/2027.html | BEFORE: https://egazat.com/en/country/dj/2027.html | AFTER: https://egazat.com/en/country/dj/2027.html
-[PASS] /en/country/dj/2028.html | BEFORE: https://egazat.com/en/country/dj/2028.html | AFTER: https://egazat.com/en/country/dj/2028.html
-[PASS] /en/country/km/2026.html | BEFORE: https://egazat.com/en/country/km/2026.html | AFTER: https://egazat.com/en/country/km/2026.html
-[PASS] /en/country/km/2027.html | BEFORE: https://egazat.com/en/country/km/2027.html | AFTER: https://egazat.com/en/country/km/2027.html
-[PASS] /en/country/km/2028.html | BEFORE: https://egazat.com/en/country/km/2028.html | AFTER: https://egazat.com/en/country/km/2028.html
+[PASS] /ar/country/ae/2026.html | CANONICAL: https://egazat.com/ar/country/ae/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ae/2027.html | CANONICAL: https://egazat.com/ar/country/ae/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ae/2028.html | CANONICAL: https://egazat.com/ar/country/ae/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ae/2029.html | CANONICAL: https://egazat.com/ar/country/ae/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ae/2030.html | CANONICAL: https://egazat.com/ar/country/ae/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/bh/2026.html | CANONICAL: https://egazat.com/ar/country/bh/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/bh/2027.html | CANONICAL: https://egazat.com/ar/country/bh/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/bh/2028.html | CANONICAL: https://egazat.com/ar/country/bh/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/bh/2029.html | CANONICAL: https://egazat.com/ar/country/bh/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/bh/2030.html | CANONICAL: https://egazat.com/ar/country/bh/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dj/2026.html | CANONICAL: https://egazat.com/ar/country/dj/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dj/2027.html | CANONICAL: https://egazat.com/ar/country/dj/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dj/2028.html | CANONICAL: https://egazat.com/ar/country/dj/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dj/2029.html | CANONICAL: https://egazat.com/ar/country/dj/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dj/2030.html | CANONICAL: https://egazat.com/ar/country/dj/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dz/2026.html | CANONICAL: https://egazat.com/ar/country/dz/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dz/2027.html | CANONICAL: https://egazat.com/ar/country/dz/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dz/2028.html | CANONICAL: https://egazat.com/ar/country/dz/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dz/2029.html | CANONICAL: https://egazat.com/ar/country/dz/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/dz/2030.html | CANONICAL: https://egazat.com/ar/country/dz/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/eg/2026.html | CANONICAL: https://egazat.com/ar/country/eg/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/eg/2027.html | CANONICAL: https://egazat.com/ar/country/eg/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/eg/2028.html | CANONICAL: https://egazat.com/ar/country/eg/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/eg/2029.html | CANONICAL: https://egazat.com/ar/country/eg/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/eg/2030.html | CANONICAL: https://egazat.com/ar/country/eg/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/iq/2026.html | CANONICAL: https://egazat.com/ar/country/iq/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/iq/2027.html | CANONICAL: https://egazat.com/ar/country/iq/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/iq/2028.html | CANONICAL: https://egazat.com/ar/country/iq/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/iq/2029.html | CANONICAL: https://egazat.com/ar/country/iq/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/iq/2030.html | CANONICAL: https://egazat.com/ar/country/iq/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/jo/2026.html | CANONICAL: https://egazat.com/ar/country/jo/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/jo/2027.html | CANONICAL: https://egazat.com/ar/country/jo/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/jo/2028.html | CANONICAL: https://egazat.com/ar/country/jo/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/jo/2029.html | CANONICAL: https://egazat.com/ar/country/jo/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/jo/2030.html | CANONICAL: https://egazat.com/ar/country/jo/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/km/2026.html | CANONICAL: https://egazat.com/ar/country/km/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/km/2027.html | CANONICAL: https://egazat.com/ar/country/km/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/km/2028.html | CANONICAL: https://egazat.com/ar/country/km/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/km/2029.html | CANONICAL: https://egazat.com/ar/country/km/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/km/2030.html | CANONICAL: https://egazat.com/ar/country/km/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/kw/2026.html | CANONICAL: https://egazat.com/ar/country/kw/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/kw/2027.html | CANONICAL: https://egazat.com/ar/country/kw/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/kw/2028.html | CANONICAL: https://egazat.com/ar/country/kw/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/kw/2029.html | CANONICAL: https://egazat.com/ar/country/kw/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/kw/2030.html | CANONICAL: https://egazat.com/ar/country/kw/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/lb/2026.html | CANONICAL: https://egazat.com/ar/country/lb/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/lb/2027.html | CANONICAL: https://egazat.com/ar/country/lb/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/lb/2028.html | CANONICAL: https://egazat.com/ar/country/lb/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/lb/2029.html | CANONICAL: https://egazat.com/ar/country/lb/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/lb/2030.html | CANONICAL: https://egazat.com/ar/country/lb/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ly/2026.html | CANONICAL: https://egazat.com/ar/country/ly/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ly/2027.html | CANONICAL: https://egazat.com/ar/country/ly/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ly/2028.html | CANONICAL: https://egazat.com/ar/country/ly/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ly/2029.html | CANONICAL: https://egazat.com/ar/country/ly/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ly/2030.html | CANONICAL: https://egazat.com/ar/country/ly/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ma/2026.html | CANONICAL: https://egazat.com/ar/country/ma/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ma/2027.html | CANONICAL: https://egazat.com/ar/country/ma/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ma/2028.html | CANONICAL: https://egazat.com/ar/country/ma/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ma/2029.html | CANONICAL: https://egazat.com/ar/country/ma/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ma/2030.html | CANONICAL: https://egazat.com/ar/country/ma/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/om/2026.html | CANONICAL: https://egazat.com/ar/country/om/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/om/2027.html | CANONICAL: https://egazat.com/ar/country/om/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/om/2028.html | CANONICAL: https://egazat.com/ar/country/om/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/om/2029.html | CANONICAL: https://egazat.com/ar/country/om/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/om/2030.html | CANONICAL: https://egazat.com/ar/country/om/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/qa/2026.html | CANONICAL: https://egazat.com/ar/country/qa/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/qa/2027.html | CANONICAL: https://egazat.com/ar/country/qa/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/qa/2028.html | CANONICAL: https://egazat.com/ar/country/qa/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/qa/2029.html | CANONICAL: https://egazat.com/ar/country/qa/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/qa/2030.html | CANONICAL: https://egazat.com/ar/country/qa/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sa/2026.html | CANONICAL: https://egazat.com/ar/country/sa/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sa/2027.html | CANONICAL: https://egazat.com/ar/country/sa/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sa/2028.html | CANONICAL: https://egazat.com/ar/country/sa/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sa/2029.html | CANONICAL: https://egazat.com/ar/country/sa/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sa/2030.html | CANONICAL: https://egazat.com/ar/country/sa/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sd/2026.html | CANONICAL: https://egazat.com/ar/country/sd/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sd/2027.html | CANONICAL: https://egazat.com/ar/country/sd/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sd/2028.html | CANONICAL: https://egazat.com/ar/country/sd/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sd/2029.html | CANONICAL: https://egazat.com/ar/country/sd/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sd/2030.html | CANONICAL: https://egazat.com/ar/country/sd/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/so/2026.html | CANONICAL: https://egazat.com/ar/country/so/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/so/2027.html | CANONICAL: https://egazat.com/ar/country/so/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/so/2028.html | CANONICAL: https://egazat.com/ar/country/so/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/so/2029.html | CANONICAL: https://egazat.com/ar/country/so/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/so/2030.html | CANONICAL: https://egazat.com/ar/country/so/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sy/2026.html | CANONICAL: https://egazat.com/ar/country/sy/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sy/2027.html | CANONICAL: https://egazat.com/ar/country/sy/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sy/2028.html | CANONICAL: https://egazat.com/ar/country/sy/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sy/2029.html | CANONICAL: https://egazat.com/ar/country/sy/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/sy/2030.html | CANONICAL: https://egazat.com/ar/country/sy/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/tn/2026.html | CANONICAL: https://egazat.com/ar/country/tn/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/tn/2027.html | CANONICAL: https://egazat.com/ar/country/tn/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/tn/2028.html | CANONICAL: https://egazat.com/ar/country/tn/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/tn/2029.html | CANONICAL: https://egazat.com/ar/country/tn/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/tn/2030.html | CANONICAL: https://egazat.com/ar/country/tn/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ye/2026.html | CANONICAL: https://egazat.com/ar/country/ye/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ye/2027.html | CANONICAL: https://egazat.com/ar/country/ye/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ye/2028.html | CANONICAL: https://egazat.com/ar/country/ye/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ye/2029.html | CANONICAL: https://egazat.com/ar/country/ye/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/country/ye/2030.html | CANONICAL: https://egazat.com/ar/country/ye/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/eid/2026.html | CANONICAL: https://egazat.com/ar/eid/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/eid/2027.html | CANONICAL: https://egazat.com/ar/eid/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/eid/2028.html | CANONICAL: https://egazat.com/ar/eid/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/eid/2029.html | CANONICAL: https://egazat.com/ar/eid/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/eid/2030.html | CANONICAL: https://egazat.com/ar/eid/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /ar/eid.html | CANONICAL: https://egazat.com/ar/eid.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ae/2026.html | CANONICAL: https://egazat.com/en/country/ae/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ae/2027.html | CANONICAL: https://egazat.com/en/country/ae/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ae/2028.html | CANONICAL: https://egazat.com/en/country/ae/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ae/2029.html | CANONICAL: https://egazat.com/en/country/ae/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ae/2030.html | CANONICAL: https://egazat.com/en/country/ae/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/bh/2026.html | CANONICAL: https://egazat.com/en/country/bh/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/bh/2027.html | CANONICAL: https://egazat.com/en/country/bh/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/bh/2028.html | CANONICAL: https://egazat.com/en/country/bh/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/bh/2029.html | CANONICAL: https://egazat.com/en/country/bh/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/bh/2030.html | CANONICAL: https://egazat.com/en/country/bh/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dj/2026.html | CANONICAL: https://egazat.com/en/country/dj/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dj/2027.html | CANONICAL: https://egazat.com/en/country/dj/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dj/2028.html | CANONICAL: https://egazat.com/en/country/dj/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dj/2029.html | CANONICAL: https://egazat.com/en/country/dj/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dj/2030.html | CANONICAL: https://egazat.com/en/country/dj/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dz/2026.html | CANONICAL: https://egazat.com/en/country/dz/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dz/2027.html | CANONICAL: https://egazat.com/en/country/dz/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dz/2028.html | CANONICAL: https://egazat.com/en/country/dz/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dz/2029.html | CANONICAL: https://egazat.com/en/country/dz/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/dz/2030.html | CANONICAL: https://egazat.com/en/country/dz/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/eg/2026.html | CANONICAL: https://egazat.com/en/country/eg/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/eg/2027.html | CANONICAL: https://egazat.com/en/country/eg/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/eg/2028.html | CANONICAL: https://egazat.com/en/country/eg/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/eg/2029.html | CANONICAL: https://egazat.com/en/country/eg/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/eg/2030.html | CANONICAL: https://egazat.com/en/country/eg/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/iq/2026.html | CANONICAL: https://egazat.com/en/country/iq/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/iq/2027.html | CANONICAL: https://egazat.com/en/country/iq/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/iq/2028.html | CANONICAL: https://egazat.com/en/country/iq/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/iq/2029.html | CANONICAL: https://egazat.com/en/country/iq/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/iq/2030.html | CANONICAL: https://egazat.com/en/country/iq/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/jo/2026.html | CANONICAL: https://egazat.com/en/country/jo/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/jo/2027.html | CANONICAL: https://egazat.com/en/country/jo/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/jo/2028.html | CANONICAL: https://egazat.com/en/country/jo/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/jo/2029.html | CANONICAL: https://egazat.com/en/country/jo/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/jo/2030.html | CANONICAL: https://egazat.com/en/country/jo/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/km/2026.html | CANONICAL: https://egazat.com/en/country/km/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/km/2027.html | CANONICAL: https://egazat.com/en/country/km/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/km/2028.html | CANONICAL: https://egazat.com/en/country/km/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/km/2029.html | CANONICAL: https://egazat.com/en/country/km/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/km/2030.html | CANONICAL: https://egazat.com/en/country/km/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/kw/2026.html | CANONICAL: https://egazat.com/en/country/kw/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/kw/2027.html | CANONICAL: https://egazat.com/en/country/kw/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/kw/2028.html | CANONICAL: https://egazat.com/en/country/kw/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/kw/2029.html | CANONICAL: https://egazat.com/en/country/kw/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/kw/2030.html | CANONICAL: https://egazat.com/en/country/kw/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/lb/2026.html | CANONICAL: https://egazat.com/en/country/lb/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/lb/2027.html | CANONICAL: https://egazat.com/en/country/lb/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/lb/2028.html | CANONICAL: https://egazat.com/en/country/lb/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/lb/2029.html | CANONICAL: https://egazat.com/en/country/lb/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/lb/2030.html | CANONICAL: https://egazat.com/en/country/lb/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ly/2026.html | CANONICAL: https://egazat.com/en/country/ly/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ly/2027.html | CANONICAL: https://egazat.com/en/country/ly/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ly/2028.html | CANONICAL: https://egazat.com/en/country/ly/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ly/2029.html | CANONICAL: https://egazat.com/en/country/ly/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ly/2030.html | CANONICAL: https://egazat.com/en/country/ly/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ma/2026.html | CANONICAL: https://egazat.com/en/country/ma/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ma/2027.html | CANONICAL: https://egazat.com/en/country/ma/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ma/2028.html | CANONICAL: https://egazat.com/en/country/ma/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ma/2029.html | CANONICAL: https://egazat.com/en/country/ma/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ma/2030.html | CANONICAL: https://egazat.com/en/country/ma/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/om/2026.html | CANONICAL: https://egazat.com/en/country/om/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/om/2027.html | CANONICAL: https://egazat.com/en/country/om/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/om/2028.html | CANONICAL: https://egazat.com/en/country/om/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/om/2029.html | CANONICAL: https://egazat.com/en/country/om/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/om/2030.html | CANONICAL: https://egazat.com/en/country/om/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/qa/2026.html | CANONICAL: https://egazat.com/en/country/qa/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/qa/2027.html | CANONICAL: https://egazat.com/en/country/qa/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/qa/2028.html | CANONICAL: https://egazat.com/en/country/qa/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/qa/2029.html | CANONICAL: https://egazat.com/en/country/qa/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/qa/2030.html | CANONICAL: https://egazat.com/en/country/qa/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sa/2026.html | CANONICAL: https://egazat.com/en/country/sa/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sa/2027.html | CANONICAL: https://egazat.com/en/country/sa/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sa/2028.html | CANONICAL: https://egazat.com/en/country/sa/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sa/2029.html | CANONICAL: https://egazat.com/en/country/sa/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sa/2030.html | CANONICAL: https://egazat.com/en/country/sa/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sd/2026.html | CANONICAL: https://egazat.com/en/country/sd/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sd/2027.html | CANONICAL: https://egazat.com/en/country/sd/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sd/2028.html | CANONICAL: https://egazat.com/en/country/sd/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sd/2029.html | CANONICAL: https://egazat.com/en/country/sd/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sd/2030.html | CANONICAL: https://egazat.com/en/country/sd/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/so/2026.html | CANONICAL: https://egazat.com/en/country/so/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/so/2027.html | CANONICAL: https://egazat.com/en/country/so/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/so/2028.html | CANONICAL: https://egazat.com/en/country/so/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/so/2029.html | CANONICAL: https://egazat.com/en/country/so/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/so/2030.html | CANONICAL: https://egazat.com/en/country/so/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sy/2026.html | CANONICAL: https://egazat.com/en/country/sy/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sy/2027.html | CANONICAL: https://egazat.com/en/country/sy/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sy/2028.html | CANONICAL: https://egazat.com/en/country/sy/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sy/2029.html | CANONICAL: https://egazat.com/en/country/sy/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/sy/2030.html | CANONICAL: https://egazat.com/en/country/sy/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/tn/2026.html | CANONICAL: https://egazat.com/en/country/tn/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/tn/2027.html | CANONICAL: https://egazat.com/en/country/tn/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/tn/2028.html | CANONICAL: https://egazat.com/en/country/tn/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/tn/2029.html | CANONICAL: https://egazat.com/en/country/tn/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/tn/2030.html | CANONICAL: https://egazat.com/en/country/tn/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ye/2026.html | CANONICAL: https://egazat.com/en/country/ye/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ye/2027.html | CANONICAL: https://egazat.com/en/country/ye/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ye/2028.html | CANONICAL: https://egazat.com/en/country/ye/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ye/2029.html | CANONICAL: https://egazat.com/en/country/ye/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/country/ye/2030.html | CANONICAL: https://egazat.com/en/country/ye/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/eid/2026.html | CANONICAL: https://egazat.com/en/eid/2026.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/eid/2027.html | CANONICAL: https://egazat.com/en/eid/2027.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/eid/2028.html | CANONICAL: https://egazat.com/en/eid/2028.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/eid/2029.html | CANONICAL: https://egazat.com/en/eid/2029.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/eid/2030.html | CANONICAL: https://egazat.com/en/eid/2030.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en/eid.html | CANONICAL: https://egazat.com/en/eid.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /en.html | CANONICAL: https://egazat.com/en.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /index.html | CANONICAL: https://egazat.com/ | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
+[PASS] /sitemap.html | CANONICAL: https://egazat.com/sitemap.html | HREFLANG_AR: present | HREFLANG_EN: present | HREFLANG_XDEFAULT: present
 ────────────────────────────────────────────────────────────────────────────────
-✅ All canonical tags are correct.
+✅ All verifications passed.
