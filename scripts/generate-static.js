@@ -1271,16 +1271,25 @@ ${structuredDataScripts}
     `<div id="root">${seoContent}</div>`
   );
   
-  // Ensure tracking codes (GA4 + Matomo) — inline scripts cannot use defer/async (spec ignores it),
-  // so use async only on the external loader. config() runs immediately; gtag.js drains the dataLayer when ready.
-  if (!updatedHtml.includes('G-14SVM3B0VD')) {
-    const trackingCodes = `
+  // CRITICAL: Static pages are NOT React SPA routes — the usePageTracking hook never runs here.
+  // Every load is a full page load, so trackPageView MUST fire inline on page load
+  // and GA4 must NOT use send_page_view:false (which is only correct for the SPA shell).
+  // Strip any existing GA4/Matomo blocks inherited from index.html and inject the static-page version.
+  updatedHtml = updatedHtml
+    .replace(/\s*<!--\s*Google Analytics[^>]*-->\s*/gi, '')
+    .replace(/\s*<script[^>]*googletagmanager\.com\/gtag\/js[^>]*><\/script>/gi, '')
+    .replace(/\s*<script>\s*window\.dataLayer[\s\S]*?gtag\('config'[\s\S]*?<\/script>/gi, '')
+    .replace(/\s*<!--\s*Matomo[^>]*-->\s*/gi, '')
+    .replace(/\s*<!--\s*End Matomo Code\s*-->\s*/gi, '')
+    .replace(/\s*<script>\s*var _paq[\s\S]*?<\/script>/gi, '');
+  const trackingCodes = `
+    <!-- Google Analytics GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-14SVM3B0VD"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-14SVM3B0VD',{send_page_view:false});</script>
-    <script>var _paq=window._paq=window._paq||[];_paq.push(['enableLinkTracking']);(function(){var u="//www.waterfallsbg.info/piwik/matomo/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','99']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.async=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-14SVM3B0VD');</script>
+    <!-- Matomo -->
+    <script>var _paq=window._paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//www.waterfallsbg.info/piwik/matomo/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','99']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.async=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script>
 `;
-    updatedHtml = updatedHtml.replace('<head>', '<head>' + trackingCodes);
-  }
+  updatedHtml = updatedHtml.replace('<head>', '<head>' + trackingCodes);
 
   // Ensure AdSense loader is the first script immediately after <head> on every generated page.
   const adsense = `\n    <!-- Google AdSense -->\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1784742484268469" crossorigin="anonymous"></script>`;
