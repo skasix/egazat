@@ -25,6 +25,13 @@ const countriesData = require('../src/data/countries.json');
 const holidaysData = require('../src/data/holidays.json');
 
 const countriesMap = new Map(countriesData.countries.map(c => [c.code, c]));
+const ADSENSE_SCRIPT = `\n    <!-- Google AdSense -->\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1784742484268469" crossorigin="anonymous"></script>`;
+
+function ensureAdsenseFirstAfterHead(html) {
+  return html
+    .replace(/\s*<!-- Google AdSense -->\s*<script\s+async\s+src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-1784742484268469"\s+crossorigin="anonymous"><\/script>/gi, '')
+    .replace('<head>', '<head>' + ADSENSE_SCRIPT);
+}
 
 // ──────────────────────────────────────────────
 // Date formatting for English
@@ -221,7 +228,10 @@ async function injectMeta(filePath, countryCode, year, lang = 'ar') {
   const locale = lang === 'en' ? 'en_US' : 'ar_AR';
   const siteName = lang === 'en' ? 'Egazat' : 'إجازات';
 
+  html = ensureAdsenseFirstAfterHead(html);
+
   // 1. Title
+  html = ensureAdsenseFirstAfterHead(html);
   html = html.replace(/<title>.*?<\/title>/g, '');
   html = html.replace('<head>', `<head>\n    <title>${escapeAttr(title)}</title>`);
 
