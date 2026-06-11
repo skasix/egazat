@@ -1,7 +1,17 @@
 // Service Worker for caching and performance optimization
-const CACHE_NAME = 'egazat-v1';
-const STATIC_CACHE = 'egazat-static-v1';
-const DYNAMIC_CACHE = 'egazat-dynamic-v1';
+const CACHE_NAME = 'egazat-v2';
+const STATIC_CACHE = 'egazat-static-v2';
+const DYNAMIC_CACHE = 'egazat-dynamic-v2';
+
+// Domains/paths that must never be intercepted or cached (analytics beacons)
+const NEVER_CACHE = [
+  'google-analytics.com',
+  'analytics.google.com',
+  'googletagmanager.com/gtag',
+  'waterfallsbg.info/piwik',
+  'doubleclick.net',
+  'googlesyndication.com'
+];
 
 // Resources to cache on install
 const STATIC_ASSETS = [
@@ -57,7 +67,12 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
-  
+
+  // Never intercept analytics — let them go direct to network
+  if (NEVER_CACHE.some((domain) => request.url.includes(domain))) {
+    return;
+  }
+
   // Skip non-GET requests
   if (request.method !== 'GET') return;
   
