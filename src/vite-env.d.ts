@@ -1,10 +1,11 @@
 /// <reference types="vite/client" />
 
-interface Window {
-  gtag: (
-    command: string,
-    action: string,
-    params?: Record<string, unknown>
-  ) => void;
-  _paq: string[][];
+declare global {
+  interface Window {
+    gtag: (...args: unknown[]) => void;
+    _paq: unknown[][];
+    dataLayer: unknown[];
+  }
 }
+
+export {};
