@@ -258,6 +258,7 @@ async function injectMeta(filePath, countryCode, year, lang = 'ar') {
     html = html.replace(/<html[^>]*>/, `<html lang="${expectedLang}" dir="${expectedDir}">`);
   }
 
+  html = ensureAdsenseFirstAfterHead(html);
   await fs.writeFile(filePath, html, 'utf8');
 
   return {
@@ -299,6 +300,7 @@ async function injectEidMeta(filePath, year, lang, isMainPage = false) {
   const expectedDir = lang === 'en' ? 'ltr' : 'rtl';
   html = html.replace(/<html[^>]*>/, `<html lang="${expectedLang}" dir="${expectedDir}">`);
 
+  html = ensureAdsenseFirstAfterHead(html);
   await fs.writeFile(filePath, html, 'utf8');
   return { status: 'PASS', title, descLength: description.length };
 }
