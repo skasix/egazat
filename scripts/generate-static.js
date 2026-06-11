@@ -1282,11 +1282,11 @@ ${structuredDataScripts}
     updatedHtml = updatedHtml.replace('<head>', '<head>' + trackingCodes);
   }
 
-  // Ensure AdSense loader is present on every generated page
-  if (!updatedHtml.includes('ca-pub-1784742484268469')) {
-    const adsense = `\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1784742484268469" crossorigin="anonymous"></script>\n`;
-    updatedHtml = updatedHtml.replace('</head>', adsense + '</head>');
-  }
+  // Ensure AdSense loader is the first script immediately after <head> on every generated page.
+  const adsense = `\n    <!-- Google AdSense -->\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1784742484268469" crossorigin="anonymous"></script>`;
+  updatedHtml = updatedHtml
+    .replace(/\s*<!-- Google AdSense -->\s*<script\s+async\s+src="https:\/\/pagead2\.googlesyndication\.com\/pagead\/js\/adsbygoogle\.js\?client=ca-pub-1784742484268469"\s+crossorigin="anonymous"><\/script>/gi, '')
+    .replace('<head>', '<head>' + adsense);
   
   return updatedHtml;
 };
