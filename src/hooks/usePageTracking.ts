@@ -1,34 +1,39 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-type Gtag = (
-  command: string,
-  action: string,
-  params?: Record<string, unknown>
-) => void;
-
 export function usePageTracking() {
   const location = useLocation();
 
   useEffect(() => {
-    const path = location.pathname + location.search;
-    const title = document.title;
+    const timer = setTimeout(() => {
+      const path = location.pathname + location.search;
+      const title = document.title;
 
-    // Google Analytics 4 page view
-    const gtag = (window as unknown as { gtag?: Gtag }).gtag;
-    if (gtag) {
-      gtag("event", "page_view", {
-        page_path: path,
-        page_title: title,
-      });
-    }
+      console.log(
+        "[Analytics] route change fired:",
+        path,
+        "gtag:",
+        typeof window.gtag,
+        "_paq:",
+        !!window._paq
+      );
 
-    // Matomo page view
-    const _paq = (window as unknown as { _paq?: string[][] })._paq;
-    if (_paq) {
-      _paq.push(["setCustomUrl", path]);
-      _paq.push(["setDocumentTitle", title]);
-      _paq.push(["trackPageView"]);
-    }
+      // Google Analytics 4 page view
+      if (typeof window.gtag === "function") {
+        window.gtag("event", "page_view", {
+          page_path: path,
+          page_title: title,
+        });
+      }
+
+      // Matomo page view
+      if (window._paq) {
+        window._paq.push(["setCustomUrl", path]);
+        window._paq.push(["setDocumentTitle", title]);
+        window._paq.push(["trackPageView"]);
+      }
+    }, 0);
+
+    return () => clearTimeout(timer);
   }, [location]);
 }
