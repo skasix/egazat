@@ -1271,14 +1271,21 @@ ${structuredDataScripts}
     `<div id="root">${seoContent}</div>`
   );
   
-  // Ensure tracking codes
+  // Ensure tracking codes (GA4 + Matomo) — inline scripts cannot use defer/async (spec ignores it),
+  // so use async only on the external loader. config() runs immediately; gtag.js drains the dataLayer when ready.
   if (!updatedHtml.includes('G-14SVM3B0VD')) {
     const trackingCodes = `
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-14SVM3B0VD"></script>
-    <script defer>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-14SVM3B0VD');</script>
-    <script defer>var _paq=window._paq=window._paq||[];_paq.push(['trackPageView']);_paq.push(['enableLinkTracking']);(function(){var u="//www.waterfallsbg.info/piwik/matomo/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','99']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.defer=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-14SVM3B0VD"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-14SVM3B0VD',{send_page_view:false});</script>
+    <script>var _paq=window._paq=window._paq||[];_paq.push(['enableLinkTracking']);(function(){var u="//www.waterfallsbg.info/piwik/matomo/";_paq.push(['setTrackerUrl',u+'matomo.php']);_paq.push(['setSiteId','99']);var d=document,g=d.createElement('script'),s=d.getElementsByTagName('script')[0];g.async=true;g.src=u+'matomo.js';s.parentNode.insertBefore(g,s);})();</script>
 `;
     updatedHtml = updatedHtml.replace('<head>', '<head>' + trackingCodes);
+  }
+
+  // Ensure AdSense loader is present on every generated page
+  if (!updatedHtml.includes('ca-pub-1784742484268469')) {
+    const adsense = `\n    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1784742484268469" crossorigin="anonymous"></script>\n`;
+    updatedHtml = updatedHtml.replace('</head>', adsense + '</head>');
   }
   
   return updatedHtml;
