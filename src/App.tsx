@@ -13,6 +13,7 @@ import { Sitemap } from "./pages/Sitemap";
 import NotFound from "./pages/NotFound";
 
 const AppContent = () => {
+  usePageTracking();
   const location = useLocation();
   const pathSegments = location.pathname.split('/').filter(Boolean);
   // Handle root path (/) as Arabic, otherwise extract language from first segment
