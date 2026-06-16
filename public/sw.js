@@ -1,14 +1,15 @@
 // Service Worker for caching and performance optimization
-const CACHE_NAME = 'egazat-v2';
-const STATIC_CACHE = 'egazat-static-v2';
-const DYNAMIC_CACHE = 'egazat-dynamic-v2';
+const CACHE_VERSION = 'v3';
+const CACHE_NAME = `egazat-${CACHE_VERSION}`;
+const STATIC_CACHE = `egazat-static-${CACHE_VERSION}`;
+const DYNAMIC_CACHE = `egazat-dynamic-${CACHE_VERSION}`;
 
 // Domains/paths that must never be intercepted or cached (analytics beacons)
-const NEVER_CACHE = [
+const BYPASS_URLS = [
   'google-analytics.com',
   'analytics.google.com',
-  'googletagmanager.com/gtag',
-  'waterfallsbg.info/piwik',
+  'googletagmanager.com',
+  'waterfallsbg.info',
   'doubleclick.net',
   'googlesyndication.com'
 ];
@@ -69,7 +70,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(request.url);
 
   // Never intercept analytics — let them go direct to network
-  if (NEVER_CACHE.some((domain) => request.url.includes(domain))) {
+  if (BYPASS_URLS.some((domain) => request.url.includes(domain))) {
     return;
   }
 
